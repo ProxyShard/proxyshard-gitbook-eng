@@ -9,11 +9,11 @@ Here you will find everything you need to work with our proxies: product descrip
 {% hint style="info" %}
 **English version:** [docs.proxyshard.com/eng](https://docs.proxyshard.com/eng/)
 
-**Russian version:** [docs.proxyshard.com](https://docs.proxyshard.com/)
+**Русская версия:** [docs.proxyshard.com](https://docs.proxyshard.com/)
 
-**Ukrainian version:** [docs.proxyshard.com/ua](https://docs.proxyshard.com/ua/)
+**Українська версія:** [docs.proxyshard.com/ua](https://docs.proxyshard.com/ua/)
 
-**Chinese version:** [docs.proxyshard.com/cn](https://docs.proxyshard.com/cn/)
+**简体中文版:** [docs.proxyshard.com/cn](https://docs.proxyshard.com/cn/)
 {% endhint %}
 
 ***
