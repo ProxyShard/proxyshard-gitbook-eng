@@ -10,6 +10,10 @@ Here you will find everything you need to work with our proxies: product descrip
 **English version:** [docs.proxyshard.com/eng](https://docs.proxyshard.com/eng/)
 
 **Russian version:** [docs.proxyshard.com](https://docs.proxyshard.com/)
+
+**Ukrainian version:** [docs.proxyshard.com/ua](https://docs.proxyshard.com/ua/)
+
+**Chinese version:** [docs.proxyshard.com/cn](https://docs.proxyshard.com/cn/)
 {% endhint %}
 
 ***
@@ -19,4 +23,3 @@ Here you will find everything you need to work with our proxies: product descrip
 * [FAQ](faq-and-support/faq/) - answers to frequently asked questions
 
 [Contact us](contact-us.md)
-
