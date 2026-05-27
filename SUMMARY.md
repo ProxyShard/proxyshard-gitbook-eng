@@ -58,6 +58,7 @@
 ## Questions and answers
 
 * [FAQ](faq-and-support/faq/README.md)
+  * [🔥 Popular product questions](faq-and-support/faq/products.md)
   * [Residential proxies](faq-and-support/faq/residential-proxies.md)
     * [Why Residential proxies are not saved](faq-and-support/faq/why-residential-proxies-not-saved.md)
   * [Datacenter / ISP proxies](faq-and-support/faq/datacenter-isp-proxies.md)
