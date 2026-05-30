@@ -19,6 +19,7 @@
 * [IP Checker](our-products/ip-checker.md)
 * [Proxy Tester](our-products/proxy-tester.md)
 * [ProxyShard Extension](our-products/proxyshard-extension.md)
+* [ShardX Launcher (anti-detect browser)](our-products/shardx-launcher.md)
 * [About the UDP protocol](our-products/about-udp/README.md)
   * [How to install Tampermonkey and the WebRTC debug script](our-products/about-udp/tampermonkey-webrtc-debug.md)
   * [How a WebRTC leak works](our-products/about-udp/how-webrtc-leak-works.md)
@@ -117,3 +118,17 @@
 * [OpenWrt proxy](setup-guides/openwrt-proxy.md)
 * [Checker proxy](setup-guides/checker-proxy.md)
 * [Template](setup-guides/template.md)
+
+## shardx-launcher-api
+
+* ```yaml
+  type: builtin:openapi
+  props:
+    models: true
+    downloadLink: true
+  dependencies:
+    spec:
+      ref:
+        kind: openapi
+        spec: shardbrowser-api
+  ```
