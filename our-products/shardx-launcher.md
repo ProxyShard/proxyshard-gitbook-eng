@@ -5,9 +5,17 @@ description: >-
 icon: fingerprint
 ---
 
-# ShardX Browser (anti-detect browser)
+# ShardX Launcher
 
-<mark style="color:purple;">**ShardX Browser**</mark> is our anti-detect browser: create separate profiles with unique fingerprints, bind a dedicated proxy to each one, and work across dozens of accounts as if they were different people on different devices. On top of the manual UI there is a local **Automation API** through which profiles can be created, launched, and driven by Puppeteer / Playwright bots.
+<mark style="color:purple;">**ShardX Browser**</mark> is our anti-detect browser:
+
+## Download and install
+
+Step-by-step guide covering installation, proxy setup, and your first profile:
+
+{% content-ref url="../setup-guides/shardx-browser.md" %}
+[ShardX Launcher — setup guide](../setup-guides/shardx-browser.md)
+{% endcontent-ref %} create separate profiles with unique fingerprints, bind a dedicated proxy to each one, and work across dozens of accounts as if they were different people on different devices. On top of the manual UI there is a local **Automation API** through which profiles can be created, launched, and driven by Puppeteer / Playwright bots.
 
 #### What ShardX can do:
 
