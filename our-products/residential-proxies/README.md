@@ -4,7 +4,32 @@ icon: house-signal
 
 # Residential proxies
 
-<mark style="color:purple;">Residential proxies</mark> are proxies hosted on real home devices, with <mark style="color:purple;">UDP</mark> support in <mark style="color:purple;">Standard\Unlimited</mark> packages. You can view the differences between products [<mark style="color:purple;">here</mark>](../../). They are ideal for working with many IP addresses from home ISPs and support detailed targeting down to operator selection. You can view product restrictions [here](../restrictions.md).
+<mark style="color:purple;">Residential proxies</mark> are hosted on real home devices. They are ideal for working with many home-ISP IP addresses and support fine-grained targeting down to operator selection.\
+You can review product restrictions [here](../restrictions.md).
+
+{% hint style="warning" %}
+Addresses are issued on real home IPs. A session can change at any moment if the device in the pool leaves the traffic-sharing network. If you need a **static IP**, see [Datacenter](../datacenter-proxies.md) or [ISP proxies](../isp-proxies.md).
+{% endhint %}
+
+## Plans
+
+| Parameter            | [Standard](standard-residential.md) | [Unlimited](unlimited-residential-proxy.md) | [Premium](premium-residential.md) |
+| -------------------- | ------------------------------------ | ------------------------------------------- | --------------------------------- |
+| Pool size            | 600k — 750k                          | 600k — 750k (= Standard)                    | 2.8M — 3.2M                       |
+| Max connections      | 35,000                               | 5,000                                       | —                                 |
+| Max speed            | 75 Mbps                              | 75 Mbps                                     | 75 Mbps                           |
+| UDP support          | ✓ (except USA)                       | ✓ (except USA)                              | ✗                                 |
+| Unlimited plan       | ✗                                    | ✓                                           | ✗                                 |
+| Billing              | Per GB (Pay as you go)               | Day / Half-month / Month                    | Per GB (Pay as you go)            |
+| Price                | **$2 / GB**                          | **$30** / day · **$399** / half-month · **$699** / month | **$3 / GB**          |
+
+## Available locations
+
+An up-to-date list of countries, regions, cities and operators is on a separate page:
+
+{% content-ref url="available-countries.md" %}
+[available-countries.md](available-countries.md)
+{% endcontent-ref %}
 
 ## **How to start using them?**
 
@@ -83,74 +108,29 @@ Additional information about connection formatting is available at this [link](h
 Proxies in "Proxy List" are not saved because this is a dynamic field. You can generate many proxies for different locations: old proxies will not stop working when new proxies are generated.
 {% endhint %}
 
-## Differences between Premium\Standard\Unlimited packages
+## What tasks they fit
 
-### <mark style="color:purple;">Standard Residential</mark>
-
-These proxies are a pool of devices that have passed non-strict address filtering and have an average number of devices and available countries. This plan is most often chosen for process automation tasks where <mark style="color:purple;">UDP</mark> support is also required.
-
-<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
-
-### <mark style="color:purple;">Unlimited Residential</mark>
-
-These proxies are a pool based on the "Standard" plan. They have the same countries and devices, but no limit on the amount of traffic used. Rental is available for "Day", "Half month", and "Month". There is a connection limit: no more than 5000 connections of any type are allowed (ESTAB\FIN\_WAIT and others). With a monthly subscription, it is also possible to increase the connection limit; contact Support for details. This plan is most often chosen for process automation tasks with high traffic consumption where <mark style="color:purple;">UDP</mark> support is also required.
-
-### <mark style="color:purple;">Premium Residential</mark>
-
-The Premium pool consists of some of the best IPs for different goals and tasks. The main advantages of the traffic are:
-
-1. Flexible targeting, down to operator selection
-2. A larger list of available countries, regions, and cities
-3. A larger number of IP addresses
-
-The downside of this plan is the absence of UDP and Unlimited plan options.
-
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Social media and multi-accounting, crypto exchanges (Binance, Bybit and others), Polymarket, web scraping, SEO monitoring, ad verification, e-commerce analytics, price monitoring, geo-targeted website testing.
 
 ## Pros and cons of Residential proxies
 
 #### <mark style="color:green;">Pros:</mark>
 
-* **Bypassing exchange and service restrictions**
-
-Many crypto exchanges and DeFi platforms introduce regional restrictions, for example Binance restricts access for users from certain countries. With Residential proxies, you can easily change geolocation by accessing platforms from real users' IP addresses. This helps work with platforms without the risk of being blocked.<br>
-
-* **Increased anonymity and tracking protection**
-
-The crypto industry is tightly controlled, and platforms often track user activity. Residential proxies mask the real IP, prevent transaction tracking, and create the appearance of working from different devices and locations.<br>
-
-* **Bot trading and automation**
-
-Trading and arbitrage strategies require many accounts and automated interaction with exchanges. Residential proxies allow bots to work without country-selection restrictions and protect against IP bans because they are not filtered by most fraud systems on the market.<br>
-
-* **Multi-accounting and antidetect browsers**
-
-Exchanges often use multi-accounting. Residential proxies + antidetect browsers, such as Vision or Octo, allow each account to look unique and reduce the risk of bans.<br>
-
-* **Access to ICO, IDO, and Airdrop**
-
-Many projects distribute tokens only to users from specific regions. With proxies, you can change your location and participate in drops even if access is initially restricted.<br>
-
-* **Increased security in P2P transactions**
-
-When exchanging crypto on P2P platforms, such as Binance P2P or LocalBitcoins, Residential proxies protect against scammers by hiding the real IP and preventing tracking attempts.
+* **Flexible billing** — Pay as you go or an unlimited subscription (Unlimited)
+* **IP rotation** — change addresses on demand or by timer (TTL)
+* **Wide geo-targeting** — select country, region, city and operator
+* **Home-origin addresses** — IPs are registered to home ISPs
+* **UDP support** — available on Standard and Unlimited (except the USA location)
 
 #### <mark style="color:red;">Cons:</mark>
 
-* **High cost**
-
-Residential proxies are more expensive than Datacenter alternatives. This is because they use IP addresses of real users rather than server infrastructure.
-
-* **Possible speed and latency issues**
-
-Because requests pass through real people's devices, **speed may vary** depending on network load, proxy location, and the end user's internet connection quality. For tasks that require high speed, such as bot trading, this can be critical. In these situations, Datacenter or ISP proxies are recommended.
-
-* **Limited lifetime of a single IP**
-
-IP addresses in Residential proxies may **change frequently** because users may disconnect their devices from the sharing network. Although we provide the option to increase the rental period by specifying TTL, it is not 100% guaranteed and usually does not exceed 2 days.
+* **Possible speed drops** — depends on the internet quality of the end device; this is a specific of the product
+* **Dynamic IP** — the address may change at any moment; if you need a static IP, see [ISP](../isp-proxies.md) or [Datacenter](../datacenter-proxies.md)
+* **No p0f support** — planned, stay tuned for updates
+* **UDP is unavailable in the USA location** on Standard and Unlimited
 
 {% hint style="success" %}
-These drawbacks are covered by [ISP proxies](../isp-proxies.md).
+No UDP or need a static address? [ISP proxies](../isp-proxies.md) cover both.
 {% endhint %}
 
 {% hint style="info" %}

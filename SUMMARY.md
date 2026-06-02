@@ -7,14 +7,15 @@
 ## Our products
 
 * [Residential proxies](our-products/residential-proxies/README.md)
-  * [Unlimited Residential proxy](our-products/residential-proxies/unlimited-residential-proxy.md)
+  * [Standard Residential](our-products/residential-proxies/standard-residential.md)
+  * [Unlimited Residential](our-products/residential-proxies/unlimited-residential-proxy.md)
+  * [Premium Residential](our-products/residential-proxies/premium-residential.md)
   * [Available countries list](our-products/residential-proxies/available-countries.md)
   * [How to use Residential proxies](our-products/residential-proxies/how-to-use-residential-proxies.md)
 * [Datacenter proxies](our-products/datacenter-proxies.md)
 * [Mobile proxies](our-products/mobile-proxies.md)
 * [ISP proxies](our-products/isp-proxies.md)
 * [Network fingerprint spoofing (p0f)](our-products/p0f-spoofing.md)
-* [Proxies with UDP](our-products/udp-proxies.md)
 * [Limitations](our-products/restrictions.md)
 * [IP Checker](our-products/ip-checker.md)
 * [Proxy Tester](our-products/proxy-tester.md)
@@ -64,10 +65,9 @@
     * [Why Residential proxies are not saved](faq-and-support/faq/why-residential-proxies-not-saved.md)
   * [Datacenter / ISP proxies](faq-and-support/faq/datacenter-isp-proxies.md)
   * [Mobile proxies](faq-and-support/faq/mobile-proxies.md)
-  * [General questions](faq-and-support/faq/general-questions.md)
-    * [How to check whether a proxy works](faq-and-support/faq/how-to-check-proxy.md)
-    * [Proxies are not working](faq-and-support/faq/proxy-not-working.md)
-    * [The proxy location is incorrect!](faq-and-support/faq/wrong-proxy-location.md)
+  * [How to check whether a proxy works](faq-and-support/faq/how-to-check-proxy.md)
+  * [Proxies are not working](faq-and-support/faq/proxy-not-working.md)
+  * [The proxy location is incorrect!](faq-and-support/faq/wrong-proxy-location.md)
 
 ## Usage instructions
 

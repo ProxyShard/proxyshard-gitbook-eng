@@ -18,4 +18,9 @@ Didn't find the answer you need? Contact us: [Contact us](../../contact-us.md)
 * [**Residential proxies**](residential-proxies.md) - questions about using Residential proxies, session generation, and IP rotation
 * [**Datacenter / ISP proxies**](datacenter-isp-proxies.md) - questions about static proxies, datacenters, and ISP
 * [**Mobile proxies**](mobile-proxies.md) - questions about Mobile proxies
-* [**General questions**](general-questions.md) - availability checks, connection issues, location issues, and more
+
+### General articles
+
+* [How to check whether a proxy works](how-to-check-proxy.md)
+* [Proxies are not working](proxy-not-working.md)
+* [The proxy location is incorrect!](wrong-proxy-location.md)

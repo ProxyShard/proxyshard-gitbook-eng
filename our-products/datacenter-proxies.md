@@ -8,6 +8,25 @@ icon: server
 
 <mark style="color:purple;">Datacenter proxies</mark>, like <mark style="color:purple;">ISP</mark> proxies, are issued to one user only: no sharing, meaning no more than one user per address and no hidden sharing. The addresses are <mark style="color:purple;">IPv4</mark> and also support <mark style="color:purple;">UDP</mark>.
 
+## Characteristics
+
+| Parameter      | Value                                                                     |
+| -------------- | ------------------------------------------------------------------------- |
+| IP type        | IPv4                                                                      |
+| Sharing        | No — one IP per user                                                      |
+| UDP support    | ✓                                                                         |
+| p0f support    | ✓ (with monthly rental, +$0.3 / IP)                                       |
+| Price          | **$0.3** / 3 days · **$0.4** / week · **$0.7** / half-month · **$1.2** / month |
+
+## Available locations
+
+* 🇲🇩 Moldova
+* 🇺🇦 Ukraine
+* 🇳🇱 Netherlands
+* 🇩🇪 Germany
+* 🇵🇱 Poland
+* 🇺🇸 USA *(coming soon)*
+
 ## **How do they work?**
 
 Inside the order, you can find several important items and options. Let's review them:
@@ -54,30 +73,28 @@ Orders with the "<mark style="color:$danger;">**Cancelled**</mark>" status **can
 
 <mark style="color:purple;">Auto renew</mark> - Toggle for enabling/disabling monthly product renewal <mark style="color:purple;">(funds are charged from the account balance on the date specified at purchase)</mark>
 
+## What tasks they fit
+
+Most crypto exchanges, Polymarket and platforms, mass web scraping of simple sites, fast collection of public data, availability and uptime checks, SEO scraping, price monitoring on weakly protected sites, load testing of your own systems, scraping catalogs and directories, API request automation.
+
 ## Pros and cons of Datacenter proxies
 
-#### <mark style="color:green;">**Pros**</mark>_<mark style="color:green;">**:**</mark>_
+#### <mark style="color:green;">Pros:</mark>
 
-* **High speed**
+* **Wide channel in a Tier 4 data center** with the lowest possible latency
+* **Static addresses, one user only** — the IP does not change during the rental
+* **p0f and UDP support**
+* **Low price** — the most affordable option among all products
+* **Flexible rental periods** — from 3 days to a month
+* **High stability and availability**
 
-Achieved by hosting addresses in large data centers, where 10 Gigabit broadband connectivity is possible. Ideal for high-load applications and tasks.<br>
+#### <mark style="color:red;">Cons:</mark>
 
-* **Low cost**
-
-Compared with other products, they have a very low cost because of their large quantity and easy scalability.<br>
-
-* **Ideal for many tasks**
-
-Suitable for all tasks that do not require masking as a real user. Such tasks may include website parsing, working with various exchanges, Facebook, Twitter, and other scenarios where there is no strict policy regarding address origin.
-
-#### <mark style="color:red;">**Cons:**</mark>
-
-* **Easy detectability**
-
-These proxies may not be suitable for some tasks where DC addresses are filtered, for example DePIN projects. Such projects filter out these addresses at an early stage. For these cases, only <mark style="color:purple;">ISP</mark> / <mark style="color:purple;">Mobile</mark> / <mark style="color:purple;">Residential proxies</mark> are suitable.
+* **Easily detected** — major geolocation databases tag them DC / Hosting; this is normal and we don't hide it
+* **Not suitable for some platforms** — certain resources block DC addresses outright (for example, the DePIN projects Grass and Gradient)
 
 {% hint style="success" %}
-These drawbacks are covered by [ISP proxies](isp-proxies.md).
+These restrictions are bypassed with [ISP proxies](isp-proxies.md).
 {% endhint %}
 
 {% hint style="info" %}

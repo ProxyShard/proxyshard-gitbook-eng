@@ -46,7 +46,7 @@ ShardX pairs especially well with our proxies. On **every** profile launch, befo
 Timezone, locale, and geolocation fields set to `auto` are also resolved live through the proxy at launch time.
 
 {% hint style="success" %}
-The ShardX + [**UDP proxies**](udp-proxies.md) combination closes the WebRTC leak at the browser level: UDP traffic goes through the proxy, not directly from your IP. More about the underlying issue in the [**About UDP**](about-udp/) section.
+The ShardX + [**UDP-supporting proxies**](about-udp/) combination closes the WebRTC leak at the browser level: UDP traffic goes through the proxy, not directly from your IP. More about the underlying issue in the [**About UDP**](about-udp/) section.
 {% endhint %}
 
 ## Automation: local API

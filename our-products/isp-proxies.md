@@ -8,7 +8,31 @@ icon: fire
 
 <mark style="color:purple;">ISP proxies</mark> combine the benefits of both <mark style="color:purple;">Residential</mark> proxies and <mark style="color:purple;">Datacenter</mark> proxies. They are as stable and static as <mark style="color:purple;">Datacenter</mark> proxies, but they use IP addresses registered to home internet providers, like <mark style="color:purple;">Residential</mark> proxies.
 
-This makes them one of the best options for bypassing blocks and working with websites that are sensitive to the <mark style="color:purple;">IP</mark> type. With <mark style="color:purple;">UDP</mark> support, they become practically undetectable. A recent update for <mark style="color:purple;">ISP</mark> proxies added the ability to switch the fingerprint (<mark style="color:purple;">p0f</mark>).
+This makes them one of the best options for working with Tier-1 sites and services that are sensitive to the <mark style="color:purple;">IP</mark> type. And with <mark style="color:purple;">UDP</mark> support they become practically undetectable.\
+\
+A recent update for <mark style="color:purple;">ISP</mark> proxies added the ability to switch the fingerprint (<mark style="color:purple;">p0f</mark>).
+
+## Characteristics
+
+| Parameter      | Value                              |
+| -------------- | ---------------------------------- |
+| IP type        | IPv4 (home ISP)                    |
+| Sharing        | No — one IP per user               |
+| UDP support    | ✓                                  |
+| p0f support    | ✓ (+$0.6 / IP per month)           |
+| Price          | **$2** / IP per month              |
+
+## Available locations
+
+| Country |
+| ------- |
+| 🇨🇿 Czechia |
+| 🇺🇸 USA (Pennsylvania) |
+| 🇹🇷 Turkey |
+
+{% hint style="info" %}
+The list of locations is constantly expanding.
+{% endhint %}
 
 ## **How do they work?**
 
@@ -54,9 +78,24 @@ Orders with the "<mark style="color:$danger;">**Cancelled**</mark>" status **can
 
 <mark style="color:purple;">Auto renew</mark> - Toggle for enabling/disabling monthly product renewal <mark style="color:purple;">(funds are charged from the account balance on the date specified at purchase)</mark>
 
+## What tasks they fit
+
+Any crypto exchanges, Polymarket, stable web scraping sessions, SEO monitoring, e-commerce price monitoring, marketplace checks, ad verification, brand monitoring, testing sites from a home-ISP ASN, QA of authorization and user scenarios, website availability monitoring, account management.
+
 ## Pros and cons of ISP proxies
 
-Since they combine only the advantages of Datacenter and Residential proxies, they have no drawbacks except for price and the number of available locations.
+#### <mark style="color:green;">Pros:</mark>
+
+* **Real ISP addresses** — IPs are listed under real home internet providers (in geolocation databases the ASN type is provider, not hosting)
+* **Reliable home-ISP carriers**
+* **Wide channel with minimal latency**
+* **Static addresses, one user only** — the IP does not change during the rental
+* **p0f and UDP support**
+
+#### <mark style="color:red;">Cons:</mark>
+
+* **Price** — higher than Datacenter proxies
+* **Number of available locations** — integration with real providers is extremely complex, but we keep expanding the list
 
 {% hint style="info" %}
 You can learn how to configure proxies in our [Setup guide](../setup-guides/getting-started.md) section.

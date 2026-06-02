@@ -132,7 +132,7 @@ Click <mark style="color:purple;">**Test all**</mark> to check the proxies befor
 
 <figure><img src="../.gitbook/assets/shardx-setup-check-proxy.png" alt=""><figcaption>Click «Test all» to verify, then «Import»</figcaption></figure>
 
-After testing, each proxy gets a status. Proxies with the <mark style="color:purple;">**UDP**</mark> label support <mark style="color:purple;">SOCKS5 UDP</mark>, which means <mark style="color:purple;">WebRTC</mark> too — very useful when working with serious antifraud systems. If there is no <mark style="color:purple;">**UDP**</mark> label, the browser profile automatically switches to <mark style="color:purple;">**TCP-only**</mark> mode: your IP won't leak, but traffic may look suspicious to advanced antifraud systems. We strongly recommend using [proxies with UDP support](../our-products/udp-proxies.md).
+After testing, each proxy gets a status. Proxies with the <mark style="color:purple;">**UDP**</mark> label support <mark style="color:purple;">SOCKS5 UDP</mark>, which means <mark style="color:purple;">WebRTC</mark> too — very useful when working with serious antifraud systems. If there is no <mark style="color:purple;">**UDP**</mark> label, the browser profile automatically switches to <mark style="color:purple;">**TCP-only**</mark> mode: your IP won't leak, but traffic may look suspicious to advanced antifraud systems. We strongly recommend using [proxies with UDP support](../our-products/about-udp/).
 
 Click <mark style="color:purple;">**Import**</mark> — the proxy will appear in the list with status <mark style="color:purple;">**Active**</mark>.
 

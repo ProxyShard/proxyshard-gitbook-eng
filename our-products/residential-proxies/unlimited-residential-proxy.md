@@ -2,13 +2,34 @@
 icon: triple-chevrons-up
 ---
 
-# Unlimited Residential proxy
+# Unlimited Residential
 
-Unlimited Residential proxies. Functionally, they are fully identical to regular Residential proxies, but **without traffic limits**.
+<mark style="color:purple;">Unlimited Residential</mark> is based on the [Standard Residential](standard-residential.md) pool — the same devices, the same countries, the same IP range. The key difference: **no traffic limits**. This plan pays off where Standard with per-gigabyte billing becomes expensive.
 
-Suitable for scenarios with high traffic consumption, where using regular Residential proxies with per-gigabyte billing becomes unprofitable.
+## Characteristics
 
-{% hint style="info" %}
-**Restrictions:** No more than 5000 active connections at the same time. The limit can be increased on request. Maximum speed per order = 75 **MB/s** on the standard plan.
+| Parameter                | Value                                       |
+| ------------------------ | ------------------------------------------- |
+| Pool size                | 600,000 — 750,000 devices (= Standard)      |
+| Max connections          | 5,000                                       |
+| Max speed per order      | 75 Mbps                                     |
+| UDP support              | ✓ (unavailable in the USA location)         |
+| Billing                  | Day / Half-month / Month                    |
+| Price                    | **$30** / day · **$199** / week · **$399** / half-month · **$699** / month |
+
+{% hint style="warning" %}
+The 5,000-connection limit applies to all types (ESTAB, FIN\_WAIT and others). An increase is available on the monthly plan — message [Support](../../contact-us.md).
 {% endhint %}
 
+## What tasks they fit
+
+- Automation with high traffic consumption
+- Long-running processes where counting gigabytes is impractical
+- Tasks that require <mark style="color:purple;">UDP / WebRTC</mark> support
+
+{% hint style="info" %}
+Need to pay per gigabyte instead of a subscription? See [Standard Residential](standard-residential.md).\
+Need a larger pool with fine targeting? See [Premium Residential](premium-residential.md).
+{% endhint %}
+
+You can review the product restrictions [here](../restrictions.md).

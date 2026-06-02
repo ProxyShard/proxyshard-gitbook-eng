@@ -14,7 +14,7 @@ The following are unavailable through proxies:
 
 * Banking websites (online banking, bank personal accounts)
 * Government portals and websites
-* Payment processors: <mark style="color:purple;">Stripe</mark>, <mark style="color:purple;">PayPal</mark>
+* Payment processors: <mark style="color:purple;">Stripe</mark>, <mark style="color:purple;">PayPal</mark> (including <mark style="color:purple;">Yahoo</mark>)
 
 This is a regulatory requirement aimed at limiting fraudulent activity. The block **does not apply** to crypto services and payment systems such as exchanges.
 

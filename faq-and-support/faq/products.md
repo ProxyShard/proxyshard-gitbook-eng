@@ -36,7 +36,7 @@ UDP is supported on **all** products, except:
 
 On Datacenter, ISP, Mobile, and non-US Residential proxies, UDP works normally.
 
-More info: [About the UDP protocol](../../our-products/about-udp/) and [Proxies with UDP](../../our-products/udp-proxies.md).
+More info: [About the UDP protocol](../../our-products/about-udp/).
 
 ***
 
@@ -233,11 +233,11 @@ Residential proxies cover **most countries in the world**. The full up-to-date l
 
 As of June 2026, ISP proxies are available in:
 
-| Country | Region / Operator |
-| ------- | ----------------- |
-| 🇨🇿 Czech Republic | - |
-| 🇺🇸 USA | Pennsylvania |
-| 🇹🇷 Turkey | Türk Telekom |
+| Country |
+| ------- |
+| 🇨🇿 Czech Republic |
+| 🇺🇸 USA (Pennsylvania) |
+| 🇹🇷 Turkey |
 
 ***
 

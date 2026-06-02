@@ -4,12 +4,54 @@ icon: signal
 
 # Mobile proxies
 
-Mobile proxies are proxies hosted on modems and support <mark style="color:purple;">UDP</mark>. They offer a wide choice of locations and operators. They are an ideal solution for those who need to work through a specific operator and a specific device type.
+<mark style="color:purple;">Mobile proxies</mark> are hosted on routers with real SIM cards. The type and quality of the connection are identical to ordinary mobile internet through a cellular operator — exactly like on your smartphone. They support <mark style="color:purple;">UDP</mark> and offer a rich choice of locations and operators.
+
+{% hint style="info" %}
+**Mobile proxies work on any device.** The name "mobile" reflects only the connection method via a SIM card, not the type of end device. They work equally well on a PC, a laptop, or in an antidetect browser.
+{% endhint %}
+
+{% hint style="warning" %}
+**A specific product — for those who understand why they need it.** Traffic goes through a real SIM card, so speed may vary — this is normal, not a malfunction. If you are not sure whether mobile proxies fit your task, ask in [live chat](../contact-us.md) or consider [ISP proxies](isp-proxies.md) (stable speed, home IPs) or [Residential proxies](residential-proxies/README.md) (a large pool, many sessions).
+{% endhint %}
 
 {% hint style="danger" %}
 1\) Device fingerprint switching (p0f) is not available in all countries. p0f switching does not work in: Germany, France, Indonesia, Poland (Orange), Ukraine (Lifecell). See the full list of restrictions on the [Restrictions](restrictions.md) page.
 
 2\) Not available to users in Russia without using a VPN.
+{% endhint %}
+
+## Characteristics
+
+| Parameter      | Value                                 |
+| -------------- | ------------------------------------- |
+| IP type        | Mobile IPv4                           |
+| Sharing        | No — one port per user                |
+| Traffic        | Unlimited                             |
+| UDP support    | ✓                                     |
+| p0f support    | ✓ (not in all locations, see above)   |
+| Price          | from **$4** / day · from **$55** / month |
+
+## Available locations
+
+| Country | Operators |
+| ------- | --------- |
+| 🇺🇸 USA | T-Mobile (5G), Verizon (5G, Colorado) |
+| 🇬🇧 United Kingdom | O2, Vodafone |
+| 🇩🇪 Germany | O2, Vodafone |
+| 🇫🇷 France | SFR (5G), Bouygues Telecom (5G) |
+| 🇮🇹 Italy | Vodafone (5G), WindTre (5G) |
+| 🇪🇸 Spain | Digimobil, Movistar (5G), Vodafone (5G) |
+| 🇵🇹 Portugal | NOS (5G) |
+| 🇳🇱 Netherlands | Ziggo (5G), Odido (5G) |
+| 🇮🇪 Ireland | Vodafone (5G), Three (5G) |
+| 🇵🇱 Poland | T-Mobile (5G) |
+| 🇺🇦 Ukraine | Lifecell, Vodafone, Kyivstar |
+| 🇲🇩 Moldova | Moldcell, Moldtelecom |
+| 🇨🇦 Canada | Rogers |
+| 🇮🇩 Indonesia | Telkomsel |
+
+{% hint style="info" %}
+The list is regularly expanding. Up-to-date locations and pricing are on the purchase page [Mobile proxy](https://dashboard.proxyshard.com/en/mobile-proxy).
 {% endhint %}
 
 ## **How do they work?**
@@ -57,43 +99,28 @@ Let's review the <mark style="color:purple;">order</mark> fields:
 
 <mark style="color:purple;">Restart</mark> - Start or change IP; equivalent to the <mark style="color:purple;">Reset URL</mark> address
 
+## What tasks they fit
+
+Social media and multi-accounting, mobile ad verification, mobile ad checks, most crypto exchanges, Polymarket, testing mobile sites and apps, web scraping of mobile site versions, SEO monitoring of mobile results, e-commerce monitoring of mobile prices, geo-targeted content testing, travel scraping of mobile fares, brand monitoring in the mobile environment.
+
 ## Pros and cons of Mobile proxies
 
 #### <mark style="color:green;">Pros:</mark>
 
-* **Bypassing exchange and service restrictions**
-
-Many crypto exchanges and DeFi platforms introduce regional restrictions. With mobile proxies, you can easily change geolocation by accessing platforms from real users' IP addresses. This helps work with platforms without the risk of being blocked.<br>
-
-* **Increased anonymity and tracking protection**
-
-The crypto industry is tightly controlled, and platforms often track user activity. Mobile proxies mask the real IP, prevent transaction tracking, and create the appearance of working from different devices and locations.<br>
-
-* **Bot trading and automation**
-
-Trading and arbitrage strategies require many accounts and automated interaction with exchanges. Mobile proxies allow bots to work without country-selection restrictions and protect against IP bans because they are not filtered by most fraud systems on the market.<br>
-
-* **Multi-accounting and antidetect browsers**
-
-Exchanges often use multi-accounting. Mobile proxies + antidetect browsers, such as Vision or Octo, allow each account to look unique and reduce the risk of bans.<br>
-
-* **Access to ICO, IDO, and Airdrop**
-
-Many projects distribute tokens only to users from specific regions. With proxies, you can change your location and participate in drops even if access is initially restricted.<br>
-
-* **Increased security in P2P transactions**
-
-When exchanging crypto on P2P platforms, such as Binance P2P or LocalBitcoins, Mobile proxies protect against scammers by hiding the real IP and preventing tracking attempts.
+* **Choice of a specific operator** — connect through the exact cellular provider you need
+* **IP change via Reset URL** — rotation no more than once a minute
+* **p0f support** — available in most locations (see [Restrictions](restrictions.md))
+* **UDP support**
+* **Flexible rental period** — from one day to a month
+* **One user per port** — one SIM card, one user
 
 #### <mark style="color:red;">Cons:</mark>
 
-* **High cost**
-
-Mobile proxies are more expensive than Datacenter or Residential proxies. This is because they use IP addresses of real users rather than server infrastructure.
-
-* **One active IP**
-
-With Mobile proxies, you purchase one port that can be used with only one profile because only one IP address is assigned behind the port. This does not allow flexible simultaneous setup across several profiles, since all of them would use the same address.
+* **Possible speed drops** when the operator's cell tower is overloaded — rare, but possible
+* **A complex product for beginners** — we recommend checking with [Support](../contact-us.md) before purchase
+* **p0f spoofing on macOS / iOS** reduces channel speed due to the complexity of the algorithm
+* **Dynamic IP** — the address may change at the operator's initiative at any moment
+* **One session at a time** — one port holds one IP. If you need to connect several devices _simultaneously_ (not one after another, but at the same moment), buy a separate port or consider [Residential proxies](residential-proxies/README.md)
 
 {% hint style="info" %}
 You can learn how to configure proxies in our [Setup guide](../setup-guides/getting-started.md) section.
