@@ -78,4 +78,4 @@ Connections through proxies to service ports that are often used for attacks on 
 ## Restrictions on Unlimited Residential proxies
 
 * Basic connection limit = 5000. It can be increased; more details are available from [Support](../contact-us.md).
-* Maximum speed per order = 75 **MB/s**
+* Maximum speed per order = 75 **Mbps**
