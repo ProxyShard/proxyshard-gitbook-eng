@@ -1,9 +1,9 @@
 ---
-description: Popular questions about our products and pricing
+description: Popular questions about products, connection, and how the service works
 icon: circle-question
 ---
 
-# Popular product questions
+# Popular questions
 
 {% hint style="warning" %}
 **Information is current as of June 2026.** The list of products, locations, operators, and prices may change, please double-check the current pages in the [dashboard](https://dashboard.proxyshard.com/) before purchase.
@@ -291,6 +291,98 @@ The list is regularly expanded. The current locations and pricing are on the [Mo
 {% hint style="info" %}
 The exact price and available periods for each plan are shown directly on the purchase page in the [dashboard](https://dashboard.proxyshard.com/).
 {% endhint %}
+
+***
+
+## 24. I need an IPv4 connection, why is there a domain in my connection string?
+
+On <mark style="color:purple;">**Mobile**</mark> and <mark style="color:purple;">**Residential**</mark> proxies the default connection address is a **domain name**, behind which there are many IP addresses. Balancing (backconnect) servers sit behind the domain, and the connection to the proxy devices is made through them, so we don't hand out a direct IPv4 in the string by default.
+
+Example connection strings:
+
+```
+mobile.eu.proxyshard.com:1234:aabbbcc:password
+resident.eu.proxyshard.com:8080:plan-limited-country-NL-sid-ABXdedq:AAAbbbbCC
+```
+
+If your software strictly requires IPv4, you can **resolve** the domain and substitute the resulting address for the domain name.
+
+**Option 1. Via a website.** Open [www.nslookup.io](https://www.nslookup.io), enter the domain from your connection string, and you'll get a list of IPv4 addresses. For example, if the query returned `172.67.72.239`, then instead of `mobile.eu.proxyshard.com` you can put this IP:
+
+```
+172.67.72.239:1234:aabbbcc:password
+```
+
+**Option 2. Manually from the terminal.** On Windows or Linux run:
+
+```
+nslookup mobile.eu.proxyshard.com
+```
+
+The **Addresses** section of the response will contain the IPv4 addresses — take any of them and use it instead of the domain.
+
+{% hint style="warning" %}
+There are several servers behind the domain, and their IPs **may change**. If a connection with a hard-coded IP stops working, resolve the domain again and substitute the new address.
+{% endhint %}
+
+***
+
+## 25. Do you have IPv6?
+
+No, we sell **IPv4 proxies only**.
+
+***
+
+## 26. How does rotation (IP change) work on mobile proxies?
+
+In addition to the automatic address change on the operator's side (see question 10), you can **change the IP manually, no more than once per minute**, in one of two ways:
+
+* follow the personal <mark style="color:purple;">**Reset URL**</mark> link from the order;
+* press the <mark style="color:purple;">**Restart proxy**</mark> button in the order settings.
+
+More about the order fields is on the [Mobile proxies](../../our-products/mobile-proxies.md) page.
+
+***
+
+## 27. Is there channel-consumption monitoring on the proxies?
+
+Measuring the **speed** of the consumed channel is not built into any of the products. The following accounting is available:
+
+* <mark style="color:purple;">**Unlimited Residential**</mark> — there is an active-connections counter;
+* <mark style="color:purple;">**Residential**</mark> — there is spent-traffic statistics (in gigabytes);
+* on the **other products** (Datacenter, ISP, Mobile) traffic measurement and request logging are **not performed**.
+
+***
+
+## 28. Why is Cloudflare DNS used on Standard and Unlimited residential proxies?
+
+This is because, at the moment, **DNS queries to the operators' servers are disabled** on these plans, and resolving goes through public DNS (Cloudflare).
+
+On <mark style="color:purple;">**ISP**</mark> and <mark style="color:purple;">**Premium Residential**</mark> proxies there is no such limitation.
+
+***
+
+## 29. How do I achieve the lowest latency (ping) on a proxy?
+
+On **residential** and **mobile** proxies, the latency to the end node depends on several factors:
+
+* the current load on the operator's base station;
+* the signal quality on the device sharing the traffic;
+* how far you are from the connection point.
+
+In addition, the main balancing servers are located in the **Netherlands**. When connecting to locations like the **USA** or **Africa**, on top of your latency to the balancer there is also the overhead latency between the Netherlands server and the final proxy. Shortening this route is not possible.
+
+{% hint style="success" %}
+If minimal latency and speed are critical, use <mark style="color:purple;">**Datacenter**</mark> or <mark style="color:purple;">**ISP**</mark> proxies. They have extremely low connection overhead: there is no layer of balancing servers, the connection is direct.
+{% endhint %}
+
+For the **lowest possible ping**, connect from the same country where the proxy is located. This is usually achieved by renting a <mark style="color:purple;">VPS / VDS / Bare-Metal</mark> server in the required country. For example, for ISP proxies in the USA it's ideal to work through a VPS in New York — the ping will be minimal, whereas connecting from Europe it will be at least **80–120 ms**.
+
+***
+
+## 30. What timezone does the site use?
+
+All orders and dates in the dashboard are shown in **UTC +0**.
 
 ***
 
