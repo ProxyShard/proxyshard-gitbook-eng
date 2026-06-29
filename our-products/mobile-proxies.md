@@ -15,7 +15,7 @@ icon: signal
 {% endhint %}
 
 {% hint style="danger" %}
-1\) Device fingerprint switching (p0f) is not available in all countries. p0f switching does not work in: Germany, France, Indonesia, Poland (Orange), Ukraine (Lifecell). See the full list of restrictions on the [Restrictions](restrictions.md) page.
+1\) Device fingerprint switching (p0f) is not available on all operators. See the full list of restrictions on the [Restrictions](restrictions.md) page.
 
 2\) Not available to users in Russia without using a VPN.
 {% endhint %}

@@ -202,13 +202,13 @@ The full list of restrictions by port, by site, by product-specific exceptions, 
 We accept payments via:
 
 * <mark style="color:purple;">**Stripe**</mark> - bank cards, minimum payment **$5**.
-* <mark style="color:purple;">**NowPayments**</mark> - cryptocurrencies (BTC, LTC, USDT, and others).
+* <mark style="color:purple;">**Cryptomus**</mark> - cryptocurrencies (BTC, LTC, USDT, and others).
 
 {% hint style="info" %}
-**About crypto payments through NowPayments:**
+**About crypto payments through Cryptomus:**
 
 * Payment via **BTC** or **LTC** may take up to **1 hour** to process, this depends on network confirmations, not on our system.
-* Payment via **USDT** requires a minimum payment of **$15** and a fee on the client side. This is a NowPayments platform requirement, we have no influence over these terms.
+* Payment via **USDT** requires a minimum payment of **$15** and a fee on the client side. This is a Cryptomus platform requirement, we have no influence over these terms.
 {% endhint %}
 
 ***

@@ -8,7 +8,7 @@ Adding funds is the most important step when working with the website.\
 The balance is used to purchase all products on the website and to renew orders.\
 \
 The following top-up methods are currently supported:\
-\- <mark style="color:purple;">Cryptocurrency</mark>, via Nowpayments\
+\- <mark style="color:purple;">Cryptocurrency</mark>, via Cryptomus\
 \- <mark style="color:purple;">Bank card</mark>, via Stripe\
 \
 To top up your wallet balance, click "[Wallet](https://dashboard.proxyshard.com/en/wallet)"
