@@ -44,17 +44,18 @@ UDP works without issues in all other locations.
 
 Device fingerprint spoofing (p0f) is unavailable in some countries and operators:
 
-| Country                   | Operator         |
-| ------------------------- | ---------------- |
-| United Kingdom :flag\_gb: | THREE (iOS only) |
-| Ireland :flag\_ie:        | Vodafone         |
-| Germany :flag\_de:        | Vodafone         |
-| Netherlands :flag\_nl:    | Vodafone         |
-| Italy :flag\_it:          | Vodafone, WIND   |
-| Poland :flag\_pl:         | Orange           |
-| Indonesia :flag\_id:      | Telkomsel        |
-| New Zealand :flag\_nz:    | OneNZ            |
-| Ukraine :flag\_ua:        | Life (Lifecell)  |
+| Country                   | Operator        |
+| ------------------------- | --------------- |
+| United Kingdom :flag\_gb: | All operators   |
+| Ireland :flag\_ie:        | Vodafone        |
+| Germany :flag\_de:        | All operators   |
+| Netherlands :flag\_nl:    | Vodafone        |
+| France :flag\_fr:         | All operators   |
+| Italy :flag\_it:          | Vodafone, WIND  |
+| Poland :flag\_pl:         | Orange          |
+| Indonesia :flag\_id:      | All operators   |
+| New Zealand :flag\_nz:    | OneNZ           |
+| Ukraine :flag\_ua:        | Life (Lifecell) |
 
 In all other locations and operators, p0f switching works normally.
 
