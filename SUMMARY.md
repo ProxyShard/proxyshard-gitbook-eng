@@ -133,3 +133,12 @@
         kind: openapi
         spec: shardbrowser-api
   ```
+
+## Buy
+
+* [Buy Residential Proxies](https://proxyshard.com/residential-proxy)
+* [Buy Datacenter Proxies](https://proxyshard.com/datacenter-proxy)
+* [Buy ISP Proxy](https://proxyshard.com/isp-proxy)
+* [Buy Mobile Proxies](https://proxyshard.com/mobile-proxy)
+* [IP Checker](https://proxyshard.com/ip-checker)
+* [Proxy Tester](https://proxyshard.com/proxy-tester)
