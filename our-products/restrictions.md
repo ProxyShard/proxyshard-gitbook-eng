@@ -13,7 +13,7 @@ This page lists all current restrictions for our products.
 The following are unavailable through proxies:
 
 * Banking websites (online banking, bank personal accounts)
-* Government portals and websites
+* Government portals and websites, as well as websites in the `.gov` and `.edu` domains
 * Payment processors: <mark style="color:purple;">Stripe</mark>, <mark style="color:purple;">PayPal</mark> (including <mark style="color:purple;">Yahoo</mark>)
 
 This is a regulatory requirement aimed at limiting fraudulent activity. The block **does not apply** to crypto services and payment systems such as exchanges.
@@ -23,6 +23,11 @@ Applies to all products **except** [Mobile proxy](mobile-proxies.md).
 
 Stripe and PayPal are available on Datacenter and ISP proxies.
 {% endhint %}
+
+Additional restrictions on Residential proxies:
+
+* On [Premium Residential](residential-proxies/premium-residential.md), `apple.com` is unavailable.
+* Microsoft services are unavailable on [Standard Residential](residential-proxies/standard-residential.md) and [Unlimited Residential](residential-proxies/unlimited-residential-proxy.md).
 
 ***
 
@@ -56,6 +61,12 @@ Device fingerprint spoofing (p0f) is unavailable in some countries and operators
 | Ukraine :flag\_ua:        | Life (Lifecell) |
 
 In all other locations and operators, p0f switching works normally.
+
+***
+
+## Connection limit for Datacenter and ISP proxies
+
+[Datacenter proxies](datacenter-proxies.md) and [ISP proxies](isp-proxies.md) have a limit of **2,500 connections per IP**.
 
 ***
 

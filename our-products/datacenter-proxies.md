@@ -16,6 +16,7 @@ icon: server
 | -------------- | ------------------------------------------------------------------------- |
 | IP type        | IPv4                                                                      |
 | Sharing        | No — one IP per user                                                      |
+| Connection limit | 2,500 per IP                                                            |
 | UDP support    | ✓                                                                         |
 | p0f support    | ✓ (with monthly rental, +$0.3 / IP)                                       |
 | Price          | **$0.3** / 3 days · **$0.4** / week · **$0.7** / half-month · **$1.2** / month |
