@@ -20,6 +20,7 @@ A recent update for <mark style="color:purple;">ISP</mark> proxies added the abi
 | -------------- | ---------------------------------- |
 | IP type        | IPv4 (home ISP)                    |
 | Sharing        | No — one IP per user               |
+| Connection limit | 2,500 per IP                     |
 | UDP support    | ✓                                  |
 | p0f support    | ✓ (+$0.6 / IP per month)           |
 | Price          | **$2** / IP per month              |

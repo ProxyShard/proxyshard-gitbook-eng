@@ -67,13 +67,12 @@ This stack covers all layers of checks: browser fingerprint (Vision) + network f
 
 ## Where it is available
 
-p0f spoofing is available on the following products:
+p0f spoofing and device filtering are available on the following products:
 
 * [Datacenter proxies](datacenter-proxies.md)
 * [ISP proxies](isp-proxies.md)
 * [Mobile proxies](mobile-proxies.md)
-
-[Residential proxies](residential-proxies/) do not support p0f spoofing. [Premium Residential](residential-proxies/premium-residential.md) only provides device filtering through the Device OS parameter.
+* [Premium Residential](residential-proxies/premium-residential.md) - device filtering through the [Device OS](residential-proxies/#settings-field-description) parameter, without p0f spoofing
 
 {% hint style="warning" %}
 p0f spoofing is not available on some [Mobile proxies](mobile-proxies.md). See the full list of restrictions on the [Limitations](restrictions.md) page.
