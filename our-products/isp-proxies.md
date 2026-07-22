@@ -19,7 +19,7 @@ A recent update for <mark style="color:purple;">ISP</mark> proxies added the abi
 | Parameter      | Value                              |
 | -------------- | ---------------------------------- |
 | IP type        | IPv4 (home ISP)                    |
-| Sharing        | No — one IP per user               |
+| Sharing        | No - one IP per user               |
 | Connection limit | 2,500 per IP                     |
 | UDP support    | ✓                                  |
 | p0f support    | ✓ (+$0.6 / IP per month)           |
@@ -89,16 +89,16 @@ Any crypto exchanges, Polymarket, stable web scraping sessions, SEO monitoring, 
 
 #### <mark style="color:green;">Pros:</mark>
 
-* **Real ISP addresses** — IPs are listed under real home internet providers (in geolocation databases the ASN type is provider, not hosting)
+* **Real ISP addresses** - IPs are listed under real home internet providers (in geolocation databases the ASN type is provider, not hosting)
 * **Reliable home-ISP carriers**
 * **Wide channel with minimal latency**
-* **Static addresses, one user only** — the IP does not change during the rental
+* **Static addresses, one user only** - the IP does not change during the rental
 * **p0f and UDP support**
 
 #### <mark style="color:red;">Cons:</mark>
 
-* **Price** — higher than Datacenter proxies
-* **Number of available locations** — integration with real providers is extremely complex, but we keep expanding the list
+* **Price** - higher than Datacenter proxies
+* **Number of available locations** - integration with real providers is extremely complex, but we keep expanding the list
 
 {% hint style="info" %}
 You can learn how to configure proxies in our [Setup guide](../setup-guides/getting-started.md) section.

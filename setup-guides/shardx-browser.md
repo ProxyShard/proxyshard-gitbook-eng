@@ -6,7 +6,7 @@ icon: browser
 # ShardX Launcher
 
 {% hint style="info" %}
-ShardX Launcher is distributed under the MIT license as a free tool for personal use. The software is provided "as is". We regularly release updates, but we don't offer live chat support — for serious issues, please file a bug report on [GitHub](https://github.com/ProxyShard/ShardBrowser/issues).
+ShardX Launcher is distributed under the MIT license as a free tool for personal use. The software is provided "as is". We regularly release updates, but we don't offer live chat support - for serious issues, please file a bug report on [GitHub](https://github.com/ProxyShard/ShardBrowser/issues).
 {% endhint %}
 
 ## System Requirements
@@ -20,7 +20,7 @@ ShardX Launcher is distributed under the MIT license as a free tool for personal
 | CPU          | Dual-core 64-bit with SSE3 support            | Quad-core or better                           |
 | RAM          | 4 GB                                          | 8 GB (16 GB for heavy multi-profile use)      |
 | Disk space   | 1 GB                                          | 5 GB+                                         |
-| Runtime      | Microsoft Edge WebView2                       | —                                             |
+| Runtime      | Microsoft Edge WebView2                       | -                                             |
 
 ### macOS
 
@@ -47,9 +47,9 @@ Under <mark style="color:purple;">**Assets**</mark>, pick the <mark style="color
 
 <figure><img src="../.gitbook/assets/shardx-win-download.png" alt=""><figcaption>Choose .exe or .msi under Assets</figcaption></figure>
 
-Run the downloaded file. <mark style="color:purple;">Windows SmartScreen</mark> may show a warning — click <mark style="color:purple;">**More info**</mark>, then <mark style="color:purple;">**Run anyway**</mark>.
+Run the downloaded file. <mark style="color:purple;">Windows SmartScreen</mark> may show a warning - click <mark style="color:purple;">**More info**</mark>, then <mark style="color:purple;">**Run anyway**</mark>.
 
-<figure><img src="../.gitbook/assets/shardx-win-smartscreen.png" alt=""><figcaption>SmartScreen — click «Run anyway»</figcaption></figure>
+<figure><img src="../.gitbook/assets/shardx-win-smartscreen.png" alt=""><figcaption>SmartScreen - click «Run anyway»</figcaption></figure>
 
 The installer will finish in a few seconds.
 
@@ -74,7 +74,7 @@ Open the downloaded `.dmg` and drag <mark style="color:purple;">**ShardX Launche
 ### Bypassing Gatekeeper
 
 {% hint style="warning" %}
-This step is mandatory. macOS blocks all unsigned apps — without it the application will not open.
+This step is mandatory. macOS blocks all unsigned apps - without it the application will not open.
 {% endhint %}
 
 Open <mark style="color:purple;">**Terminal**</mark> using one of two methods:
@@ -91,7 +91,7 @@ Paste the command and press <mark style="color:purple;">**Enter:**</mark>
 xattr -dr com.apple.quarantine "/Applications/ShardX Launcher.app"
 ```
 
-<figure><img src="../.gitbook/assets/shardx-mac-xattr-command.png" alt=""><figcaption>The command runs silently — that's normal</figcaption></figure>
+<figure><img src="../.gitbook/assets/shardx-mac-xattr-command.png" alt=""><figcaption>The command runs silently - that's normal</figcaption></figure>
 
 After that, open the app via <mark style="color:purple;">Spotlight</mark> (`⌘ + Space` → `shardx`) or from the <mark style="color:purple;">Applications</mark> folder.
 
@@ -132,9 +132,9 @@ Click <mark style="color:purple;">**Test all**</mark> to check the proxies befor
 
 <figure><img src="../.gitbook/assets/shardx-setup-check-proxy.png" alt=""><figcaption>Click «Test all» to verify, then «Import»</figcaption></figure>
 
-After testing, each proxy gets a status. Proxies with the <mark style="color:purple;">**UDP**</mark> label support <mark style="color:purple;">SOCKS5 UDP</mark>, which means <mark style="color:purple;">WebRTC</mark> too — very useful when working with serious antifraud systems. If there is no <mark style="color:purple;">**UDP**</mark> label, the browser profile automatically switches to <mark style="color:purple;">**TCP-only**</mark> mode: your IP won't leak, but traffic may look suspicious to advanced antifraud systems. We strongly recommend using [proxies with UDP support](../our-products/about-udp/).
+After testing, each proxy gets a status. Proxies with the <mark style="color:purple;">**UDP**</mark> label support <mark style="color:purple;">SOCKS5 UDP</mark>, which means <mark style="color:purple;">WebRTC</mark> too - very useful when working with serious antifraud systems. If there is no <mark style="color:purple;">**UDP**</mark> label, the browser profile automatically switches to <mark style="color:purple;">**TCP-only**</mark> mode: your IP won't leak, but traffic may look suspicious to advanced antifraud systems. We strongly recommend using [proxies with UDP support](../our-products/about-udp/).
 
-Click <mark style="color:purple;">**Import**</mark> — the proxy will appear in the list with status <mark style="color:purple;">**Active**</mark>.
+Click <mark style="color:purple;">**Import**</mark> - the proxy will appear in the list with status <mark style="color:purple;">**Active**</mark>.
 
 <figure><img src="../.gitbook/assets/shardx-setup-proxy-done.png" alt=""><figcaption>Proxy added</figcaption></figure>
 
@@ -146,7 +146,7 @@ Go to the <mark style="color:purple;">**Browsers**</mark> section and click <mar
 
 <figure><img src="../.gitbook/assets/shardx-setup-profiles-empty.png" alt=""><figcaption>Browsers section</figcaption></figure>
 
-No need to change the default settings — ShardX will generate a unique <mark style="color:purple;">fingerprint</mark> automatically. Make sure to select a proxy in the <mark style="color:purple;">**Proxy**</mark> field at the bottom of the form.
+No need to change the default settings - ShardX will generate a unique <mark style="color:purple;">fingerprint</mark> automatically. Make sure to select a proxy in the <mark style="color:purple;">**Proxy**</mark> field at the bottom of the form.
 
 <figure><img src="../.gitbook/assets/shardx-setup-new-profile.png" alt=""><figcaption>Select a proxy and click «Create profile»</figcaption></figure>
 
@@ -158,7 +158,7 @@ Click <mark style="color:purple;">**Create profile**</mark>.
 
 ## Launching a Profile
 
-Click <mark style="color:purple;">**Start**</mark> — the browser will open with an isolated fingerprint and proxy.
+Click <mark style="color:purple;">**Start**</mark> - the browser will open with an isolated fingerprint and proxy.
 
 <figure><img src="../.gitbook/assets/shardx-setup-done.png" alt=""><figcaption>Profile launched</figcaption></figure>
 
@@ -176,7 +176,7 @@ Original Windows 10/11 images already include WebView2. On stripped-down builds 
 
 ### macOS: "ShardX Launcher is damaged and can't be opened"
 
-This is a standard <mark style="color:purple;">Gatekeeper</mark> block. Follow the steps in [Bypassing Gatekeeper](#bypassing-gatekeeper) — both ways to open Terminal and the command to remove the quarantine flag are described there.
+This is a standard <mark style="color:purple;">Gatekeeper</mark> block. Follow the steps in [Bypassing Gatekeeper](#bypassing-gatekeeper) - both ways to open Terminal and the command to remove the quarantine flag are described there.
 
 ---
 

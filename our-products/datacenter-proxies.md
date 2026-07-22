@@ -15,7 +15,7 @@ icon: server
 | Parameter      | Value                                                                     |
 | -------------- | ------------------------------------------------------------------------- |
 | IP type        | IPv4                                                                      |
-| Sharing        | No — one IP per user                                                      |
+| Sharing        | No - one IP per user                                                      |
 | Connection limit | 2,500 per IP                                                            |
 | UDP support    | ✓                                                                         |
 | p0f support    | ✓ (with monthly rental, +$0.3 / IP)                                       |
@@ -87,16 +87,16 @@ Most crypto exchanges, Polymarket and platforms, mass web scraping of simple sit
 #### <mark style="color:green;">Pros:</mark>
 
 * **Wide channel in a Tier 4 data center** with the lowest possible latency
-* **Static addresses, one user only** — the IP does not change during the rental
+* **Static addresses, one user only** - the IP does not change during the rental
 * **p0f and UDP support**
-* **Low price** — the most affordable option among all products
-* **Flexible rental periods** — from 3 days to a month
+* **Low price** - the most affordable option among all products
+* **Flexible rental periods** - from 3 days to a month
 * **High stability and availability**
 
 #### <mark style="color:red;">Cons:</mark>
 
-* **Easily detected** — major geolocation databases tag them DC / Hosting; this is normal and we don't hide it
-* **Not suitable for some platforms** — certain resources block DC addresses outright (for example, the DePIN projects Grass and Gradient)
+* **Easily detected** - major geolocation databases tag them DC / Hosting; this is normal and we don't hide it
+* **Not suitable for some platforms** - certain resources block DC addresses outright (for example, the DePIN projects Grass and Gradient)
 
 {% hint style="success" %}
 These restrictions are bypassed with [ISP proxies](isp-proxies.md).

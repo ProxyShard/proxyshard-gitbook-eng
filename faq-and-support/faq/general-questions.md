@@ -15,10 +15,10 @@ icon: circle-question
 
 Network fingerprint spoofing (<mark style="color:purple;">p0f</mark>) or device filtering by operating system is available on:
 
-* [**Premium Residential**](../../our-products/residential-proxies/premium-residential.md) — Device OS filtering
-* [**Datacenter**](../../our-products/datacenter-proxies.md) proxies — p0f spoofing
-* [**ISP**](../../our-products/isp-proxies.md) proxies — p0f spoofing
-* [**Mobile**](../../our-products/mobile-proxies.md) proxies — p0f spoofing, but not with every operator
+* [**Premium Residential**](../../our-products/residential-proxies/premium-residential.md) - Device OS filtering
+* [**Datacenter**](../../our-products/datacenter-proxies.md) proxies - p0f spoofing
+* [**ISP**](../../our-products/isp-proxies.md) proxies - p0f spoofing
+* [**Mobile**](../../our-products/mobile-proxies.md) proxies - p0f spoofing, but not with every operator
 
 For Mobile proxies, see the operator restrictions on the [Mobile proxies page](../../our-products/mobile-proxies.md).
 
@@ -320,7 +320,7 @@ If your software strictly requires IPv4, you can **resolve** the domain and subs
 nslookup mobile.eu.proxyshard.com
 ```
 
-The **Addresses** section of the response will contain the IPv4 addresses — take any of them and use it instead of the domain.
+The **Addresses** section of the response will contain the IPv4 addresses - take any of them and use it instead of the domain.
 
 {% hint style="warning" %}
 There are several servers behind the domain, and their IPs **may change**. If a connection with a hard-coded IP stops working, resolve the domain again and substitute the new address.
@@ -349,8 +349,8 @@ More about the order fields is on the [Mobile proxies](../../our-products/mobile
 
 Measuring the **speed** of the consumed channel is not built into any of the products. The following accounting is available:
 
-* <mark style="color:purple;">**Unlimited Residential**</mark> — there is an active-connections counter;
-* <mark style="color:purple;">**Residential**</mark> — there is spent-traffic statistics (in gigabytes);
+* <mark style="color:purple;">**Unlimited Residential**</mark> - there is an active-connections counter;
+* <mark style="color:purple;">**Residential**</mark> - there is spent-traffic statistics (in gigabytes);
 * on the **other products** (Datacenter, ISP, Mobile) traffic measurement and request logging are **not performed**.
 
 ***
@@ -377,7 +377,7 @@ In addition, the main balancing servers are located in the **Netherlands**. When
 If minimal latency and speed are critical, use <mark style="color:purple;">**Datacenter**</mark> or <mark style="color:purple;">**ISP**</mark> proxies. They have extremely low connection overhead: there is no layer of balancing servers, the connection is direct.
 {% endhint %}
 
-For the **lowest possible ping**, connect from the same country where the proxy is located. This is usually achieved by renting a <mark style="color:purple;">VPS / VDS / Bare-Metal</mark> server in the required country. For example, for ISP proxies in the USA it's ideal to work through a VPS in New York — the ping will be minimal, whereas connecting from Europe it will be at least **80–120 ms**.
+For the **lowest possible ping**, connect from the same country where the proxy is located. This is usually achieved by renting a <mark style="color:purple;">VPS / VDS / Bare-Metal</mark> server in the required country. For example, for ISP proxies in the USA it's ideal to work through a VPS in New York - the ping will be minimal, whereas connecting from Europe it will be at least **80–120 ms**.
 
 ***
 

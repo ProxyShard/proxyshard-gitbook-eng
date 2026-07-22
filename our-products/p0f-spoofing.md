@@ -51,7 +51,7 @@ Before changing p0f, make sure to close all connections through the proxy. The p
 Interim tests show a significant improvement in passing anti-fraud checks. One confirmed case:
 
 {% hint style="success" %}
-**Google accounts:** together with the developer of [Vision Browser](../setup-guides/antidetect-browsers/vision-browser.md), we tested Google registration without modifying the browser fingerprint. On a clean profile without p0f spoofing, the system immediately offers QR-code verification. With p0f spoofing to Windows 10/11, the QR check no longer appears and Google requests phone-number verification — confirming the absence of proxy detection.
+**Google accounts:** together with the developer of [Vision Browser](../setup-guides/antidetect-browsers/vision-browser.md), we tested Google registration without modifying the browser fingerprint. On a clean profile without p0f spoofing, the system immediately offers QR-code verification. With p0f spoofing to Windows 10/11, the QR check no longer appears and Google requests phone-number verification - confirming the absence of proxy detection.
 {% endhint %}
 
 People who work with Google registrations know that without “breaking” the fingerprint on desktop, it is impossible to get phone-number verification: the system will always ask for QR. p0f spoofing solves this problem at the network level.

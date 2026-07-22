@@ -4,14 +4,14 @@ icon: signal
 
 # Mobile proxies
 
-<mark style="color:purple;">Mobile proxies</mark> are hosted on routers with real SIM cards. The type and quality of the connection are identical to ordinary mobile internet through a cellular operator — exactly like on your smartphone. They support <mark style="color:purple;">UDP</mark> and offer a rich choice of locations and operators.
+<mark style="color:purple;">Mobile proxies</mark> are hosted on routers with real SIM cards. The type and quality of the connection are identical to ordinary mobile internet through a cellular operator - exactly like on your smartphone. They support <mark style="color:purple;">UDP</mark> and offer a rich choice of locations and operators.
 
 {% hint style="info" %}
 **Mobile proxies work on any device.** The name "mobile" reflects only the connection method via a SIM card, not the type of end device. They work equally well on a PC, a laptop, or in an antidetect browser.
 {% endhint %}
 
 {% hint style="warning" %}
-**A specific product — for those who understand why they need it.** Traffic goes through a real SIM card, so speed may vary — this is normal, not a malfunction. If you are not sure whether mobile proxies fit your task, ask in [live chat](../contact-us.md) or consider [ISP proxies](isp-proxies.md) (stable speed, home IPs) or [Residential proxies](residential-proxies/README.md) (a large pool, many sessions).
+**A specific product - for those who understand why they need it.** Traffic goes through a real SIM card, so speed may vary - this is normal, not a malfunction. If you are not sure whether mobile proxies fit your task, ask in [live chat](../contact-us.md) or consider [ISP proxies](isp-proxies.md) (stable speed, home IPs) or [Residential proxies](residential-proxies/README.md) (a large pool, many sessions).
 {% endhint %}
 
 {% hint style="danger" %}
@@ -27,7 +27,7 @@ icon: signal
 | Parameter      | Value                                 |
 | -------------- | ------------------------------------- |
 | IP type        | Mobile IPv4                           |
-| Sharing        | No — one port per user                |
+| Sharing        | No - one port per user                |
 | Traffic        | Unlimited                             |
 | UDP support    | ✓                                     |
 | p0f support    | ✓ (not in all locations, see above)   |
@@ -109,20 +109,20 @@ Social media and multi-accounting, mobile ad verification, mobile ad checks, mos
 
 #### <mark style="color:green;">Pros:</mark>
 
-* **Choice of a specific operator** — connect through the exact cellular provider you need
-* **IP change via Reset URL** — rotation no more than once a minute
-* **p0f support** — available in most locations (see [Restrictions](restrictions.md))
+* **Choice of a specific operator** - connect through the exact cellular provider you need
+* **IP change via Reset URL** - rotation no more than once a minute
+* **p0f support** - available in most locations (see [Restrictions](restrictions.md))
 * **UDP support**
-* **Flexible rental period** — from one day to a month
-* **One user per port** — one SIM card, one user
+* **Flexible rental period** - from one day to a month
+* **One user per port** - one SIM card, one user
 
 #### <mark style="color:red;">Cons:</mark>
 
-* **Possible speed drops** when the operator's cell tower is overloaded — rare, but possible
-* **A complex product for beginners** — we recommend checking with [Support](../contact-us.md) before purchase
+* **Possible speed drops** when the operator's cell tower is overloaded - rare, but possible
+* **A complex product for beginners** - we recommend checking with [Support](../contact-us.md) before purchase
 * **p0f spoofing on macOS / iOS** reduces channel speed due to the complexity of the algorithm
-* **Dynamic IP** — the address may change at the operator's initiative at any moment
-* **One session at a time** — one port holds one IP. If you need to connect several devices _simultaneously_ (not one after another, but at the same moment), buy a separate port or consider [Residential proxies](residential-proxies/README.md)
+* **Dynamic IP** - the address may change at the operator's initiative at any moment
+* **One session at a time** - one port holds one IP. If you need to connect several devices _simultaneously_ (not one after another, but at the same moment), buy a separate port or consider [Residential proxies](residential-proxies/README.md)
 
 {% hint style="info" %}
 You can learn how to configure proxies in our [Setup guide](../setup-guides/getting-started.md) section.

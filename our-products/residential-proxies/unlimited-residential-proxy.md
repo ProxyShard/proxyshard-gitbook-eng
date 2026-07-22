@@ -4,7 +4,7 @@ icon: triple-chevrons-up
 
 # Unlimited Residential
 
-<mark style="color:purple;">Unlimited Residential</mark> is based on the [Standard Residential](standard-residential.md) pool — the same devices, the same countries, the same IP range. The key difference: **no traffic limits**. This plan pays off where Standard with per-gigabyte billing becomes expensive.
+<mark style="color:purple;">Unlimited Residential</mark> is based on the [Standard Residential](standard-residential.md) pool - the same devices, the same countries, the same IP range. The key difference: **no traffic limits**. This plan pays off where Standard with per-gigabyte billing becomes expensive.
 
 {% embed url="https://dashboard.proxyshard.com/en/residential-unlimited" %}
 
@@ -12,7 +12,7 @@ icon: triple-chevrons-up
 
 | Parameter                | Value                                       |
 | ------------------------ | ------------------------------------------- |
-| Pool size                | 300,000 — 400,000 devices (= Standard)      |
+| Pool size                | 300,000 - 400,000 devices (= Standard)      |
 | Max connections          | 5,000                                       |
 | Max speed per order      | 75 Mbps                                     |
 | UDP support              | ✓ (unavailable in the USA location)         |
@@ -21,7 +21,7 @@ icon: triple-chevrons-up
 | Price                    | **$30** / day · **$199** / week · **$399** / half-month · **$699** / month |
 
 {% hint style="warning" %}
-The 5,000-connection limit applies to all types (ESTAB, FIN\_WAIT and others). An increase is available on the monthly plan — message [Support](../../contact-us.md).
+The 5,000-connection limit applies to all types (ESTAB, FIN\_WAIT and others). An increase is available on the monthly plan - message [Support](../../contact-us.md).
 {% endhint %}
 
 ## What tasks they fit

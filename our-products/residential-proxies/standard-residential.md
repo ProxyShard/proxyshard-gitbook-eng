@@ -12,7 +12,7 @@ icon: house-signal
 
 | Parameter                | Value                          |
 | ------------------------ | ------------------------------ |
-| Pool size                | 300,000 — 400,000 devices      |
+| Pool size                | 300,000 - 400,000 devices      |
 | Max connections          | 35,000                         |
 | Max speed per order      | 75 Mbps                        |
 | UDP support              | ✓ (unavailable in the USA location) |
@@ -28,7 +28,7 @@ icon: house-signal
 - Working with platforms that block datacenter IPs
 
 {% hint style="info" %}
-Need to remove the traffic limit? See [Unlimited Residential](unlimited-residential-proxy.md) — the same pool, but without counting gigabytes.\
+Need to remove the traffic limit? See [Unlimited Residential](unlimited-residential-proxy.md) - the same pool, but without counting gigabytes.\
 Need the largest and cleanest pool? See [Premium Residential](premium-residential.md).
 {% endhint %}
 

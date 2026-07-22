@@ -21,8 +21,8 @@ Addresses are issued on real home IPs. A session can change at any moment if the
 
 | Parameter            | [Standard](standard-residential.md) | [Unlimited](unlimited-residential-proxy.md) | [Premium](premium-residential.md) |
 | -------------------- | ------------------------------------ | ------------------------------------------- | --------------------------------- |
-| Pool size            | 300k — 400k                          | 300k — 400k (= Standard)                    | 3.8M — 4.6M                       |
-| Max connections      | 35,000                               | 5,000                                       | —                                 |
+| Pool size            | 300k - 400k                          | 300k - 400k (= Standard)                    | 3.8M - 4.6M                       |
+| Max connections      | 35,000                               | 5,000                                       | -                                 |
 | Max speed            | 75 Mbps                              | 75 Mbps                                     | 75 Mbps                           |
 | [UDP support](../about-udp/) | ✓ (except USA)                       | ✓ (except USA)                              | ✗                                 |
 | [Device OS filtering (p0f)](README.md#settings-field-description) | ✗ | ✗ | ✓ |
@@ -144,17 +144,17 @@ Social media and multi-accounting, crypto exchanges (Binance, Bybit and others),
 
 #### <mark style="color:green;">Pros:</mark>
 
-* **Flexible billing** — Pay as you go or an unlimited subscription (Unlimited)
-* **IP rotation** — change addresses on demand or by timer (TTL)
-* **Wide geo-targeting** — select country, region, city and operator
-* **Home-origin addresses** — IPs are registered to home ISPs
-* **UDP support** — available on Standard and Unlimited (except the USA location)
+* **Flexible billing** - Pay as you go or an unlimited subscription (Unlimited)
+* **IP rotation** - change addresses on demand or by timer (TTL)
+* **Wide geo-targeting** - select country, region, city and operator
+* **Home-origin addresses** - IPs are registered to home ISPs
+* **UDP support** - available on Standard and Unlimited (except the USA location)
 
 #### <mark style="color:red;">Cons:</mark>
 
-* **Possible speed drops** — depends on the internet quality of the end device; this is a specific of the product
-* **Dynamic IP** — the address may change at any moment; if you need a static IP, see [ISP](../isp-proxies.md) or [Datacenter](../datacenter-proxies.md)
-* **p0f spoofing is unavailable** — Premium Residential offers only [Device OS filtering](README.md#settings-field-description)
+* **Possible speed drops** - depends on the internet quality of the end device; this is a specific of the product
+* **Dynamic IP** - the address may change at any moment; if you need a static IP, see [ISP](../isp-proxies.md) or [Datacenter](../datacenter-proxies.md)
+* **p0f spoofing is unavailable** - Premium Residential offers only [Device OS filtering](README.md#settings-field-description)
 * **UDP is unavailable in the USA location** on Standard and Unlimited
 
 {% hint style="success" %}
