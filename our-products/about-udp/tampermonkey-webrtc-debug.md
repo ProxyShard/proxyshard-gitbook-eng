@@ -118,11 +118,11 @@ o=- 46117317 2 IN IP4 127.0.0.1
 
 ### What to look at first
 
-* `\[TM] WebRTC hook installed` — the script loaded successfully.
-* `\[WebRTC] created` — the page really created a WebRTC connection.
-* `\[WebRTC] local candidate parsed` — a local candidate is visible.
-* `\[WebRTC] remote candidate parsed` — a remote candidate is visible.
-* `\[WebRTC] REAL REMOTE ENDPOINT` — the most useful log. It shows the final remote endpoint selected by WebRTC.
+* `\[TM] WebRTC hook installed` - the script loaded successfully.
+* `\[WebRTC] created` - the page really created a WebRTC connection.
+* `\[WebRTC] local candidate parsed` - a local candidate is visible.
+* `\[WebRTC] remote candidate parsed` - a remote candidate is visible.
+* `\[WebRTC] REAL REMOTE ENDPOINT` - the most useful log. It shows the final remote endpoint selected by WebRTC.
 
 ### If there are few logs
 

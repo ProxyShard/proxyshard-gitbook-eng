@@ -26,7 +26,7 @@ You can learn more about the tool on the [IP Checker](../ip-checker.md) page.
 
 ## 2. Ipbinding
 
-<mark style="color:purple;">**Ipbinding**</mark> — a service for checking WebRTC leaks.
+<mark style="color:purple;">**Ipbinding**</mark> - a service for checking WebRTC leaks.
 
 {% embed url="https://ipbinding.online/" %}
 

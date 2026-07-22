@@ -12,7 +12,7 @@ icon: crown
 
 | Parameter                | Value                                |
 | ------------------------ | ------------------------------------ |
-| Pool size                | 3,800,000 — 4,600,000 devices        |
+| Pool size                | 3,800,000 - 4,600,000 devices        |
 | UDP support              | ✗                                    |
 | [Device OS filtering (p0f)](README.md#settings-field-description) | ✓ |
 | Unlimited plan           | ✗                                    |
