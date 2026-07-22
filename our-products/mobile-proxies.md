@@ -62,11 +62,17 @@ To get started, you need to [**purchase**](https://dashboard.proxyshard.com/en/m
 
 <figure><img src="../.gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
 
+{% hint style="warning" %}
+After purchase, activate the port: click <mark style="color:purple;">**Restart**</mark> in the order or follow your personal <mark style="color:purple;">**Reset URL**</mark>. The proxy will not work until the port is activated.
+{% endhint %}
+
+<figure><img src="../.gitbook/assets/mobile_pred.png" alt="Mobile proxy activation warning" width="492"><figcaption></figcaption></figure>
+
 ## Order field description
 
 Let's review the <mark style="color:purple;">order</mark> fields:
 
-<figure><img src="../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/mobile_order2.png" alt="Mobile proxy order fields"><figcaption></figcaption></figure>
 
 <mark style="color:purple;">Proxy info</mark> - Product name
 
