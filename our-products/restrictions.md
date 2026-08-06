@@ -26,8 +26,7 @@ Stripe and PayPal are available on Datacenter and ISP proxies.
 
 Additional restrictions on Residential proxies:
 
-* On [Premium Residential](residential-proxies/premium-residential.md), `apple.com` is unavailable.
-* Microsoft services are unavailable on [Standard Residential](residential-proxies/standard-residential.md) and [Unlimited Residential](residential-proxies/unlimited-residential-proxy.md).
+* Microsoft and Apple services are unavailable on [Standard Residential](residential-proxies/standard-residential.md) / [Unlimited Residential](residential-proxies/unlimited-residential-proxy.md) / [Premium Residential](residential-proxies/premium-residential.md).
 
 ***
 
