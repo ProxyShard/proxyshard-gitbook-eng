@@ -239,6 +239,7 @@ As of June 2026, ISP proxies are available in:
 | 🇨🇿 Czech Republic |
 | 🇺🇸 USA (Pennsylvania) |
 | 🇹🇷 Turkey |
+| 🇺🇦 Ukraine |
 
 ***
 
