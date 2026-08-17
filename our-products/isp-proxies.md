@@ -32,6 +32,7 @@ A recent update for <mark style="color:purple;">ISP</mark> proxies added the abi
 | 🇹🇷 Turkey |
 | 🇺🇸 USA |
 | 🇨🇿 Czechia |
+| 🇺🇦 Ukraine |
 
 {% hint style="info" %}
 The list of locations is constantly expanding.
