@@ -49,6 +49,7 @@
 * [Order search (Product tag)](site-navigation/order-search-product-tag.md)
 * [Invoices](site-navigation/invoices.md)
 * [My orders](site-navigation/my-orders.md)
+* [Teamspaces](site-navigation/teamspaces.md)
 * [Referral program](site-navigation/referral-program.md)
 
 ## Questions and answers <a href="#questions-and-answers" id="questions-and-answers"></a>
