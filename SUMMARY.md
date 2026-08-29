@@ -4,7 +4,7 @@
 * [What is Proxyshard](about-proxyshard.md)
 * [Contact us](contact-us.md)
 
-## Our products <a href="#our-products" id="our-products"></a>
+## Our products
 
 * [Residential proxies](our-products/residential-proxies/README.md)
   * [Standard Residential](our-products/residential-proxies/standard-residential.md)
@@ -18,7 +18,7 @@
 * [ISP proxies](our-products/isp-proxies.md)
 * [Limitations](our-products/restrictions.md)
 
-## Tools <a href="#tools" id="tools"></a>
+## Tools
 
 * [Proxy Tester](our-products/proxy-tester.md)
 * [IP Checker](our-products/ip-checker.md)
@@ -26,7 +26,7 @@
 * [ShardX Launcher](our-products/shardx-launcher.md)
 * [API Specifications](our-products/api-specifications.md)
 
-## Technologies and capabilities <a href="#technologies-and-capabilities" id="technologies-and-capabilities"></a>
+## Technologies and capabilities
 
 * [Network fingerprint spoofing (p0f)](our-products/p0f-spoofing.md)
 * [About the UDP protocol](our-products/about-udp/README.md)
@@ -38,7 +38,7 @@
   * [Results of our field tests](our-products/about-udp/field-test-results.md)
   * [Software solutions for enabling WebRTC](our-products/about-udp/webrtc-software-solutions.md)
 
-## Site navigation <a href="#site-navigation" id="site-navigation"></a>
+## Site navigation
 
 * [Balance top-up](site-navigation/top-up-balance.md)
 * [Purchasing and renewing proxies](site-navigation/buying-and-renewing/README.md)
@@ -52,7 +52,7 @@
 * [Teamspaces](site-navigation/teamspaces.md)
 * [Referral program](site-navigation/referral-program.md)
 
-## Questions and answers <a href="#questions-and-answers" id="questions-and-answers"></a>
+## Questions and answers
 
 * [FAQ](faq-and-support/faq/README.md)
   * [🔥 Popular questions](faq-and-support/faq/general-questions.md)
@@ -64,7 +64,7 @@
   * [Proxies are not working](faq-and-support/faq/proxy-not-working.md)
   * [The proxy location is incorrect!](faq-and-support/faq/wrong-proxy-location.md)
 
-## Usage instructions <a href="#usage-instructions" id="usage-instructions"></a>
+## Usage instructions
 
 * [Setup instructions](setup-guides/getting-started.md)
 * [ShardX Launcher](setup-guides/shardx-browser.md)
@@ -112,7 +112,7 @@
 * [Telegram](setup-guides/telegram.md)
 * [MikroTik proxy](setup-guides/mikrotik-proxy.md)
 
-## Buy <a href="#buy" id="buy"></a>
+## Buy
 
 * [Buy Residential Proxies](https://proxyshard.com/residential-proxy)
 * [Buy Datacenter Proxies](https://proxyshard.com/datacenter-proxy)
@@ -121,7 +121,7 @@
 * [IP Checker](https://proxyshard.com/ip-checker)
 * [Proxy Tester](https://proxyshard.com/proxy-tester)
 
-## ProxyShard API <a href="#proxyshard-api" id="proxyshard-api"></a>
+## ProxyShard API
 
 * ```yaml
   props:
@@ -135,7 +135,7 @@
         spec: proxysharddoc-api
   ```
 
-## ShardX Launcher API <a href="#shardx-launcher-api" id="shardx-launcher-api"></a>
+## ShardX Launcher API
 
 * ```yaml
   props:

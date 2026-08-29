@@ -1,3 +1,7 @@
+---
+icon: people-group
+---
+
 # Teamspaces
 
 Teamspaces let you collaborate with other users, share access to proxies, assign roles, and manage orders in one workspace.
