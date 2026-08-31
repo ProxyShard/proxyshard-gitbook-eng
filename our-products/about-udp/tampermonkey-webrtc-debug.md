@@ -5,9 +5,11 @@ icon: server
 
 # How to install Tampermonkey and a WebRTC debug script
 
-## Installing Tampermonkey
+## Introduction
 
-To run custom scripts in Chrome, it is convenient to use the **Tampermonkey** extension.
+Tampermonkey lets you run custom scripts in the browser. This guide explains how to use the extension to determine whether a website performs WebRTC checks.
+
+## Installing Tampermonkey
 
 Go to the Chrome Web Store and install the extension:
 

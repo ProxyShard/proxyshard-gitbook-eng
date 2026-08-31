@@ -8,15 +8,15 @@ icon: git-alt
 
 Examples of supported software for different operating systems:
 
-<mark style="color:purple;">**Antidetect browser:**</mark>
+<mark style="color:purple;">**Antidetect browsers:**</mark>
 
-* [<mark style="color:$success;">Vision</mark>](../../setup-guides/antidetect-browsers/vision-browser.md) - supports full UDP operation and working QUIC.
-
-{% embed url="https://docs.proxyshard.com/eng/usage-instructions/antidetect-browsers/vision-browser" %}
+* [<mark style="color:$success;">Vision</mark>](../../setup-guides/antidetect-browsers/vision-browser.md): an accessible and reliable paid browser with support for UDP, QUIC, Smart Fingerprint, and other useful features. More than 60% of teams on our website choose it.
 
 {% hint style="success" %}
-At the moment, the combination of our [ISP Proxy](https://dashboard.proxyshard.com/en/isp-proxy) and the [Vision](../../setup-guides/antidetect-browsers/vision-browser.md) browser is the most relevant and correct setup for using UDP with proxies. ISP Proxy also supports p0f switching, which makes proxy detection by any parameters impossible!
+Our [ISP Proxy](https://dashboard.proxyshard.com/en/isp-proxy) combined with the [Vision](../../setup-guides/antidetect-browsers/vision-browser.md) browser is one of the recommended setups for using UDP through a proxy. ISP Proxy also supports changing the [p0f](../p0f-spoofing.md) network fingerprint.
 {% endhint %}
+
+* [<mark style="color:$tint;">ShardX</mark>](../shardx-launcher.md): our open-source solution with a wide selection of profiles and proper UDP and QUIC support.
 
 <mark style="color:purple;">**Windows:**</mark>
 
@@ -29,7 +29,6 @@ At the moment, the combination of our [ISP Proxy](https://dashboard.proxyshard.c
 <mark style="color:purple;">**macOS:**</mark>
 
 * [V2Box](../../setup-guides/ios-android/v2box.md)
-* Proximac (outdated)
 
 <mark style="color:purple;">**Linux:**</mark>
 
@@ -41,12 +40,9 @@ At the moment, the combination of our [ISP Proxy](https://dashboard.proxyshard.c
 * Clash for Android
 * SocksDroid
 * [Super Proxy](../../setup-guides/ios-android/super-proxy.md)
-
-<mark style="color:purple;">**Android:**</mark>
-
 * [V2Box](../../setup-guides/ios-android/v2box.md)
 * [Potatso](../../setup-guides/ios-android/potatso.md)
 
 {% hint style="info" %}
-You can view the current list, which is constantly updated, in the [Setup guide](../../setup-guides/getting-started.md).
+The current list of applications is available in the [Setup guide](../../setup-guides/getting-started.md).
 {% endhint %}

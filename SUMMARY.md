@@ -30,11 +30,10 @@
 
 * [Network fingerprint spoofing (p0f)](our-products/p0f-spoofing.md)
 * [About the UDP protocol](our-products/about-udp/README.md)
-  * [How to install Tampermonkey and the WebRTC debug script](our-products/about-udp/tampermonkey-webrtc-debug.md)
   * [How a WebRTC leak works](our-products/about-udp/how-webrtc-leak-works.md)
   * [Where to check for WebRTC leaks](our-products/about-udp/webrtc-leak-check-tools.md)
-  * [Why a TCP-only proxy is not enough!](our-products/about-udp/why-tcp-proxy-not-enough.md)
   * [Why blocking WebRTC does not protect against detection](our-products/about-udp/why-blocking-webrtc-doesnt-help.md)
+  * [How to install Tampermonkey and the WebRTC debug script](our-products/about-udp/tampermonkey-webrtc-debug.md)
   * [Results of our field tests](our-products/about-udp/field-test-results.md)
   * [Software solutions for enabling WebRTC](our-products/about-udp/webrtc-software-solutions.md)
 

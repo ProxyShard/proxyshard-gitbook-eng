@@ -4,15 +4,13 @@ icon: island-tropical
 
 # Results of our field tests
 
-Initially, we added <mark style="color:purple;">**UDP**</mark> support to all our <mark style="color:purple;">Datacenter</mark> proxy locations and tested it through ClashX. We got the following results:
+We enabled <mark style="color:purple;">**UDP**</mark> in all [<mark style="color:purple;">**Datacenter**</mark>](../datacenter-proxies.md) proxy locations and tested the setup in the [Vision](../../setup-guides/antidetect-browsers/vision-browser.md) browser. We obtained the following results:
 
-* Google - 15 accounts created in a row with no errors and no phone numbers.
-* Discord - registration and server login, including servers with enhanced bot checks, were successful! Even on servers that usually block ISP proxies.
-* Twitter - a 10-image captcha was accepted with errors, and re-verification passed without issues.
-* Facebook/Instagram/FB ADS... - registration without problems or captcha.
+* Google: 15 accounts were created in a row without errors or phone number verification.
+* Discord: registration and joining servers with enhanced bot checks succeeded, including servers that normally block ISP proxies.
+* Twitter: the 10-image CAPTCHA was accepted, and repeat verification completed without problems.
+* Facebook, Instagram, and Facebook Ads: registration completed without issues or a CAPTCHA.
 
-For comparison, the same actions through ISP proxies without **UDP** ended in errors or required SMS verification.
+For comparison, the same actions through ISP proxies without **UDP** resulted in errors or required SMS verification.
 
-And all of this on Datacenter proxies!
-
-**Support is now available on all our products** :tada:
+With WebRTC operating correctly, false bot-activity detections no longer occurred during these tests.

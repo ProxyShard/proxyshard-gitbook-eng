@@ -1,33 +1,24 @@
 ---
 description: >-
-  Why UDP support is needed in proxies and how it helps bypass
+  Why proxies need UDP support and how it helps prevent detection by
   anti-fraud systems
 icon: shield-exclamation
 ---
 
 # About the UDP protocol
 
-### **Contents**&#x20;
+### **Contents**
 
 * [How WebRTC detection works](how-webrtc-leak-works.md)
 * [How to check for WebRTC leaks or WebRTC functionality](webrtc-leak-check-tools.md)
-* [Why a TCP proxy alone is not enough!](why-tcp-proxy-not-enough.md)
-* [Software solutions for enabling WebRTC](webrtc-software-solutions.md)
-* [Why blocking WebRTC does not protect you from detection](why-blocking-webrtc-doesnt-help.md)
+* [Why blocking WebRTC does not protect against detection](why-blocking-webrtc-doesnt-help.md)
+* [How to install Tampermonkey and the WebRTC debug script](tampermonkey-webrtc-debug.md)
 * [Results of our field tests](field-test-results.md)
+* [Software solutions for enabling WebRTC](webrtc-software-solutions.md)
 * [FAQ](../../faq-and-support/faq/)
-
-
 
 ### **Introductory theory**
 
-Modern anti-fraud systems are becoming increasingly persistent in identifying your real address or detecting the use of tools that hide your address. Even if you use a proxy or <mark style="color:purple;">VPN</mark>, they can determine that you are not a “real” user by many parameters.&#x20;
+Modern anti-fraud systems use increasingly sophisticated methods to identify a user's real IP address and detect tools that mask network traffic. Even when you use a proxy or <mark style="color:purple;">VPN</mark>, a website may detect that masking through other signals.
 
-One of the most common detection mechanisms is <mark style="color:purple;">WebRTC</mark>, a technology that can send requests around the proxy and therefore expose your real IP if <mark style="color:purple;">WebRTC</mark> is not blocked by the browser.<br>
-
-The solution? Two-way <mark style="color:purple;">UDP</mark> protocol support in both proxies and software products.
-
-{% hint style="info" %}
-{% endhint %}
-
-&#x20;
+One such mechanism involves <mark style="color:purple;">WebRTC</mark>. This technology can send requests over UDP and expose the user's real IP address if the proxy or client application does not support UDP or routes this traffic incorrectly.
