@@ -10,14 +10,14 @@ icon: vial
 
 ***
 
-<figure><img src="../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/proxy-tester-check-result.png" alt=""><figcaption></figcaption></figure>
 
 ## How to use it
 
 1. Open [proxyshard.com/proxy-tester](https://proxyshard.com/proxy-tester)
-2. Paste proxies into the text field, one per line if there are several
+2. Paste one or more proxies into the <mark style="color:purple;">**Proxy list**</mark> field, one per line
 3. Click <mark style="color:purple;">**Test Proxy**</mark>
-4. Wait for the result in the <mark style="color:purple;">History</mark> table on the right
+4. Wait for the result in the <mark style="color:purple;">**Proxy check history**</mark> table below
 
 ***
 
@@ -34,14 +34,14 @@ icon: vial
 
 ## What the result shows
 
-After the check, the <mark style="color:purple;">**History**</mark> table displays:
+After the check, the <mark style="color:purple;">**Proxy check history**</mark> table displays:
 
 | Field             | Description                                                                                                                                                                                                    |
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Proxy**         | IP address through which the connection was made                                                                                                                                                               |
 | **Response time** | Response time in milliseconds. The lower it is, the faster the proxy                                                                                                                                            |
 | **Status code**   | HTTP response code. `200` means everything is OK                                                                                                                                                               |
-| **Result**        | Final status: <mark style="color:green;">**Success**</mark> (works) or <mark style="color:red;">**Failed**</mark> (does not work). Also shows the connection type (HTTP/SOCKS5) and <mark style="color:purple;">UDP</mark> support if the proxy is SOCKS5. |
+| **Result**        | Final status: <mark style="color:green;">**Success**</mark> (works) or <mark style="color:red;">**Failed**</mark> (does not work). If the proxy supports UDP, the <mark style="color:purple;">**UDP**</mark> label is shown next to the status |
 
 ***
 
@@ -49,9 +49,9 @@ After the check, the <mark style="color:purple;">**History**</mark> table displa
 
 This does not always mean the proxy is faulty. Check:
 
-* Whether the format is correct (login\password\port)
-* Whether the protocol is mixed up (HTTP \ SOCKS5)
-* Whether 2-3 minutes have passed since purchase (DC\ISP proxies require up to 2 minutes for synchronization)
+* Whether the login, password, and port are in the correct format
+* Whether the correct protocol, HTTP or SOCKS5, is selected
+* Whether 2-3 minutes have passed since purchase (DC/ISP proxies may need up to 2 minutes to synchronize)
 * Whether there is any blocking by your provider
 
 If everything is correct but the check still fails, contact [support](../contact-us.md).

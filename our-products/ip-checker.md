@@ -8,27 +8,27 @@ icon: magnifying-glass
 
 {% embed url="https://proxyshard.com/ip-checker" %}
 
-<figure><img src="../.gitbook/assets/image (41).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/ip-checker-overview.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ## Main fields
 
-### My IP
+### My IP address
 
 Your current external IP address that all websites see. A country flag and copy button are shown next to it. If the proxy is connected correctly, this should be the <mark style="color:purple;">proxy server IP</mark>, not your real address.
 
-### Browser Score
+### Risk score
 
-A numeric score showing how many anonymity issues were detected. **The lower, the better.**&#x20;
+A numeric risk score based on the detected anonymity issues. **The lower, the better.**
 
 {% hint style="info" %}
-Click **"View details"** to see the full report for each parameter.
+Open the detailed diagnostics to see a report for each parameter.
 {% endhint %}
 
 ***
 
-## General IP Info
+## General info
 
 ### Provider
 
@@ -40,7 +40,7 @@ The name of the internet provider (ISP) that owns your IP. For example: `WYOCORE
 This is the most important field. If **"WebRTC is leaked"** is displayed, your real IP is visible to websites while the proxy is active. More details: [How a WebRTC leak works](about-udp/how-webrtc-leak-works.md)
 {% endhint %}
 
-<mark style="color:purple;">WebRTC</mark> is a browser protocol for p2p connections. It can expose the real IP bypassing proxies and VPNs. This field shows the IP detected by <mark style="color:purple;">WebRTC</mark>. If it differs from **My IP**, there is a leak.
+<mark style="color:purple;">WebRTC</mark> is a browser protocol for p2p connections. It can expose the real IP by bypassing proxies and VPNs. This field shows the IP detected by <mark style="color:purple;">WebRTC</mark>. If it differs from **My IP address**, there is a leak.
 
 | Status              | What it means                         |
 | ------------------- | ------------------------------------- |
@@ -68,7 +68,9 @@ Determines whether your IP belongs to known anonymizing infrastructure: VPN, pro
 
 ## Browser Status Report
 
-Opened with the **"View details"** button. Shows detailed browser and network analysis results grouped by severity level:
+<figure><img src="../.gitbook/assets/ip-checker-diagnostics.png" alt=""><figcaption></figcaption></figure>
+
+The detailed diagnostics show browser and network analysis results grouped by severity. To view information about a detected issue, click **View troubles** on the corresponding card.
 
 | Level        | What it means                                      |
 | ------------ | -------------------------------------------------- |
@@ -173,7 +175,7 @@ Checks `navigator.maxTouchPoints` and pointer type (`mouse`, `touch`, `pen`). If
 ## How to read the result
 
 {% hint style="success" %}
-**Everything is fine:** My IP = proxy IP, WebRTC is not detected or is blocked, Browser Score = 0, ISP type = `residential`.
+**Everything is fine:** My IP address = proxy IP, WebRTC is not detected or is blocked, Risk score = 0, ISP type = `residential`.
 {% endhint %}
 
 {% hint style="warning" %}
