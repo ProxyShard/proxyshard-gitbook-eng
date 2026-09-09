@@ -1,4 +1,8 @@
-# Octo Browser for iOS
+---
+icon: octopus
+---
+
+# Octo Browser for iOS and Android
 
 {% hint style="warning" %}
 The proxy applies only to the active Octo Browser profile. Other apps on the device continue using their regular Internet connection.
@@ -6,9 +10,11 @@ The proxy applies only to the active Octo Browser profile. Other apps on the dev
 
 ## Install Octo Browser
 
-Download Octo Browser from the App Store.
+Download Octo Browser from the App Store or Google Play.
 
 {% embed url="https://apps.apple.com/us/app/octo-browser/id6762627194" %}
+
+{% embed url="https://play.google.com/store/apps/details?id=net.octobrowser.mobile&pli=1" %}
 
 ## Create an account and sign in
 
