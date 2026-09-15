@@ -1,5 +1,5 @@
 # ============================================================================
-# ProxyShard User API — OpenAPI 3.0.3.
+# ProxyShard User API: OpenAPI 3.0.3.
 #
 # ИСТОЧНИК ПРАВДЫ по публичному API. Раньше спека жила только в GitBook
 # (docs.proxyshard.com/proxyshard-api/*), из-за чего расходилась с кодом
@@ -7,7 +7,7 @@
 # продолжала обещать старую форму.
 #
 # Правила:
-#   * добавил/изменил ручку в services/user-api — правь этот файл в ТОМ ЖЕ
+#   * добавил/изменил ручку в services/user-api - правь этот файл в ТОМ ЖЕ
 #     коммите;
 #   * теги = страницы в GitBook, менять их имена без нужды не стоит;
 #   * после мержа залить файл в GitBook (OpenAPI-спека проекта), иначе
@@ -54,7 +54,7 @@ components:
           type: integer
         until:
           type: string
-          description: ISO8601/string date
+          description: "ISO 8601 date string"
         status:
           type: string
         signature:
@@ -81,7 +81,7 @@ components:
         - message
     AddonLine:
       type: object
-      description: A single add-on line stored on an order
+      description: "One add-on line stored on an order"
       properties:
         addon_key:
           type: string
@@ -89,12 +89,12 @@ components:
           type: integer
         qty:
           type: integer
-          description: Active units for the current period
+          description: "Units active in the current period"
         price_per_unit:
           type: integer
-          description: Price per unit in cents at time of purchase
+          description: "Unit price in cents at purchase time"
         pending:
-          description: Scheduled change to apply on next renewal (null if none)
+          description: "Change scheduled for the next renewal, or `null`"
           nullable: true
           type: object
           properties:
@@ -105,10 +105,10 @@ components:
                 - downgrade
             next_qty:
               type: integer
-              description: Target qty after downgrade (only present for downgrade action)
+              description: "Target quantity after downgrade"
     PurchaseRequestDcIsp:
       type: object
-      description: Purchase for Datacenter/ISP — the location field is required.
+      description: "Purchase for Datacenter/ISP; the location field is required."
       properties:
         product:
           type: string
@@ -132,7 +132,7 @@ components:
         addons:
           type: array
           nullable: true
-          description: Add-ons attached at purchase time (e.g. p0f_slots for DC/ISP)
+          description: "Add-ons attached at purchase time, for example `p0f_slots` for DC or ISP"
           items:
             $ref: '#/components/schemas/CreateOrderAddonRequest'
       required:
@@ -141,7 +141,7 @@ components:
         - cycle
     PurchaseRequestResidentialStandard:
       type: object
-      description: Purchase for Standart Residential Proxy — location is not required; the cycle is fixed (lifetime).
+      description: "Purchase for Standart Residential Proxy; location is not required; the cycle is fixed (lifetime)."
       properties:
         product:
           type: string
@@ -157,14 +157,14 @@ components:
         addons:
           type: array
           nullable: true
-          description: Add-ons attached at purchase time (e.g. p0f_slots for DC/ISP)
+          description: "Add-ons attached at purchase time, for example `p0f_slots` for DC or ISP"
           items:
             $ref: '#/components/schemas/CreateOrderAddonRequest'
       required:
         - product
     PurchaseRequestResidentialPremium:
       type: object
-      description: Purchase for Premium Residential Proxy — location is not required; the cycle is fixed (lifetime).
+      description: "Purchase for Premium Residential Proxy; location is not required; the cycle is fixed (lifetime)."
       properties:
         product:
           type: string
@@ -180,14 +180,14 @@ components:
         addons:
           type: array
           nullable: true
-          description: Add-ons attached at purchase time (e.g. p0f_slots for DC/ISP)
+          description: "Add-ons attached at purchase time, for example `p0f_slots` for DC or ISP"
           items:
             $ref: '#/components/schemas/CreateOrderAddonRequest'
       required:
         - product
     PurchaseRequestResidentialUnmetered:
       type: object
-      description: Purchase for Unmetered Residential proxy — supports auto-renewal.
+      description: "Purchase for Unmetered Residential proxy; supports auto-renewal."
       properties:
         product:
           type: string
@@ -204,7 +204,7 @@ components:
         addons:
           type: array
           nullable: true
-          description: Add-ons attached at purchase time (e.g. p0f_slots for DC/ISP)
+          description: "Add-ons attached at purchase time, for example `p0f_slots` for DC or ISP"
           items:
             $ref: '#/components/schemas/CreateOrderAddonRequest'
       required:
@@ -233,7 +233,7 @@ components:
         addons:
           type: array
           nullable: true
-          description: Add-ons attached at purchase time (e.g. p0f_slots for DC/ISP)
+          description: "Add-ons attached at purchase time, for example `p0f_slots` for DC or ISP"
           items:
             $ref: '#/components/schemas/CreateOrderAddonRequest'
       required:
@@ -393,11 +393,11 @@ components:
         code:
           type: string
           maxLength: 10
-          description: Region code (state/province code)
+          description: "Region or state code"
         name:
           type: string
           maxLength: 255
-          description: Region name (state/province name)
+          description: "Region or state name"
         country:
           $ref: '#/components/schemas/Country'
       required:
@@ -410,7 +410,7 @@ components:
         code:
           type: string
           maxLength: 50
-          description: City code (usually slug format)
+          description: "City code, usually a slug"
         name:
           type: string
           maxLength: 255
@@ -477,7 +477,7 @@ components:
       properties:
         code:
           type: string
-          description: ISP code (slug)
+          description: "ISP code, usually a slug"
         name:
           type: string
           description: ISP name
@@ -566,10 +566,8 @@ paths:
     post:
       tags:
         - Datacenter & ISP Proxies
-      summary: Set del-np (per-IP deletion)
-      description: |
-        Only for Datacenter & ISP proxies.
-        After updating, the order `quantity` and `price_paid` are recalculated.
+      summary: "Set per-IP deletion (del-np)"
+      description: "Only for Datacenter & ISP proxies. After updating, the order `quantity` and `price_paid` are recalculated."
       parameters:
         - in: path
           name: order_id
@@ -619,35 +617,8 @@ paths:
     post:
       tags:
         - Datacenter & ISP Proxies
-      summary: Set IP OS-fingerprint signature
-      description: "Sets the OS-fingerprint signature for one or more proxy IPs. \ 
-
-        Requires the `p0f_slots` add-on to be active on the order.
-
-
-        Each IP that receives a signature permanently occupies one slot.
-
-        Changing the OS value on an IP that already has a signature does not consume an extra slot.
-
-
-        **Available signature values:**
-
-
-        | Value | OS |
-
-        |-------|----|
-
-        | `ios` | iOS |
-
-        | `macos` | macOS |
-
-        | `android` | Android |
-
-        | `linux` | Linux |
-
-        | `win10` | Windows 10 |
-
-        | `win11` | Windows 11 |\n"
+      summary: "Set the IP OS fingerprint"
+      description: "Sets the OS-fingerprint signature for one or more proxy IPs. Requires the `p0f_slots` add-on to be active on the order. Each IP that receives a signature permanently occupies one slot. Changing the OS value on an IP that already has a signature does not consume an extra slot. **Available signature values:** | Value | OS | |-------|----| | `ios` | iOS | | `macos` | macOS | | `android` | Android | | `linux` | Linux | | `win10` | Windows 10 | | `win11` | Windows 11 |"
       parameters:
         - in: path
           name: order_id
@@ -708,9 +679,8 @@ paths:
     get:
       tags:
         - Datacenter & ISP Proxies
-      summary: Calculate add-on price
-      description: |
-        Returns the price preview for purchasing additional units of a given add-on for an active datacenter/ISP order.   Currently the only supported add-on key is `p0f_slots` — OS-fingerprint signature slots.
+      summary: "Calculate add-on cost"
+      description: "Returns the price preview for purchasing additional units of a given add-on for an active datacenter/ISP order. Currently the only supported add-on key is `p0f_slots`; OS-fingerprint signature slots."
       parameters:
         - in: path
           name: order_id
@@ -762,8 +732,7 @@ paths:
       tags:
         - Datacenter & ISP Proxies
       summary: Purchase an add-on
-      description: |
-        Immediately charges the wallet and adds the requested number of add-on units to the order.  The order must be **active**.   The only currently available add-on key is `p0f_slots`.
+      description: "Immediately charges the wallet and adds the requested number of add-on units to the order. The order must be **active**. The only currently available add-on key is `p0f_slots`."
       parameters:
         - in: path
           name: order_id
@@ -810,9 +779,8 @@ paths:
     post:
       tags:
         - Datacenter & ISP Proxies
-      summary: Schedule add-on downgrade for next renewal
-      description: |
-        Schedules a **downgrade** of an add-on to take effect on the next renewal cycle.  The new quantity must be lower than the current one.  The change is stored as a `pending` marker and applied automatically when the order renews.
+      summary: "Schedule an add-on downgrade"
+      description: "Schedules a **downgrade** of an add-on to take effect on the next renewal cycle. The new quantity must be lower than the current one. The change is stored as a `pending` marker and applied automatically when the order renews."
       parameters:
         - in: path
           name: order_id
@@ -861,7 +829,7 @@ paths:
     post:
       tags:
         - Datacenter & ISP Proxies
-      summary: Cancel a scheduled downgrade
+      summary: "Cancel scheduled downgrade"
       description: Removes the pending downgrade that was set via the schedule endpoint.
       parameters:
         - in: path
@@ -902,10 +870,7 @@ paths:
       tags:
         - General
       summary: Create and pay for an order
-      description: |
-        Purchase by product name, location, and cycle.
-        For Datacenter/ISP, location is required.
-        For Standart Residential Proxy, location is not required.
+      description: "Purchase by product name, location, and cycle. For Datacenter/ISP, location is required. For Standart Residential Proxy, location is not required."
       requestBody:
         required: true
         content:
@@ -940,10 +905,8 @@ paths:
     get:
       tags:
         - General
-      summary: Calculate order price
-      description: |
-        Calculates price by product name, cycle name and quantity.
-        Uses the same validation rules as purchase (allowed billing cycles, promo rules).
+      summary: "Calculate order cost"
+      description: "Calculates price by product name, cycle name and quantity. Uses the same validation rules as purchase (allowed billing cycles, promo rules)."
       parameters:
         - in: query
           name: product
@@ -1018,9 +981,7 @@ paths:
       tags:
         - General
       summary: Change the order billing cycle
-      description: |
-        Changes the billing cycle by cycle name. Only for Datacenter & ISP proxies.
-        If the promo code is not available for the selected cycle, it will be automatically reset.
+      description: "Changes the billing cycle by cycle name. Only for Datacenter & ISP proxies. If the promo code is not available for the selected cycle, it will be automatically reset."
       parameters:
         - in: path
           name: order_id
@@ -1081,8 +1042,7 @@ paths:
       tags:
         - General
       summary: Change order auto-renewal
-      description: |
-        Enable/disable auto-renewal. Only for Datacenter & ISP proxies.
+      description: "Enable/disable auto-renewal. Only for Datacenter & ISP proxies."
       parameters:
         - in: path
           name: order_id
@@ -1145,7 +1105,7 @@ paths:
     get:
       tags:
         - General
-      summary: Get the available number of proxies
+      summary: "Get available proxy count"
       description: Returns the total available quantity for all products.
       responses:
         '200':
@@ -1327,8 +1287,7 @@ paths:
       tags:
         - General
       summary: Renew order
-      description: |
-        Renewal is available only when order status is `on-hold`.
+      description: "Renewal is available only when order status is `on-hold`."
       parameters:
         - in: path
           name: id
@@ -1432,9 +1391,8 @@ paths:
     get:
       tags:
         - Residential Proxies
-      summary: Parent (account owner) traffic
-      description: |
-        Returns the parent account's own total and remaining data for the given proxy type, aggregated across the parent's orders. Unlike the sub-user endpoints, this reflects the data of the account owner, not a sub-user.
+      summary: "Account owner traffic"
+      description: "Returns the parent account's own total and remaining data for the given proxy type, aggregated across the parent's orders. Unlike the sub-user endpoints, this reflects the data of the account owner, not a sub-user."
       parameters:
         - in: query
           name: proxy_type
@@ -1895,7 +1853,7 @@ paths:
         - in: query
           name: region_code
           required: true
-          description: Region code (state/province code)
+          description: "Region or state code"
           schema:
             type: string
       responses:
@@ -1910,16 +1868,12 @@ paths:
       tags:
         - Residential Proxies
       summary: List ISPs
-      description: |
-        Internet providers available inside a city — the fourth targeting level after country, region and city.
-        Unlike the other location endpoints this one needs the full chain: `country_code`, `region_code` AND `city_code` are all required, because upstream ISPs are bound to a city.
-        Premium package only: the ISP catalogue is not maintained for the standart and unlimited packages, and any other `proxy_type` is rejected with 400.
-        ISPs are listed for major cities only, so an empty `results` with `count: 0` is a normal answer for a smaller city.
+      description: "Internet providers available inside a city; the fourth targeting level after country, region and city. Unlike the other location endpoints this one needs the full chain: `country_code`, `region_code` AND `city_code` are all required, because upstream ISPs are bound to a city. Premium package only: the ISP catalogue is not maintained for the standart and unlimited packages, and any other `proxy_type` is rejected with 400. ISPs are listed for major cities only, so an empty `results` with `count: 0` is a normal answer for a smaller city."
       parameters:
         - in: query
           name: proxy_type
           required: true
-          description: Must be `premium` — ISP targeting is premium-only
+          description: "Must be `premium`; ISP targeting is premium-only"
           schema:
             type: string
             enum:
@@ -1933,7 +1887,7 @@ paths:
         - in: query
           name: region_code
           required: true
-          description: Region code (state/province code)
+          description: "Region or state code"
           schema:
             type: string
         - in: query
@@ -1970,9 +1924,8 @@ paths:
     get:
       tags:
         - Service
-      summary: Deep health check
-      description: |
-        Outside the /user/api/ prefix, so no API key is required.
+      summary: "Health check"
+      description: "Outside the /user/api/ prefix, so no API key is required."
       security: []
       responses:
         '200':
@@ -1981,9 +1934,8 @@ paths:
     get:
       tags:
         - Service
-      summary: Liveness probe
-      description: |
-        Outside the /user/api/ prefix, so no API key is required.
+      summary: "Liveness check"
+      description: "Outside the /user/api/ prefix, so no API key is required."
       security: []
       responses:
         '200':

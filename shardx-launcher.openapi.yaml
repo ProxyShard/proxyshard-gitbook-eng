@@ -1,92 +1,9 @@
 openapi: 3.0.3
 
 info:
-  title: ShardX Launcher — Automation API
+  title: "ShardX Launcher; Automation API"
   version: "0.1.0"
-  description: |
-    Local HTTP API for automating the ShardX anti-detect browser launcher:
-    generate fingerprints, create/launch/close profiles, and obtain a Chrome
-    DevTools Protocol (CDP) WebSocket endpoint to drive a launched profile
-    with Puppeteer / Playwright.
-
-    ## Binding & lifecycle
-    The server runs inside the launcher app, bound to **127.0.0.1** only,
-    on the port configured in *Settings → Automation API* (default **40325**).
-    It is **not** reachable from other hosts. Enabling/port changes take
-    effect after the app restarts.
-
-    ## Authentication
-    Every endpoint except `GET /health` requires a **Bearer JWT** (HS256,
-    signed with the launcher's stored secret):
-
-        Authorization: Bearer <token>
-
-    The permanent token is shown in *Settings → Automation API* (copy it
-    from there). Pressing **Regenerate token** rotates the signing secret
-    live — the new token works immediately and every previously issued
-    token is invalidated at once. There is no separate API key and no
-    token-minting endpoint: the token itself is the credential.
-
-    Missing/invalid token → `401` with an empty body.
-
-    ## Typical flow
-    1. `GET /fingerprint/new/{platform}` → a fully uniquified fingerprint
-       (random platform_version, host-aware CPU/RAM, clamped screen,
-       library noise prefs), **not** persisted.
-    2. Optionally edit the returned `fingerprint` object (e.g. flip
-       `noise.fonts.enabled`, set `webrtc`, tweak `navigator`).
-    3. `POST /profiles` (or `POST /folders/{folder}/profiles`) with that
-       object as `fingerprint` → the launcher stores it **verbatim**
-       (create never re-randomizes).
-    4. `POST /profiles/{id}/start` → returns the CDP endpoint; connect with
-       `browserWSEndpoint = cdp.web_socket_debugger_url`.
-    5. `POST /profiles/{id}/stop` when done.
-
-    ## Proxies & QUIC/WebRTC
-    On **every** launch (UI or API), before the browser starts, the bound
-    proxy is probed live for UDP-relay (SOCKS5 UDP_ASSOCIATE). If UDP works,
-    QUIC is enabled and WebRTC may use the proxied UDP relay; otherwise QUIC
-    is disabled and WebRTC collapses to TCP-only so the real IP can't leak.
-    Timezone/locale/geo `auto` fields are resolved live through the proxy at
-    launch too. Passing `proxy` (string) on a persistent create adds it to
-    the store and full-tests it up front; a temporary profile keeps it inline.
-
-    ## Temporary profiles
-    `POST /profiles/temporary` creates a profile flagged `temporary`: it is
-    hidden from `GET /profiles` and from the launcher UI, and is deleted
-    (config + user-data-dir) automatically when its browser closes. If the
-    app crashes while one is open, it is purged on the next app start.
-
-    ## Fingerprint object
-    The `fingerprint` returned by `GET /fingerprint/new*` and accepted by
-    the create endpoints is the launcher's native FingerprintConfig. It is
-    round-tripped verbatim, so the schema below documents the common
-    sub-objects but is intentionally open (`additionalProperties: true`).
-
-    ## MCP server
-    A companion **MCP** (Model Context Protocol) server lets an AI client
-    drive the launcher through *this* API plus a profile's browser over
-    CDP. It is a separate Node process — **not** part of this HTTP API and
-    not hosted by it. Get it from the launcher (**Settings → MCP server →
-    Download MCP server**, or the sidebar "Download MCP" button), which
-    saves the source to a folder you choose; or from the repo at
-    `rust/shardx-launcher/mcp/`.
-
-    Under the hood it just calls this API: configure it with
-    `SHARDX_API` (this base URL) and `SHARDX_TOKEN` (the Bearer token from
-    *Settings → Automation API*). It exposes:
-    - **API tools** — thin wrappers over the endpoints below
-      (profiles, fingerprints, proxies, folders, cookies, start/stop).
-    - **Browser tools** (patchright over CDP) — `browser_navigate`,
-      `browser_evaluate`, `browser_screenshot`, `browser_click`,
-      `browser_fill`, tabs, waits, etc., targeting a profile started via
-      `POST /profiles/{id}/start` (which returns the CDP endpoint).
-
-    Run it standalone over **stdio** (the client spawns it) or, with
-    `MCP_HTTP_PORT` set, over HTTP at `127.0.0.1:<port>/mcp`. See the MCP
-    server's README for setup. (The launcher only downloads it; it does
-    not run it.)
-
+  description: "Local HTTP API for automating the ShardX anti-detect browser launcher: generate fingerprints, create/launch/close profiles, and obtain a Chrome DevTools Protocol (CDP) WebSocket endpoint to drive a launched profile with Puppeteer / Playwright. ## Binding & lifecycle The server runs inside the launcher app, bound to **127.0.0.1** only, on the port configured in *Settings → Automation API* (default **40325**). It is **not** reachable from other hosts. Enabling/port changes take effect after the app restarts. ## Authentication Every endpoint except `GET /health` requires a **Bearer JWT** (HS256, signed with the launcher's stored secret): Authorization: Bearer <token> The permanent token is shown in *Settings → Automation API* (copy it from there). Pressing **Regenerate token** rotates the signing secret live; the new token works immediately and every previously issued token is invalidated at once. There is no separate API key and no token-minting endpoint: the token itself is the credential. Missing/invalid token → `401` with an empty body. ## Typical flow 1. `GET /fingerprint/new/{platform}` → a fully uniquified fingerprint (random platform_version, host-aware CPU/RAM, clamped screen, library noise prefs), **not** persisted. 2. Optionally edit the returned `fingerprint` object (e.g. flip `noise.fonts.enabled`, set `webrtc`, tweak `navigator`). 3. `POST /profiles` (or `POST /folders/{folder}/profiles`) with that object as `fingerprint` → the launcher stores it **verbatim** (create never re-randomizes). 4. `POST /profiles/{id}/start` → returns the CDP endpoint; connect with `browserWSEndpoint = cdp.web_socket_debugger_url`. 5. `POST /profiles/{id}/stop` when done. ## Proxies & QUIC/WebRTC On **every** launch (UI or API), before the browser starts, the bound proxy is probed live for UDP-relay (SOCKS5 UDP_ASSOCIATE). If UDP works, QUIC is enabled and WebRTC may use the proxied UDP relay; otherwise QUIC is disabled and WebRTC collapses to TCP-only so the real IP can't leak. Timezone/locale/geo `auto` fields are resolved live through the proxy at launch too. Passing `proxy` (string) on a persistent create adds it to the store and full-tests it up front; a temporary profile keeps it inline. ## Temporary profiles `POST /profiles/temporary` creates a profile flagged `temporary`: it is hidden from `GET /profiles` and from the launcher UI, and is deleted (config + user-data-dir) automatically when its browser closes. If the app crashes while one is open, it is purged on the next app start. ## Fingerprint object The `fingerprint` returned by `GET /fingerprint/new*` and accepted by the create endpoints is the launcher's native FingerprintConfig. It is round-tripped verbatim, so the schema below documents the common sub-objects but is intentionally open (`additionalProperties: true`). ## MCP server A companion **MCP** (Model Context Protocol) server lets an AI client drive the launcher through *this* API plus a profile's browser over CDP. It is a separate Node process; **not** part of this HTTP API and not hosted by it. Get it from the launcher (**Settings → MCP server → Download MCP server**, or the sidebar \"Download MCP\" button), which saves the source to a folder you choose; or from the repo at `rust/shardx-launcher/mcp/`. Under the hood it just calls this API: configure it with `SHARDX_API` (this base URL) and `SHARDX_TOKEN` (the Bearer token from *Settings → Automation API*). It exposes: - **API tools**; thin wrappers over the endpoints below (profiles, fingerprints, proxies, folders, cookies, start/stop). - **Browser tools** (patchright over CDP); `browser_navigate`, `browser_evaluate`, `browser_screenshot`, `browser_click`, `browser_fill`, tabs, waits, etc., targeting a profile started via `POST /profiles/{id}/start` (which returns the CDP endpoint). Run it standalone over **stdio** (the client spawns it) or, with `MCP_HTTP_PORT` set, over HTTP at `127.0.0.1:<port>/mcp`. See the MCP server's README for setup. (The launcher only downloads it; it does not run it.)"
 servers:
   - url: http://127.0.0.1:40325
     description: Local launcher (default port; change in Settings)
@@ -109,7 +26,7 @@ paths:
   /health:
     get:
       tags: [ System ]
-      summary: Liveness probe
+      summary: "Liveness check"
       description: Returns basic server info. The only endpoint that does **not** require auth.
       security: []
       responses:
@@ -128,10 +45,7 @@ paths:
     get:
       tags: [ Fingerprints ]
       summary: Generate a new fingerprint (host OS)
-      description: |
-        Returns a fully uniquified fingerprint for the **host** operating
-        system, without persisting it. Equivalent to
-        `/fingerprint/new/{platform}` with the launcher host's platform.
+      description: "Returns a fully uniquified fingerprint for the **host** operating system, without persisting it. Equivalent to `/fingerprint/new/{platform}` with the launcher host's platform."
       responses:
         "200":
           description: A uniquified, unsaved fingerprint.
@@ -150,12 +64,7 @@ paths:
     get:
       tags: [ Fingerprints ]
       summary: Generate a new fingerprint for a platform
-      description: |
-        Picks a random library fingerprint matching `platform`, then
-        uniquifies it: a fresh Sec-CH-UA `platform_version`, host-aware
-        `hardware_concurrency`/`device_memory` (never claims more than the
-        real machine), and a screen clamped to the real display. Returned
-        unsaved — feed it to a create endpoint as `fingerprint`.
+      description: "Picks a random library fingerprint matching `platform`, then uniquifies it: a fresh Sec-CH-UA `platform_version`, host-aware `hardware_concurrency`/`device_memory` (never claims more than the real machine), and a screen clamped to the real display. Returned unsaved; feed it to a create endpoint as `fingerprint`."
       parameters:
         - name: platform
           in: path
@@ -182,9 +91,7 @@ paths:
     get:
       tags: [ Profiles ]
       summary: List profiles
-      description: |
-        Lists persistent profiles (temporary profiles are hidden), newest
-        first, pinned on top. Each entry is enriched with live run state.
+      description: "Lists persistent profiles (temporary profiles are hidden), newest first, pinned on top. Each entry is enriched with live run state."
       responses:
         "200":
           description: Profile list.
@@ -197,12 +104,7 @@ paths:
     post:
       tags: [ Profiles ]
       summary: Create a profile
-      description: |
-        Persists a profile from a client-supplied `fingerprint` **exactly as
-        given** (no re-randomization — uniquification already happened in
-        `/fingerprint/new`). Use `folder` to file it; bind a proxy by stored
-        `proxy_id` or attach one inline via `proxy` (a string that is NOT
-        saved to the proxy store).
+      description: "Persists a profile from a client-supplied `fingerprint` **exactly as given** (no re-randomization; uniquification already happened in `/fingerprint/new`). Use `folder` to file it; bind a proxy by stored `proxy_id` or attach one inline via `proxy` (a string that is NOT saved to the proxy store)."
       requestBody:
         required: true
         content:
@@ -225,12 +127,7 @@ paths:
     post:
       tags: [ Profiles ]
       summary: Create a temporary profile
-      description: |
-        Creates a profile from a random (or specified) library fingerprint,
-        uniquified like `/fingerprint/new` and stored verbatim, flagged
-        `temporary`: hidden from listings and **auto-deleted when its
-        browser closes** (or purged on next app start after a crash). Pair
-        with `POST /profiles/{id}/start`.
+      description: "Creates a profile from a random (or specified) library fingerprint, uniquified like `/fingerprint/new` and stored verbatim, flagged `temporary`: hidden from listings and **auto-deleted when its browser closes** (or purged on next app start after a crash). Pair with `POST /profiles/{id}/start`."
       requestBody:
         required: false
         content:
@@ -269,10 +166,7 @@ paths:
     get:
       tags: [ Profiles ]
       summary: Get a profile
-      description: |
-        Returns the full stored profile: the `_meta` envelope plus the
-        flattened FingerprintConfig. If the profile is running, `running`
-        and `cdp` are added.
+      description: "Returns the full stored profile: the `_meta` envelope plus the flattened FingerprintConfig. If the profile is running, `running` and `cdp` are added."
       parameters:
         - $ref: "#/components/parameters/ProfileId"
       responses:
@@ -290,20 +184,12 @@ paths:
     delete:
       tags: [ Profiles ]
       summary: Delete a profile
-      description: |
-        Moves the profile to the trash, where it stays restorable for 7 days
-        before it is swept. What is archived is the account — cookies, logins,
-        web data, preferences, Local Storage, IndexedDB — not the caches, so
-        the archive is a fraction of the user-data dir. The original config and
-        user-data dir are removed once the archive is written.
-
-        Temporary profiles are torn down by the process tracker when their
-        browser closes and never reach the trash.
+      description: "Moves the profile to Trash. It can be restored for 7 days. The archive includes cookies, logins, web data, preferences, Local Storage, and IndexedDB. Cache data is excluded. The original configuration and user data directory are deleted after the archive is created. Temporary profiles are deleted automatically when their browser closes and are not moved to Trash."
       parameters:
         - $ref: "#/components/parameters/ProfileId"
       responses:
         "200":
-          description: Moved to the trash.
+          description: "Profile moved to Trash."
           content:
             application/json:
               schema:
@@ -314,7 +200,7 @@ paths:
                   trashed:
                     type: boolean
                     example: true
-                    description: Restorable from the launcher's Trash for 7 days.
+                    description: "Can be restored from Trash for 7 days."
         "401": { $ref: "#/components/responses/Unauthorized" }
         "500":
           description: Deletion failed.
@@ -324,12 +210,7 @@ paths:
     patch:
       tags: [ Profiles ]
       summary: Edit a profile
-      description: |
-        Updates only the provided fields. When `fingerprint` is given it
-        REPLACES the stored fingerprint verbatim (no re-randomization).
-        `folder: ""` unfiles the profile; `proxy_id: ""` unbinds the proxy;
-        a `proxy` string is stored (deduped) + full-tested, then bound.
-        Returns the updated stored profile.
+      description: "Updates only the provided fields. When `fingerprint` is given it REPLACES the stored fingerprint verbatim (no re-randomization). `folder: \"\"` unfiles the profile; `proxy_id: \"\"` unbinds the proxy; a `proxy` string is stored (deduped) + full-tested, then bound. Returns the updated stored profile."
       parameters:
         - $ref: "#/components/parameters/ProfileId"
       requestBody:
@@ -359,15 +240,7 @@ paths:
     post:
       tags: [ Profiles ]
       summary: Launch a profile (with CDP)
-      description: |
-        Spawns the ShardX browser for the profile with remote-debugging
-        enabled, resolves any `auto` timezone/locale/geo from the bound
-        proxy, and returns the CDP endpoint once Chrome has written its
-        DevToolsActivePort. CDP is enabled **only** on API launches (UI
-        launches stay debugging-free for anti-detect). The call waits up to
-        30 seconds for the endpoint; if it still has none, `cdp` is `null`
-        and `cdp_error` says what happened and where to read the port
-        yourself. Works for both regular and temporary profiles.
+      description: "Spawns the ShardX browser for the profile with remote-debugging enabled, resolves any `auto` timezone/locale/geo from the bound proxy, and returns the CDP endpoint once Chrome has written its DevToolsActivePort. CDP is enabled **only** on API launches (UI launches stay debugging-free for anti-detect). The call waits up to 30 seconds for the endpoint; if it still has none, `cdp` is `null` and `cdp_error` says what happened and where to read the port yourself. Works for both regular and temporary profiles."
       parameters:
         - $ref: "#/components/parameters/ProfileId"
       requestBody:
@@ -399,8 +272,7 @@ paths:
                   cdp_error:
                     type: string
                     nullable: true
-                    description: >
-                      Why `cdp` is null, when it is. Absent otherwise.
+                    description: "Why `cdp` is null, when it is. Absent otherwise."
         "401": { $ref: "#/components/responses/Unauthorized" }
         "500":
           description: Binary not configured / spawn failed.
@@ -412,10 +284,7 @@ paths:
     post:
       tags: [ Profiles ]
       summary: Stop a profile
-      description: |
-        Sends the browser a graceful shutdown (SIGTERM on Unix; 5s grace
-        then SIGKILL). Temporary profiles are deleted as part of close.
-        `stopped` is `false` if the profile wasn't running.
+      description: "Sends the browser a graceful shutdown (SIGTERM on Unix; 5s grace then SIGKILL). Temporary profiles are deleted as part of close. `stopped` is `false` if the profile wasn't running."
       parameters:
         - $ref: "#/components/parameters/ProfileId"
       responses:
@@ -434,10 +303,7 @@ paths:
     get:
       tags: [ Profiles ]
       summary: Export cookies
-      description: |
-        Reads the profile's Chromium cookie store and returns all cookies
-        **decrypted**. Works whether the profile is running or stopped.
-        Empty array if the profile has never launched.
+      description: "Reads the profile's Chromium cookie store and returns all cookies **decrypted**. Works whether the profile is running or stopped. Empty array if the profile has never launched."
       parameters:
         - $ref: "#/components/parameters/ProfileId"
       responses:
@@ -460,10 +326,7 @@ paths:
     post:
       tags: [ Profiles ]
       summary: Import cookies
-      description: |
-        Writes cookies into the profile's cookie store (re-encrypting to
-        Chromium's v10 scheme). The profile **must be stopped** — a running
-        browser rewrites the store on exit and would clobber the import.
+      description: "Writes cookies into the profile's cookie store (re-encrypting to Chromium's v10 scheme). The profile **must be stopped**; a running browser rewrites the store on exit and would clobber the import."
       parameters:
         - $ref: "#/components/parameters/ProfileId"
       requestBody:
@@ -488,7 +351,7 @@ paths:
                   imported: { type: integer, description: Number of cookies written. }
         "401": { $ref: "#/components/responses/Unauthorized" }
         "409":
-          description: Profile is running — stop it first.
+          description: "Profile is running; stop it first."
           content:
             application/json:
               schema: { $ref: "#/components/schemas/Error" }
@@ -547,9 +410,7 @@ paths:
     delete:
       tags: [ Folders ]
       summary: Delete a folder
-      description: |
-        Deletes the folder tag. With `delete_profiles=true` the profiles in
-        it are deleted too; otherwise they're unfiled (moved to "All").
+      description: "Deletes the folder tag. With `delete_profiles=true` the profiles in it are deleted too; otherwise they're unfiled (moved to \"All\")."
       parameters:
         - name: folder
           in: path
@@ -577,9 +438,7 @@ paths:
     post:
       tags: [ Folders ]
       summary: Create a profile in a folder
-      description: |
-        Same as `POST /profiles`, but the folder comes from the path
-        (overriding any `folder` in the body).
+      description: "Same as `POST /profiles`, but the folder comes from the path (overriding any `folder` in the body)."
       parameters:
         - name: folder
           in: path
@@ -650,9 +509,7 @@ paths:
     post:
       tags: [ Proxies ]
       summary: Add a proxy
-      description: |
-        Adds a proxy to the store (deduped by endpoint). Pass `proxy` as a
-        string, or explicit `host`/`port` (+ `kind`/`username`/`password`).
+      description: "Adds a proxy to the store (deduped by endpoint). Pass `proxy` as a string, or explicit `host`/`port` (+ `kind`/`username`/`password`)."
       requestBody:
         required: true
         content:
@@ -695,17 +552,11 @@ paths:
   /extensions:
     get:
       tags: [ Extensions ]
-      summary: List the extension library
-      description: |
-        Extensions available to profiles. The `id` of each is what
-        `POST /profiles` and `PATCH /profiles/{id}` take in `extensions`.
-
-        Icons are omitted here: a data URL runs to hundreds of kilobytes and a
-        listing of thirty would be mostly base64. `POST /extensions` returns
-        the icon for the one it just added.
+      summary: "List extensions"
+      description: "Returns extensions available to profiles. Use an extension `id` in the `extensions` field of `POST /profiles` or `PATCH /profiles/{id}`. Icons are omitted because data URLs can be large. `POST /extensions` includes the icon of the added extension."
       responses:
         "200":
-          description: The library.
+          description: "Extension list."
           content:
             application/json:
               schema:
@@ -715,17 +566,7 @@ paths:
     post:
       tags: [ Extensions ]
       summary: Add an extension
-      description: |
-        Give either `url` or `path`.
-
-        `url` takes a Chrome Web Store page, a bare 32-character extension id,
-        or a direct link to a `.crx` / `.zip`; the launcher resolves the store
-        page to the download itself. `path` takes a local `.crx`, `.zip`, or an
-        unpacked folder on the machine running the launcher.
-
-        Name, version, description and icon come out of the extension's own
-        `manifest.json` — including `__MSG_*__` placeholders, resolved against
-        its default locale.
+      description: "Provide either `url` or `path`. `url` can be a Chrome Web Store page, a 32-character extension ID, or a direct `.crx` or `.zip` URL. `path` can be a local `.crx`, `.zip`, or unpacked folder on the launcher host. The extension name, version, description, and icon are read from its `manifest.json`, including `__MSG_*__` placeholders resolved with the default locale."
       requestBody:
         required: true
         content:
@@ -733,7 +574,7 @@ paths:
             schema: { $ref: "#/components/schemas/AddExtensionRequest" }
       responses:
         "200":
-          description: Added; `icon` is populated on this response.
+          description: "Extension added. The response includes `icon`."
           content:
             application/json:
               schema: { $ref: "#/components/schemas/Extension" }
@@ -748,10 +589,7 @@ paths:
     delete:
       tags: [ Extensions ]
       summary: Remove an extension
-      description: |
-        Profiles hold ids, not copies, so any profile naming this extension
-        stops loading it from its next launch. Their stored list is left as it
-        is — re-adding the extension does not restore the binding.
+      description: "Profiles hold ids, not copies, so any profile naming this extension stops loading it from its next launch. Their stored list is left as it is; re-adding the extension does not restore the binding."
       parameters:
         - name: id
           in: path
@@ -772,7 +610,7 @@ paths:
   /bookmarks:
     get:
       tags: [ Bookmarks ]
-      summary: List folder bookmarks
+      summary: "List bookmarks"
       responses:
         "200":
           description: Every bookmark, across folders.
@@ -784,17 +622,8 @@ paths:
         "401": { $ref: "#/components/responses/Unauthorized" }
     post:
       tags: [ Bookmarks ]
-      summary: Add or update a bookmark
-      description: |
-        With `id` it updates that bookmark; without, it creates one.
-
-        A bookmark bound to a folder appears in the bookmarks bar of every
-        profile in that folder, inside a folder called **ShardX**; `folder: ""`
-        means every profile. Only that folder is managed, so bookmarks the
-        operator saved inside a profile are untouched.
-
-        Applied when a profile next launches — the file is written just before
-        the browser reads it, so a running profile does not see the change.
+      summary: "Create or update a bookmark"
+      description: "With `id`, updates the bookmark; without `id`, creates it. A bookmark assigned to a folder appears in the bookmarks bar of every profile in that folder, inside **ShardX**. `folder: \"\"` applies to every profile. Only this managed folder is changed. The update is applied at the next profile launch; a running profile does not see it."
       requestBody:
         required: true
         content:
@@ -807,7 +636,7 @@ paths:
             application/json:
               schema: { $ref: "#/components/schemas/Bookmark" }
         "400":
-          description: No URL given.
+          description: "`url` is required."
           content:
             application/json:
               schema: { $ref: "#/components/schemas/Error" }
@@ -839,9 +668,7 @@ paths:
     get:
       tags: [ Trash ]
       summary: List deleted profiles
-      description: |
-        Profiles `DELETE /profiles/{id}` archived, newest first, each with the
-        instant it stops being restorable. The sweep runs at launcher startup.
+      description: "Returns profiles archived by `DELETE /profiles/{id}`, newest first, with their restoration expiration time. Expired entries are deleted when the launcher starts."
       responses:
         "200":
           description: The trash.
@@ -856,14 +683,7 @@ paths:
     post:
       tags: [ Trash ]
       summary: Restore a deleted profile
-      description: |
-        Puts the profile back under its **own id**, so a script, a bookmark
-        folder or a proxy binding that referenced it still points at it. The
-        archive is removed once the profile is back.
-
-        What returns is the account — cookies, logins, web data, preferences,
-        history, bookmarks, Local Storage, IndexedDB. Caches were never
-        archived and are rebuilt on the next launch.
+      description: "Restores the profile with its original ID. The archive is deleted after the profile is restored. Cookies, logins, web data, preferences, history, bookmarks, Local Storage, and IndexedDB are restored. Cache data is rebuilt on the next launch."
       parameters:
         - name: id
           in: path
@@ -877,7 +697,7 @@ paths:
               schema: { $ref: "#/components/schemas/ProfileMeta" }
         "401": { $ref: "#/components/responses/Unauthorized" }
         "404":
-          description: Nothing in the trash under that id.
+          description: "No deleted profile with this ID."
           content:
             application/json:
               schema: { $ref: "#/components/schemas/Error" }
@@ -886,7 +706,7 @@ paths:
     delete:
       tags: [ Trash ]
       summary: Delete a trashed profile for good
-      description: Irreversible — the archive is the only remaining copy.
+      description: "Permanently deletes the profile archive. This action cannot be undone."
       parameters:
         - name: id
           in: path
@@ -908,12 +728,10 @@ paths:
     get:
       tags: [ Automation ]
       summary: List automation projects
-      description: |
-        Every project saved in the launcher, with its blocks and run settings.
-        These are the same projects the desktop **Automation** section edits.
+      description: "Every project saved in the launcher, with its blocks and run settings. These are the same projects the desktop **Automation** section edits."
       responses:
         "200":
-          description: The projects.
+          description: "Project list."
           content:
             application/json:
               schema:
@@ -922,7 +740,7 @@ paths:
         "401": { $ref: "#/components/responses/Unauthorized" }
     post:
       tags: [ Automation ]
-      summary: Create an empty project
+      summary: "Create project"
       requestBody:
         required: false
         content:
@@ -930,10 +748,10 @@ paths:
             schema:
               type: object
               properties:
-                name: { type: string, description: "Empty gives \"Untitled\"." }
+                name: { type: string, description: "Uses `Untitled` when empty." }
       responses:
         "200":
-          description: The new project.
+          description: "Created project."
           content:
             application/json:
               schema: { $ref: "#/components/schemas/AutomationProject" }
@@ -942,7 +760,7 @@ paths:
   /automation/projects/{id}:
     get:
       tags: [ Automation ]
-      summary: Get one project
+      summary: "Get project"
       parameters:
         - name: id
           in: path
@@ -950,24 +768,20 @@ paths:
           schema: { type: string, format: uuid }
       responses:
         "200":
-          description: The project.
+          description: "Project details."
           content:
             application/json:
               schema: { $ref: "#/components/schemas/AutomationProject" }
         "401": { $ref: "#/components/responses/Unauthorized" }
         "404":
-          description: No such project.
+          description: "Project not found."
           content:
             application/json:
               schema: { $ref: "#/components/schemas/Error" }
     put:
       tags: [ Automation ]
-      summary: Replace a project
-      description: |
-        Whole-project replace: send it back the way `GET` returned it. The id
-        in the path wins over the one in the body, and an id that does not
-        exist is a `404` rather than a silent create — use `POST
-        /automation/projects` to make one.
+      summary: "Replace project"
+      description: "Replaces the entire project. Send the object returned by `GET`. The path ID takes precedence over the body ID. A missing project returns `404`; use `POST /automation/projects` to create one."
       parameters:
         - name: id
           in: path
@@ -980,18 +794,18 @@ paths:
             schema: { $ref: "#/components/schemas/AutomationProject" }
       responses:
         "200":
-          description: The saved project.
+          description: "Saved project."
           content:
             application/json:
               schema: { $ref: "#/components/schemas/AutomationProject" }
         "400":
-          description: The body is not a project.
+          description: "Invalid project object."
           content:
             application/json:
               schema: { $ref: "#/components/schemas/Error" }
         "401": { $ref: "#/components/responses/Unauthorized" }
         "404":
-          description: No such project.
+          description: "Project not found."
           content:
             application/json:
               schema: { $ref: "#/components/schemas/Error" }
@@ -1015,7 +829,7 @@ paths:
                   id: { type: string, format: uuid }
         "401": { $ref: "#/components/responses/Unauthorized" }
         "404":
-          description: No such project.
+          description: "Project not found."
           content:
             application/json:
               schema: { $ref: "#/components/schemas/Error" }
@@ -1023,7 +837,7 @@ paths:
   /automation/projects/{id}/duplicate:
     post:
       tags: [ Automation ]
-      summary: Copy a project
+      summary: "Duplicate project"
       parameters:
         - name: id
           in: path
@@ -1031,13 +845,13 @@ paths:
           schema: { type: string, format: uuid }
       responses:
         "200":
-          description: The copy.
+          description: "Duplicated project."
           content:
             application/json:
               schema: { $ref: "#/components/schemas/AutomationProject" }
         "401": { $ref: "#/components/responses/Unauthorized" }
         "404":
-          description: No such project.
+          description: "Project not found."
           content:
             application/json:
               schema: { $ref: "#/components/schemas/Error" }
@@ -1045,11 +859,8 @@ paths:
   /automation/projects/{id}/export:
     get:
       tags: [ Automation ]
-      summary: Export a project as a bundle
-      description: |
-        Parameters the project marked secret are emptied on the way out, so a
-        bundle can be handed on without taking a password with it. The import
-        side asks for them again.
+      summary: "Export project bundle"
+      description: "Parameters the project marked secret are emptied on the way out, so a bundle can be handed on without taking a password with it. The import side asks for them again."
       parameters:
         - name: id
           in: path
@@ -1057,13 +868,13 @@ paths:
           schema: { type: string, format: uuid }
       responses:
         "200":
-          description: The bundle.
+          description: "Export bundle."
           content:
             application/json:
               schema: { $ref: "#/components/schemas/AutomationBundle" }
         "401": { $ref: "#/components/responses/Unauthorized" }
         "404":
-          description: No such project.
+          description: "Project not found."
           content:
             application/json:
               schema: { $ref: "#/components/schemas/Error" }
@@ -1071,7 +882,7 @@ paths:
   /automation/import:
     post:
       tags: [ Automation ]
-      summary: Import a project bundle
+      summary: "Import project bundle"
       description: The bundle arrives as a new project with a new id.
       requestBody:
         required: true
@@ -1080,12 +891,12 @@ paths:
             schema: { $ref: "#/components/schemas/AutomationBundle" }
       responses:
         "200":
-          description: The imported project.
+          description: "Imported project."
           content:
             application/json:
               schema: { $ref: "#/components/schemas/AutomationProject" }
         "400":
-          description: Not a bundle, or a version this build does not read.
+          description: "Invalid bundle or unsupported format version."
           content:
             application/json:
               schema: { $ref: "#/components/schemas/Error" }
@@ -1094,12 +905,8 @@ paths:
   /automation/projects/{id}/run:
     post:
       tags: [ Automation ]
-      summary: Start a project
-      description: |
-        Answers as soon as the run is under way — the browsers it needs are
-        started by the project's own blocks. Poll `/status` for progress.
-
-        A project already running is a `400`; so is one with no enabled steps.
+      summary: "Start project"
+      description: "Starts the project and returns immediately. Project blocks start the required browsers. Use `/status` to monitor progress. Returns `400` if the project is already running or has no enabled steps."
       parameters:
         - name: id
           in: path
@@ -1107,7 +914,7 @@ paths:
           schema: { type: string, format: uuid }
       responses:
         "200":
-          description: Started.
+          description: "Project started."
           content:
             application/json:
               schema:
@@ -1116,18 +923,18 @@ paths:
                   project_id: { type: string, format: uuid }
                   running: { type: boolean, example: true }
         "400":
-          description: Already running, or nothing to run.
+          description: "Project is already running or has no enabled steps."
           content:
             application/json:
               schema: { $ref: "#/components/schemas/Error" }
         "401": { $ref: "#/components/responses/Unauthorized" }
         "404":
-          description: No such project.
+          description: "Project not found."
           content:
             application/json:
               schema: { $ref: "#/components/schemas/Error" }
         "501":
-          description: This launcher was built without automation.
+          description: "This build does not support automation."
           content:
             application/json:
               schema: { $ref: "#/components/schemas/Error" }
@@ -1135,11 +942,8 @@ paths:
   /automation/projects/{id}/stop:
     post:
       tags: [ Automation ]
-      summary: Stop a project
-      description: |
-        Asks the run to stop. Each browser finishes the step it is in and then
-        closes, so the run does not disappear the instant this answers — watch
-        `running` on `/status`.
+      summary: "Stop project"
+      description: "Requests that the run stop. Each browser finishes its current step before closing. Use `/status` to monitor the `running` field."
       parameters:
         - name: id
           in: path
@@ -1147,7 +951,7 @@ paths:
           schema: { type: string, format: uuid }
       responses:
         "200":
-          description: Stopping.
+          description: "Stop requested."
           content:
             application/json:
               schema:
@@ -1157,7 +961,7 @@ paths:
                   stopping: { type: boolean, example: true }
         "401": { $ref: "#/components/responses/Unauthorized" }
         "501":
-          description: This launcher was built without automation.
+          description: "This build does not support automation."
           content:
             application/json:
               schema: { $ref: "#/components/schemas/Error" }
@@ -1165,11 +969,8 @@ paths:
   /automation/projects/{id}/status:
     get:
       tags: [ Automation ]
-      summary: How a run is going
-      description: |
-        `null` when the project is not running and has not run since the
-        launcher started. The log is the tail the fleet window shows; the whole
-        thing is on disk under `automation-runs/`.
+      summary: "Get project run status"
+      description: "Returns `null` if the project is not running and has not run since launcher startup. `log` contains the recent entries shown in the fleet window. The full log is stored under `automation-runs/`."
       parameters:
         - name: id
           in: path
@@ -1177,7 +978,7 @@ paths:
           schema: { type: string, format: uuid }
       responses:
         "200":
-          description: The run state, or null.
+          description: "Run status or `null`."
           content:
             application/json:
               schema:
@@ -1186,7 +987,7 @@ paths:
                   - type: "null"
         "401": { $ref: "#/components/responses/Unauthorized" }
         "501":
-          description: This launcher was built without automation.
+          description: "This build does not support automation."
           content:
             application/json:
               schema: { $ref: "#/components/schemas/Error" }
@@ -1194,10 +995,10 @@ paths:
   /automation/runs:
     get:
       tags: [ Automation ]
-      summary: Every run going right now
+      summary: "List active runs"
       responses:
         "200":
-          description: The runs.
+          description: "Active run list."
           content:
             application/json:
               schema:
@@ -1205,7 +1006,7 @@ paths:
                 items: { $ref: "#/components/schemas/AutomationRun" }
         "401": { $ref: "#/components/responses/Unauthorized" }
         "501":
-          description: This launcher was built without automation.
+          description: "This build does not support automation."
           content:
             application/json:
               schema: { $ref: "#/components/schemas/Error" }
@@ -1214,13 +1015,10 @@ paths:
     get:
       tags: [ Automation ]
       summary: List installed modules
-      description: |
-        Modules are WebAssembly an operator wrote themselves; each contributes
-        blocks under the kind `module:<module id>:<block>`. A module never
-        touches the page — it answers with actions the runner performs.
+      description: "Returns WebAssembly modules installed by the operator. Each module adds blocks with the kind `module:<module id>:<block>`. Modules return actions for the runner and do not access the page directly."
       responses:
         "200":
-          description: The modules.
+          description: "Module list."
           content:
             application/json:
               schema:
@@ -1228,16 +1026,14 @@ paths:
                 items: { $ref: "#/components/schemas/AutomationModule" }
         "401": { $ref: "#/components/responses/Unauthorized" }
         "501":
-          description: This launcher was built without automation.
+          description: "This build does not support automation."
           content:
             application/json:
               schema: { $ref: "#/components/schemas/Error" }
     post:
       tags: [ Automation ]
-      summary: Install a module
-      description: |
-        `path` is a `.wasm` file **on this machine** — the API is local, and a
-        module is native code the operator built themselves.
+      summary: "Install module"
+      description: "`path` must point to a local `.wasm` file on the launcher host. Modules contain native code created by the operator."
       requestBody:
         required: true
         content:
@@ -1254,13 +1050,13 @@ paths:
             application/json:
               schema: { $ref: "#/components/schemas/AutomationModule" }
         "400":
-          description: No path, or the file is not a module this build can load.
+          description: "Missing path or unsupported module file."
           content:
             application/json:
               schema: { $ref: "#/components/schemas/Error" }
         "401": { $ref: "#/components/responses/Unauthorized" }
         "501":
-          description: This launcher was built without automation.
+          description: "This build does not support automation."
           content:
             application/json:
               schema: { $ref: "#/components/schemas/Error" }
@@ -1268,8 +1064,8 @@ paths:
   /automation/modules/{id}:
     delete:
       tags: [ Automation ]
-      summary: Remove a module
-      description: Projects using its blocks stop working; nothing rewrites them.
+      summary: "Remove module"
+      description: "Projects that use the module stop working. Existing project definitions are not modified."
       parameters:
         - name: id
           in: path
@@ -1287,12 +1083,12 @@ paths:
                   id: { type: string }
         "401": { $ref: "#/components/responses/Unauthorized" }
         "404":
-          description: No such module.
+          description: "Module not found."
           content:
             application/json:
               schema: { $ref: "#/components/schemas/Error" }
         "501":
-          description: This launcher was built without automation.
+          description: "This build does not support automation."
           content:
             application/json:
               schema: { $ref: "#/components/schemas/Error" }
@@ -1332,10 +1128,7 @@ components:
 
     Fingerprint:
       type: object
-      description: |
-        Native FingerprintConfig. Documented sub-objects are the common
-        ones; the object is open and stored verbatim by the create
-        endpoints, so any field present here is round-tripped.
+      description: "Native FingerprintConfig. Documented sub-objects are the common ones; the object is open and stored verbatim by the create endpoints, so any field present here is round-tripped."
       additionalProperties: true
       properties:
         name: { type: string }
@@ -1369,8 +1162,7 @@ components:
               minimum: 24
               maximum: 480
               example: 60
-              description: >
-                How often the claimed display refreshes. Absent means 60. See the refresh_rate field on the create/edit requests.
+              description: "How often the claimed display refreshes. Absent means 60. See the refresh_rate field on the create/edit requests."
         client_hints:
           type: object
           description: Sec-CH-UA family (browser.vision calls this `hints`).
@@ -1409,9 +1201,7 @@ components:
 
     NoisePrefs:
       type: object
-      description: |
-        Per-vector anti-fingerprint noise. Each block is `{enabled, seed}`
-        (+ feature-specific knobs). `enabled:false` = pass-through.
+      description: "Per-vector anti-fingerprint noise. Each block is `{enabled, seed}` (+ feature-specific knobs). `enabled:false` = pass-through."
       properties:
         canvas: { $ref: "#/components/schemas/NoiseBlock" }
         webgl:
@@ -1429,10 +1219,7 @@ components:
         sensors: { $ref: "#/components/schemas/NoiseBlock" }
         fonts:
           allOf: [ { $ref: "#/components/schemas/NoiseBlock" } ]
-          description: |
-            `enabled:true` hides a small deterministic per-profile subset of
-            non-essential fonts (real host fonts otherwise pass through).
-
+          description: "`enabled:true` hides a small deterministic per-profile subset of non-essential fonts (real host fonts otherwise pass through)."
     NoiseBlock:
       type: object
       properties:
@@ -1452,52 +1239,32 @@ components:
           description: Bind a proxy already in the store (by id).
         proxy:
           type: string
-          description: |
-            Attach a proxy by string (`host:port:user:pass` or
-            `scheme://user:pass@host:port`). On a **persistent** profile it is
-            added to the proxy store (deduped by endpoint) and full-tested
-            (UDP + geo), then bound by id — so it appears in the proxy list
-            and QUIC/WebRTC gating has a cached result. On a **temporary**
-            profile it is attached inline (not stored). Ignored if `proxy_id`
-            is set.
+          description: "Attach a proxy by string (`host:port:user:pass` or `scheme://user:pass@host:port`). On a **persistent** profile it is added to the proxy store (deduped by endpoint) and full-tested (UDP + geo), then bound by id; so it appears in the proxy list and QUIC/WebRTC gating has a cached result. On a **temporary** profile it is attached inline (not stored). Ignored if `proxy_id` is set."
           example: "socks5://user:pass@1.2.3.4:1080"
         folder:
           type: string
           description: Folder tag (ignored on /folders/{folder}/profiles, which wins).
         color:
           type: string
-          description: |
-            Accent for the profile's window icon and for the pill carrying its
-            name in the omnibox. Omit it and the icon derives a colour from the
-            name while the pill keeps the browser's own toolbar colour.
+          description: "Accent for the profile's window icon and for the pill carrying its name in the omnibox. Omit it and the icon derives a colour from the name while the pill keeps the browser's own toolbar colour."
           example: "#2FCB80"
         extensions:
           type: array
           items: { type: string }
-          description: |
-            Extension-library ids (`GET /extensions`), loaded at launch. An id
-            the library does not hold is a 400 rather than a profile that
-            silently starts without it.
+          description: "Extension-library ids (`GET /extensions`), loaded at launch. An id the library does not hold is a 400 rather than a profile that silently starts without it."
         refresh_rate:
           type: integer
           minimum: 24
           maximum: 480
           example: 60
-          description: |
-            Claimed display refresh rate, written into `screen.refresh_rate`.
-            No web API reports it; a page measures it by timing
-            requestAnimationFrame, which is why leaving it out is not neutral —
-            absent means 60, what most machines report, rather than whatever
-            the host's own screen does. Frames can only be slowed, so the
-            effective rate is the closest whole division of the host's panel at
-            or under this.
+          description: "Claimed display refresh rate, written into `screen.refresh_rate`. No web API reports it; a page measures it by timing requestAnimationFrame, which is why leaving it out is not neutral; absent means 60, what most machines report, rather than whatever the host's own screen does. Frames can only be slowed, so the effective rate is the closest whole division of the host's panel at or under this."
         fingerprint:
           allOf: [ { $ref: "#/components/schemas/Fingerprint" } ]
           description: Stored verbatim. Get one from /fingerprint/new and edit as needed.
 
     EditProfileRequest:
       type: object
-      description: All fields optional — only what's present is changed.
+      description: "All fields optional; only what's present is changed."
       properties:
         name: { type: string }
         notes: { type: string }
@@ -1505,7 +1272,7 @@ components:
         proxy_id: { type: string, description: '"" unbinds the proxy.' }
         proxy:
           type: string
-          description: Proxy string — stored (deduped) + full-tested, then bound.
+          description: "Proxy string; stored (deduped) + full-tested, then bound."
         color:
           type: string
           description: '`#rrggbb`; "" goes back to the name-derived colour.'
@@ -1518,14 +1285,7 @@ components:
           minimum: 24
           maximum: 480
           example: 60
-          description: |
-            Claimed display refresh rate, applied AFTER `fingerprint` and written into `screen.refresh_rate`.
-            No web API reports it; a page measures it by timing
-            requestAnimationFrame, which is why leaving it out is not neutral —
-            absent means 60, what most machines report, rather than whatever
-            the host's own screen does. Frames can only be slowed, so the
-            effective rate is the closest whole division of the host's panel at
-            or under this.
+          description: "Claimed display refresh rate, applied AFTER `fingerprint` and written into `screen.refresh_rate`. No web API reports it; a page measures it by timing requestAnimationFrame, which is why leaving it out is not neutral; absent means 60, what most machines report, rather than whatever the host's own screen does. Frames can only be slowed, so the effective rate is the closest whole division of the host's panel at or under this."
         fingerprint:
           allOf: [ { $ref: "#/components/schemas/Fingerprint" } ]
           description: When present, REPLACES the stored fingerprint verbatim.
@@ -1550,31 +1310,10 @@ components:
           minimum: 24
           maximum: 480
           example: 60
-          description: |
-            Claimed display refresh rate, written into `screen.refresh_rate`.
-            No web API reports it; a page measures it by timing
-            requestAnimationFrame, which is why leaving it out is not neutral —
-            absent means 60, what most machines report, rather than whatever
-            the host's own screen does. Frames can only be slowed, so the
-            effective rate is the closest whole division of the host's panel at
-            or under this.
+          description: "Claimed display refresh rate, written into `screen.refresh_rate`. No web API reports it; a page measures it by timing requestAnimationFrame, which is why leaving it out is not neutral; absent means 60, what most machines report, rather than whatever the host's own screen does. Frames can only be slowed, so the effective rate is the closest whole division of the host's panel at or under this."
         noise:
           type: object
-          description: |
-            Per-vector fingerprint noise. Vectors left out keep their default
-            (off). Two forms, mixable in one request:
-
-              * shorthand — `{"canvas": true, "webgl": true}`; turning `webgl`
-                or `client_rects` on this way also gives it the strength the UI
-                uses, since a vector enabled at zero strength does nothing
-              * full block — `{"canvas": {"enabled": true, "seed": 42}}`, the
-                same shape `GET /profiles/{id}` hands back
-
-            Fields are merged into the vector rather than replacing it, so
-            `{"webgl": {"intensity": 0.001}}` leaves `enabled` alone. A `seed`
-            of `0` (or omitted) still means "derive a stable one from the
-            profile id", which is what keeps two temporary profiles from
-            sharing a fingerprint.
+          description: "Per-vector fingerprint noise. Omitted vectors keep their defaults (disabled). Two formats can be combined: shorthand `{\"canvas\": true, \"webgl\": true}`, which also applies the UI default intensity to `webgl` and `client_rects`, and a full object such as `{\"canvas\": {\"enabled\": true, \"seed\": 42}}`, matching the format returned by `GET /profiles/{id}`. Fields are merged with the existing vector settings. A missing or zero `seed` generates a stable value from the profile ID."
           additionalProperties:
             oneOf:
               - type: boolean
@@ -1608,19 +1347,14 @@ components:
         icon:
           type: string
           nullable: true
-          description: |
-            Largest icon the manifest declares, as a `data:` URL. Null on the
-            listing endpoint and on extensions that ship none.
-
+          description: "Largest icon the manifest declares, as a `data:` URL. Null on the listing endpoint and on extensions that ship none."
     AddExtensionRequest:
       type: object
       description: Exactly one of `url` or `path`.
       properties:
         url:
           type: string
-          description: |
-            A Chrome Web Store page, a bare 32-character extension id, or a
-            direct link to a `.crx` / `.zip`.
+          description: "A Chrome Web Store page, a bare 32-character extension id, or a direct link to a `.crx` / `.zip`."
           example: https://chromewebstore.google.com/detail/rabby-wallet/acmacodkjbdgmoleebolmdjonilkdbch
         path:
           type: string
@@ -1645,7 +1379,7 @@ components:
           description: Present updates that bookmark; absent creates one.
         url:
           type: string
-          description: A bare host is fine — `https://` is added.
+          description: "A bare host is fine; `https://` is added."
           example: facebook.com/ads/manager
         title:
           type: string
@@ -1685,9 +1419,7 @@ components:
         color:
           type: string
           nullable: true
-          description: |
-            Icon accent as `#rrggbb`; `null` means it is derived from the name,
-            which is what the browser does when nothing is chosen.
+          description: "Icon accent as `#rrggbb`; `null` means it is derived from the name, which is what the browser does when nothing is chosen."
         extensions:
           type: array
           items: { type: string }
@@ -1706,10 +1438,7 @@ components:
 
     StoredProfile:
       type: object
-      description: |
-        Full on-disk profile: the `_meta` envelope plus the flattened
-        FingerprintConfig (all `Fingerprint` fields appear at the top
-        level). `running`/`cdp` are present only while the profile runs.
+      description: "Full on-disk profile: the `_meta` envelope plus the flattened FingerprintConfig (all `Fingerprint` fields appear at the top level). `running`/`cdp` are present only while the profile runs."
       additionalProperties: true
       properties:
         _meta:
@@ -1727,8 +1456,7 @@ components:
             temporary: { type: boolean }
             rev:
               type: integer
-              description: >
-                Bumped by every write. The desktop editor sends back the number it opened the profile at, so a save that would land on top of a change made through this API is refused rather than silently reverting it. API edits are never refused; they read the profile and write it back in one step.
+              description: "Bumped by every write. The desktop editor sends back the number it opened the profile at, so a save that would land on top of a change made through this API is refused rather than silently reverting it. API edits are never refused; they read the profile and write it back in one step."
         running: { type: boolean }
         cdp:
           nullable: true
@@ -1796,10 +1524,7 @@ components:
 
     Cookie:
       type: object
-      description: |
-        A cookie in a tool-friendly shape (compatible with EditThisCookie /
-        Puppeteer exports — `httpOnly`/`sameSite` are accepted as aliases on
-        import).
+      description: "A cookie in a tool-friendly shape (compatible with EditThisCookie / Puppeteer exports; `httpOnly`/`sameSite` are accepted as aliases on import)."
       required: [ domain, name, value ]
       properties:
         domain:
@@ -1834,15 +1559,11 @@ components:
         notes: { type: string }
 
     AutomationBranch:
-      description: |
-        Where the run goes after a step. A plain string for the simple cases,
-        an object for the ones carrying a value.
+      description: "Where the run goes after a step. A plain string for the simple cases, an object for the ones carrying a value."
       oneOf:
         - type: string
           enum: [ next, stop, endpass ]
-          description: |
-            `next` — the step below. `stop` — end this profile's whole run.
-            `endpass` — end this pass; the next one starts from the top.
+          description: "`next`; the step below. `stop`; end this profile's whole run. `endpass`; end this pass; the next one starts from the top."
         - type: object
           properties:
             goto: { type: string, description: "Block id to jump to; one that no longer exists behaves as next." }
@@ -1852,29 +1573,12 @@ components:
 
     AutomationBlock:
       type: object
-      description: One step. `kind` and `params` are open — a module can add a kind this build has never heard of.
+      description: "One step. `kind` and `params` are open; a module can add a kind this build has never heard of."
       properties:
         id: { type: string }
         kind:
           type: string
-          description: |
-            A palette kind (`goto`, `click`, `type`, `profile.create`,
-            `var.set`, …) or `module:<module id>:<block>`.
-
-            **On a phone profile** the ordinary steps already become touches —
-            `click` taps, `rightClick` long-presses, `scroll` and `swipe` use a
-            finger — and `hover` is refused, because a phone has no cursor.
-            These are the ones with no desktop twin, and they are refused on a
-            desktop profile for the same reason:
-
-            | kind | params | what it does |
-            | --- | --- | --- |
-            | `touch.tap` | `selector` or `x`+`y`, `tapCount` (1–3), `timeout` | A tap, with the contact drifting the way a fingertip does. |
-            | `touch.longPress` | `selector` or `x`+`y`, `timeout` | Press and hold — the phone's context menu. |
-            | `touch.swipe` | `selector` or `x`+`y`, `dx`, `dy`, `timeout` | A swipe. The browser makes the scroll and the fling out of the touch stream. |
-            | `touch.drag` | `selector`, `to`, `holdMs`, `timeout` | Press, wait for the item to be picked up, carry it, set it down. The wait is what makes it a drag and not a scroll. |
-            | `touch.pinch` | `scale`, `selector` or `x`+`y` | Two fingers, to zoom. Above 1 spreads. |
-            | `screen.rotate` | `angle` (0/90/180/270), `turnMs`, `into` | Turns the handset: the sensors move first, the picture commits at the end. `into` saves the new `screen.orientation.type`. |
+          description: "A built-in palette kind (`goto`, `click`, `type`, `profile.create`, `var.set`, ...) or `module:<module id>:<block>`. On a mobile profile, common actions use touch input: `click` taps, `rightClick` performs a long press, and `scroll` and `swipe` use touch gestures. `hover` is unavailable because mobile devices have no pointer. The following mobile-only steps are rejected on desktop profiles: | kind | params | action | | --- | --- | --- | | `touch.tap` | `selector` or `x`+`y`, `tapCount` (1-3), `timeout` | Tap the target. | | `touch.longPress` | `selector` or `x`+`y`, `timeout` | Press and hold. | | `touch.swipe` | `selector` or `x`+`y`, `dx`, `dy`, `timeout` | Swipe. | | `touch.drag` | `selector`, `to`, `holdMs`, `timeout` | Drag an element. | | `touch.pinch` | `scale`, `selector` or `x`+`y` | Pinch to zoom. Values above 1 zoom out. | | `screen.rotate` | `angle` (0/90/180/270), `turnMs`, `into` | Rotate the device. `into` stores the new `screen.orientation.type`. |"
           example: click
         label: { type: string }
         params:
@@ -1882,13 +1586,13 @@ components:
           additionalProperties: true
           description: The step's own fields, as the palette defines them.
         enabled: { type: boolean, default: true }
-        x: { type: number, description: "Canvas position. Layout only — the run follows the branches." }
+        x: { type: number, description: "Canvas position. Layout only; the run follows the branches." }
         y: { type: number }
         on_done: { $ref: "#/components/schemas/AutomationBranch" }
         on_fail:
           allOf:
             - $ref: "#/components/schemas/AutomationBranch"
-          description: Defaults to `stop` — carrying on after a click that found nothing is how a run types into the wrong page.
+          description: "Defaults to `stop`; carrying on after a click that found nothing is how a run types into the wrong page."
         secrets:
           type: array
           items: { type: string }
@@ -1897,7 +1601,7 @@ components:
     AutomationRunSettings:
       type: object
       properties:
-        threads: { type: integer, default: 1, description: "Browsers running at once; clamped to 1–64." }
+        threads: { type: integer, default: 1, description: "Browsers running at once; clamped to 1-64." }
         loops: { type: integer, default: 1, description: "Passes over the blocks. 0 means run until `hours` is up." }
         hours: { type: number, description: "Only meaningful when `loops` is 0." }
         start: { type: string, description: "Block id to start at; empty means the first." }
@@ -1932,12 +1636,7 @@ components:
           description: Module ids the steps need.
         module_files:
           type: array
-          description: |
-            Those modules' files, carried inside the bundle so an imported
-            project can run where it lands. A module missing from disk at
-            export time is left out here but still named in `modules`. On
-            import, a module already installed under the same id is kept as it
-            is rather than overwritten.
+          description: "Those modules' files, carried inside the bundle so an imported project can run where it lands. A module missing from disk at export time is left out here but still named in `modules`. On import, a module already installed under the same id is kept as it is rather than overwritten."
           items:
             type: object
             properties:
