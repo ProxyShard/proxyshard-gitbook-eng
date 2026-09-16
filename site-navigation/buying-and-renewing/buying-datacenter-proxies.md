@@ -6,35 +6,64 @@ icon: '1'
 
 ## Purchasing proxies
 
-When purchasing [<mark style="color:purple;">Datacenter</mark>](https://dashboard.proxyshard.com/datacenter-proxy) proxies, specify:
+To purchase [datacenter proxies](https://dashboard.proxyshard.com/datacenter-proxy):
 
-* Proxy country
-* Rental cycle (week\month\half-year\year)
-* Number of proxies
-* Auto-renewal toggle (when enabled, funds will be charged automatically every rental cycle; it can be disabled inside the order)
-* Promo code, if available.
+1. Open `Datacenter Proxy`.
+2. Select the proxy country in `Proxy region`.
+3. Select a payment period in `Billing cycle`.
+4. Enter the number of proxies in `Number of proxies`.
+5. Enable `Auto renew` if you want the order to renew automatically.
+6. Enable `Enable p0f settings` if needed.
+7. Enter the number of p0f slots in `Total slots`.
+8. If you have a promo code, enter it in `Promocode` and click `Apply`.
+9. Review the order total and click `Buy now`.
 
-<figure><img src="../../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/datacenter-purchase-form_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/datacenter-purchase-form_white.png" alt="Datacenter proxy purchase form">
+  </picture>
+</figure>
 
-After purchase, the order will open automatically and will be available in the "<mark style="color:purple;">Active Product</mark>" panel or in "[<mark style="color:purple;">My orders</mark>](https://dashboard.proxyshard.com/products)"
+## Paying for the order
 
-<figure><img src="../../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
+After you click `Buy now`, an invoice with the `Unpaid` status opens. Check the `Total amount`, then click `Pay with Wallet`.
+
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/datacenter-invoice-payment_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/datacenter-invoice-payment_white.png" alt="Paying an invoice with the ProxyShard balance">
+  </picture>
+</figure>
+
+After payment, the order appears under `Active products` and in [`My orders`](https://dashboard.proxyshard.com/products). A paid order has the `Active` status.
+
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/datacenter-active-products_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/datacenter-active-products_white.png" alt="Active datacenter proxy orders">
+  </picture>
+</figure>
 
 {% hint style="warning" %}
-The proxies will start working within 1-2 minutes; this time is required for order synchronization
+The proxies will start working within 1-2 minutes while the order is being synchronized.
 {% endhint %}
 
-## Renewing Datacenter proxies&#x20;
+## Renewing datacenter proxies
 
-The product can be renewed automatically or manually\
-\
-With automatic payment, the order will attempt to renew automatically 1-2 hours before expiration. \
-If there are enough funds for renewal, the proxies are renewed automatically. If funds are insufficient, the proxies stop working and will wait for the balance to be topped up for <mark style="color:purple;">three days</mark>.\
-\
-When automatic renewal is disabled, the proxies will wait for manual payment (status <mark style="color:$warning;">On-Hold</mark>). To do this, click ![](<../../.gitbook/assets/image (55).png>) in the order
+You can renew an order automatically or manually.
 
-<figure><img src="../../.gitbook/assets/image (52).png" alt=""><figcaption></figcaption></figure>
+When `Auto renew` is enabled, the system attempts to renew the order 1-2 hours before the paid period ends. If the balance is sufficient, the payment is charged automatically and the proxies continue to work.
+
+If automatic renewal is disabled or the balance is insufficient, the order receives the `On-hold` status. To renew it manually, open the order, click ![](<../../.gitbook/assets/datacenter-renew-button.png>), and pay the new invoice.
+
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/datacenter-order-details_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/datacenter-order-details_white.png" alt="Manual renewal of datacenter proxies">
+  </picture>
+</figure>
 
 {% hint style="danger" %}
-Proxies with the "<mark style="color:$danger;">Cancelled</mark>" status cannot be renewed. This status is assigned three days after the order is not paid.
+An order with the `Canceled` status cannot be renewed. This status is assigned after the order remains unpaid for three days.
 {% endhint %}
