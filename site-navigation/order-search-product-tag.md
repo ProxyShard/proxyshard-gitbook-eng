@@ -2,20 +2,34 @@
 icon: magnifying-glass
 ---
 
-# Order search (Product tag)
+# Finding orders by Product tag
 
-Each order allows you to set a <mark style="color:purple;">Product-Tag</mark>
+You can assign a custom `Product tag` to each order. Tags make it easier to find an order by a recognizable name.
 
-<figure><img src="../.gitbook/assets/image (255).png" alt="" width="506"><figcaption></figcaption></figure>
+1. Open the order and enter a tag in `Product tag`.
+2. Click `Apply`.
 
-An arbitrary name is specified on the left side of the order; in this example, "<mark style="color:$info;">test\_tag1</mark>" is used
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/product-tag-setup_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/product-tag-setup_white.png" alt="Setting a Product tag">
+  </picture>
+</figure>
 
-Then in "<mark style="color:purple;">Active product</mark>" or "<mark style="color:purple;">My order</mark>", you can see how the tag has been applied to the order.
+The assigned tag appears next to the order number under `Active products`.
 
-<figure><img src="../.gitbook/assets/image (256).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/product-tag-active-search_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/product-tag-active-search_white.png" alt="Finding an order under Active products">
+  </picture>
+</figure>
 
-Using the "Search" field ![](<../.gitbook/assets/image (258).png>), you can find orders by tag
+Enter the tag in `Search` and click `Search`. Search is available both on the selected product page and under [`My orders`](https://dashboard.proxyshard.com/products).
 
-<figure><img src="../.gitbook/assets/image (259).png" alt="" width="563"><figcaption></figcaption></figure>
-
-Orders can be searched both on the product page and in the [orders](https://dashboard.proxyshard.com/products) list
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/product-tag-orders-search_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/product-tag-orders-search_white.png" alt="Finding an order by tag under My orders">
+  </picture>
+</figure>

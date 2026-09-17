@@ -2,7 +2,7 @@
 icon: '3'
 ---
 
-# ISP proxy purchase example
+# Purchasing ISP proxies
 
 ## Purchasing proxies
 

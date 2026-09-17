@@ -4,38 +4,76 @@ icon: people-group
 
 # Teamspaces
 
-Teamspaces let you collaborate with other users, share access to proxies, assign roles, and manage orders in one workspace.
+Teams let you share access to proxies and orders, assign permissions, and work in a shared workspace. One account can create up to 10 teams.
 
-## Open Teamspaces
+## Opening Teams
 
-1. Click your profile icon in the lower-left corner of the dashboard.
-2. Select **Settings**, then open the **Teams** tab in the top navigation.
+1. Click the profile icon in the lower-left corner.
+2. Select `Settings`.
+3. Open the `Teams` tab.
 
-<figure><img src="../.gitbook/assets/navigation-to-teams.png" alt="Opening the Teams section"><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/teams-navigation_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/teams-navigation_white.png" alt="Opening the Teams section">
+  </picture>
+</figure>
 
-## Manage teams
+## Creating a team
 
-The **Teams** tab shows both teams you own and teams you belong to. You can create up to 10 teams.
+1. Click `Create team`.
+2. Enter a name in `Team name`.
+3. Click `Create team` in the dialog.
 
-For teams you belong to, use the available buttons to switch the active team or leave it.
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/team-create_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/team-create_white.png" alt="Creating a team">
+  </picture>
+</figure>
 
-<figure><img src="../.gitbook/assets/switch-between-teams.png" alt="Switching between teams"><figcaption></figcaption></figure>
+## Switching between teams
 
-For teams you own, you can manage members and configure team settings.
+Open the account menu in the lower-left corner, select `Team`, then choose the required team. The interface will show the orders and features available to that team.
 
-<figure><img src="../.gitbook/assets/teams-review.png" alt="Team list"><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/team-switch_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/team-switch_white.png" alt="Switching the active team">
+  </picture>
+</figure>
 
-If you own the team, select **Settings** on its card to configure its workspace settings:
+Teams you have joined appear under `Teams you belong to`. The current team has the `Active` status. Click `Leave team` to leave it.
 
-<figure><img src="../.gitbook/assets/teams-settings.png" alt="Team settings"><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/team-membership_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/team-membership_white.png" alt="A team joined by the user">
+  </picture>
+</figure>
 
-## Add members
+## Team settings
 
-1. Open the team and select **Members**.
-2. Click **+ Add member** and enter the user's email address.
+The owner can open `Settings` on the team card, change the `Team name`, enable `Log order views`, or delete the team. Click `Save changes` after changing the settings.
 
-<figure><img src="../.gitbook/assets/members-menu.png" alt="Members menu"><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/team-settings_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/team-settings_white.png" alt="Team settings">
+  </picture>
+</figure>
 
-3. Set the required permissions for the member.
+## Adding members
 
-<figure><img src="../.gitbook/assets/add-new-member.png" alt="Adding a team member"><figcaption></figcaption></figure>
+Open `Members` on a team you own and click `Add member`. Then:
+
+1. Enter an address in `Member email`.
+2. Configure access to orders and the required permissions.
+3. Click `Add member`.
+
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/team-add-member_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/team-add-member_white.png" alt="Adding a member and configuring permissions">
+  </picture>
+</figure>

@@ -5,19 +5,22 @@ icon: coin-vertical
 # Purchasing and renewing proxies
 
 {% hint style="info" %}
-To purchase an order, you must have [funds](../top-up-balance.md) on your balance.
+You need sufficient [funds](../top-up-balance.md) on your balance to pay for an order.
 {% endhint %}
 
-## **Examples of purchasing and managing an order**
+## Purchasing and managing orders
 
-To purchase an order, select any product you are interested in:
+Select the required proxy type from the sidebar:
 
-<figure><img src="../../.gitbook/assets/new_pokupka_zakaza.png" alt=""><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/proxy-product-navigation_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/proxy-product-navigation_white.png" alt="Proxy purchase sections">
+  </picture>
+</figure>
 
-#### [**Example for Datacenter proxy**](buying-datacenter-proxies.md)
+#### [**Purchasing ISP / Datacentre proxies**](buying-datacenter-proxies.md)
 
-#### [**Example for ISP**](buying-isp-proxies.md)
+#### [**Purchasing residential proxies**](buying-residential-proxies.md)
 
-#### [**Example for Residential proxy**](buying-residential-proxies.md)
-
-#### [**Example for Mobile proxy**](buying-mobile-proxies.md)
+#### [**Purchasing mobile proxies**](buying-mobile-proxies.md)

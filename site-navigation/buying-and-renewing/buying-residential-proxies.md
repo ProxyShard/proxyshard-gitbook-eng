@@ -2,30 +2,52 @@
 icon: '2'
 ---
 
-# Residential proxy purchase example
+# Purchasing residential proxies
 
 ## Purchasing proxies
 
-Since <mark style="color:purple;">Residential</mark> proxies are billed in gigabytes, you need to specify the amount of traffic to purchase, as well as a promo code if available
+Choose the plan that fits your use case: `Standard`, `Residential Premium`, or `Unlimited`. See the [comparison table](../../our-products/residential-proxies/) for the differences between the plans.
+
+To place an order:
+
+1. Select a plan under `Residential Proxy`.
+2. For a traffic-based plan, enter the number of gigabytes.
+3. If you have a promo code, enter it in `Promocode` and click `Apply`.
+4. Review the total and click `Buy now`.
 
 {% hint style="info" %}
 Unused traffic does not expire at the end of the month. It remains on the order until it is fully used.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (51).png" alt="" width="537"><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/residential-purchase-form_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/residential-purchase-form_white.png" alt="Purchasing residential proxies">
+  </picture>
+</figure>
 
-After purchase, the proxy setup and generation panel becomes available
+## Paying for the order
 
-<figure><img src="../../.gitbook/assets/image (56).png" alt=""><figcaption></figcaption></figure>
+After you click `Buy now`, an invoice with the `Unpaid` status opens. Check the `Total amount`, then click `Pay with Wallet`.
 
-{% hint style="info" %}
-The order parameter field descriptions are available [here](../../our-products/residential-proxies/#settings-field-description)
-{% endhint %}
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/residential-invoice-payment_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/residential-invoice-payment_white.png" alt="Paying for residential proxies from the balance">
+  </picture>
+</figure>
+
+After payment, the proxy configuration and generation panel opens. See the [residential proxy guide](../../our-products/residential-proxies/#settings-field-description) for descriptions of the order settings.
 
 ## Adding traffic to an order
 
-Traffic can be added using the ![](<../../.gitbook/assets/image (248).png>) button in the right corner of the order
+Open the order and click `Add Traffic` next to the remaining traffic. Select the required amount and pay the new invoice from your balance.
 
-<figure><img src="../../.gitbook/assets/image (249).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/residential-add-traffic_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/residential-add-traffic_white.png" alt="Adding traffic to an order">
+  </picture>
+</figure>
 
-After purchasing additional traffic, the proxies will start working again
+The additional traffic is added to the order after payment. If the proxies stopped because the balance reached zero, they become available again.

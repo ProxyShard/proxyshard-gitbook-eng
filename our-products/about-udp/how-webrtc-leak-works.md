@@ -21,7 +21,12 @@ Key point: **step 3**. Whether the UDP packet travels through the proxy or bypas
 
 <br>
 
-<figure><img src="../../.gitbook/assets/webrtc-leak (1).svg" alt=""><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/webrtc-leak_black.svg" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/webrtc-leak_white.svg" alt="WebRTC behavior through a proxy">
+  </picture>
+</figure>
 
 ### Scenario 1: The proxy carries UDP and the addresses match
 

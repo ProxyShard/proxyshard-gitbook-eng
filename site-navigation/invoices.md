@@ -4,15 +4,20 @@ icon: file-lines
 
 # Invoices
 
-The "<mark style="color:purple;">Invoices</mark>" tab displays purchases, payment time, and payment status.\
-On this page, you can track how funds were spent.
+The `Invoices` section shows the total, date, and status of each invoice. Click `Open` to view an invoice.
 
-Example invoice list:
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/invoice-list_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/invoice-list_white.png" alt="Invoice list">
+  </picture>
+</figure>
 
-<figure><img src="../.gitbook/assets/image (264).png" alt=""><figcaption></figcaption></figure>
+An invoice contains the payer details, payment method, status, and order items. Click `Download invoice PDF` to save it as a PDF.
 
-Invoice example:
-
-<figure><img src="../.gitbook/assets/image (251).png" alt=""><figcaption></figcaption></figure>
-
-Inside an invoice, there is a button for exporting the invoice in PDF format.
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/invoice-details_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/invoice-details_white.png" alt="Invoice details and PDF download">
+  </picture>
+</figure>

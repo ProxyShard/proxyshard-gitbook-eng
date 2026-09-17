@@ -2,13 +2,13 @@
 icon: '1'
 ---
 
-# Datacenter proxy purchase example
+# Purchasing ISP / Datacentre proxies
 
 ## Purchasing proxies
 
-To purchase [datacenter proxies](https://dashboard.proxyshard.com/datacenter-proxy):
+To purchase [datacentre proxies](https://dashboard.proxyshard.com/datacenter-proxy) or [ISP proxies](https://dashboard.proxyshard.com/isp-proxy):
 
-1. Open `Datacenter Proxy`.
+1. Open `Datacenter Proxy` or `ISP Proxy`, depending on the proxy type you need.
 2. Select the proxy country in `Proxy region`.
 3. Select a payment period in `Billing cycle`.
 4. Enter the number of proxies in `Number of proxies`.
@@ -21,7 +21,7 @@ To purchase [datacenter proxies](https://dashboard.proxyshard.com/datacenter-pro
 <figure>
   <picture>
     <source srcset="../../.gitbook/assets/datacenter-purchase-form_black.png" media="(prefers-color-scheme: dark)">
-    <img src="../../.gitbook/assets/datacenter-purchase-form_white.png" alt="Datacenter proxy purchase form">
+    <img src="../../.gitbook/assets/datacenter-purchase-form_white.png" alt="Proxy purchase form">
   </picture>
 </figure>
 
@@ -41,7 +41,7 @@ After payment, the order appears under `Active products` and in [`My orders`](ht
 <figure>
   <picture>
     <source srcset="../../.gitbook/assets/datacenter-active-products_black.png" media="(prefers-color-scheme: dark)">
-    <img src="../../.gitbook/assets/datacenter-active-products_white.png" alt="Active datacenter proxy orders">
+    <img src="../../.gitbook/assets/datacenter-active-products_white.png" alt="Active proxy orders">
   </picture>
 </figure>
 
@@ -49,7 +49,7 @@ After payment, the order appears under `Active products` and in [`My orders`](ht
 The proxies will start working within 1-2 minutes while the order is being synchronized.
 {% endhint %}
 
-## Renewing datacenter proxies
+## Renewing an order
 
 You can renew an order automatically or manually.
 
@@ -60,7 +60,7 @@ If automatic renewal is disabled or the balance is insufficient, the order recei
 <figure>
   <picture>
     <source srcset="../../.gitbook/assets/datacenter-order-details_black.png" media="(prefers-color-scheme: dark)">
-    <img src="../../.gitbook/assets/datacenter-order-details_white.png" alt="Manual renewal of datacenter proxies">
+    <img src="../../.gitbook/assets/datacenter-order-details_white.png" alt="Manual order renewal">
   </picture>
 </figure>
 

@@ -2,42 +2,72 @@
 icon: '4'
 ---
 
-# Mobile proxy purchase example
+# Purchasing mobile proxies
 
 ## Purchasing proxies
 
-When purchasing <mark style="color:purple;">Mobile proxies</mark>, choose the tariff that suits you (you can use the country filter to sort the list) and specify the rental period, as shown in the screenshot below
+To place an order:
 
-<figure><img src="../../.gitbook/assets/image (9) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+1. Open `Mobile Proxy`.
+2. Select a country with `Country filter`.
+3. Choose a rental period on the card of the required carrier.
+4. Click `Buy`.
 
-After purchase, the order will open automatically and will be available in the "<mark style="color:purple;">Active Product</mark>" panel or in "[<mark style="color:purple;">My orders</mark>](https://dashboard.proxyshard.com/products)"
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/mobile-purchase-form_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/mobile-purchase-form_white.png" alt="Purchasing mobile proxies">
+  </picture>
+</figure>
 
-<figure><img src="../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
+## Paying for the order
+
+Review the invoice total and click `Pay with Wallet`.
+
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/mobile-invoice-payment_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/mobile-invoice-payment_white.png" alt="Paying for mobile proxies from the balance">
+  </picture>
+</figure>
+
+After payment, the order appears under `Active products` and in [`My orders`](https://dashboard.proxyshard.com/products). Click `Open` to view its settings.
+
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/mobile-active-products_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/mobile-active-products_white.png" alt="An active mobile proxy order">
+  </picture>
+</figure>
 
 ## Getting started
 
-<figure><img src="../../.gitbook/assets/mobile_order.png" alt=""><figcaption></figcaption></figure>
+To activate the proxy after purchase, copy and open the `Reset URL`, or click `Restart`.
 
-{% hint style="danger" %}
-**To make the proxies start working after purchase, open the **<mark style="color:purple;">**Reset URL**</mark>** link or click the button** ![](<../../.gitbook/assets/image (13) (1).png>)**.**\
-\
-_Also, if there is no activity on the proxies for more than three hours, they are disabled and need to be activated again._
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/mobile-order-restart_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/mobile-order-restart_white.png" alt="Activating mobile proxies">
+  </picture>
+</figure>
+
+{% hint style="warning" %}
+The proxy becomes inactive after three hours without activity. Open the `Reset URL` again or click `Restart` to resume operation.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/mobile_pred.png" alt="" width="492"><figcaption></figcaption></figure>
+See the [mobile proxy guide](../../our-products/mobile-proxies.md) for descriptions of the order settings.
 
-{% hint style="info" %}
-You can read about the settings and field descriptions at this [link](../../our-products/mobile-proxies.md)
-{% endhint %}
+## Renewing the order
 
-## Renewing Mobile proxies
+When `Auto renew` is enabled, the order renews automatically if the balance is sufficient. If automatic renewal is disabled, the order receives the `On-hold` status when the paid period ends. Open the order and click `Renew` to renew it manually.
 
-The product can only be renewed manually.\
-\
-When automatic renewal is disabled, the proxies will wait for manual payment (status <mark style="color:$warning;">On-Hold</mark>). To do this, click ![](<../../.gitbook/assets/image (55).png>) in the order
-
-<figure><img src="../../.gitbook/assets/image (21) (1).png" alt="" width="463"><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/mobile-order-renewal_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/mobile-order-renewal_white.png" alt="Renewing a mobile proxy order">
+  </picture>
+</figure>
 
 {% hint style="danger" %}
-Proxies with the "<mark style="color:$danger;">Cancelled</mark>" status cannot be renewed. This status is assigned three days after the order is not paid.
+An order with the `Canceled` status cannot be renewed. This status is assigned after three days without payment.
 {% endhint %}
