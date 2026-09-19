@@ -10,4 +10,4 @@ If a profile has no native UDP support, a website running a WebRTC check may rec
 
 The correct approach is to keep WebRTC enabled and route its UDP traffic through the proxy. Both the client application and the proxy must support `UDP ASSOCIATE`.
 
-All ProxyShard products support UDP over SOCKS5 connections. Applications with suitable support are listed on the [Software solutions for enabling WebRTC](webrtc-software-solutions.md) page.
+UDP is available across all ProxyShard product lines, with restrictions for certain products, locations and devices. See the current summary on the [About the UDP protocol](README.md#products-with-udp-support) page and compatible applications under [Software solutions for enabling WebRTC](webrtc-software-solutions.md).

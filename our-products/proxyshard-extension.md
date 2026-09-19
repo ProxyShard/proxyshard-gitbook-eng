@@ -17,7 +17,13 @@ icon: puzzle-piece
 * Bypass lists and advanced domain routing
 * Localized into **English, Russian, Ukrainian, and Chinese**
 
-<div align="center"><figure><img src="../.gitbook/assets/ext-promo.png" alt="ProxyShard extension overview" width="283"><figcaption><p>ProxyShard extension overview</p></figcaption></figure></div>
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/extension-overview_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/extension-overview_white.png" alt="ProxyShard extension overview">
+  </picture>
+  <figcaption><p>ProxyShard extension overview</p></figcaption>
+</figure>
 
 ## Installation
 
@@ -33,7 +39,13 @@ The extension is available in the official **Chrome Web Store** and **Firefox Ad
 
 Once installed, open the extensions menu (the puzzle icon next to the address bar) and **pin ProxyShard** for quick access by clicking the pin icon next to the extension's name.
 
-<div align="center"><figure><img src="../.gitbook/assets/ext-pinextension.png" alt="Pinning the extension"><figcaption><p>1) Open the extensions menu 2) Pin ProxyShard</p></figcaption></figure></div>
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/extension-pin_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/extension-pin_white.png" alt="Pinning the extension">
+  </picture>
+  <figcaption><p>1) Open the extensions menu. 2) Pin ProxyShard.</p></figcaption>
+</figure>
 
 {% hint style="danger" %}
 **SOCKS5 limitation in Chromium-based browsers**
@@ -61,30 +73,66 @@ The Mozilla Firefox version of ProxyShard Extension supports SOCKS5 through the 
 3. Copy the connection string with the <mark style="color:purple;">**Copy all**</mark> button.
 4. Open the ProxyShard extension (the pinned icon next to the address bar).
 
-<figure><img src="../.gitbook/assets/ext-resiadd.png" alt="Generating a residential proxy on the dashboard"><figcaption><p>Steps 1-4: configuring and copying the proxy from the dashboard</p></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/extension-residential-copy_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/extension-residential-copy_white.png" alt="Generating a residential proxy on the dashboard">
+  </picture>
+  <figcaption><p>Steps 1-4: configuring and copying the proxy from the dashboard</p></figcaption>
+</figure>
 
 5. In the field at the bottom of the extension, **paste the copied string** in the `ip:port:login:password` format and click <mark style="color:purple;">**Add**</mark>.
 
-<div align="center"><figure><img src="../.gitbook/assets/ext-resiadd2.png" alt="Adding the proxy in the extension" width="332"><figcaption><p>Step 5: pasting the proxy and adding the profile</p></figcaption></figure></div>
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/extension-residential-add_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/extension-residential-add_white.png" alt="Adding the proxy in the extension">
+  </picture>
+  <figcaption><p>Step 5: pasting the proxy and adding the profile</p></figcaption>
+</figure>
 
 6. The profile will appear in the list. Click <mark style="color:purple;">**Test**</mark> to verify it works, and the <mark style="color:purple;">**Play**</mark> button to activate the proxy.
 
-<div align="center"><figure><img src="../.gitbook/assets/ext-resiadd4.png" alt="Activating the proxy in the extension" width="282"><figcaption><p>Step 6: testing and starting the profile</p></figcaption></figure></div>
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/extension-residential-run_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/extension-residential-run_white.png" alt="Activating the proxy in the extension">
+  </picture>
+  <figcaption><p>Step 6: testing and starting the profile</p></figcaption>
+</figure>
 
 ## Setting up Datacenter / ISP proxies
 
 1. Open your <mark style="color:purple;">Datacenter</mark> or <mark style="color:purple;">ISP proxy</mark> order on the dashboard and **copy** the connection string from the <mark style="color:purple;">Proxy List</mark> block.
 2. Open the pinned **ProxyShard** extension.
 
-<figure><img src="../.gitbook/assets/ext-dcispadd.png" alt="Copying the proxy from a DC/ISP order"><figcaption><p>Steps 1-2: copying the proxy from your order and opening the extension</p></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/extension-dcisp-copy_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/extension-dcisp-copy_white.png" alt="Copying the proxy from a DC/ISP order">
+  </picture>
+  <figcaption><p>Steps 1-2: copying the proxy from your order and opening the extension</p></figcaption>
+</figure>
 
 3. In the field at the bottom of the extension, **paste the proxy** (`ip:port:login:password`) and click <mark style="color:purple;">**Add**</mark>.
 
-<div align="center"><figure><img src="../.gitbook/assets/ext-dcispadd2.png" alt="Pasting the proxy into the extension" width="404"><figcaption><p>Step 3: pasting the proxy into the extension</p></figcaption></figure></div>
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/extension-dcisp-add_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/extension-dcisp-add_white.png" alt="Pasting the proxy into the extension">
+  </picture>
+  <figcaption><p>Step 3: pasting the proxy into the extension</p></figcaption>
+</figure>
 
 4. Click <mark style="color:purple;">**Test**</mark> to verify, then activate the profile with the <mark style="color:purple;">**Play**</mark> button.
 
-<div align="center"><figure><img src="../.gitbook/assets/ext-dcispadd3.png" alt="Activating a DC/ISP profile" width="284"><figcaption><p>Step 4: testing and starting the profile</p></figcaption></figure></div>
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/extension-dcisp-run_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/extension-dcisp-run_white.png" alt="Activating a DC/ISP profile">
+  </picture>
+  <figcaption><p>Step 4: testing and starting the profile</p></figcaption>
+</figure>
 
 {% hint style="info" %}
 **For Mobile proxies: IP rotation on a timer or by hotkey**
@@ -96,7 +144,12 @@ When editing a profile, an <mark style="color:purple;">**IP Rotation**</mark> bl
 * **Trigger: Hotkey** - assign a key combination (for example, `Shift+F2`) to rotate the IP on the fly.
 * **Track IP history** - duplicate-detection feature: the extension will notify you if the same IP address repeats during your session.
 
-<img src="../.gitbook/assets/ext-iprotate.png" alt="IP Rotation settings" data-size="original">
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/extension-ip-rotation_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/extension-ip-rotation_white.png" alt="IP Rotation settings">
+  </picture>
+</figure>
 {% endhint %}
 
 ## Adding a profile manually
@@ -114,7 +167,13 @@ If you'd like to create a profile by hand instead of pasting a ready-made string
    * <mark style="color:purple;">**Username**</mark> / <mark style="color:purple;">**Password**</mark> - authentication details
 4. Click <mark style="color:purple;">**Save Profile**</mark>.
 
-<figure><img src="../.gitbook/assets/ext-manual_add.png" alt="Adding a profile manually"><figcaption><p>The full profile creation form</p></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/extension-manual-profile_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/extension-manual-profile_white.png" alt="Adding a profile manually">
+  </picture>
+  <figcaption><p>The full profile creation form</p></figcaption>
+</figure>
 
 {% hint style="success" %}
 **Done!** The ProxyShard extension is fully configured and ready to go. Switch between proxies in one click from any supported browser.

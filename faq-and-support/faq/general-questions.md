@@ -125,7 +125,7 @@ This is a feature of how mobile internet works and **is outside our control**. I
 * <mark style="color:purple;">**TTL**</mark> (Time-To-Live) is the session "lifetime" in seconds. Once TTL expires, the proxy chain is rebuilt and you get a new IP. Range: from 60 to 86400 seconds.
 * <mark style="color:purple;">**Sticky / Random**</mark> is the session mode. <mark style="color:purple;">Sticky</mark> tries to hold the same IP within TTL, <mark style="color:purple;">Random</mark> issues a random IP on every new connection.
 
-Full description of all Residential proxy order parameters: [How to use Residential proxies](../../our-products/residential-proxies/how-to-use-residential-proxies.md).
+Full description of all Residential proxy order parameters: [Residential proxy configuration](../../our-products/residential-proxies/#proxy-configuration).
 
 ***
 

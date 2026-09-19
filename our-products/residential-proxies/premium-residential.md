@@ -8,20 +8,22 @@ icon: crown
 
 {% embed url="https://dashboard.proxyshard.com/en/residential-premium" %}
 
+Step-by-step purchase and payment guide: [Purchasing residential proxies](../../site-navigation/buying-and-renewing/buying-residential-proxies.md).
+
 ## Characteristics
 
 | Parameter                | Value                                |
 | ------------------------ | ------------------------------------ |
 | Pool size                | 3,800,000 - 4,600,000 devices        |
-| UDP support              | ✗                                    |
-| [Device OS filtering (p0f)](README.md#settings-field-description) | ✓ |
+| [UDP support](../about-udp/) | ✓ (except some cities and macOS/iOS devices) |
+| [Device OS filtering](../p0f-spoofing.md) | ✓ |
 | Unlimited plan           | ✗                                    |
 | Billing                  | Per gigabyte (Pay as you go)         |
 | Targeting                | Country / Region / City / Operator   |
 | Price                    | **$3 / GB**                          |
 
 {% hint style="warning" %}
-Premium Residential does not support <mark style="color:purple;">UDP</mark> and has no unlimited plan. If UDP or WebRTC matters for your task, choose [Standard](standard-residential.md) or [Unlimited](unlimited-residential-proxy.md).
+Premium Residential supports <mark style="color:purple;">UDP</mark> in all locations except certain cities and devices running macOS or iOS. An unlimited plan is not available.
 {% endhint %}
 
 ## Available countries
@@ -37,6 +39,6 @@ Premium Residential does not support <mark style="color:purple;">UDP</mark> and 
 - Tasks that require maximum IP diversity
 - Fine geo-targeting: country, region, city, operator
 - Working with strict anti-fraud systems where pool cleanliness matters
-- Scraping and automation without UDP requirements
+- UDP / WebRTC tasks subject to product restrictions
 
 You can review the product restrictions [here](../restrictions.md).

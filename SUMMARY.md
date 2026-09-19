@@ -12,7 +12,6 @@
   * [Premium Residential](our-products/residential-proxies/premium-residential.md)
   * [Standard and Unlimited countries](our-products/residential-proxies/available-countries.md)
   * [Premium countries](our-products/residential-proxies/premium-available-countries.md)
-  * [How to add Residential proxies to an application](our-products/residential-proxies/how-to-use-residential-proxies.md)
 * [Datacenter proxies](our-products/datacenter-proxies.md)
 * [Mobile proxies](our-products/mobile-proxies.md)
 * [ISP proxies](our-products/isp-proxies.md)

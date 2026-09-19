@@ -37,7 +37,7 @@ After you click `Buy now`, an invoice with the `Unpaid` status opens. Check the 
   </picture>
 </figure>
 
-After payment, the proxy configuration and generation panel opens. See the [residential proxy guide](../../our-products/residential-proxies/#settings-field-description) for descriptions of the order settings.
+After payment, the proxy configuration and generation panel opens. See the [residential proxy guide](../../our-products/residential-proxies/#proxy-configuration) for descriptions of the order settings.
 
 ## Adding traffic to an order
 

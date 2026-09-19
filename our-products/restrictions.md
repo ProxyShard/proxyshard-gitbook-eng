@@ -30,15 +30,17 @@ Additional restrictions on Residential proxies:
 
 ***
 
-## UDP on Residential proxies (US)
+## UDP on Residential proxies
 
 {% hint style="danger" %}
-UDP does not work on [Residential proxies](residential-proxies/) (**including Unlimited**) in the **US** location :flag\_us:
+UDP does not work on [Standard Residential](residential-proxies/standard-residential.md) and [Unlimited Residential](residential-proxies/unlimited-residential-proxy.md) in the **US** location :flag\_us:
 {% endhint %}
 
 This is not our restriction. In early 2026, US providers prohibited incoming UDP connections without prior initiation from inside the network. Because of this, UDP Associate on proxies stopped working in this region.
 
-UDP works without issues in all other locations.
+Standard and Unlimited support UDP in other locations, subject to the general port restrictions.
+
+[Premium Residential](residential-proxies/premium-residential.md) supports UDP in all locations except certain cities and devices running macOS or iOS.
 
 ***
 

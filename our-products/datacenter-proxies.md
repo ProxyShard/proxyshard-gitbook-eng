@@ -4,11 +4,13 @@ icon: server
 
 # Datacenter proxies
 
-<mark style="color:purple;">Datacenter proxies</mark> are proxies for high-load scenarios and tasks. They are usually hosted in data centers and provide the highest speed and stability.
+<mark style="color:purple;">Datacenter proxies</mark> are designed for high-load tasks. They are hosted in data centers and provide high speed and stable connections.
 
 <mark style="color:purple;">Datacenter proxies</mark>, like <mark style="color:purple;">ISP</mark> proxies, are issued to one user only: no sharing, meaning no more than one user per address and no hidden sharing. The addresses are <mark style="color:purple;">IPv4</mark> and also support <mark style="color:purple;">UDP</mark>.
 
 {% embed url="https://dashboard.proxyshard.com/en/datacenter-proxy" %}
+
+Step-by-step purchase and payment guide: [Purchasing ISP / Datacentre proxies](../site-navigation/buying-and-renewing/buying-datacenter-proxies.md).
 
 ## Characteristics
 
@@ -17,8 +19,8 @@ icon: server
 | IP type        | IPv4                                                                      |
 | Sharing        | No - one IP per user                                                      |
 | Connection limit | 2,500 per IP                                                            |
-| UDP support    | ✓                                                                         |
-| p0f support    | ✓ (with monthly rental, +$0.3 / IP)                                       |
+| [UDP support](about-udp/) | ✓                                                                 |
+| [p0f support](p0f-spoofing.md) | ✓ (with monthly rental, +$0.3 / IP)                          |
 | Price          | **$0.3** / 3 days · **$0.4** / week · **$0.7** / half-month · **$1.2** / month |
 
 ## Available locations
@@ -32,51 +34,54 @@ icon: server
 * 🇺🇦 Ukraine
 * 🇪🇸 Spain
 
-## **How do they work?**
+## How to purchase
 
-Inside the order, you can find several important items and options. Let's review them:
+1. Open `Datacenter Proxy`.
+2. Select a country in `Proxy region`.
+3. Select the rental period in `Billing cycle`.
+4. Enter the quantity in `Number of proxies`.
+5. Enable `Auto renew` if you want the order to renew automatically.
+6. Enable `Enable p0f settings` if required.
+7. In `Total slots`, enter how many proxies should use p0f spoofing.
+8. If you have a promo code, enter it in `Promocode` and click `Apply`.
+9. Review the total and click `Buy now`.
 
-You can purchase them on the [Datacenter proxy](https://dashboard.proxyshard.com/en/datacenter-proxy) page. There, you need to specify the <mark style="color:purple;">Country</mark>, <mark style="color:purple;">Rental period</mark>, and <mark style="color:purple;">Quantity</mark>. If needed, you can enable <mark style="color:purple;">Auto renew</mark> for automatic renewal.
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/datacenter-purchase-form_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/datacenter-purchase-form_white.png" alt="Purchasing Datacenter proxies">
+  </picture>
+</figure>
 
-<figure><img src="../.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
+Payment and renewal are covered in [Purchasing ISP / Datacentre proxies](../site-navigation/buying-and-renewing/buying-datacenter-proxies.md).
 
 {% hint style="info" %}
-After purchase, proxies start working within 1-2 minutes because the database needs to synchronize with the proxy server.
+After payment, allow 1-2 minutes for the order to synchronize and the proxies to start working.
 {% endhint %}
 
-## Order field description
+## Order fields
 
-Let's review the <mark style="color:purple;">Order</mark> fields:
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/datacenter-order-details_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/datacenter-order-details_white.png" alt="Datacenter proxy order fields">
+  </picture>
+</figure>
 
-<figure><img src="../.gitbook/assets/image (67).png" alt=""><figcaption></figcaption></figure>
-
-<mark style="color:purple;">User ID</mark> - This User ID is used for internal order identification. Sometimes we request it when you contact technical support.
-
-<mark style="color:purple;">Status</mark> - Order status. Possible statuses:
-
-* <mark style="color:green;">**Active**</mark> - Active order
-* <mark style="color:orange;">**On-Hold**</mark> - Waiting for payment after the rental period expires
-* <mark style="color:red;">**Cancelled**</mark> - Cancelled order
+* `Status` shows the order state: `Active`, `On-hold`, or `Canceled`.
+* `Product tag` adds a label that you can use to find the order in product lists.
+* `User ID` identifies the order internally and may be requested by support.
+* `Proxy Region` shows the selected country.
+* `p0f slots` shows the active p0f slots and the change scheduled for the next billing period.
+* `Username` and `Password` contain the credentials. `Regenerate` creates a new password, so existing proxy strings stop working.
+* `Billing cycle`, `Next due date`, `Price`, and `Next charge` show the rental term and the next payment.
+* `Auto-renew proxy` controls automatic renewal. The same settings are available through `Manage renewal`.
+* `p0f` and `Buy p0f slots` open the fingerprint settings and the purchase of additional slots.
+* In `Proxy List`, you can select `HTTP` or `SOCKS5`, change the proxy string format, copy the list with `Copy all`, or download it with `Export All`.
 
 {% hint style="danger" %}
-Orders with the "<mark style="color:$danger;">**Cancelled**</mark>" status **cannot be restored** three days after the rental period ends.
+An order with the `Canceled` status cannot be restored. This status is assigned after three days without payment.
 {% endhint %}
-
-<mark style="color:purple;">Price</mark> - Product price per month
-
-<mark style="color:purple;">Username</mark> - Proxy login
-
-<mark style="color:purple;">Password</mark> - Proxy password
-
-<mark style="color:purple;">Next Due Date</mark> - Next charge date
-
-<mark style="color:purple;">Copy proxy</mark> - Button for copying proxies to the clipboard
-
-<mark style="color:purple;">HTTP/SOCKS</mark> - Proxy protocol type selection
-
-<mark style="color:purple;">Re-generate</mark> - Change the proxy password
-
-<mark style="color:purple;">Auto renew</mark> - Toggle for enabling/disabling monthly product renewal <mark style="color:purple;">(funds are charged from the account balance on the date specified at purchase)</mark>
 
 ## What tasks they fit
 
@@ -103,5 +108,5 @@ These restrictions are bypassed with [ISP proxies](isp-proxies.md).
 {% endhint %}
 
 {% hint style="info" %}
-You can learn how to configure proxies in our [Setup guide](../setup-guides/getting-started.md) section.
+See the [setup guides](../setup-guides/getting-started.md) for proxy configuration instructions.
 {% endhint %}

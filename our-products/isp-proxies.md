@@ -8,11 +8,13 @@ icon: fire
 
 <mark style="color:purple;">ISP proxies</mark> combine the benefits of both <mark style="color:purple;">Residential</mark> proxies and <mark style="color:purple;">Datacenter</mark> proxies. They are as stable and static as <mark style="color:purple;">Datacenter</mark> proxies, but they use IP addresses registered to home internet providers, like <mark style="color:purple;">Residential</mark> proxies.
 
-This makes them one of the best options for working with Tier-1 sites and services that are sensitive to the <mark style="color:purple;">IP</mark> type. And with <mark style="color:purple;">UDP</mark> support they become practically undetectable.\
-\
-A recent update for <mark style="color:purple;">ISP</mark> proxies added the ability to switch the fingerprint (<mark style="color:purple;">p0f</mark>).
+This makes them a good option for Tier-1 sites and services that are sensitive to the <mark style="color:purple;">IP</mark> type. <mark style="color:purple;">UDP</mark> support also makes them suitable for WebRTC and other UDP-based workflows.
+
+ISP proxies support <mark style="color:purple;">p0f</mark> network fingerprint spoofing.
 
 {% embed url="https://dashboard.proxyshard.com/en/isp-proxy" %}
+
+Step-by-step purchase and payment guide: [Purchasing ISP / Datacentre proxies](../site-navigation/buying-and-renewing/buying-datacenter-proxies.md).
 
 ## Characteristics
 
@@ -21,8 +23,8 @@ A recent update for <mark style="color:purple;">ISP</mark> proxies added the abi
 | IP type        | IPv4 (home ISP)                    |
 | Sharing        | No - one IP per user               |
 | Connection limit | 2,500 per IP                     |
-| UDP support    | ✓                                  |
-| p0f support    | ✓ (+$0.6 / IP per month)           |
+| [UDP support](about-udp/) | ✓                          |
+| [p0f support](p0f-spoofing.md) | ✓ (+$0.6 / IP per month) |
 | Price          | **$2** / IP per month              |
 
 ## Available locations
@@ -38,49 +40,53 @@ A recent update for <mark style="color:purple;">ISP</mark> proxies added the abi
 The list of locations is constantly expanding.
 {% endhint %}
 
-## **How do they work?**
+## How to purchase
 
-Inside the order, you can find several important items and options. Let's review them:
+1. Open `ISP Proxy`.
+2. Select a country in `Proxy region`.
+3. Enter the quantity in `Number of proxies`.
+4. Enable `Auto renew` if you want the order to renew automatically.
+5. Enable `Enable p0f settings` if required.
+6. In `Total slots`, enter how many proxies should use p0f spoofing.
+7. If you have a promo code, enter it in `Promocode` and click `Apply`.
+8. Review the total and click `Buy now`.
 
-You can purchase them on the [ISP proxy](https://dashboard.proxyshard.com/en/isp-proxy) page. There, you need to specify the <mark style="color:purple;">Country</mark>, <mark style="color:purple;">Rental period</mark>, and <mark style="color:purple;">Quantity</mark>. If needed, you can enable <mark style="color:purple;">Auto renew</mark> for automatic renewal.
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/isp-purchase-form_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/isp-purchase-form_white.png" alt="Purchasing ISP proxies">
+  </picture>
+</figure>
 
-<figure><img src="../.gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure>
+Payment and renewal are covered in [Purchasing ISP / Datacentre proxies](../site-navigation/buying-and-renewing/buying-datacenter-proxies.md).
 
 {% hint style="info" %}
-After purchase, proxies start working within 1-2 minutes because the database needs to synchronize with the proxy server.
+After payment, allow 1-2 minutes for the order to synchronize and the proxies to start working.
 {% endhint %}
 
-## Order field description
+## Order fields
 
-Let's review the <mark style="color:purple;">Order</mark> fields:
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/isp-order-details_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/isp-order-details_white.png" alt="ISP proxy order fields">
+  </picture>
+</figure>
 
-<mark style="color:purple;">User ID</mark> - This User ID is used for internal order identification. Sometimes we request it when you contact technical support.
-
-<mark style="color:purple;">Status</mark> - Order status. Possible statuses:
-
-* <mark style="color:green;">**Active**</mark> - Active order
-* <mark style="color:orange;">**On-Hold**</mark> - Waiting for payment after the rental period expires
-* <mark style="color:red;">**Cancelled**</mark> - Cancelled order
+* `Status` shows the order state: `Active`, `On-hold`, or `Canceled`.
+* `Product tag` adds a label that you can use to find the order in product lists.
+* `User ID` identifies the order internally and may be requested by support.
+* `Proxy Region` shows the selected country.
+* `p0f slots` shows the active p0f slots and the change scheduled for the next billing period.
+* `Username` and `Password` contain the credentials. `Regenerate` creates a new password, so existing proxy strings stop working.
+* `Billing cycle`, `Next due date`, `Price`, and `Next charge` show the rental term and the next payment.
+* `Auto-renew proxy` controls automatic renewal. The same settings are available through `Manage renewal`.
+* `p0f` and `Buy p0f slots` open the fingerprint settings and the purchase of additional slots.
+* In `Proxy List`, you can select `HTTP` or `SOCKS5`, change the proxy string format, copy the list with `Copy all`, or download it with `Export All`.
 
 {% hint style="danger" %}
-Orders with the "<mark style="color:$danger;">**Cancelled**</mark>" status **cannot be restored** three days after the rental period ends.
+An order with the `Canceled` status cannot be restored. This status is assigned after three days without payment.
 {% endhint %}
-
-<mark style="color:purple;">Price</mark> - Product price per month
-
-<mark style="color:purple;">Username</mark> - Proxy login
-
-<mark style="color:purple;">Password</mark> - Proxy password
-
-<mark style="color:purple;">Next Due Date</mark> - Next charge date
-
-<mark style="color:purple;">Copy proxy</mark> - Button for copying proxies to the clipboard
-
-<mark style="color:purple;">HTTP/SOCKS</mark> - Proxy protocol type selection
-
-<mark style="color:purple;">Re-generate</mark> - Change the proxy password
-
-<mark style="color:purple;">Auto renew</mark> - Toggle for enabling/disabling monthly product renewal <mark style="color:purple;">(funds are charged from the account balance on the date specified at purchase)</mark>
 
 ## What tasks they fit
 
@@ -102,5 +108,5 @@ Any crypto exchanges, Polymarket, stable web scraping sessions, SEO monitoring, 
 * **Number of available locations** - integration with real providers is extremely complex, but we keep expanding the list
 
 {% hint style="info" %}
-You can learn how to configure proxies in our [Setup guide](../setup-guides/getting-started.md) section.
+See the [setup guides](../setup-guides/getting-started.md) for proxy configuration instructions.
 {% endhint %}

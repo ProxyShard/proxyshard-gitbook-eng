@@ -32,13 +32,13 @@ Available spoofing options:
 | **iOS**        | iOS fingerprint             |
 | **Android**    | Android fingerprint         |
 
-### ISP proxy dashboard with p0f support
+### ISP and Datacenter proxy dashboard with p0f support
 
-<figure><img src="../.gitbook/assets/p0f-dashboard.png" alt=""><figcaption><p>p0f tab in ISP proxy settings</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/p0f-dashboard.png" alt=""><figcaption><p>p0f tab in ISP and Datacenter proxy settings</p></figcaption></figure>
 
 ### Fingerprint selection panel
 
-Below is a screenshot of an example p0f setup from an ISP proxy order.
+The screenshot shows an ISP proxy order. The same p0f settings panel is available for Datacenter orders.
 
 <figure><img src="../.gitbook/assets/p0f-panel.png" alt=""><figcaption><p>OS selection for network fingerprint spoofing</p></figcaption></figure>
 
@@ -72,7 +72,7 @@ p0f spoofing and device filtering are available on the following products:
 * [Datacenter proxies](datacenter-proxies.md)
 * [ISP proxies](isp-proxies.md)
 * [Mobile proxies](mobile-proxies.md)
-* [Premium Residential](residential-proxies/premium-residential.md) - device filtering through the [Device OS](residential-proxies/#settings-field-description) parameter, without p0f spoofing
+* [Premium Residential](residential-proxies/premium-residential.md) - device filtering through the [Device OS](residential-proxies/#proxy-configuration) parameter, without p0f spoofing
 
 {% hint style="warning" %}
 p0f spoofing is not available on some [Mobile proxies](mobile-proxies.md). See the full list of restrictions on the [Limitations](restrictions.md) page.

@@ -17,6 +17,8 @@ Addresses are issued on real home IPs. A session can change at any moment if the
 
 {% embed url="https://dashboard.proxyshard.com/en/residential-main" %}
 
+Step-by-step purchase and payment guide: [Purchasing residential proxies](../../site-navigation/buying-and-renewing/buying-residential-proxies.md).
+
 ## Plans
 
 | Parameter            | [Standard](standard-residential.md) | [Unlimited](unlimited-residential-proxy.md) | [Premium](premium-residential.md) |
@@ -24,8 +26,8 @@ Addresses are issued on real home IPs. A session can change at any moment if the
 | Pool size            | 300k - 400k                          | 300k - 400k (= Standard)                    | 3.8M - 4.6M                       |
 | Max connections      | 35,000                               | 5,000                                       | -                                 |
 | Max speed            | 75 Mbps                              | 75 Mbps                                     | 75 Mbps                           |
-| [UDP support](../about-udp/) | ✓ (except USA)                       | ✓ (except USA)                              | ✗                                 |
-| [Device OS filtering (p0f)](README.md#settings-field-description) | ✗ | ✗ | ✓ |
+| [UDP support](../about-udp/) | ✓ (except USA; port restrictions apply) | ✓ (except USA; port restrictions apply) | ✓ (except some cities and macOS/iOS devices) |
+| [Device OS filtering](../p0f-spoofing.md) | ✗ | ✗ | ✓ |
 | Unlimited plan       | ✗                                    | ✓                                           | ✗                                 |
 | Billing              | Per GB (Pay as you go)               | Day / Half-month / Month                    | Per GB (Pay as you go)            |
 | Price                | **$2 / GB**                          | **$30** / day · **$399** / half-month · **$699** / month | **$3 / GB**          |
@@ -48,93 +50,92 @@ Addresses are issued on real home IPs. A session can change at any moment if the
 [premium-available-countries.md](premium-available-countries.md)
 {% endcontent-ref %}
 
-## **How to start using them?**
+## How to purchase
 
-The cost of Residential proxies is calculated based on the number of gigabytes purchased for the order. To access country selection and other parameters, you need to [**purchase** ](https://dashboard.proxyshard.com/en/residential-main) an order. To do this, go to the page ![](<../../.gitbook/assets/image (70).png>) and specify the number of gigabytes.<br>
+1. Under `Residential Proxy`, select `Standard`, `Residential Premium`, or `Unlimited`.
+2. For a traffic-based plan, enter the number of gigabytes.
+3. If you have a promo code, enter it in `Promocode` and click `Apply`.
+4. Check the total and click `Buy now`.
 
-<figure><img src="../../.gitbook/assets/image (71).png" alt=""><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/residential-purchase-form_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/residential-purchase-form_white.png" alt="Purchasing residential proxies">
+  </picture>
+</figure>
 
-## Settings field description
+Payment and adding traffic are covered in [Purchasing residential proxies](../../site-navigation/buying-and-renewing/buying-residential-proxies.md).
 
-Inside the order, you can find several important items and options. Let's review them.
+## Proxy configuration
 
-<figure><img src="../../.gitbook/assets/residential-proxy-settings.png" alt="Residential Proxy settings with Device OS and Session mode"><figcaption></figcaption></figure>
+For a basic connection, select `Country` and click `Generate proxy`. Use the other fields only when you need more precise targeting or session control.
 
-<mark style="color:purple;">**Traffic used**</mark> - How much has been used \ How much has been purchased
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/residential-settings_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/residential-settings_white.png" alt="Residential proxy configuration">
+  </picture>
+</figure>
 
-<mark style="color:purple;">**Country**</mark> - Country selection
+1. `Country` selects the country.
+2. `Region` selects a region within the country.
+3. `City` selects the city.
+4. `ISP` filters addresses by provider. This field is available only for [Premium Residential](premium-residential.md).
+5. `Session` controls rotation. `Sticky` keeps one IP for the configured `TTL`, while `Rotate` changes the IP on every request.
+6. `Protocol` selects `HTTP` or `SOCKS5`.
+7. `Relay` changes the connection server. Use it only if you have connection issues.
+8. `TTL` sets the IP lifetime for a `Sticky` session. The minimum value is 60 seconds.
+9. `Device OS` filters the [Premium Residential](premium-residential.md) pool by the operating system of the device.
+10. `Amount` sets the number of connection strings generated at once.
+11. `Session mode` controls Premium Residential sessions. `Default(after 5sec)` switches sessions if a device does not respond for more than five seconds. `Static` waits for the same device to return for the configured `TTL`.
+12. `Generate proxy` creates connection strings with the selected settings.
+13. `Proxy List` displays the generated strings. Use `Format` to change their format and `Copy all` to copy the complete list.
 
-<mark style="color:purple;">**Region**</mark> - Country region selection
-
-<mark style="color:purple;">**City**</mark> - Region city selection
-
-<mark style="color:purple;">**ISP**</mark> - Provider type selection. Available only for [Premium Residential](premium-residential.md).
-
-[**Device OS**](../p0f-spoofing.md) - Filters the [Premium Residential](premium-residential.md) pool by device operating system. Select the required OS to receive proxies from devices with the corresponding OS. Available only for Premium Residential.
+`Presets` stores reusable sets of settings. Configure the fields, click `Save preset`, and select the saved preset the next time you generate proxies.
 
 {% hint style="warning" %}
-This setting significantly reduces the pool of available devices. We recommend using it only when targeting cities with more than one million residents, or when targeting at country or region level.
-{% endhint %}
-
-<mark style="color:purple;">**Session**</mark> - Session type selection. Available options are <mark style="color:purple;">Sticky</mark> and <mark style="color:purple;">Rotate</mark>.
-
-* <mark style="color:purple;">Sticky</mark> allows you to keep one IP address and depends on the selected TTL parameter.
-* <mark style="color:purple;">Rotate</mark> changes the IP on every request. The IP range pool for <mark style="color:purple;">Sticky</mark> is smaller than for <mark style="color:purple;">Rotate</mark>.
-
-<mark style="color:purple;">**Session mode**</mark> - A session management parameter available only for [Premium Residential](premium-residential.md).
-
-* <mark style="color:purple;">Default (5 sec)</mark> changes the session if the device does not respond for more than 5 seconds.
-* <mark style="color:purple;">Static</mark> does not change the session and waits for the device to return to the network for the time specified in TTL. If TTL is not set, the session is fixed for one day.
-
-<mark style="color:purple;">**Protocol**</mark> - HTTP/SOCKS. These are the main protocols for connecting to the proxy server.
-
-<mark style="color:purple;">**TTL**</mark> - Appears when <mark style="color:purple;">Session - Sticky</mark> is selected and controls the IP address lifetime (<mark style="color:purple;">Time to live</mark>). The minimum possible <mark style="color:purple;">TTL</mark> is 60 seconds (1 minute).
-
-<mark style="color:purple;">**Relay**</mark> **-** Set only if there are connection issues.
-
-<mark style="color:purple;">**Username\Password\Host\Port**</mark> - Connection data. It is also generated in the proxy list and supports conditional formatting.
-
-{% hint style="info" %}
-Proxy ports do not affect the final address you receive. They are simply the port number for the remote proxy server and nothing more!
-{% endhint %}
-
-<mark style="color:purple;">**Traffic Statistics**</mark> - Per-minute statistics for used traffic. Display may be delayed by 10-20 minutes.
-
-<figure><img src="../../.gitbook/assets/image (78).png" alt=""><figcaption></figcaption></figure>
-
-At the end of the order, you can find request statistics for your Residential traffic. In rare cases, display delays of up to 20 minutes may occur.
-
-## **Setup guide**
-
-1. Specify the settings: <mark style="color:purple;">Country</mark>, <mark style="color:purple;">Region</mark>, and other parameters if needed.
-
-<figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-2. The <mark style="color:purple;">HTTP</mark> or <mark style="color:purple;">SOCKS5</mark> protocol is set at your discretion <mark style="color:$info;">(as a rule, SOCKS5 is used for UDP)</mark>.
-
-<figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
-
-3. The server (<mark style="color:purple;">Relay</mark>) is specified only if there are connection issues.
-
-<figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-4. Other parameters are set if needed.
-
-<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
-
-5. Click the <img src="../../.gitbook/assets/image (76).png" alt="" data-size="line"> button and copy the proxies from <mark style="color:purple;">Proxy List</mark>.
-
-<figure><img src="../../.gitbook/assets/image (75).png" alt=""><figcaption></figcaption></figure>
-
-Later, if you need another country, specify new settings, click <img src="../../.gitbook/assets/image (76).png" alt="" data-size="line">, and reinstall the new proxies in the application from which the connection is made.
-
-{% hint style="info" %}
-Additional information about connection formatting is available at this [link](how-to-use-residential-proxies.md).
+Combining `Device OS` with city and provider targeting can reduce the available pool considerably. Suitable macOS or iOS devices may not be available in Tier 2 and Tier 3 countries.
 {% endhint %}
 
 {% hint style="warning" %}
-Proxies in "Proxy List" are not saved because this is a dynamic field. You can generate many proxies for different locations: old proxies will not stop working when new proxies are generated.
+With a non-default `Session mode`, a connection string may stop responding when the selected device leaves the network. Generate a new string with `Generate proxy` if this happens.
 {% endhint %}
+
+{% hint style="danger" %}
+`Regenerate password` changes the order password and immediately invalidates every previously generated string. Use it only if the credentials may have been exposed. To track traffic by user, use the `Users` tab.
+{% endhint %}
+
+`Proxy List` is a dynamic field, not storage. Previously generated strings remain valid because the selected parameters are encoded in `Username`. Use `Presets` to save the settings themselves.
+
+## Connection string format
+
+The standard format is:
+
+```text
+host:port:username:password
+```
+
+* `host` specifies the connection server, for example `relay-eu.proxyshard.com`.
+* `port` connects to that server and does not determine the final IP by itself.
+* `username` contains the targeting parameters and the `sid` session identifier.
+* `password` is used for authentication.
+
+You can add the complete string to a browser, application, or another client. Step-by-step examples are available in the [setup guides](../../setup-guides/getting-started.md).
+
+## Statistics
+
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/residential-statistics_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/residential-statistics_white.png" alt="Residential proxy statistics">
+  </picture>
+</figure>
+
+1. Open the `Statistics` tab.
+2. Select the period for `Traffic Statistics`.
+3. Select the period for `Requests Statistics` separately.
+
+New data may take 10-20 minutes to appear. Statistics are retained for one month.
 
 ## What tasks they fit
 
@@ -148,19 +149,19 @@ Social media and multi-accounting, crypto exchanges (Binance, Bybit and others),
 * **IP rotation** - change addresses on demand or by timer (TTL)
 * **Wide geo-targeting** - select country, region, city and operator
 * **Home-origin addresses** - IPs are registered to home ISPs
-* **UDP support** - available on Standard and Unlimited (except the USA location)
+* **UDP support** - available on Standard, Unlimited and Premium subject to product restrictions
 
 #### <mark style="color:red;">Cons:</mark>
 
-* **Possible speed drops** - depends on the internet quality of the end device; this is a specific of the product
+* **Possible speed drops** - performance depends on the end device's internet connection; this is inherent to this proxy type
 * **Dynamic IP** - the address may change at any moment; if you need a static IP, see [ISP](../isp-proxies.md) or [Datacenter](../datacenter-proxies.md)
-* **p0f spoofing is unavailable** - Premium Residential offers only [Device OS filtering](README.md#settings-field-description)
-* **UDP is unavailable in the USA location** on Standard and Unlimited
+* **p0f spoofing is unavailable** - Premium Residential offers only [Device OS filtering](../p0f-spoofing.md)
+* **UDP restrictions** - Standard and Unlimited do not support UDP in the USA; Premium has exceptions for certain cities and macOS/iOS devices. General [port restrictions](../restrictions.md) also apply
 
 {% hint style="success" %}
-No UDP or need a static address? [ISP proxies](../isp-proxies.md) cover both.
+Need a static address with UDP? Choose [ISP proxies](../isp-proxies.md).
 {% endhint %}
 
 {% hint style="info" %}
-You can learn how to configure proxies in our [Setup guide](../../setup-guides/getting-started.md) section.
+See the [setup guides](../../setup-guides/getting-started.md) for proxy configuration instructions.
 {% endhint %}

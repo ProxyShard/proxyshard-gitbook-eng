@@ -8,6 +8,8 @@ icon: house-signal
 
 {% embed url="https://dashboard.proxyshard.com/en/residential-main" %}
 
+Step-by-step purchase and payment guide: [Purchasing residential proxies](../../site-navigation/buying-and-renewing/buying-residential-proxies.md).
+
 ## Characteristics
 
 | Parameter                | Value                          |
@@ -15,8 +17,8 @@ icon: house-signal
 | Pool size                | 300,000 - 400,000 devices      |
 | Max connections          | 35,000                         |
 | Max speed per order      | 75 Mbps                        |
-| UDP support              | ✓ (unavailable in the USA location) |
-| [Device OS filtering (p0f)](README.md#settings-field-description) | ✗ |
+| [UDP support](../about-udp/) | ✓ (except USA; port restrictions apply) |
+| [Device OS filtering](../p0f-spoofing.md) | ✗ |
 | Billing                  | Per gigabyte (Pay as you go)   |
 | Price                    | **$2 / GB**                    |
 

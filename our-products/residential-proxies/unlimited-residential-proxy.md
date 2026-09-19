@@ -8,6 +8,8 @@ icon: triple-chevrons-up
 
 {% embed url="https://dashboard.proxyshard.com/en/residential-unlimited" %}
 
+Step-by-step purchase and payment guide: [Purchasing residential proxies](../../site-navigation/buying-and-renewing/buying-residential-proxies.md).
+
 ## Characteristics
 
 | Parameter                | Value                                       |
@@ -15,8 +17,8 @@ icon: triple-chevrons-up
 | Pool size                | 300,000 - 400,000 devices (= Standard)      |
 | Max connections          | 5,000                                       |
 | Max speed per order      | 75 Mbps                                     |
-| UDP support              | ✓ (unavailable in the USA location)         |
-| [Device OS filtering (p0f)](README.md#settings-field-description) | ✗ |
+| [UDP support](../about-udp/) | ✓ (except USA; port restrictions apply) |
+| [Device OS filtering](../p0f-spoofing.md) | ✗ |
 | Billing                  | Day / Half-month / Month                    |
 | Price                    | **$30** / day · **$199** / week · **$399** / half-month · **$699** / month |
 

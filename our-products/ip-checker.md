@@ -8,7 +8,12 @@ icon: magnifying-glass
 
 {% embed url="https://proxyshard.com/ip-checker" %}
 
-<figure><img src="../.gitbook/assets/ip-checker-overview.png" alt=""><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/ip-checker-overview_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/ip-checker-overview_white.png" alt="IP Checker overview">
+  </picture>
+</figure>
 
 ***
 
@@ -68,7 +73,12 @@ Determines whether your IP belongs to known anonymizing infrastructure: VPN, pro
 
 ## Browser Status Report
 
-<figure><img src="../.gitbook/assets/ip-checker-diagnostics.png" alt=""><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/ip-checker-diagnostics_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/ip-checker-diagnostics_white.png" alt="Detailed IP Checker diagnostics">
+  </picture>
+</figure>
 
 The detailed diagnostics show browser and network analysis results grouped by severity. To view information about a detected issue, click **View troubles** on the corresponding card.
 

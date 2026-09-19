@@ -22,6 +22,8 @@ icon: signal
 
 {% embed url="https://dashboard.proxyshard.com/en/mobile-proxy" %}
 
+Step-by-step purchase and activation guide: [Purchasing mobile proxies](../site-navigation/buying-and-renewing/buying-mobile-proxies.md).
+
 ## Characteristics
 
 | Parameter      | Value                                 |
@@ -29,8 +31,8 @@ icon: signal
 | IP type        | Mobile IPv4                           |
 | Sharing        | No - one port per user                |
 | Traffic        | Unlimited                             |
-| UDP support    | ✓                                     |
-| p0f support    | ✓ (not in all locations, see above)   |
+| [UDP support](about-udp/) | ✓                             |
+| [p0f support](p0f-spoofing.md) | ✓ (not in all locations, see above) |
 | Price          | from **$4** / day · from **$55** / month |
 
 ## Available locations
@@ -56,56 +58,50 @@ icon: signal
 The list is regularly expanding. Up-to-date locations and pricing are on the purchase page [Mobile proxy](https://dashboard.proxyshard.com/en/mobile-proxy).
 {% endhint %}
 
-## **How do they work?**
+## How to purchase
 
-To get started, you need to [**purchase**](https://dashboard.proxyshard.com/en/mobile-proxy) an order. Go to the page ![](<../.gitbook/assets/image (58).png>) and select a suitable country and operator.
+1. Open `Mobile Proxy`.
+2. Select a country using `Country filter`.
+3. Choose the rental period in the card for the required operator.
+4. Click `Buy`.
 
-<figure><img src="../.gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/mobile-purchase-form_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/mobile-purchase-form_white.png" alt="Purchasing mobile proxies">
+  </picture>
+</figure>
+
+Payment, initial activation, and renewal are covered in [Purchasing mobile proxies](../site-navigation/buying-and-renewing/buying-mobile-proxies.md).
+
+## Order fields and controls
+
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/mobile-order-settings_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/mobile-order-settings_white.png" alt="Mobile proxy order fields">
+  </picture>
+</figure>
+
+1. `Signature` selects the network signature. Available values are `w`, `w10`, `w7`, `linux`, `android`, `macos`, and `ios`. After changing the signature, click `Restart`.
+2. `Auto-reset` restarts the connection automatically at the selected interval.
+3. `Restart` activates the port or changes its IP. You can perform the same action through your personal `Reset URL`.
+4. `Auto renew` renews the order automatically when the balance is sufficient.
+5. `Re-generate credentials` creates new login credentials. Existing proxy connection strings stop working after this action.
+
+Other fields:
+
+* `Product tag` adds a label that you can use to find the order in your lists.
+* `Proxy info` shows the country, operator, and plan type.
+* `Order status` shows the order state: `Active`, `On-hold`, or `Canceled`.
+* `Proxy status` shows the port state: `Active` or `Disconnected`.
+* `Username` and `Password` contain the login credentials.
+* `Billing cycle`, `Next due date`, and `Price` show the rental period and next payment.
+* In `Proxy List`, you can select the connection string format, copy the list with `Copy all`, or download it with `Export All`.
 
 {% hint style="warning" %}
-After purchase, activate the port: click <mark style="color:purple;">**Restart**</mark> in the order or follow your personal <mark style="color:purple;">**Reset URL**</mark>. The proxy will not work until the port is activated.
+After purchase and after three hours without activity, activate the port using `Restart` or `Reset URL`. The proxy does not work while `Proxy status` is `Disconnected`.
 {% endhint %}
-
-<figure><img src="../.gitbook/assets/mobile_pred.png" alt="Mobile proxy activation warning" width="492"><figcaption></figcaption></figure>
-
-## Order field description
-
-Let's review the <mark style="color:purple;">order</mark> fields:
-
-<figure><img src="../.gitbook/assets/mobile_order2.png" alt="Mobile proxy order fields"><figcaption></figcaption></figure>
-
-<mark style="color:purple;">Proxy info</mark> - Product name
-
-<mark style="color:purple;">Reset URL</mark> - Link for changing the IP address on the connection
-
-<mark style="color:purple;">Login</mark> - Proxy login
-
-<mark style="color:purple;">Password</mark> - Proxy password
-
-<mark style="color:purple;">Order status</mark> - Order status. Possible statuses:
-
-* <mark style="color:green;">**Active**</mark> - Active order
-* <mark style="color:orange;">**On-Hold**</mark> - Waiting for payment after the rental period expires
-* <mark style="color:red;">**Cancelled**</mark> - Cancelled order
-
-<mark style="color:purple;">Proxy status</mark> - Proxy status. Possible statuses:
-
-* <mark style="color:green;">**Active**</mark> - Active order
-* <mark style="color:$danger;">Disconnected</mark> - Disconnected, inactive port
-
-{% hint style="danger" %}
-**After purchase or after there has been no activity on the port, it must be&#x20;**<mark style="color:$success;">**activated**</mark>**. If the proxy status is&#x20;**<mark style="color:$danger;">**Disconnected**</mark>**, the proxies will not work until you activate them!**
-
-**You can activate the proxy through the&#x20;**<mark style="color:purple;">**Reset URL**</mark>**&#x20;or the&#x20;**<mark style="color:purple;">**Restart Proxy**</mark>**&#x20;button.**
-{% endhint %}
-
-<mark style="color:purple;">Next Due Date</mark> - Next charge date
-
-<mark style="color:purple;">Copy proxy</mark> - Button for copying proxies to the clipboard
-
-<mark style="color:purple;">Re-generate</mark> - Change the proxy password
-
-<mark style="color:purple;">Restart</mark> - Start or change IP; equivalent to the <mark style="color:purple;">Reset URL</mark> address
 
 ## What tasks they fit
 
@@ -131,5 +127,5 @@ Social media and multi-accounting, mobile ad verification, mobile ad checks, mos
 * **One session at a time** - one port holds one IP. If you need to connect several devices _simultaneously_ (not one after another, but at the same moment), buy a separate port or consider [Residential proxies](residential-proxies/README.md)
 
 {% hint style="info" %}
-You can learn how to configure proxies in our [Setup guide](../setup-guides/getting-started.md) section.
+See the [setup guides](../setup-guides/getting-started.md) for proxy configuration instructions.
 {% endhint %}
