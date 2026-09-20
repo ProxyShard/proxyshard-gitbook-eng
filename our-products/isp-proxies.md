@@ -16,6 +16,8 @@ ISP proxies support <mark style="color:purple;">p0f</mark> network fingerprint s
 
 Step-by-step purchase and payment guide: [Purchasing ISP / Datacentre proxies](../site-navigation/buying-and-renewing/buying-datacenter-proxies.md).
 
+Current product restrictions are listed on the [Restrictions](restrictions.md) page.
+
 ## Characteristics
 
 | Parameter      | Value                              |

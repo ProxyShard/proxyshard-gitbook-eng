@@ -7,6 +7,13 @@ icon: fingerprint
 
 # ShardX Launcher
 
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/shardx-cover_black.svg" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/shardx-cover_white.svg" alt="ShardX Launcher logo">
+  </picture>
+</figure>
+
 <mark style="color:purple;">**ShardX Browser**</mark> is our anti-detect browser:
 
 ## Download and install

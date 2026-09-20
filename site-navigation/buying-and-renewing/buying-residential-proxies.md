@@ -1,5 +1,5 @@
 ---
-icon: '2'
+icon: house-signal
 ---
 
 # Purchasing residential proxies

@@ -5,6 +5,13 @@ icon: browser
 
 # ShardX Launcher
 
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/shardx-cover_black.svg" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/shardx-cover_white.svg" alt="ShardX Launcher logo">
+  </picture>
+</figure>
+
 {% hint style="info" %}
 ShardX Launcher is distributed under the MIT license as a free tool for personal use. The software is provided "as is". We regularly release updates, but we don't offer live chat support - for serious issues, please file a bug report on [GitHub](https://github.com/ProxyShard/ShardBrowser/issues).
 {% endhint %}

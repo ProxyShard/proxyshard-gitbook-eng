@@ -17,7 +17,7 @@ Step-by-step purchase and payment guide: [Purchasing residential proxies](../../
 | Pool size                | 300,000 - 400,000 devices (= Standard)      |
 | Max connections          | 5,000                                       |
 | Max speed per order      | 75 Mbps                                     |
-| [UDP support](../about-udp/) | ✓ (except USA; port restrictions apply) |
+| [UDP support](../about-udp/) | ✓ (except USA; [port restrictions apply](../restrictions.md)) |
 | [Device OS filtering](../p0f-spoofing.md) | ✗ |
 | Billing                  | Day / Half-month / Month                    |
 | Price                    | **$30** / day · **$199** / week · **$399** / half-month · **$699** / month |

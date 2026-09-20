@@ -42,6 +42,22 @@ Standard and Unlimited support UDP in other locations, subject to the general po
 
 [Premium Residential](residential-proxies/premium-residential.md) supports UDP in all locations except certain cities and devices running macOS or iOS.
 
+### UDP port restriction for Standard and Unlimited
+
+Standard and Unlimited currently allow UDP traffic only to destination ports `8443`, `8080`, `3478`, and `19302`. Other UDP port ranges are blocked. UDP remains completely unavailable in the US location.
+
+Premium Residential is not affected by this port restriction. Only the existing exceptions for certain cities and macOS/iOS devices apply.
+
+The restriction on Standard and Unlimited is expected to be removed in early October 2026.
+
+### `static_mode2` and macOS/iOS devices
+
+`static_mode2` corresponds to `Static` in the `Session mode` field for Premium Residential. In this mode, the proxy keeps the selected device and does not move the session to another device if the current one temporarily goes offline.
+
+If the selected device is unavailable, the proxy string may stop responding until the device returns or the `TTL` expires. To get another device immediately, create a new string with `Generate proxy`.
+
+Filtering by `Device OS: macOS` or `iOS` significantly reduces the available pool. Combining the OS filter with a city and provider may leave no matching devices, especially in Tier 2 and Tier 3 countries. UDP is also unavailable on some macOS/iOS devices and in certain cities.
+
 ***
 
 ## p0f switching on Mobile proxies

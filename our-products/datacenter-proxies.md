@@ -12,6 +12,8 @@ icon: server
 
 Step-by-step purchase and payment guide: [Purchasing ISP / Datacentre proxies](../site-navigation/buying-and-renewing/buying-datacenter-proxies.md).
 
+Current product restrictions are listed on the [Restrictions](restrictions.md) page.
+
 ## Characteristics
 
 | Parameter      | Value                                                                     |

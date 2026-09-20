@@ -15,7 +15,7 @@ Step-by-step purchase and payment guide: [Purchasing residential proxies](../../
 | Parameter                | Value                                |
 | ------------------------ | ------------------------------------ |
 | Pool size                | 3,800,000 - 4,600,000 devices        |
-| [UDP support](../about-udp/) | ✓ (except some cities and macOS/iOS devices) |
+| [UDP support](../about-udp/) | ✓ ([except some cities and macOS/iOS devices](../restrictions.md)) |
 | [Device OS filtering](../p0f-spoofing.md) | ✓ |
 | Unlimited plan           | ✗                                    |
 | Billing                  | Per gigabyte (Pay as you go)         |

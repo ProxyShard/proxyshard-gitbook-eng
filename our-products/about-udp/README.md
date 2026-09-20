@@ -31,9 +31,9 @@ One such mechanism involves <mark style="color:purple;">WebRTC</mark>. This tech
 | [Datacenter](../datacenter-proxies.md) | ✓ All locations |
 | [ISP](../isp-proxies.md) | ✓ All locations |
 | [Mobile](../mobile-proxies.md) | ✓ |
-| [Standard Residential](../residential-proxies/standard-residential.md) | ✓ Except USA; port restrictions apply |
-| [Unlimited Residential](../residential-proxies/unlimited-residential-proxy.md) | ✓ Except USA; port restrictions apply |
-| [Premium Residential](../residential-proxies/premium-residential.md) | ✓ All locations except certain cities and macOS/iOS devices |
+| [Standard Residential](../residential-proxies/standard-residential.md) | ✓ Except USA; [port restrictions apply](../restrictions.md) |
+| [Unlimited Residential](../residential-proxies/unlimited-residential-proxy.md) | ✓ Except USA; [port restrictions apply](../restrictions.md) |
+| [Premium Residential](../residential-proxies/premium-residential.md) | ✓ All locations [except certain cities and macOS/iOS devices](../restrictions.md) |
 
 To carry UDP traffic, use SOCKS5 and an application that supports `UDP ASSOCIATE`. Compatible options are listed under [Software solutions for enabling WebRTC](webrtc-software-solutions.md).
 

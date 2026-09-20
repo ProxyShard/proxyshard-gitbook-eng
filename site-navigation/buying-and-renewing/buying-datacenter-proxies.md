@@ -1,5 +1,5 @@
 ---
-icon: '1'
+icon: server
 ---
 
 # Purchasing ISP / Datacentre proxies
