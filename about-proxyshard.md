@@ -1,11 +1,19 @@
 ---
-description: A brief overview of our service
+description: A brief overview of ProxyShard and its products
 icon: question
 ---
 
-# What is Proxyshard
+# What is ProxyShard
 
-<mark style="color:purple;">**Proxyshard**</mark> specializes in high-quality Residential, Datacenter, ISP, and Mobile proxies with UDP support, and pioneered system fingerprint spoofing (p0f) for Datacenter and ISP proxies. We provide **clean, fast, and reliable IP addresses** at some of the best prices on the market. We guarantee that Datacenter and ISP proxies are issued exclusively to one user!
+<mark style="color:purple;">**ProxyShard**</mark> brings together Residential, Datacenter, ISP, and Mobile proxies with tools for browser workflows, testing, and automation. Datacenter and ISP addresses are assigned to one customer and are not shared. Availability of UDP, p0f switching, and other features depends on the product and location.
+
+<figure>
+  <picture>
+    <source srcset=".gitbook/assets/proxyshard-products_black.svg" media="(prefers-color-scheme: dark)">
+    <img src=".gitbook/assets/proxyshard-products_white.svg" alt="ProxyShard products and tools">
+  </picture>
+  <figcaption><p>Proxy services, browser tools, and testing services in the ProxyShard ecosystem</p></figcaption>
+</figure>
 
 ***
 
@@ -13,28 +21,32 @@ icon: question
 
 ### [<mark style="color:green;">Residential proxies</mark>](our-products/residential-proxies/)
 
-Real IP addresses from residential and mobile providers in **250+ locations**. The total pool contains more than **3,000,000 addresses**. They provide a high level of anonymity, making them an excellent choice for crypto services, SEO, multi-accounting, and other tasks where IP cleanliness matters.
+IP addresses from residential and mobile providers with configurable location, session type, and connection parameters. They suit tasks that require a varied address pool and a regular consumer network profile.
 
 ### [<mark style="color:orange;">Datacenter proxies</mark>](our-products/datacenter-proxies.md)
 
-Some of the most stable and fastest proxies with a **static IP**. Each address is assigned to only one user. They support UDP and p0f switching. Suitable for tasks that require speed and a fixed IP without rotation. All servers in each location include a guaranteed 10 Gbps channel, high uptime, and low ping thanks to excellent peering from our datacenter providers.
+Fast static proxies with dedicated IP addresses. They suit long-running sessions and tasks that require a stable connection, high speed, and a consistent address.
 
 ### [<mark style="color:blue;">ISP proxies</mark>](our-products/isp-proxies.md)
 
-Proxies from residential internet providers in different countries. They combine the advantages of Datacenter and Residential proxies: the uptime and speed of a static DC IP with the trust profile of a residential provider. As with Datacenter proxies, addresses are issued strictly to one user and also support UDP and p0f switching.
+Static addresses hosted on internet service provider networks. They combine the stability of Datacenter proxies with an ISP network profile and are assigned to one customer.
 
 ### [<mark style="color:red;">Mobile proxies</mark>](our-products/mobile-proxies.md)
 
-Proxies with flexible country and carrier selection. They have a single connection address, allow IP changes via a link, and support p0f fingerprint spoofing (device signature).
+Mobile carrier proxies with country and carrier selection. You can rotate the IP through a link, while available settings depend on the selected plan and location.
+
+### [<mark style="color:purple;">ProxyShard Extension</mark>](our-products/proxyshard-extension.md)
+
+A browser extension for Chrome, Firefox, and Chromium-based browsers. It stores proxy profiles, switches and tests connections, and can rotate a Mobile proxy IP on a timer or keyboard shortcut.
+
+### [<mark style="color:purple;">ShardX Launcher</mark>](our-products/shardx-launcher.md)
+
+A modern anti-detect browser for isolated profiles with consistent fingerprints and dedicated proxy settings. It supports Windows, macOS, and Linux, as well as a local HTTP API, CDP, Puppeteer, Playwright, and an MCP server for automation.
 
 ### [<mark style="color:purple;">IP Checker</mark>](our-products/ip-checker.md)
 
-The first free tool on the market for assessing not only IP quality but also the quality of your browser profile.
-
-They support proxy assessment by IP origin type, UDP availability, and FakeISP detection based on many signatures.
-
-They also check profile quality and cleanliness based on browser fingerprints and other parameters collected by advanced antifraud systems.
+A tool for checking an IP address, UDP, FakeISP indicators, WebRTC behavior, and browser profile parameters. It helps verify a connection before starting work.
 
 ### [<mark style="color:purple;">Proxy Tester</mark>](our-products/proxy-tester.md)
 
-One of the most accurate testers on the market, because it includes not only a basic status-response check but also checks whether a proxy supports UDP, since not all services sell proxies with UDP support.
+Checks proxy availability, response time, exit IP, and UDP support. It can quickly test a single address or a list of proxies.
