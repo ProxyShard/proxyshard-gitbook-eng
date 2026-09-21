@@ -30,14 +30,12 @@ More about the technology: [Network fingerprint spoofing (p0f)](../../our-produc
 
 ## 2. Which products support UDP?
 
-UDP is supported on **all** products, except:
+UDP is supported on Datacenter, ISP, Mobile, Standard Residential, Unlimited Residential, and Premium Residential, subject to the following restrictions:
 
-* **Residential** and **Unlimited Residential** proxies in the <mark style="color:purple;">**US**</mark> :flag\_us: location (a restriction from American providers since early 2026)
-* **Premium Residential** proxies in **all locations**
+* **Standard Residential** and **Unlimited Residential** do not support UDP in the <mark style="color:purple;">**US**</mark> :flag\_us: location. In other locations, UDP traffic is currently limited to destination ports `8443`, `8080`, `3478`, and `19302`.
+* **Premium Residential** supports UDP except in certain cities and on some macOS/iOS devices. The Standard and Unlimited port restriction does not apply to Premium.
 
-On Datacenter, ISP, Mobile, and non-US Residential proxies, UDP works normally.
-
-More info: [About the UDP protocol](../../our-products/about-udp/).
+See [About the UDP protocol](../../our-products/about-udp/) and [Restrictions](../../our-products/restrictions.md) for the current list of exceptions.
 
 ***
 

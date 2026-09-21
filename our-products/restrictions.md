@@ -16,7 +16,7 @@ The following are unavailable through proxies:
 * Government portals and websites, as well as websites in the `.gov` and `.edu` domains
 * Payment processors: <mark style="color:purple;">Stripe</mark>, <mark style="color:purple;">PayPal</mark> (including <mark style="color:purple;">Yahoo</mark>)
 
-This is a regulatory requirement aimed at limiting fraudulent activity. The block **does not apply** to crypto services and payment systems such as exchanges.
+This is a regulatory requirement aimed at limiting fraudulent activity. This restriction **does not apply** to crypto services and payment systems such as exchanges.
 
 {% hint style="warning" %}
 Applies to all products **except** [Mobile proxy](mobile-proxies.md).
@@ -48,13 +48,11 @@ Standard and Unlimited currently allow UDP traffic only to destination ports `84
 
 Premium Residential is not affected by this port restriction. Only the existing exceptions for certain cities and macOS/iOS devices apply.
 
-The restriction on Standard and Unlimited is expected to be removed in early October 2026.
-
 ### `static_mode2` and macOS/iOS devices
 
-`static_mode2` corresponds to `Static` in the `Session mode` field for Premium Residential. In this mode, the proxy keeps the selected device and does not move the session to another device if the current one temporarily goes offline.
+`static_mode2` corresponds to `Static` in the `Session mode` field for Premium Residential. In this mode, the proxy keeps the selected device and does not switch the session to another device if the current one temporarily goes offline.
 
-If the selected device is unavailable, the proxy string may stop responding until the device returns or the `TTL` expires. To get another device immediately, create a new string with `Generate proxy`.
+If the selected device is unavailable, the generated proxy may stop responding until the device returns or the `TTL` expires. To get another device immediately, generate a new proxy with `Generate proxy`.
 
 Filtering by `Device OS: macOS` or `iOS` significantly reduces the available pool. Combining the OS filter with a city and provider may leave no matching devices, especially in Tier 2 and Tier 3 countries. UDP is also unavailable on some macOS/iOS devices and in certain cities.
 
@@ -90,7 +88,7 @@ In all other locations and operators, p0f switching works normally.
 ## Closed ports
 
 {% hint style="info" %}
-Applies to all products. IMAP (993) is available on DC\ISP proxies.
+Applies to all products. IMAP (993) is available on Datacenter and ISP proxies.
 {% endhint %}
 
 Connections through proxies to service ports that are often used for attacks on third-party services are blocked:
