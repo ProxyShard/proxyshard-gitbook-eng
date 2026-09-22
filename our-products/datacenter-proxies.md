@@ -10,7 +10,7 @@ icon: server
 
 {% embed url="https://dashboard.proxyshard.com/en/datacenter-proxy" %}
 
-Step-by-step purchase and payment guide: [Purchasing ISP / Datacentre proxies](../site-navigation/buying-and-renewing/buying-datacenter-proxies.md).
+Step-by-step purchase and payment guide: [Purchasing Datacenter proxies](../site-navigation/buying-and-renewing/buying-datacenter-proxies.md).
 
 Current product restrictions are listed on the [Restrictions](restrictions.md) page.
 
@@ -55,7 +55,7 @@ Current product restrictions are listed on the [Restrictions](restrictions.md) p
   </picture>
 </figure>
 
-Payment and renewal are covered in [Purchasing ISP / Datacentre proxies](../site-navigation/buying-and-renewing/buying-datacenter-proxies.md).
+Payment and renewal are covered in [Purchasing Datacenter proxies](../site-navigation/buying-and-renewing/buying-datacenter-proxies.md).
 
 {% hint style="info" %}
 After payment, allow 1-2 minutes for the order to synchronize and the proxies to start working.

@@ -19,8 +19,10 @@ Select the required proxy type from the sidebar:
   </picture>
 </figure>
 
-#### [**Purchasing ISP / Datacentre proxies**](buying-datacenter-proxies.md)
+#### [**Purchasing Datacenter proxies**](buying-datacenter-proxies.md)
 
 #### [**Purchasing residential proxies**](buying-residential-proxies.md)
+
+#### [**Purchasing ISP proxies**](buying-isp-proxies.md)
 
 #### [**Purchasing mobile proxies**](buying-mobile-proxies.md)

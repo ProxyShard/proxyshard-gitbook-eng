@@ -2,13 +2,13 @@
 icon: server
 ---
 
-# Purchasing ISP / Datacentre proxies
+# Purchasing Datacenter proxies
 
 ## Purchasing proxies
 
-To purchase [datacentre proxies](https://dashboard.proxyshard.com/datacenter-proxy) or [ISP proxies](https://dashboard.proxyshard.com/isp-proxy):
+To purchase [Datacenter proxies](https://dashboard.proxyshard.com/datacenter-proxy):
 
-1. Open `Datacenter Proxy` or `ISP Proxy`, depending on the proxy type you need.
+1. Open `Datacenter Proxy`.
 2. Select the proxy country in `Proxy region`.
 3. Select a payment period in `Billing cycle`.
 4. Enter the number of proxies in `Number of proxies`.

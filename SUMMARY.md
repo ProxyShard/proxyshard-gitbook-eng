@@ -40,8 +40,9 @@
 
 * [Balance top-up](site-navigation/top-up-balance.md)
 * [Purchasing and renewing proxies](site-navigation/buying-and-renewing/README.md)
-  * [Purchasing ISP / Datacentre proxies](site-navigation/buying-and-renewing/buying-datacenter-proxies.md)
+  * [Purchasing Datacenter proxies](site-navigation/buying-and-renewing/buying-datacenter-proxies.md)
   * [Purchasing residential proxies](site-navigation/buying-and-renewing/buying-residential-proxies.md)
+  * [Purchasing ISP proxies](site-navigation/buying-and-renewing/buying-isp-proxies.md)
   * [Purchasing mobile proxies](site-navigation/buying-and-renewing/buying-mobile-proxies.md)
 * [Order search (Product tag)](site-navigation/order-search-product-tag.md)
 * [Invoices](site-navigation/invoices.md)

@@ -32,15 +32,42 @@ Available spoofing options:
 | **iOS**        | iOS fingerprint             |
 | **Android**    | Android fingerprint         |
 
-### ISP and Datacenter proxy dashboard with p0f support
+### ISP and Datacenter proxies
 
-<figure><img src="../.gitbook/assets/p0f-dashboard.png" alt=""><figcaption><p>p0f tab in ISP and Datacenter proxy settings</p></figcaption></figure>
+Open the order, click `p0f`, and select the required OS for each IP. The setting works the same way for ISP and Datacenter proxies.
 
-### Fingerprint selection panel
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/p0f-datacenter-isp_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/p0f-datacenter-isp_white.png" alt="p0f settings for ISP and Datacenter proxies">
+  </picture>
+</figure>
 
-The screenshot shows an ISP proxy order. The same p0f settings panel is available for Datacenter orders.
+### Mobile proxies
 
-<figure><img src="../.gitbook/assets/p0f-panel.png" alt=""><figcaption><p>OS selection for network fingerprint spoofing</p></figcaption></figure>
+In the `Signature` field, select the OS whose fingerprint the proxy should use. After changing the setting, restart the proxy with `Restart`.
+
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/p0f-mobile_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/p0f-mobile_white.png" alt="Network fingerprint selection for a Mobile proxy">
+  </picture>
+</figure>
+
+p0f spoofing is not available in every Mobile location. See [Limitations](restrictions.md) for the current list.
+
+### Premium Residential
+
+For Premium Residential, the `Device OS` parameter filters the proxy pool by the device operating system. It filters the pool rather than spoofing the network fingerprint.
+
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/p0f-premium-residential_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/p0f-premium-residential_white.png" alt="Filtering Premium Residential proxies by Device OS">
+  </picture>
+</figure>
+
+The availability of `Device OS` depends on the location. See [Limitations](restrictions.md) for details.
 
 {% hint style="warning" %}
 Before changing p0f, make sure to close all connections through the proxy. The proxy will not work until old connections are closed. After changing p0f, wait 2-3 minutes before connecting.

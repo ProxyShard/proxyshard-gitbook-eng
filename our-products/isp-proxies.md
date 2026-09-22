@@ -14,7 +14,7 @@ ISP proxies support <mark style="color:purple;">p0f</mark> network fingerprint s
 
 {% embed url="https://dashboard.proxyshard.com/en/isp-proxy" %}
 
-Step-by-step purchase and payment guide: [Purchasing ISP / Datacentre proxies](../site-navigation/buying-and-renewing/buying-datacenter-proxies.md).
+Step-by-step purchase and payment guide: [Purchasing ISP proxies](../site-navigation/buying-and-renewing/buying-isp-proxies.md).
 
 Current product restrictions are listed on the [Restrictions](restrictions.md) page.
 
@@ -60,7 +60,7 @@ The list of locations is constantly expanding.
   </picture>
 </figure>
 
-Payment and renewal are covered in [Purchasing ISP / Datacentre proxies](../site-navigation/buying-and-renewing/buying-datacenter-proxies.md).
+Payment and renewal are covered in [Purchasing ISP proxies](../site-navigation/buying-and-renewing/buying-isp-proxies.md).
 
 {% hint style="info" %}
 After payment, allow 1-2 minutes for the order to synchronize and the proxies to start working.
