@@ -6,15 +6,15 @@ icon: fingerprint
 
 ## What p0f is and why it matters
 
-Every device on the network has its own digital fingerprint at the <mark style="color:$primary;">TCP/IP</mark> level, called <mark style="color:$primary;">**p0f**</mark>. It is formed from network stack parameters: MSS, TSval, TTL, TCP options, Window size, TOS, and others. These parameters differ across Windows, macOS, Linux, iOS, and Android, and anti-fraud systems know this.
+Every device on a network has a digital fingerprint at the <mark style="color:$primary;">TCP/IP</mark> level, called <mark style="color:$primary;">**p0f**</mark>. It is formed from network stack parameters such as MSS, TSval, TTL, TCP options, Window size, and TOS. These parameters differ across Windows, macOS, Linux, iOS, and Android, and anti-fraud systems can use those differences to identify the device environment.
 
-How website-side checks work:
+How websites perform these checks:
 
-1. The website looks at the <mark style="color:$primary;">**User-Agent**</mark>, <mark style="color:$primary;">**TLS fingerprint**</mark>, and other client parameters to determine which OS the user came from.
+1. The website checks the <mark style="color:$primary;">**User-Agent**</mark>, <mark style="color:$primary;">**TLS fingerprint**</mark>, and other client parameters to determine which operating system the user is using.
 2. In parallel, the <mark style="color:$primary;">**network layer**</mark> of the connection is analyzed, namely the <mark style="color:$primary;">TCP/IP fingerprint</mark> that the proxy server sends together with your traffic.
 3. If the browser says “I am Windows 11”, but the TCP/IP fingerprint indicates <mark style="color:$primary;">Linux</mark>, the anti-fraud system records a mismatch.
 
-**The problem with all proxy services is** that all Datacenter and ISP proxies run on Linux servers. This means that in 99% of cases your network fingerprint will be Linux, even though you are accessing from Windows or macOS. For anti-fraud systems, this is a direct signal that a proxy is being used.
+**A common problem:** Datacenter and ISP proxies usually run on Linux servers. Without spoofing, the network fingerprint may indicate Linux even when the user is working on Windows or macOS. An anti-fraud system may treat this mismatch as a sign that a proxy is being used.
 
 ## How ProxyShard solves this
 
@@ -54,7 +54,7 @@ In the `Signature` field, select the OS whose fingerprint the proxy should use. 
   </picture>
 </figure>
 
-p0f spoofing is not available in every Mobile location. See [Limitations](restrictions.md) for the current list.
+Some Mobile proxy locations do not support p0f spoofing. See [Limitations](restrictions.md) for the current list.
 
 ### Premium Residential
 
@@ -70,18 +70,18 @@ For Premium Residential, the `Device OS` parameter filters the proxy pool by the
 The availability of `Device OS` depends on the location. See [Limitations](restrictions.md) for details.
 
 {% hint style="warning" %}
-Before changing p0f, make sure to close all connections through the proxy. The proxy will not work until old connections are closed. After changing p0f, wait 2-3 minutes before connecting.
+Before changing p0f, close all connections through the proxy. Existing connections will continue to use the previous fingerprint and may prevent the new setting from taking effect. After changing p0f, wait 2-3 minutes before reconnecting.
 {% endhint %}
 
 ## Real results
 
-Interim tests show a significant improvement in passing anti-fraud checks. One confirmed case:
+Initial tests show that p0f spoofing helps with anti-fraud checks. One confirmed scenario:
 
 {% hint style="success" %}
-**Google accounts:** together with the developer of [Vision Browser](../setup-guides/antidetect-browsers/vision-browser.md), we tested Google registration without modifying the browser fingerprint. On a clean profile without p0f spoofing, the system immediately offers QR-code verification. With p0f spoofing to Windows 10/11, the QR check no longer appears and Google requests phone-number verification - confirming the absence of proxy detection.
+**Google accounts:** together with the developer of [Vision Browser](../setup-guides/antidetect-browsers/vision-browser.md), we tested Google registration without changing the browser fingerprint. On a clean profile without p0f spoofing, the system immediately requests verification through a QR code. After setting the fingerprint to Windows 10 or Windows 11, the QR check no longer appears and Google offers phone-number verification instead. This shows that the mismatch between the browser and network fingerprints has been removed.
 {% endhint %}
 
-People who work with Google registrations know that without “breaking” the fingerprint on desktop, it is impossible to get phone-number verification: the system will always ask for QR. p0f spoofing solves this problem at the network level.
+When registering a Google account on a desktop device, a mismatch between the browser and network fingerprints usually triggers QR-code verification. p0f spoofing helps align the network fingerprint with the selected operating system.
 
 ## Recommended stack
 
@@ -90,7 +90,7 @@ For maximum results, we recommend using:
 * [**Vision Browser**](../setup-guides/antidetect-browsers/vision-browser.md), an antidetect browser with UDP support
 * **ProxyShard ISP proxies** with p0f spoofing enabled
 
-This stack covers all layers of checks: browser fingerprint (Vision) + network fingerprint (p0f) + clean IP from a home provider (ISP).
+In this configuration, Vision Browser handles the browser fingerprint, p0f handles the network fingerprint, and the ISP proxy provides an IP address from a residential internet provider.
 
 ## Where it is available
 

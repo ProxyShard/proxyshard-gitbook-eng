@@ -35,7 +35,7 @@ After you click `Buy now`, an invoice with the `Unpaid` status opens. Check the 
 After payment, the order appears under `Active products` and in [`My orders`](https://dashboard.proxyshard.com/products).
 
 {% hint style="warning" %}
-The proxies start working within 1-2 minutes. This time is required to synchronize the order.
+The proxies become available within 1-2 minutes while the order is being synchronized.
 {% endhint %}
 
 ## Managing and renewing an order
@@ -47,12 +47,12 @@ The proxies start working within 1-2 minutes. This time is required to synchroni
   </picture>
 </figure>
 
-When `Auto renew` is enabled, the system attempts to renew the order 1-2 hours before the paid period ends. If the balance is sufficient, the payment is charged automatically.
+When `Auto renew` is enabled, the system attempts to renew the order 1-2 hours before the current billing period ends. If the balance is sufficient, the payment is charged automatically.
 
-If automatic renewal is disabled or the balance is insufficient, the order receives the `On-hold` status. To renew it manually, open the order, click `Renew`, and pay the invoice.
+If automatic renewal is disabled or the balance is insufficient, the order moves to the `On-hold` status. To renew it manually, open the order, click `Renew`, and pay the invoice.
 
 See [Order fields](../../our-products/isp-proxies.md#order-fields) for details about `Status`, `Product tag`, access credentials, p0f settings, and the other fields.
 
 {% hint style="danger" %}
-An order with the `Canceled` status cannot be renewed. This status is assigned after three days without payment.
+An order with the `Canceled` status cannot be renewed. An unpaid order moves to this status after three days.
 {% endhint %}
