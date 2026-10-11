@@ -618,7 +618,7 @@ paths:
       tags:
         - Datacenter & ISP Proxies
       summary: "Set the IP OS fingerprint"
-      description: "Sets the OS-fingerprint signature for one or more proxy IPs. Requires the `p0f_slots` add-on to be active on the order. Each IP that receives a signature permanently occupies one slot. Changing the OS value on an IP that already has a signature does not consume an extra slot. **Available signature values:** | Value | OS | |-------|----| | `ios` | iOS | | `macos` | macOS | | `android` | Android | | `linux` | Linux | | `win10` | Windows 10 | | `win11` | Windows 11 |"
+      description: "Sets the OS-fingerprint signature for one or more proxy IPs.  \nRequires the `p0f_slots` add-on to be active on the order.\n\nEach IP that receives a signature permanently occupies one slot.\nChanging the OS value on an IP that already has a signature does not consume an extra slot.\n\n**Available signature values:**\n\n| Value | OS |\n|-------|----|\n| `ios` | iOS |\n| `macos` | macOS |\n| `android` | Android |\n| `linux` | Linux |\n| `win10` | Windows 10 |\n| `win11` | Windows 11 |"
       parameters:
         - in: path
           name: order_id
