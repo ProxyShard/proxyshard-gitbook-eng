@@ -17,12 +17,12 @@ Step-by-step purchase and payment guide: [Purchasing residential proxies](../../
 | Pool size                | 300,000 - 400,000 devices      |
 | Max connections          | 35,000                         |
 | Max speed per order      | 75 Mbps                        |
-| [UDP support](../about-udp/) | ✓ (except USA; [port restrictions apply](../restrictions.md)) |
-| [Device OS filtering](../p0f-spoofing.md) | ✗ |
+| [UDP support](../about-udp/) | Available (except in the USA; [port restrictions apply](../restrictions.md)) |
+| [Device OS filtering](../p0f-spoofing.md) | Not available |
 | Billing                  | Per gigabyte (Pay as you go)   |
 | Price                    | **$2 / GB**                    |
 
-## What tasks they fit
+## Suitable use cases
 
 - Automation, scraping, bots
 - Multi-accounting with antidetect browsers

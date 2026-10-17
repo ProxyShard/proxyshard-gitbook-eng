@@ -1,47 +1,68 @@
 ---
-description: Proxy for Mozilla Firefox
+description: Proxy setup for Mozilla Firefox
 ---
 
 # FoxyProxy
 
-## Installing the FoxyProxy extension
+## Installing FoxyProxy
 
 {% hint style="warning" %}
-This solution does not support UDP tunneling!
+FoxyProxy handles TCP traffic only.
 {% endhint %}
 
-Follow the [link](https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/?utm_source=addons.mozilla.org\&utm_medium=referral\&utm_content=search) to download the "<mark style="color:purple;">FoxyProxy</mark>" extension.
+Install [FoxyProxy Standard](https://addons.mozilla.org/firefox/addon/foxyproxy-standard/) from Firefox Add-ons.
 
-{% embed url="https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search" %}
+{% embed url="https://addons.mozilla.org/firefox/addon/foxyproxy-standard/" %}
 
-<figure><img src="../../../.gitbook/assets/image (93).png" alt=""><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../../../.gitbook/assets/foxyproxy-addon-page_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../../.gitbook/assets/foxyproxy-addon-page_white.png" alt="FoxyProxy Standard in Firefox Add-ons">
+  </picture>
+</figure>
 
-Install it and then open the extension settings.
+After installation, open FoxyProxy and go to the extension settings.
 
-<figure><img src="../../../.gitbook/assets/Image00001 (2).PNG" alt=""><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../../../.gitbook/assets/foxyproxy-options-popup-disable_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../../.gitbook/assets/foxyproxy-options-popup-disable_white.png" alt="Opening FoxyProxy settings">
+  </picture>
+</figure>
 
+## Configuring the proxy
 
+Open `Proxies` and click `Add`.
 
-## **Extension setup**
-
-Go to the "<mark style="color:purple;">Proxies</mark>" tab and add a new proxy connection with the "<mark style="color:purple;">Add</mark>" button.
-
-<figure><img src="../../../.gitbook/assets/Image00002 (2).PNG" alt=""><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../../../.gitbook/assets/foxyproxy-add-proxy-form_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../../.gitbook/assets/foxyproxy-add-proxy-form_white.png" alt="Adding a proxy in FoxyProxy">
+  </picture>
+</figure>
 
 {% hint style="info" %}
-**You can find a proxy setup example in the [Setup guide](../../getting-started.md) section**
+The data format and an example order are described in [Getting Started](../../getting-started.md).
 {% endhint %}
 
-## **Setting up the proxy connection**
+Enter a profile name in `Title`. Select the proxy type, then fill in `Hostname`, `Port`, `Username`, and `Password` using the details from your order's `Proxy List`. Click `Save`.
 
-Enter the proxy from the order into the corresponding fields (IP/Hostname:PORT:USERNAME:PASSWORD), Title, and protocol type. Then click "<mark style="color:purple;">Save</mark>".
+<figure>
+  <picture>
+    <source srcset="../../../.gitbook/assets/foxyproxy-proxy-config-filled_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../../.gitbook/assets/foxyproxy-proxy-config-filled_white.png" alt="Completed proxy profile in FoxyProxy">
+  </picture>
+</figure>
 
-<figure><img src="../../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
+## Connecting
 
-## **Finishing setup and connecting**
+Open FoxyProxy and select the profile you created.
 
-Open the extension again and select the connection you created earlier.
+<figure>
+  <picture>
+    <source srcset="../../../.gitbook/assets/foxyproxy-options-popup-proxyshard_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../../.gitbook/assets/foxyproxy-options-popup-proxyshard_white.png" alt="Selecting a proxy profile in FoxyProxy">
+  </picture>
+</figure>
 
-<figure><img src="../../../.gitbook/assets/Image00004 (2).PNG" alt=""><figcaption></figcaption></figure>
-
-**Everything is now ready. You can start using the proxy.**
+The proxy is connected and ready to use in Mozilla Firefox.

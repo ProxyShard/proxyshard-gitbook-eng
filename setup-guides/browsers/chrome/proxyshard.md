@@ -7,7 +7,7 @@ icon: puzzle-piece
 
 Our official <mark style="color:purple;">**ProxyShard – Smart Proxy Manager**</mark> extension for managing proxies straight from the browser. Installs directly from the **Chrome Web Store**.
 
-{% embed url="https://chromewebstore.google.com/detail/proxyshard-%E2%80%93-smart-proxy/ohlcikccaeapbfpmejhckfjjddkcflbe" %}
+{% embed url="https://chromewebstore.google.com/detail/ohlcikccaeapbfpmejhckfjjddkcflbe" %}
 
 ## Detailed instructions
 

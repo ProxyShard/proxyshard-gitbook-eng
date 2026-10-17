@@ -9,7 +9,7 @@ Purchased proxies may sometimes appear with the wrong country in Dolphin (Anty),
 
 The main issue is that antidetect browsers and web services use different databases to determine IP address locations or take too long to pull updates. Some of them, especially Whoer.net, **are not neutral sources**, because they sell proxies themselves and may intentionally distort data for marketing purposes.
 
-We rely exclusively on verified T**ier-1 (largest) geolocation databases**:
+We rely exclusively on verified **Tier-1 (largest) geolocation databases**:
 
 * **MaxMind** ([Link](https://www.maxmind.com/en/locate-my-ip-address))
 * **DB-IP** ([Link](https://db-ip.com/api/))

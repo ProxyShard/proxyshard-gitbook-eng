@@ -11,7 +11,7 @@ Our official <mark style="color:purple;">**ProxyShard – Smart Proxy Manager**<
 When installing an extension from the Chrome Web Store for the first time, Edge may prompt you to «**Allow extensions from other stores**», please confirm this permission.
 {% endhint %}
 
-{% embed url="https://chromewebstore.google.com/detail/proxyshard-%E2%80%93-smart-proxy/ohlcikccaeapbfpmejhckfjjddkcflbe" %}
+{% embed url="https://chromewebstore.google.com/detail/ohlcikccaeapbfpmejhckfjjddkcflbe" %}
 
 ## Detailed instructions
 

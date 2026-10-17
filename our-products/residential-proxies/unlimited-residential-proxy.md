@@ -17,16 +17,16 @@ Step-by-step purchase and payment guide: [Purchasing residential proxies](../../
 | Pool size                | 300,000 - 400,000 devices (= Standard)      |
 | Max connections          | 5,000                                       |
 | Max speed per order      | 75 Mbps                                     |
-| [UDP support](../about-udp/) | ✓ (except USA; [port restrictions apply](../restrictions.md)) |
-| [Device OS filtering](../p0f-spoofing.md) | ✗ |
+| [UDP support](../about-udp/) | Available (except in the USA; [port restrictions apply](../restrictions.md)) |
+| [Device OS filtering](../p0f-spoofing.md) | Not available |
 | Billing                  | Day / Half-month / Month                    |
 | Price                    | **$30** / day · **$199** / week · **$399** / half-month · **$699** / month |
 
 {% hint style="warning" %}
-The 5,000-connection limit applies to all types (ESTAB, FIN\_WAIT and others). An increase is available on the monthly plan - message [Support](../../contact-us.md).
+Unlimited plans support up to 5,000 concurrent connections. The limit includes every connection state, such as `ESTAB`, `FIN_WAIT`, and others. It cannot currently be increased. Dedicated plans are still in development and are not yet available.
 {% endhint %}
 
-## What tasks they fit
+## Suitable use cases
 
 - Automation with high traffic consumption
 - Long-running processes where counting gigabytes is impractical

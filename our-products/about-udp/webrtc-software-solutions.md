@@ -30,6 +30,11 @@ Our [ISP Proxy](https://dashboard.proxyshard.com/en/isp-proxy) combined with the
 
 * [V2Box](../../setup-guides/ios-android/v2box.md)
 
+<mark style="color:purple;">**iOS:**</mark>
+
+* [V2Box](../../setup-guides/ios-android/v2box.md)
+* [Potatso](../../setup-guides/ios-android/potatso.md)
+
 <mark style="color:purple;">**Linux:**</mark>
 
 * proxychains-NG + go-tun2socks
@@ -41,7 +46,6 @@ Our [ISP Proxy](https://dashboard.proxyshard.com/en/isp-proxy) combined with the
 * SocksDroid
 * [Super Proxy](../../setup-guides/ios-android/super-proxy.md)
 * [V2Box](../../setup-guides/ios-android/v2box.md)
-* [Potatso](../../setup-guides/ios-android/potatso.md)
 
 {% hint style="info" %}
 The current list of applications is available in the [Setup guide](../../setup-guides/getting-started.md).

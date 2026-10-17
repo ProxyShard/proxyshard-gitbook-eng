@@ -4,50 +4,74 @@ icon: clipboard-list
 
 # Setup guide
 
-## **Adding a proxy list from the order to programs**
+Before configuring an application, open the required [order](https://dashboard.proxyshard.com/products) and copy its connection details.
 
-To add proxies to different programs, open your [order](https://dashboard.proxyshard.com/products) on the website and copy the proxies:
-
-{% hint style="warning" %}
-**Please note that in all examples, the connection is made through&#x20;**<mark style="color:purple;">**SOCKS5**</mark>**.** \
-\
-**To find the connection port for:**\
-\
-<mark style="color:purple;">**Datacenter\ISP**</mark> - set the switch to <mark style="color:purple;">SOCKS5</mark> in the <mark style="color:purple;">Proxy list</mark> field
-
-<p align="center"><img src="../.gitbook/assets/image (40).png" alt=""></p>
-
-<mark style="color:purple;">**Residential proxy**</mark> - in the order settings, set "<mark style="color:purple;">Protocol</mark>" to <mark style="color:purple;">SOCKS5</mark>
-
-<p align="center"><img src="../.gitbook/assets/image (42).png" alt="" data-size="original"></p>
-
-<mark style="color:purple;">**Mobile proxy**</mark> - no additional actions are required in the order; the port connection works through both <mark style="color:purple;">HTTP</mark> and <mark style="color:purple;">SOCKS5</mark>
+{% hint style="info" %}
+The examples below use `SOCKS5`. If an application supports only HTTP, select `HTTP` in the order settings and use the corresponding port.
 {% endhint %}
 
-## Example for <mark style="color:purple;">Datacenter/ISP</mark> proxies
+## Residential proxies
 
-Open the [order](https://dashboard.proxyshard.com/products) and copy the proxy from <mark style="color:purple;">Proxy List</mark>.
+1. In `Proxy settings`, select a country and configure `Session`, `Relay`, and `Protocol`.
+2. Click `Generate proxy`.
+3. Copy the generated connection string from `Proxy List`.
 
-<figure><img src="../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/residential-proxy-setup_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/residential-proxy-setup_white.png" alt="Generating a residential proxy">
+  </picture>
+</figure>
 
-212.14.123.184 - proxy connection IP address
+## Datacenter and ISP proxies
 
-22334 - proxy connection port
+Open the order and copy the connection string from `Proxy List`.
 
-KDKKKEI - proxy connection login
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/static-proxy-setup_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/static-proxy-setup_white.png" alt="Connection details for datacenter and ISP proxies">
+  </picture>
+</figure>
 
-KDKKEIID3 - proxy password
+## Connection string format
 
+The standard format is `server:port:login:password`.
 
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/proxy-format-breakdown_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/proxy-format-breakdown_white.png" alt="Proxy connection string structure">
+  </picture>
+</figure>
 
-## Example for <mark style="color:purple;">Residential proxies</mark>:
+| Field | Description |
+|---|---|
+| `Server / Host` | The proxy server IP address or hostname |
+| `Port` | The connection port |
+| `Login` | The username. For residential proxies, it may also contain targeting parameters |
+| `Password` | The access password |
 
-Specify the required proxy parameters, for example country/protocol, and click "<mark style="color:purple;">Generate proxy</mark>".
+If the application does not accept a complete connection string, enter these values in separate fields.
 
-<figure><img src="../.gitbook/assets/image (260).png" alt=""><figcaption></figcaption></figure>
+## Selecting a protocol
 
-Copy the generated proxies from <mark style="color:purple;">Proxy List</mark>, or copy the individual connection fields if the program does not support pasting a full line.&#x20;
+For datacenter and ISP proxies, switch the format in `Proxy List`.
 
-Below is a screenshot showing which fields correspond to "Server":"Port":"Login":"Password".
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/proxy-protocol-toggle_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/proxy-protocol-toggle_white.png" alt="Switching the protocol in Proxy List">
+  </picture>
+</figure>
 
-<figure><img src="../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
+For residential proxies, select the protocol in the `Protocol` field before generating the connection string.
+
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/proxy-protocol-select_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/proxy-protocol-select_white.png" alt="Selecting a residential proxy protocol">
+  </picture>
+</figure>
+
+Mobile proxies accept HTTP and SOCKS5 connections on the assigned port. No additional format switch is required in the order.

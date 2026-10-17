@@ -1,61 +1,92 @@
 ---
-description: Proxy for Edge
+description: Proxy setup for Microsoft Edge
 ---
 
 # ZeroOmega
 
-## **Installing** ZeroOmega Edge
+## Installing ZeroOmega
 
 {% hint style="warning" %}
-This solution does not support UDP tunneling! For this purpose, we strongly recommend considering [<mark style="color:green;">Vision</mark>](../../antidetect-browsers/vision-browser.md)
+ZeroOmega handles TCP traffic only. Use [Vision Browser](../../antidetect-browsers/vision-browser.md) when you need UDP support.
 {% endhint %}
 
-Because Edge supports Chrome extensions, we recommend using **ZeroOmega**.
-
-For Edge, the [**ZeroOmega**](https://microsoftedge.microsoft.com/addons/detail/proxy-switchyomega-3-zer/dmaldhchmoafliphkijbfhaomcgglmgd) extension is available. Install it.
+Install [ZeroOmega](https://microsoftedge.microsoft.com/addons/detail/proxy-switchyomega-3-zer/dmaldhchmoafliphkijbfhaomcgglmgd) from Microsoft Edge Add-ons.
 
 {% embed url="https://microsoftedge.microsoft.com/addons/detail/proxy-switchyomega-3-zer/dmaldhchmoafliphkijbfhaomcgglmgd" %}
 
-<figure><img src="../../../.gitbook/assets/Image00004 (5).PNG" alt=""><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../../../.gitbook/assets/edge-zeroomega-addons-get_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../../.gitbook/assets/edge-zeroomega-addons-get_white.png" alt="Installing ZeroOmega in Microsoft Edge">
+  </picture>
+</figure>
 
-After installing the extension, it will appear in the top-right corner. Click it and pin the extension for easier use.
+After installation, open the extensions menu and pin ZeroOmega to the browser toolbar.
 
-<figure><img src="../../../.gitbook/assets/image (96).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/edge-extensions-pin-zeroomega.png" alt="Pinning ZeroOmega to the Microsoft Edge toolbar"><figcaption></figcaption></figure>
 
-## ZeroOmega setup
+## Configuring ZeroOmega
 
-Open the extension settings.
+Open ZeroOmega and select `Options`.
 
-<figure><img src="../../../.gitbook/assets/Image00002 (5).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/edge-zeroomega-popup-options.png" alt="Opening ZeroOmega settings"><figcaption></figcaption></figure>
 
-In the ZeroOmega setup interface, create a new profile and give it any name.
+Under `Profiles`, click `New profile...`.
 
-<div align="center"><figure><img src="../../../.gitbook/assets/image (134).png" alt=""><figcaption></figcaption></figure></div>
+<div align="center"><figure>
+  <picture>
+    <source srcset="../../../.gitbook/assets/edge-zeroomega-new-profile_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../../.gitbook/assets/edge-zeroomega-new-profile_white.png" alt="Creating a ZeroOmega profile">
+  </picture>
+</figure></div>
 
-Specify any profile name here.
+Enter a profile name, select `Proxy Profile`, and click `Create`.
 
-<figure><img src="../../../.gitbook/assets/image (135).png" alt=""><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../../../.gitbook/assets/edge-zeroomega-new-profile-dialog_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../../.gitbook/assets/edge-zeroomega-new-profile-dialog_white.png" alt="ZeroOmega profile name and type">
+  </picture>
+</figure>
 
-Next, the server setup interface will open. Take the proxies from "Proxy list" in your order and manually enter the server IP (or DNS), port, login, and password.\
-The login and password are set with the padlock-icon button 🔒.
+In the profile settings, select the protocol and enter the server address and port from your order's `Proxy List`. Click the lock icon to add the username and password.
 
-<figure><img src="../../../.gitbook/assets/image (136).png" alt=""><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../../../.gitbook/assets/edge-zeroomega-proxy-server_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../../.gitbook/assets/edge-zeroomega-proxy-server_white.png" alt="Proxy address and port in ZeroOmega">
+  </picture>
+</figure>
 
-Enter the proxy login and password here.
+Enter the proxy username and password, then confirm the changes.
 
-<figure><img src="../../../.gitbook/assets/image (137).png" alt=""><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../../../.gitbook/assets/edge-zeroomega-proxy-auth_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../../.gitbook/assets/edge-zeroomega-proxy-auth_white.png" alt="Proxy authentication in ZeroOmega">
+  </picture>
+</figure>
 
 {% hint style="info" %}
-**You can find a proxy setup example in the [Setup guide](../../getting-started.md) section**
+The data format and an example order are described in [Getting Started](../../getting-started.md).
 {% endhint %}
 
-Then apply the settings&#x20;
+Click `Apply changes` to save the profile.
 
-<figure><img src="../../../.gitbook/assets/image (138).png" alt=""><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../../../.gitbook/assets/edge-zeroomega-apply-changes_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../../.gitbook/assets/edge-zeroomega-apply-changes_white.png" alt="Saving the ZeroOmega profile">
+  </picture>
+</figure>
 
-7\) In the pop-up window, select the proxy you configured earlier.
+Open ZeroOmega from the browser toolbar and select the profile you created.
 
-<figure><img src="../../../.gitbook/assets/Image00001 (10).PNG" alt=""><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../../../.gitbook/assets/edge-zeroomega-select-profile_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../../.gitbook/assets/edge-zeroomega-select-profile_white.png" alt="Selecting a ZeroOmega profile">
+  </picture>
+</figure>
 
-**Done! You have finished setting up the proxy through the extension.**\
-**You can now start using our proxies.**
+The proxy is connected and ready to use in Microsoft Edge.

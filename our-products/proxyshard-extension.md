@@ -31,7 +31,7 @@ The extension is available in the official **Chrome Web Store** and **Firefox Ad
 
 ### Chrome, Edge, Opera, Brave, Yandex, and other Chromium-based browsers
 
-{% embed url="https://chromewebstore.google.com/detail/proxyshard-%E2%80%93-smart-proxy/ohlcikccaeapbfpmejhckfjjddkcflbe" %}
+{% embed url="https://chromewebstore.google.com/detail/ohlcikccaeapbfpmejhckfjjddkcflbe" %}
 
 ### Mozilla Firefox
 

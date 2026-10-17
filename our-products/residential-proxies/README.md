@@ -26,11 +26,11 @@ Step-by-step purchase and payment guide: [Purchasing residential proxies](../../
 | Pool size            | 300k - 400k                          | 300k - 400k (= Standard)                    | 3.8M - 4.6M                       |
 | Max connections      | 35,000                               | 5,000                                       | -                                 |
 | Max speed            | 75 Mbps                              | 75 Mbps                                     | 75 Mbps                           |
-| [UDP support](../about-udp/) | ✓ (except USA; [port restrictions apply](../restrictions.md)) | ✓ (except USA; [port restrictions apply](../restrictions.md)) | ✓ ([except some cities and macOS/iOS devices](../restrictions.md)) |
-| [Device OS filtering](../p0f-spoofing.md) | ✗ | ✗ | ✓ |
-| Unlimited plan       | ✗                                    | ✓                                           | ✗                                 |
-| Billing              | Per GB (Pay as you go)               | Day / Half-month / Month                    | Per GB (Pay as you go)            |
-| Price                | **$2 / GB**                          | **$30** / day · **$399** / half-month · **$699** / month | **$3 / GB**          |
+| [UDP support](../about-udp/) | Available (except in the USA; [port restrictions apply](../restrictions.md)) | Available (except in the USA; [port restrictions apply](../restrictions.md)) | Available ([except in certain cities and on macOS/iOS devices](../restrictions.md)) |
+| [Device OS filtering](../p0f-spoofing.md) | Not available | Not available | Available |
+| Unlimited plan       | Not available                        | Available                                   | Not available                     |
+| Billing              | Per GB (Pay as you go)               | Day / Week / Half-month / Month             | Per GB (Pay as you go)            |
+| Price                | **$2 / GB**                          | **$30** / day · **$199** / week · **$399** / half-month · **$699** / month | **$3 / GB** |
 
 ## Available countries
 
@@ -137,7 +137,7 @@ You can add the complete string to a browser, application, or another client. St
 
 New data may take 10-20 minutes to appear. Statistics are retained for one month.
 
-## What tasks they fit
+## Suitable use cases
 
 Social media and multi-accounting, crypto exchanges (Binance, Bybit and others), Polymarket, web scraping, SEO monitoring, ad verification, e-commerce analytics, price monitoring, geo-targeted website testing.
 

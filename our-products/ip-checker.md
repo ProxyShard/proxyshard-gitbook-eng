@@ -189,7 +189,7 @@ Checks `navigator.maxTouchPoints` and pointer type (`mouse`, `touch`, `pen`). If
 {% endhint %}
 
 {% hint style="warning" %}
-**Normal for Datacenter / ISP proxies:** ISP type = `datacenter/hosting`. This is expected and is not a problem for most tasks.
+**Normal for Datacenter proxies:** ISP type = `datacenter/hosting`. This is expected and is not a problem for most tasks.
 {% endhint %}
 
 {% hint style="danger" %}

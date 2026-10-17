@@ -7,7 +7,7 @@ icon: puzzle-piece
 
 Our official <mark style="color:purple;">**ProxyShard – Smart Proxy Manager**</mark> extension installs in Brave directly from the **Chrome Web Store**, since the browser uses the Chromium engine and is compatible with all Chrome extensions.
 
-{% embed url="https://chromewebstore.google.com/detail/proxyshard-%E2%80%93-smart-proxy/ohlcikccaeapbfpmejhckfjjddkcflbe" %}
+{% embed url="https://chromewebstore.google.com/detail/ohlcikccaeapbfpmejhckfjjddkcflbe" %}
 
 ## Detailed instructions
 

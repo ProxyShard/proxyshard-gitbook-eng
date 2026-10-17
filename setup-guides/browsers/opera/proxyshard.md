@@ -5,14 +5,13 @@ icon: puzzle-piece
 
 # ProxyShard Extension
 
-Our official <mark style="color:purple;">**ProxyShard – Smart Proxy Manager**</mark> extension works in Opera, but installing extensions from the Chrome Web Store requires an extra step.
+Our official <mark style="color:purple;">**ProxyShard – Smart Proxy Manager**</mark> extension can be installed directly from the **Chrome Web Store** in Opera.
 
-## Installing from the Chrome Web Store in Opera
+## Installation
 
-1. Open the Opera Add-ons site and install the [**Install Chrome Extensions**](https://addons.opera.com/extensions/details/install-chrome-extensions/) extension.
-2. Once installed, open the Chrome Web Store and install ProxyShard as usual.
+Open the extension page and click the install button. If Opera asks you to confirm installation from the Chrome Web Store, approve the request.
 
-{% embed url="https://chromewebstore.google.com/detail/proxyshard-%E2%80%93-smart-proxy/ohlcikccaeapbfpmejhckfjjddkcflbe" %}
+{% embed url="https://chromewebstore.google.com/detail/ohlcikccaeapbfpmejhckfjjddkcflbe" %}
 
 ## Detailed instructions
 

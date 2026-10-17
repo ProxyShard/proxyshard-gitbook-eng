@@ -1,35 +1,61 @@
 # SocksCap64
 
 {% hint style="success" %}
-This solution supports UDP tunneling!
+SocksCap64 supports both TCP and UDP proxying.
 {% endhint %}
 
-## Installing SocksCap64
+## Installation
 
-Follow the [link](https://github.com/bobo2334/sockscap64/releases/tag/4.7) to download SocksCap64.
+Download `SocksCap64-setup-4.7.exe` from the [release page](https://github.com/bobo2334/sockscap64/releases/tag/4.7), install it, and run SocksCap64 as administrator.
 
-{% embed url="https://github.com/bobo2334/sockscap64/releases/tag/4.7" %}
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/sockscap64-github-download_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/sockscap64-github-download_white.png" alt="Downloading SocksCap64 from GitHub">
+  </picture>
+</figure>
 
-<figure><img src="../../.gitbook/assets/Image00004 (8).PNG" alt=""><figcaption></figcaption></figure>
+## Add a proxy
 
-After downloading, install it and start the application.
+1. Click `Proxy` in the top bar.
+2. In `Proxy Manager`, click `+`.
+3. Enter the connection details:
+   - `Proxy Address`: the server IP address or hostname;
+   - `Port`: the connection port;
+   - `Account`: the username;
+   - `Password`: the password;
+   - `SOCKS Type`: `SOCKS 5`.
+4. Click `Save`.
 
-## **SocksCap64 setup**
-
-To get started, add a proxy server. To do this, open the <mark style="color:purple;">Proxy</mark> tab and then add a new connection using <img src="../../.gitbook/assets/image (26) (1).png" alt="" data-size="line"> at the bottom of the program.
-
-<figure><img src="../../.gitbook/assets/Image00005 (2).PNG" alt=""><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/sockscap64-proxy-manager-config_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/sockscap64-proxy-manager-config_white.png" alt="Proxy settings in SocksCap64">
+  </picture>
+</figure>
 
 {% hint style="info" %}
-**You can find a proxy setup example in the [Setup guide](../getting-started.md) section**
+See the [general setup guide](../getting-started.md) for help finding the connection details.
 {% endhint %}
 
-## Application proxying setup
+## Add an application
 
-Add the application to Apps and restart it.
+Click `Apps`, select the required application in `Programs selector`, and click `OK`.
 
-<figure><img src="../../.gitbook/assets/Image00002 (9).PNG" alt=""><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/sockscap64-programs-selector-add_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/sockscap64-programs-selector-add_white.png" alt="Adding an application in SocksCap64">
+  </picture>
+</figure>
 
-Or add the application through Proxy Panel.
+## Run through the proxy
 
-<figure><img src="../../.gitbook/assets/Image00001 (7).PNG" alt=""><figcaption></figcaption></figure>
+Right-click the added application and select `Run selected program in tunnel`. The application will start through the configured SOCKS5 proxy.
+
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/sockscap64-run-program-in-tunnel_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/sockscap64-run-program-in-tunnel_white.png" alt="Running an application through the proxy tunnel">
+  </picture>
+</figure>

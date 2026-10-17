@@ -25,8 +25,8 @@ Current product restrictions are listed on the [Restrictions](restrictions.md) p
 | IP type        | IPv4 (home ISP)                    |
 | Sharing        | No - one IP per user               |
 | Connection limit | 2,500 per IP                     |
-| [UDP support](about-udp/) | ✓                          |
-| [p0f support](p0f-spoofing.md) | ✓ (+$0.6 / IP per month) |
+| [UDP support](about-udp/) | Available                  |
+| [p0f support](p0f-spoofing.md) | Available (+$0.6 / IP per month) |
 | Price          | **$2** / IP per month              |
 
 ## Available locations
@@ -46,12 +46,13 @@ The list of locations is constantly expanding.
 
 1. Open `ISP Proxy`.
 2. Select a country in `Proxy region`.
-3. Enter the quantity in `Number of proxies`.
-4. Enable `Auto renew` if you want the order to renew automatically.
-5. Enable `Enable p0f settings` if required.
-6. In `Total slots`, enter how many proxies should use p0f spoofing.
-7. If you have a promo code, enter it in `Promocode` and click `Apply`.
-8. Review the total and click `Buy now`.
+3. Select the billing period in `Billing cycle`.
+4. Enter the quantity in `Number of proxies`.
+5. Enable `Auto renew` if you want the order to renew automatically.
+6. Enable `Enable p0f settings` if required.
+7. In `Total slots`, enter how many proxies should use p0f spoofing.
+8. If you have a promo code, enter it in `Promocode` and click `Apply`.
+9. Review the total and click `Buy now`.
 
 <figure>
   <picture>
@@ -90,7 +91,7 @@ After payment, allow 1-2 minutes for the order to synchronize and the proxies to
 An order with the `Canceled` status cannot be restored. This status is assigned after three days without payment.
 {% endhint %}
 
-## What tasks they fit
+## Suitable use cases
 
 Any crypto exchanges, Polymarket, stable web scraping sessions, SEO monitoring, e-commerce price monitoring, marketplace checks, ad verification, brand monitoring, testing sites from a home-ISP ASN, QA of authorization and user scenarios, website availability monitoring, account management.
 

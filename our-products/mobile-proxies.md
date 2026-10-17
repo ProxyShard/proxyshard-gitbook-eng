@@ -31,8 +31,8 @@ Step-by-step purchase and activation guide: [Purchasing mobile proxies](../site-
 | IP type        | Mobile IPv4                           |
 | Sharing        | No - one port per user                |
 | Traffic        | Unlimited                             |
-| [UDP support](about-udp/) | ✓                             |
-| [p0f support](p0f-spoofing.md) | ✓ (not in all locations, see above) |
+| [UDP support](about-udp/) | Available                     |
+| [p0f support](p0f-spoofing.md) | Available (not in all locations, see above) |
 | Price          | from **$4** / day · from **$55** / month |
 
 ## Available locations
@@ -103,7 +103,7 @@ Other fields:
 After purchase and after three hours without activity, activate the port using `Restart` or `Reset URL`. The proxy does not work while `Proxy status` is `Disconnected`.
 {% endhint %}
 
-## What tasks they fit
+## Suitable use cases
 
 Social media and multi-accounting, mobile ad verification, mobile ad checks, most crypto exchanges, Polymarket, testing mobile sites and apps, web scraping of mobile site versions, SEO monitoring of mobile results, e-commerce monitoring of mobile prices, geo-targeted content testing, travel scraping of mobile fares, brand monitoring in the mobile environment.
 

@@ -6,7 +6,7 @@ icon: circle-question
 # Popular questions
 
 {% hint style="warning" %}
-**Information is current as of June 2026.** The list of products, locations, operators, and prices may change, please double-check the current pages in the [dashboard](https://dashboard.proxyshard.com/) before purchase.
+Products, locations, operators, and prices may change. Check the current pages in the [dashboard](https://dashboard.proxyshard.com/) before purchasing.
 {% endhint %}
 
 ***
@@ -230,7 +230,7 @@ Residential proxies cover **most countries in the world**. The full up-to-date l
 
 ## 20. Which countries are available for ISP proxies?
 
-As of June 2026, ISP proxies are available in:
+ISP proxies are available in the following locations:
 
 | Country |
 | ------- |
@@ -243,7 +243,7 @@ As of June 2026, ISP proxies are available in:
 
 ## 21. Which countries are available for Datacenter proxies?
 
-As of June 2026:
+Available locations:
 
 * 🇲🇩 Moldova
 * 🇺🇦 Ukraine

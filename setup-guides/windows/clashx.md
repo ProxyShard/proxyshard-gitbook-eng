@@ -1,163 +1,135 @@
-# ClashX
+# Clash for Windows
 
 {% hint style="success" %}
-This solution supports UDP tunneling!
+Clash for Windows can proxy both TCP and UDP traffic in TUN mode.
 {% endhint %}
 
-## **ClashX** setup
+## Download and launch
 
-Go to the official GitHub page of the ClashX project and download the required archive version for your OS. The example shows setup on Windows OS ([Clash.for.Windows-0.20.39-win.7z](https://github.com/lantongxue/clash_for_windows_pkg/releases/download/0.20.39/Clash.for.Windows-0.20.39-win.7z)).
+Open the [Clash for Windows releases page](https://github.com/lantongxue/clash_for_windows_pkg/releases) and download `Clash.for.Windows-0.20.39-win.7z`.
 
-{% embed url="https://github.com/lantongxue/clash_for_windows_pkg/releases" %}
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/clashx-github-download_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/clashx-github-download_white.png" alt="Downloading Clash for Windows from GitHub">
+  </picture>
+</figure>
 
-<figure><img src="../../.gitbook/assets/image (170).png" alt=""><figcaption></figcaption></figure>
+Extract the archive to a separate folder.
 
-## **Starting ClashX**
+<figure><img src="../../.gitbook/assets/clashx-extract-archive.png" alt="Extracting the Clash for Windows archive"><figcaption></figcaption></figure>
 
-Then unpack the archive and run "Clash for Windows.exe" as _<mark style="color:red;">**administrator**</mark>_, as shown in the example below:
+Run `Clash for Windows.exe` as administrator. Administrator access is required to install and operate the system network driver.
 
-<figure><img src="../../.gitbook/assets/image (172).png" alt="" width="563"><figcaption><p>Unpacking the archive to the desktop</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/clashx-run-as-administrator.png" alt="Running Clash for Windows as administrator"><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (162).png" alt="" width="375"><figcaption><p>Run as administrator</p></figcaption></figure>
+## Configure the profile
 
-## **Program setup**
+1. Open `Profiles`.
+2. Click the `<>` icon next to `config.yaml`.
 
-After starting the program, go to "<mark style="color:purple;">Profiles</mark>" and open the <mark style="color:purple;">config.yaml</mark> file editor.
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/clashx-profiles-edit-config_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/clashx-profiles-edit-config_white.png" alt="Opening the config.yaml editor">
+  </picture>
+</figure>
 
-<figure><img src="../../.gitbook/assets/image (159).png" alt="" width="375"><figcaption></figcaption></figure>
-
-## **Configuration file setup**
-
-Set the file configuration as in the example below, specifying your proxies from the order:
+Add the proxy under `proxies:` and enter the details from your order. This example uses SOCKS5.
 
 ```yaml
 proxies:
-  - name: "ProxyShard-Germany-testname"
+  - name: "ProxyShard-Germany"
     type: socks5
     server: 123.123.123.123
-    port: 1234
+    port: 41733
     username: proxy_login
-    password: password_login
+    password: proxy_password
     udp: true
 
 proxy-groups:
-  - name: "Auto"
+  - name: "ProxyShard"
     type: select
     proxies:
-      - ProxyShard-Germany-testname
+      - ProxyShard-Germany
 
 rules:
-  - PROCESS-NAME,chrome.exe,Auto
+  - PROCESS-NAME,chrome.exe,ProxyShard
   - MATCH,DIRECT
 ```
 
-In the end, it should look approximately like this:
+`name` is the connection name. Enter the proxy details in `server`, `port`, `username`, and `password`. The `udp: true` setting enables UDP for this server.
 
-<figure><img src="../../.gitbook/assets/image (158).png" alt="" width="563"><figcaption><p>Configuration example</p></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/clashx-profile-config-proxies_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/clashx-profile-config-proxies_white.png" alt="Configuring a proxy in config.yaml">
+  </picture>
+</figure>
 
 {% hint style="info" %}
-**You can find a proxy setup example in the [Setup guide](../getting-started.md) section**
+See the [general setup guide](../getting-started.md) for help finding the connection details.
 {% endhint %}
 
-<pre><code>proxies:
-  - name: "ProxyShard-Germany-testname"       | Here you set the proxy name
-    type: socks5                              | Protocol type 
-    server: 123.123.123.123                   | Proxy address or domain 
-    port: 1234                                | Proxy port
-    username: proxy_login                     | Proxy login                    
-    password: password_login                  | Proxy password 
-    udp: true                                  
-proxy-groups:
-  - name: "Auto"
-    type: select
-    proxies:
-      - ProxyShard-Germany-testname              
+## Activate and test the proxy
 
-rules:
-  - PROCESS-NAME,<a data-footnote-ref href="#user-content-fn-1">chrome.exe</a>,Auto   | Select a specific application for proxying
-  - MATCH,DIRECT      | In our example, the Chrome browser is used,
-                      | but it can be any application, for example discord.exe  
-                      | - MATCH,DIRECT : Indicates that all traffic that is not Chrome
-                      | will be routed not to the proxy, but to your main interface               
-</code></pre>
+1. Open `Proxies`.
+2. Select `Global` mode.
+3. Click `Check` next to the ProxyShard server.
 
-## **Checking the configuration**
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/clashx-proxies-global-select_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/clashx-proxies-global-select_white.png" alt="Selecting Global mode and testing the proxy">
+  </picture>
+</figure>
 
-After configuring it, open "Proxies", select the "Global" option, and check the config you set up in step 4.
+If the connection is available, the server card will show its latency.
 
-<figure><img src="../../.gitbook/assets/image (160).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/clashx-proxy-ping-result.png" alt="Successful proxy test in Clash for Windows"><figcaption></figcaption></figure>
 
-If the check fails and you get "Failed", compare the configuration file and make sure all proxy data was entered correctly. If the settings are correct, you will get a successful check result as shown in the screenshot below.
+## Add multiple proxies
 
-<figure><img src="../../.gitbook/assets/image (161).png" alt=""><figcaption></figcaption></figure>
+Add each server as a separate item under `proxies:` and list their names in the `ProxyShard` group. After saving the configuration, the servers will appear under `Proxies`, where you can switch between them.
 
-## **Installing and enabling the TAP interface**
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/clashx-proxies-multiple-list_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/clashx-proxies-multiple-list_white.png" alt="Multiple proxies in Clash for Windows">
+  </picture>
+</figure>
 
-Next, go to "General" and install the TAP interface on your computer. It will create a new interface to which the proxy will be bound.
+## Enable TUN Mode
 
-After installing the TUN interface, enable TUN Mode, as shown in the 4th frame of the screenshot.
+1. Open `General`.
+2. In the `TAP Device` row, click `Manage`, then `Install`.
+3. Enable `TUN Mode` to route system traffic through the selected proxy.
 
-<figure><img src="../../.gitbook/assets/image (163).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/clashx-general-tap-tun-setup_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/clashx-general-tap-tun-setup_white.png" alt="Installing the network adapter and enabling TUN Mode">
+  </picture>
+</figure>
 
-## **Checking functionality**
+## Verify the connection
 
-If everything starts successfully, open the application for which you configured the config (step 4) and enjoy your programs working with UDP traffic proxying!<br>
+Open [ProxyShard IP Checker](https://proxyshard.com/tools/ip-checker) and confirm that it displays the proxy IP address.
 
-In our example, Chrome was proxied, and we can check it with [checkers](../../our-products/about-udp/webrtc-leak-check-tools.md).
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/clashx-ip-checker-result_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/clashx-ip-checker-result_white.png" alt="Checking the IP address after configuring Clash for Windows">
+  </picture>
+</figure>
 
-<figure><img src="../../.gitbook/assets/image (164).png" alt="" width="563"><figcaption></figcaption></figure>
+You can also check for WebRTC leaks with BrowserLeaks.
 
-<figure><img src="../../.gitbook/assets/image (165).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/clashx-browserleaks-check_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/clashx-browserleaks-check_white.png" alt="Checking WebRTC with BrowserLeaks">
+  </picture>
+</figure>
 
-If the check or proxying [does not work](../../faq-and-support/faq/proxy-not-working.md), make sure you definitely started ClashX as administrator and completed steps 4 through 6 correctly.
-
-## **Additional. Adding multiple proxies and switching between them**
-
-To quickly switch between proxies, add new proxies to the configuration from step 4. Names like "ProxyShard-DE-testname1" are arbitrary and can be set as you prefer.
-
-The key point after adding them is to also specify the proxy in "proxy-group", as shown below:
-
-```yaml
-proxies:
-  - name: "ProxyShard-DE-testname1"
-    type: socks5
-    server: 123.123.123.123
-    port: 42651
-    username: LOgin
-    password: pasSSWORD
-    udp: true
-    
-  - name: "ProxyShard-NL-testname2"
-    type: socks5
-    server: 123.123.123.123
-    port: 42651
-    username: LOgin
-    password: pasSSWORD
-    udp: true
-
-  - name: "ProxyShard-RO-testname3"
-    type: socks5
-    server: 123.123.123.123
-    port: 42651
-    username: LOgin
-    password: pasSSWORD
-    udp: true
-
-proxy-groups:
-  - name: "Auto"
-    type: select
-    proxies:
-      - ProxyShard-DE-testname1
-      - ProxyShard-NL-testname2
-      - ProxyShard-RO-testname3
-
-rules:
-  - PROCESS-NAME,chrome.exe,Auto
-  - MATCH,DIRECT
-```
-
-If you specified everything correctly, additional connection points will appear in "Proxies". The connection will be made depending on the selected settings profile (just click any of them).
-
-<figure><img src="../../.gitbook/assets/image (166).png" alt=""><figcaption></figcaption></figure>
-
-[^1]: application to proxy
+If the connection does not work, verify the values in `config.yaml`, restart the application as administrator, and follow the [troubleshooting guide](../../faq-and-support/faq/proxy-not-working.md).

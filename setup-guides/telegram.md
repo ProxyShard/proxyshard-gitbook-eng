@@ -5,53 +5,84 @@ icon: telegram
 
 # Telegram
 
-### Proxy setup for the Desktop version of Telegram
+## Telegram Desktop
 
-To set up a proxy in <mark style="color:purple;">Telegram</mark>, go to Settings.
+Open `Settings`.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/telegram-desktop-menu-settings_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/telegram-desktop-menu-settings_white.png" alt="Opening Telegram Desktop settings">
+  </picture>
+</figure>
 
-Then open the "Advanced" settings.
+Open `Advanced`.
 
-<figure><img src="../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/telegram-desktop-settings-advanced_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/telegram-desktop-settings-advanced_white.png" alt="Advanced settings in Telegram Desktop">
+  </picture>
+</figure>
 
-Select the "TCP" connection type.
+Under `Network and proxy`, open `Connection type`.
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/telegram-desktop-connection-type_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/telegram-desktop-connection-type_white.png" alt="Connection type in Telegram Desktop">
+  </picture>
+</figure>
 
-Next, specify the proxy connection.
-
-Select the connection protocol that is convenient for you. HTTP is used by default.
+Select `Use custom proxy`, click `Add proxy`, and choose a protocol. Fill in the address, port, username, and password using the details from your order's `Proxy List`.
 
 {% hint style="info" %}
-**You can find a proxy setup example in the [Setup guide](getting-started.md) section**
+The data format and an example order are described in [Getting Started](getting-started.md).
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/telegram-desktop-use-custom-proxy_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/telegram-desktop-use-custom-proxy_white.png" alt="Proxy configuration in Telegram Desktop">
+  </picture>
+</figure>
 
-Then check the connection and save it.
+Save the settings and confirm that the proxy status is `Connected`.
 
-<figure><img src="../.gitbook/assets/image (225).png" alt=""><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/telegram-desktop-proxy-connected_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/telegram-desktop-proxy-connected_white.png" alt="Connected proxy in Telegram Desktop">
+  </picture>
+</figure>
 
-**Done! You can now use Telegram with our proxies.**
+## Telegram for iOS
 
-### Proxy setup for the Mobile version of Telegram
+Open `Settings` and select `Data and Storage`.
 
-To set up a proxy on your phone, open settings and select "Data and Storage".
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/telegram-ios-settings-data-storage_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/telegram-ios-settings-data-storage_white.png" alt="Data and Storage in Telegram for iOS">
+  </picture>
+</figure>
 
-<figure><img src="../.gitbook/assets/photo_2026-04-11_02-42-22.jpg" alt="" width="375"><figcaption></figcaption></figure>
+Open `Proxy`, then tap `Add Proxy`.
 
-Then select "Proxy".
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/telegram-ios-connection-proxy_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/telegram-ios-connection-proxy_white.png" alt="Proxy settings in Telegram for iOS">
+  </picture>
+</figure>
 
-<figure><img src="../.gitbook/assets/photo_2026-04-11_02-42-30.jpg" alt="" width="375"><figcaption></figcaption></figure>
+Select `SOCKS5` and fill in `Server`, `Port`, `Username`, and `Password` using the details from your order's `Proxy List`.
 
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/telegram-ios-proxy-socks5-form_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/telegram-ios-proxy-socks5-form_white.png" alt="SOCKS5 proxy configuration in Telegram for iOS">
+  </picture>
+</figure>
 
-
-Select the SOCKS5 protocol and enter the proxy connection details.
-
-
-
-<figure><img src="../.gitbook/assets/photo_2026-04-11_02-40-30.jpg" alt="" width="375"><figcaption></figcaption></figure>
-
-Make sure to save the setting, and then you can use the proxy inside _Telegram._
-
+Save the settings and enable the proxy you created.

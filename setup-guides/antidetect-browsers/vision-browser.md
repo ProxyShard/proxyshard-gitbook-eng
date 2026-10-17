@@ -1,110 +1,140 @@
 ---
-description: Best browser with UDP proxy support
+description: An antidetect browser with UDP proxy support
 ---
 
-# 🔥 Vision browser
+# Vision Browser
 
 {% hint style="success" %}
-This solution supports UDP tunneling!
+Vision Browser supports TCP and UDP traffic through SOCKS5 proxies.
 {% endhint %}
 
-## **Installing and downloading the **<mark style="color:$success;">**Vision**</mark>** browser.**
+## Installation and registration
 
-Follow the [link](https://browser.vision/r/ecf2408f-02de-4e4f-bc24-be368ac32325) to download the browser and complete registration. The registration details will be required to log in to the antidetect browser itself.
+Open the [Vision Browser website](https://browser.vision/r/ecf2408f-02de-4e4f-bc24-be368ac32325), download the application, and install it.
 
-{% embed url="https://browser.vision/r/ecf2408f-02de-4e4f-bc24-be368ac32325" %}
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/vision-website-download_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/vision-website-download_white.png" alt="Downloading Vision Browser">
+  </picture>
+</figure>
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+Create an account. You will use these credentials to sign in to the application.
 
-Account registration:
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/vision-sign-up_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/vision-sign-up_white.png" alt="Creating a Vision Browser account">
+  </picture>
+</figure>
 
-<figure><img src="../../.gitbook/assets/image (111).png" alt=""><figcaption></figcaption></figure>
+When purchasing a plan, you can use the `PROXYSHARD` promo code for a 20% discount.
 
-On the website, you can link your <mark style="color:blue;">Telegram</mark> account to get a free 4-day trial.\
-To do this, go to your [profile](https://my.browser.vision/) and link your account.
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/vision-plan-promo-code_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/vision-plan-promo-code_white.png" alt="PROXYSHARD promo code in Vision Browser">
+  </picture>
+</figure>
 
-{% embed url="https://my.browser.vision/" %}
+## Create the first profile
 
+1. Open `Profiles`.
+2. Go to `Folders` and click `Create folder`.
 
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/vision-folders-create_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/vision-folders-create_white.png" alt="Creating a profile folder in Vision Browser">
+  </picture>
+</figure>
 
-Later, when purchasing a subscription, you can use our promo code for a 20% discount: _<mark style="color:purple;">**PROXYSHARD**</mark>_
+Enter a folder name and save it.
 
-<figure><img src="../../.gitbook/assets/image (114).png" alt=""><figcaption><p>Account subscription renewal</p></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/vision-folder-create-form_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/vision-folder-create-form_white.png" alt="Naming the profile folder">
+  </picture>
+</figure>
 
-## **Setting up the first browser profile**
+Click `Create profile` inside the folder.
 
-After downloading and installing the browser, log in with the account you created earlier.
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/vision-profiles-create-profile_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/vision-profiles-create-profile_white.png" alt="Creating a Vision Browser profile">
+  </picture>
+</figure>
 
-Next, create a folder where the browser profile, proxies, and other work environment settings will be stored:
+Generate one SOCKS5 proxy in the ProxyShard dashboard and copy its connection details.
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/vision-residential-generate-single_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/vision-residential-generate-single_white.png" alt="Generating one SOCKS5 proxy in ProxyShard">
+  </picture>
+</figure>
 
-Create a folder for profiles
+In the Vision profile settings, open the `SOCKS` tab, enter the proxy details, test the connection, and click `Save`.
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/vision-create-profile-socks_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/vision-create-profile-socks_white.png" alt="SOCKS5 proxy settings in a Vision profile">
+  </picture>
+</figure>
 
-Then create a new browser profile through "<mark style="color:purple;">Create profile</mark>":
+<figure><img src="../../.gitbook/assets/vision-folder-profile-created.png" alt="Created Vision Browser profile"><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+## Add a proxy list
 
-Specify the profile name and other settings, then click "<mark style="color:purple;">New</mark> <mark style="color:purple;">profile</mark>". When setting up the profile, you can add a proxy directly to the profile.
+Open the `Proxies` tab and click `Add proxy`.
 
-<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/vision-proxies-add-proxy_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/vision-proxies-add-proxy_white.png" alt="Adding proxies in Vision Browser">
+  </picture>
+</figure>
 
-Add the proxy specifically as <mark style="color:purple;">SOCKS5</mark>, because UDP ASSOC works there.
+Generate a SOCKS5 proxy list in the ProxyShard dashboard and copy it.
 
-<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/vision-residential-generate-list_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/vision-residential-generate-list_white.png" alt="Generating a SOCKS5 proxy list">
+  </picture>
+</figure>
 
-{% hint style="danger" %}
-We strongly recommend using ISP proxies because they are the most flexible and suitable for all tasks.
-{% endhint %}
+Paste the list into the add field. After import, confirm that the connections show `Online`.
 
-{% embed url="https://dashboard.proxyshard.com/en/isp-proxy" %}
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/vision-proxies-imported-list_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/vision-proxies-imported-list_white.png" alt="Imported proxies in Vision Browser">
+  </picture>
+</figure>
 
-Done! Your profile has been created and you can start working.
+To assign a proxy to an existing profile, click the icon in the `Proxy` column.
 
-<figure><img src="../../.gitbook/assets/image (120).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vision-profiles-proxy-column.png" alt="Proxy column in the profile list"><figcaption></figcaption></figure>
 
-## **Adding a proxy list from the order to the program.**
+Choose `Select proxy`, select the required connection, and test it.
 
-{% hint style="info" %}
-**You can find a proxy setup example in the** [**Setup guide**](../getting-started.md) **section.**
-{% endhint %}
+<figure><img src="../../.gitbook/assets/vision-edit-profile-select-proxy.png" alt="Selecting a proxy for a Vision profile"><figcaption></figcaption></figure>
 
-Next, go to <mark style="color:$success;">Vision</mark>, open the "<mark style="color:purple;">Proxies</mark>" tab, and click "<mark style="color:purple;">Create proxy</mark>".
+After saving, the assigned proxy appears in the profile row.
 
-<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vision-profile-proxy-assigned.png" alt="Proxy assigned to a Vision profile"><figcaption></figcaption></figure>
 
-Before adding proxies, we recommend selecting the proxy formatting type and SOCKS5 connection protocol in your order panel.
+## Check WebRTC
 
-<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+Start the profile and open [ProxyShard IP Checker](https://proxyshard.com/ip-checker). The TCP and WebRTC addresses should match.
 
-In the proxy add window, click the "<mark style="color:purple;">Mass Proxy Creation</mark>" tab, upload the proxies copied earlier, and click "<mark style="color:purple;">Create</mark>":
-
-<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
-
-After adding the proxy, go to the "Profiles" tab and click "<mark style="color:purple;">+</mark>" next to the profile you need in the Proxy column:
-
-<figure><img src="../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
-
-Go to "<mark style="color:purple;">Select proxy</mark>" and select the proxy you added earlier:
-
-<figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
-
-Now you can launch your profile with the proxy:
-
-<figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
-
-## Checking WebRTC operation
-
-Check the WebRTC leak and profile quality score through our [checker](../../our-products/ip-checker.md).
-
-{% embed url="https://proxyshard.com/ip-checker" %}
-
-<figure><img src="../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
-
-The WebRTC address is displayed correctly, Browser Score = 0.
-
-#### Done! You can now start working.
-
-<mark style="color:$success;">Vision</mark><mark style="color:yellow;">&</mark><mark style="color:purple;">Shard</mark>
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/vision-webrtc-check_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/vision-webrtc-check_white.png" alt="Checking TCP and WebRTC addresses in Vision Browser">
+  </picture>
+</figure>

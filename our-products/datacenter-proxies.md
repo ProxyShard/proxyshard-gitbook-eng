@@ -21,8 +21,8 @@ Current product restrictions are listed on the [Restrictions](restrictions.md) p
 | IP type        | IPv4                                                                      |
 | Sharing        | No - one IP per user                                                      |
 | Connection limit | 2,500 per IP                                                            |
-| [UDP support](about-udp/) | ✓                                                                 |
-| [p0f support](p0f-spoofing.md) | ✓ (with monthly rental, +$0.3 / IP)                          |
+| [UDP support](about-udp/) | Available                                                         |
+| [p0f support](p0f-spoofing.md) | Available (with monthly rental, +$0.3 / IP)                  |
 | Price          | **$0.3** / 3 days · **$0.4** / week · **$0.7** / half-month · **$1.2** / month |
 
 ## Available locations
@@ -85,7 +85,7 @@ After payment, allow 1-2 minutes for the order to synchronize and the proxies to
 An order with the `Canceled` status cannot be restored. This status is assigned after three days without payment.
 {% endhint %}
 
-## What tasks they fit
+## Suitable use cases
 
 Most crypto exchanges, Polymarket and platforms, mass web scraping of simple sites, fast collection of public data, availability and uptime checks, SEO scraping, price monitoring on weakly protected sites, load testing of your own systems, scraping catalogs and directories, API request automation.
 
@@ -106,7 +106,7 @@ Most crypto exchanges, Polymarket and platforms, mass web scraping of simple sit
 * **Not suitable for some platforms** - certain resources block DC addresses outright (for example, the DePIN projects Grass and Gradient)
 
 {% hint style="success" %}
-These restrictions are bypassed with [ISP proxies](isp-proxies.md).
+Use [ISP proxies](isp-proxies.md) when you need to avoid these limitations.
 {% endhint %}
 
 {% hint style="info" %}

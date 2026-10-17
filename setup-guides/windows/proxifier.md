@@ -1,49 +1,79 @@
 # Proxifier
 
 {% hint style="danger" %}
-This solution does not support UDP tunneling!
+Proxifier does not support UDP proxying.
 {% endhint %}
 
 {% hint style="info" %}
-This program is paid; its trial period is 31 days.
+Proxifier is paid software with a 31-day trial.
 {% endhint %}
 
-## Installing **Proxifier.**
+## Installation
 
-Follow the [link](https://www.proxifier.com/download/) to download Proxifier. Then install and start the program.
+Open the [Proxifier download page](https://www.proxifier.com/download/), download `ProxifierSetup.exe`, and install the application.
 
-<figure><img src="../../.gitbook/assets/image (29) (1).png" alt=""><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/proxifier-website-download_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/proxifier-website-download_white.png" alt="Downloading Proxifier">
+  </picture>
+</figure>
 
-## Proxifier setup
+## Add a proxy
 
-To get started, specify the proxy server. Open the <mark style="color:purple;">Proxy Servers</mark> tab.
+1. Launch Proxifier.
+2. Open `Profile` and select `Proxy Servers...`.
 
-<figure><img src="../../.gitbook/assets/image (28) (1).png" alt=""><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/proxifier-menu-proxy-servers_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/proxifier-menu-proxy-servers_white.png" alt="Proxy Servers in Proxifier">
+  </picture>
+</figure>
 
-## **Adding a proxy**
+Click `Add...` in the `Proxy Servers` window and complete the form:
 
-Add a connection with the Add button.
+- `Address`: the proxy IP address or hostname;
+- `Port`: the connection port;
+- `Protocol`: `SOCKS Version 5`, or `HTTPS` for an HTTP proxy;
+- `Authentication`: enable `Enable`, then enter the `Username` and `Password`.
 
-Paste the connection details, specify the required connection protocol, and click save.
-
-<figure><img src="../../.gitbook/assets/image (94).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../.gitbook/assets/Image00003 (8).PNG" alt=""><figcaption></figcaption></figure>
-
-Be sure to run a check before saving. If the check fails, the connection data is most likely incorrect or the specified protocol does not match the port from the order.
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/proxifier-add-proxy-dialog_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/proxifier-add-proxy-dialog_white.png" alt="Adding a proxy server in Proxifier">
+  </picture>
+</figure>
 
 {% hint style="info" %}
-**You can find a proxy setup example in the [Setup guide](../getting-started.md) section**
+See the [general setup guide](../getting-started.md) for help finding the connection details.
 {% endhint %}
 
-## Routing rule setup
+Click `Check`. After `Proxy is ready to work with Proxifier!` appears, close the test window with `OK` and save the server.
 
-Before starting, routing must also be configured. Go to Proxification Rule and specify the proxy settings. In our example, we will proxy all applications on the computer; in the rule, be sure to specify where the rule traffic should go.
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/proxifier-proxy-check-success_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/proxifier-proxy-check-success_white.png" alt="Successful proxy test in Proxifier">
+  </picture>
+</figure>
 
-<figure><img src="../../.gitbook/assets/Image00002 (10).PNG" alt=""><figcaption></figcaption></figure>
+## Configure routing
 
-In the proxying rules, specify the previously created proxy so that traffic can pass through it.
+Open `Profile` and select `Proxification Rules...`.
 
-<figure><img src="../../.gitbook/assets/Image00001 (8).PNG" alt=""><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/proxifier-menu-proxification-rules_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/proxifier-menu-proxification-rules_white.png" alt="Opening Proxification Rules">
+  </picture>
+</figure>
 
-**Done! You can now use the application.**
+In the `Default` row, open the list under `Action`, select the added SOCKS5 proxy, and click `OK`. Application traffic will now use the selected server.
+
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/proxifier-rules-configuration_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/proxifier-rules-configuration_white.png" alt="Selecting a proxy for the Default rule">
+  </picture>
+</figure>

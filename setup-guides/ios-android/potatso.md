@@ -6,35 +6,56 @@ icon: apple
 
 ## Installing Potatso
 
-Download the application.
+Install Potatso from the App Store.
 
 {% embed url="https://apps.apple.com/app/potatso/id1239860606" %}
 
-## Potatso setup
+## Configuring Potatso
 
-Then open the application and add the proxy.
+Open the app and tap `Add Servers`.
 
-<figure><img src="../../.gitbook/assets/photo_2025-08-12_00-17-16.png" alt="" width="295"><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/potatso-ios-add-servers_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/potatso-ios-add-servers_white.png" alt="Adding a server in Potatso">
+  </picture>
+</figure>
 
-Create a new configuration.
+Select `Manual Input`.
 
-<figure><img src="../../.gitbook/assets/photo_2025-08-12_00-17-18.png" alt="" width="295"><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/potatso-ios-manual-input_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/potatso-ios-manual-input_white.png" alt="Manual configuration in Potatso">
+  </picture>
+</figure>
 
-## Profile setup
+## Configuring the profile
 
-Enter your proxies from the order and select the connection type.
+Select the connection type and use the details from your order's `Proxy List` to complete the form:
 
-<figure><img src="../../.gitbook/assets/image (107).png" alt="" width="295"><figcaption></figcaption></figure>
+1. Enter the server address and port.
+2. Enter the username and password.
+3. Save the configuration.
+
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/potatso-ios-add-server-form_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/potatso-ios-add-server-form_white.png" alt="Proxy configuration in Potatso">
+  </picture>
+</figure>
 
 {% hint style="info" %}
-**You can find a proxy setup example in the [Setup guide](../getting-started.md) section**
+The data format and an example order are described in [Getting Started](../getting-started.md).
 {% endhint %}
 
-Save the settings and start the program.
+Select the configuration you created and enable the connection.
 
-<figure><img src="../../.gitbook/assets/photo_2025-08-12_02-23-31.png" alt="" width="295"><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/potatso-ios-connect_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/potatso-ios-connect_white.png" alt="Connecting through a proxy in Potatso">
+  </picture>
+</figure>
 
-
-
-**Done! You have finished setting up the proxy through the "Potatso" application.**\
-**You can now start using our proxies.**
+The proxy is connected and ready to use in Potatso.

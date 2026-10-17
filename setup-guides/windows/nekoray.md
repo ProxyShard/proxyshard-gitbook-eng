@@ -1,41 +1,66 @@
 # NekoRay
 
 {% hint style="success" %}
-This solution supports UDP tunneling!
+NekoRay can proxy both TCP and UDP traffic in TUN mode.
 {% endhint %}
 
-## **NekoRay** setup.
+## Download and launch
 
-Follow the [link](https://github.com/MatsuriDayo/nekoray/releases) to download the program.
+Download the Windows archive from the [NekoRay releases page](https://github.com/MatsuriDayo/nekoray/releases), extract it, and run `nekoray.exe` or `nekobox.exe`. Select the `sing-box` core on first launch.
 
-{% embed url="https://github.com/MatsuriDayo/nekoray/releases" %}
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/nekoray-github-download_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/nekoray-github-download_white.png" alt="Downloading NekoRay from GitHub">
+  </picture>
+</figure>
 
-<figure><img src="../../.gitbook/assets/Image00001 (5).PNG" alt=""><figcaption></figcaption></figure>
+## Create a profile
 
-## **Adding a NekoRay profile**
+Right-click an empty area in the server list and select `New profile`.
 
-Right-click the empty area in the program to open the context menu and create a new profile.
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/nekoray-main-new-profile_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/nekoray-main-new-profile_white.png" alt="Creating a new NekoRay profile">
+  </picture>
+</figure>
 
-<figure><img src="../../.gitbook/assets/Image00002 (6).PNG" alt=""><figcaption></figcaption></figure>
+Select `Socks` from the `Type` list.
 
-## Setting the proxy server in the NekoRay profile
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/nekoray-profile-type-socks_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/nekoray-profile-type-socks_white.png" alt="Selecting the Socks profile type in NekoRay">
+  </picture>
+</figure>
 
-In the connection profile creation window, specify the "<mark style="color:purple;">Socks</mark>" or "<mark style="color:purple;">HTTP</mark>" connection protocol.
+Enter the connection details:
 
-<figure><img src="../../.gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure>
+1. Enter any recognizable name in `Name`.
+2. Enter the proxy address and port in `Address` and `Port`.
+3. Under `Socks`, select `Version: 5`.
+4. Enter the `Username` and `Password`.
+5. Click `OK`.
 
-Set the proxy connection parameters according to your [order](https://dashboard.proxyshard.com/products).
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/nekoray-profile-config_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/nekoray-profile-config_white.png" alt="SOCKS5 proxy settings in NekoRay">
+  </picture>
+</figure>
 
 {% hint style="info" %}
-**You can find a proxy setup example in the [Setup guide](../getting-started.md) section**
+See the [general setup guide](../getting-started.md) for help finding the connection details.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (24) (1).png" alt=""><figcaption></figcaption></figure>
+## Connect
 
-## Getting started
+Select the created profile and enable `Tun Mode` in the top bar. Once connected, system traffic will be routed through the configured proxy.
 
-Enable '<mark style="color:purple;">TUN Mode</mark>' and start the created profile by right-clicking it and clicking '<mark style="color:purple;">Start</mark>'.
-
-<figure><img src="../../.gitbook/assets/Image00004 (6).PNG" alt=""><figcaption></figcaption></figure>
-
-**Done! You can now fully use the proxy by tunneling all traffic through it.**
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/nekoray-tun-mode-enable_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/nekoray-tun-mode-enable_white.png" alt="Enabling Tun Mode in NekoRay">
+  </picture>
+</figure>

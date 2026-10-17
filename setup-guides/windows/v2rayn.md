@@ -1,41 +1,59 @@
 # v2rayN
 
 {% hint style="success" %}
-This solution supports UDP tunneling!
+v2rayN can proxy both TCP and UDP traffic in TUN mode.
 {% endhint %}
 
-## v2ray&#x4E; setup**.**
+## Download and launch
 
-Follow the [link](https://github.com/2dust/v2rayN/releases/latest) to download <mark style="color:purple;">v2rayN</mark> and unpack the archive on the desktop.
+Open the [latest v2rayN release](https://github.com/2dust/v2rayN/releases/latest), download `v2rayN-windows-64.zip`, extract it, and run `v2rayN.exe` as administrator.
 
-{% embed url="https://github.com/2dust/v2rayN/releases/latest" %}
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/v2rayn-github-download_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/v2rayn-github-download_white.png" alt="Downloading v2rayN from GitHub">
+  </picture>
+</figure>
 
-<figure><img src="../../.gitbook/assets/Image00001 (5).PNG" alt=""><figcaption></figcaption></figure>
+## Add a SOCKS server
 
+Open `Configuration` and select `Add [SOCKS]`.
 
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/v2rayn-menu-add-socks_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/v2rayn-menu-add-socks_white.png" alt="Adding a SOCKS server in v2rayN">
+  </picture>
+</figure>
 
-## **Creating a profile**
+Enter the connection details:
 
-Create a new configuration and specify <mark style="color:purple;">SOCKS / HTTP</mark> as the connection protocol.
+- `Alias (remarks)`: any recognizable name;
+- `Address`: the proxy IP address or hostname;
+- `Port`: the connection port;
+- `User(Optional)`: the username;
+- `Password(Optional)`: the password.
 
-<figure><img src="../../.gitbook/assets/Image00002 (7).PNG" alt=""><figcaption></figcaption></figure>
+Click `Confirm` to save the profile.
 
-
-
-## Connection profile setup
-
-Paste the proxies copied from the order into the corresponding fields, make sure to specify the configuration core (Xray/SingBox), and save the settings.
-
-<figure><img src="../../.gitbook/assets/Image00003 (6).PNG" alt=""><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/v2rayn-socks-config-dialog_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/v2rayn-socks-config-dialog_white.png" alt="SOCKS proxy settings in v2rayN">
+  </picture>
+</figure>
 
 {% hint style="info" %}
-**You can find a proxy setup example in the** [**Setup guide**](../getting-started.md) **section.**
+See the [general setup guide](../getting-started.md) for help finding the connection details.
 {% endhint %}
 
-## Starting the client
+## Connect
 
-Start the client by enabling <mark style="color:purple;">Tun</mark> mode.
+Select the created server and test its latency. Then enable `Enable Tun` in the bottom bar to route system traffic through the proxy.
 
-<figure><img src="../../.gitbook/assets/Image00004 (7).PNG" alt=""><figcaption></figcaption></figure>
-
-**Done! You can now fully use the proxy by tunneling all traffic through it.**
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/v2rayn-enable-tun-mode_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/v2rayn-enable-tun-mode_white.png" alt="Enabling Enable Tun in v2rayN">
+  </picture>
+</figure>

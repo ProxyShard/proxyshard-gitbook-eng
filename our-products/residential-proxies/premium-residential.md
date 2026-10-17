@@ -15,9 +15,9 @@ Step-by-step purchase and payment guide: [Purchasing residential proxies](../../
 | Parameter                | Value                                |
 | ------------------------ | ------------------------------------ |
 | Pool size                | 3,800,000 - 4,600,000 devices        |
-| [UDP support](../about-udp/) | ✓ ([except some cities and macOS/iOS devices](../restrictions.md)) |
-| [Device OS filtering](../p0f-spoofing.md) | ✓ |
-| Unlimited plan           | ✗                                    |
+| [UDP support](../about-udp/) | Available ([except in certain cities and on macOS/iOS devices](../restrictions.md)) |
+| [Device OS filtering](../p0f-spoofing.md) | Available |
+| Unlimited plan           | Not available                         |
 | Billing                  | Per gigabyte (Pay as you go)         |
 | Targeting                | Country / Region / City / Operator   |
 | Price                    | **$3 / GB**                          |
@@ -34,7 +34,7 @@ Premium Residential supports <mark style="color:purple;">UDP</mark> in all locat
 [premium-available-countries.md](premium-available-countries.md)
 {% endcontent-ref %}
 
-## What tasks they fit
+## Suitable use cases
 
 - Tasks that require maximum IP diversity
 - Fine geo-targeting: country, region, city, operator

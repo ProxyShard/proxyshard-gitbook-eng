@@ -1,38 +1,60 @@
 # AdsPower
 
-## **AdsPower browser setup**
-
 {% hint style="warning" %}
-This solution does not support UDP tunneling! For this purpose, we strongly recommend considering [<mark style="color:green;">Vision</mark>](vision-browser.md)
+AdsPower does not support UDP proxies. Use [Vision Browser](vision-browser.md) when UDP is required.
 {% endhint %}
 
-To add proxies in bulk to <mark style="color:blue;">AdsPower</mark>, you need to:
+## Add a proxy
 
-Open the **"**<mark style="color:purple;">**Proxies**</mark>**"** tab.
+Open `Proxies` and click `Add Proxy`.
 
-Copy the proxy string from the **"**<mark style="color:purple;">**Proxy List**</mark>**"** section in your order and paste it into the empty field, as shown in the screenshot below.
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/adspower-proxies-add-proxy_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/adspower-proxies-add-proxy_white.png" alt="Adding a proxy in AdsPower">
+  </picture>
+</figure>
 
-<figure><img src="../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+1. Copy the connection string from the relevant order's `Proxy List` and paste it into the form.
+2. Click `Check proxy`.
+3. After a successful check, click `OK`.
+
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/adspower-add-proxy-form_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/adspower-add-proxy-form_white.png" alt="AdsPower proxy form">
+  </picture>
+</figure>
 
 {% hint style="info" %}
-**You can find a proxy setup example in the [Setup guide](../getting-started.md) section**
+See the [general setup guide](../getting-started.md) for help finding the connection details.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+If the check fails, verify the username, password, and protocol. You can also test the connection with [Proxy Tester](../../our-products/proxy-tester.md).
 
-Click the check button. If the check succeeds, save the proxy.
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/adspower-proxy-tester-result_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/adspower-proxy-tester-result_white.png" alt="Testing the proxy with Proxy Tester">
+  </picture>
+</figure>
 
-If the check fails, make sure you entered the proxy login and password correctly. Otherwise, check the proxy through our [Proxy Tester](../../our-products/proxy-tester.md).
+## Assign the proxy to a profile
 
-<figure><img src="../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+Open `Profiles` and click `New Profile`.
 
-After adding the proxy, go to the **"**<mark style="color:purple;">**Profiles**</mark>**"** tab.
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/adspower-profiles-new-profile_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/adspower-profiles-new-profile_white.png" alt="Creating an AdsPower profile">
+  </picture>
+</figure>
 
-<figure><img src="../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+In the profile settings, select the added server under `Saved Proxies`, test it, and save the profile.
 
-Then select the required proxy that you added earlier.
-
-<figure><img src="../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
-
-After that, you can start the profile and check that the proxy works\
-Done!
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/adspower-new-profile-saved-proxy_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/adspower-new-profile-saved-proxy_white.png" alt="Selecting a saved proxy for an AdsPower profile">
+  </picture>
+</figure>

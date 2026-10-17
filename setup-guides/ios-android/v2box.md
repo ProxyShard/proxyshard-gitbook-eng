@@ -1,48 +1,69 @@
-# 🔥 V2Box
+# V2Box
 
 {% hint style="success" %}
-This solution supports UDP tunneling!
+V2Box supports UDP traffic.
 {% endhint %}
 
 ## Installing V2Box
 
-Go to the App Store/Google Play and download the V2BOX application.
+Install V2Box from the app store for your device.
 
 #### <mark style="color:green;">Android</mark>
 
-{% embed url="https://play.google.com/store/apps/details?id=dev.hexasoftware.v2box&hl=ru" %}
+{% embed url="https://play.google.com/store/apps/details?id=dev.hexasoftware.v2box" %}
 
 #### <mark style="color:blue;">**iOS**</mark>
 
 {% embed url="https://apps.apple.com/app/v2box-v2ray-client/id6446814690" %}
 
-## V2Box setup
+## Configuring V2Box
 
-Open the application, go to the "<mark style="color:purple;">Configs</mark>" tab, and create a new configuration with "➕".
+1. Open `Configs`.
+2. Tap `+` to create a configuration.
 
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/v2box-ios-configs-add_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/v2box-ios-configs-add_white.png" alt="Adding a configuration in V2Box">
+  </picture>
+</figure>
 
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/v2box-ios-add-manual-config_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/v2box-ios-add-manual-config_white.png" alt="Manual configuration in V2Box">
+  </picture>
+</figure>
 
-<figure><img src="../../.gitbook/assets/photo_2026-04-11_02-42-34.png" alt="" width="375"><figcaption></figcaption></figure>
+In `Protocol`, select `SOCKS`.
 
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/v2box-ios-protocol-socks_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/v2box-ios-protocol-socks_white.png" alt="Selecting the SOCKS protocol in V2Box">
+  </picture>
+</figure>
 
+Enter a configuration name in `Remarks`. Fill in `Address`, `Port`, `Username`, and `ID/Password/Key` using the details from your order's `Proxy List`, then tap `Save`.
 
-<figure><img src="../../.gitbook/assets/photo_2026-04-11_02-42-38.png" alt="" width="373"><figcaption></figcaption></figure>
-
-Specify the <mark style="color:purple;">SOCKS</mark> connection type.
-
-<figure><img src="../../.gitbook/assets/photo_2026-04-11_02-42-42.png" alt="" width="367"><figcaption></figcaption></figure>
-
-Enter your proxies from the order into the program fields.
-
-<figure><img src="../../.gitbook/assets/photo_2026-04-11_02-42-49.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/v2box-ios-server-form_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/v2box-ios-server-form_white.png" alt="Proxy configuration in V2Box">
+  </picture>
+</figure>
 
 {% hint style="info" %}
-**You can find a proxy setup example in the [Setup guide](../getting-started.md) section**
+The data format and an example order are described in [Getting Started](../getting-started.md).
 {% endhint %}
 
-Save your configuration and go back to "<mark style="color:purple;">Configs</mark>". There you must click your config to connect.<br>
+Return to `Configs`, select the configuration you created, and use `Slide to Connect` to connect.
 
-<figure><img src="../../.gitbook/assets/photo_2026-04-11_02-42-52.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../../.gitbook/assets/v2box-ios-connected_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../.gitbook/assets/v2box-ios-connected_white.png" alt="Connecting through a proxy in V2Box">
+  </picture>
+</figure>
 
-\
-**Done! You can now check the proxy with our** [**checker**](https://proxyshard.com/proxy-tester)
+Test the connection with [Proxy Tester](../../our-products/proxy-tester.md).

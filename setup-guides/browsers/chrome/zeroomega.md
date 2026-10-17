@@ -1,60 +1,85 @@
 ---
-description: Proxy for Chrome
+description: Proxy setup for Chrome
 ---
 
 # ZeroOmega
 
-## **Installing and setting up** ZeroOmega
+## Installing ZeroOmega
 
 {% hint style="warning" %}
-This solution does not support UDP tunneling! For this purpose, we strongly recommend considering [<mark style="color:green;">Vision</mark>](../../antidetect-browsers/vision-browser.md)
+ZeroOmega handles TCP traffic only. Use [Vision Browser](../../antidetect-browsers/vision-browser.md) when you need UDP support.
 {% endhint %}
 
-For Chrome, the [**ZeroOmega**](https://chromewebstore.google.com/detail/Proxy%20SwitchyOmega%203%20\(ZeroOmega\)/pfnededegaaopdmhkdmcofjmoldfiped) extension is available. Install it.
+Install [ZeroOmega](https://chromewebstore.google.com/detail/pfnededegaaopdmhkdmcofjmoldfiped) from the Chrome Web Store.
 
-{% embed url="https://chromewebstore.google.com/detail/Proxy%20SwitchyOmega%203%20(ZeroOmega)/pfnededegaaopdmhkdmcofjmoldfiped" %}
+{% embed url="https://chromewebstore.google.com/detail/pfnededegaaopdmhkdmcofjmoldfiped" %}
 
-After installing the extension, it will appear in the top-right corner. Click it and pin the extension for easier use.
+After installation, open the extensions menu and pin ZeroOmega to the browser toolbar.
 
-<figure><img src="../../../.gitbook/assets/image (132).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/chrome-extensions-pin-zeroomega.png" alt="Pinning ZeroOmega to the Chrome toolbar"><figcaption></figcaption></figure>
 
-\
-Open the extension settings.
+Open ZeroOmega and select `Параметры`.
 
-<figure><img src="../../../.gitbook/assets/image (133).png" alt=""><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../../../.gitbook/assets/chrome-zeroomega-open-options_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../../.gitbook/assets/chrome-zeroomega-open-options_white.png" alt="Opening ZeroOmega settings">
+  </picture>
+</figure>
 
-## **Proxy setup in the extension**
+## Configuring the proxy
 
-In the ZeroOmega setup interface, create a new profile and give it any name.
+In the profiles section, click `Новый профиль...`.
 
-<div align="center"><figure><img src="../../../.gitbook/assets/image (134).png" alt=""><figcaption></figcaption></figure></div>
+<div align="center"><figure>
+  <picture>
+    <source srcset="../../../.gitbook/assets/chrome-zeroomega-new-profile_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../../.gitbook/assets/chrome-zeroomega-new-profile_white.png" alt="Creating a ZeroOmega profile">
+  </picture>
+</figure></div>
 
-Specify any profile name here.
+Enter a profile name, select `Профиль прокси`, and click `Создать`.
 
-<figure><img src="../../../.gitbook/assets/image (135).png" alt=""><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../../../.gitbook/assets/chrome-zeroomega-new-profile-dialog_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../../.gitbook/assets/chrome-zeroomega-new-profile-dialog_white.png" alt="ZeroOmega profile name and type">
+  </picture>
+</figure>
 
-Next, the server setup interface will open. Take the proxies from "Proxy list" in your order and manually enter the server IP, port, login, and password.
-
-\
-The login and password are set with the padlock-icon button 🔒.
+In the profile settings, select the protocol and enter the server address and port from your order's `Proxy List`. Click the lock icon to add the username and password.
 
 {% hint style="info" %}
-**You can find a proxy setup example in the [Setup guide](../../getting-started.md) section**
+The data format and an example order are described in [Getting Started](../../getting-started.md).
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (136).png" alt=""><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../../../.gitbook/assets/chrome-zeroomega-proxy-server_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../../.gitbook/assets/chrome-zeroomega-proxy-server_white.png" alt="Proxy address and port in ZeroOmega">
+  </picture>
+</figure>
 
-Enter the proxy login and password here.
+Enter the proxy username and password, then click `Сохранить изменения`.
 
-<figure><img src="../../../.gitbook/assets/image (137).png" alt=""><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../../../.gitbook/assets/chrome-zeroomega-proxy-auth_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../../.gitbook/assets/chrome-zeroomega-proxy-auth_white.png" alt="Proxy authentication in ZeroOmega">
+  </picture>
+</figure>
 
-Then apply the settings&#x20;
+Click `Применить изменения` to save the profile.
 
-<figure><img src="../../../.gitbook/assets/image (138).png" alt=""><figcaption></figcaption></figure>
+<figure>
+  <picture>
+    <source srcset="../../../.gitbook/assets/chrome-zeroomega-apply-changes_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../../../.gitbook/assets/chrome-zeroomega-apply-changes_white.png" alt="Saving the ZeroOmega profile">
+  </picture>
+</figure>
 
-In the pop-up window, select the proxy you configured earlier.
+Open ZeroOmega from the browser toolbar and select the profile you created.
 
-<figure><img src="../../../.gitbook/assets/image (139).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/chrome-zeroomega-select-profile.png" alt="Selecting a ZeroOmega profile"><figcaption></figcaption></figure>
 
-**Done! You have finished setting up the proxy through the Chrome extension.**\
-**You can now start using the proxy.**
+The proxy is connected and ready to use in Chrome.
