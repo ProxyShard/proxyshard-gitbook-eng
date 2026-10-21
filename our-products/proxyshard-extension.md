@@ -5,29 +5,31 @@ icon: puzzle-piece
 
 # ProxyShard Extension
 
-<mark style="color:purple;">**ProxyShard – Smart Proxy Manager**</mark> is our official extension for <mark style="color:purple;">Chrome</mark>, <mark style="color:purple;">Mozilla Firefox</mark>, and other Chromium-based browsers (<mark style="color:purple;">Edge</mark>, <mark style="color:purple;">Opera</mark>, <mark style="color:purple;">Brave</mark>, <mark style="color:purple;">Yandex</mark>, and others). It lets you add, switch, and test proxies straight from your browser in just a couple of clicks, with no third-party software needed.
+<mark style="color:purple;">**ProxyShard – Smart Proxy Manager**</mark> is the official ProxyShard extension for Chrome, Mozilla Firefox, and Chromium-based browsers such as Edge, Opera, Brave, and Yandex. It lets you add, test, and switch proxies directly in your browser.
 
-#### What the extension can do:
+#### Extension features
 
-* Stores an unlimited number of proxy profiles
-* Supports <mark style="color:purple;">HTTP / HTTPS</mark> connections in all supported browsers
-* Supports <mark style="color:purple;">SOCKS5</mark> in the Mozilla Firefox version
-* One-click profile testing (latency, country, IP)
-* <mark style="color:purple;">**IP rotation on a timer or by hotkey**</mark> for mobile proxies
-* Bypass lists and advanced domain routing
-* Localized into **English, Russian, Ukrainian, and Chinese**
+* Unlimited proxy profiles
+* HTTP / HTTPS support in every supported browser
+* SOCKS5 support in Mozilla Firefox
+* Connection, IP address, country, and latency checks
+* Mobile proxy IP rotation by interval or keyboard shortcut
+* Domain routing rules and automatic profile switching
+* WebRTC leak protection and TCP fingerprint checks with p0f
+* Profile import and export
+* English, Russian, Ukrainian, and Chinese interface languages
 
 <figure>
   <picture>
-    <source srcset="../.gitbook/assets/extension-overview_black.png" media="(prefers-color-scheme: dark)">
-    <img src="../.gitbook/assets/extension-overview_white.png" alt="ProxyShard extension overview">
+    <source srcset="../.gitbook/assets/proxyshard-extension-popup-overview_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/proxyshard-extension-popup-overview_white.png" alt="ProxyShard Extension main window">
   </picture>
-  <figcaption><p>ProxyShard extension overview</p></figcaption>
+  <figcaption><p>The main window with saved proxy profiles</p></figcaption>
 </figure>
 
-## Installation
+## Install the extension
 
-The extension is available in the official **Chrome Web Store** and **Firefox Add-ons**. The Chrome Web Store version also installs without issues in Edge, Opera, Brave, and other Chromium-based browsers.
+The extension is available from the official Chrome Web Store and Firefox Add-ons. The Chrome Web Store version also works in Edge, Opera, Brave, and other Chromium-based browsers.
 
 ### Chrome, Edge, Opera, Brave, Yandex, and other Chromium-based browsers
 
@@ -37,144 +39,214 @@ The extension is available in the official **Chrome Web Store** and **Firefox Ad
 
 {% embed url="https://addons.mozilla.org/en-US/firefox/addon/proxyshard-smart-proxy-manager/" %}
 
-Once installed, open the extensions menu (the puzzle icon next to the address bar) and **pin ProxyShard** for quick access by clicking the pin icon next to the extension's name.
+After installation, open the `Extensions` menu to the right of the address bar and pin `ProxyShard – Smart Proxy Manager` by clicking the pin icon.
 
 <figure>
   <picture>
-    <source srcset="../.gitbook/assets/extension-pin_black.png" media="(prefers-color-scheme: dark)">
-    <img src="../.gitbook/assets/extension-pin_white.png" alt="Pinning the extension">
+    <source srcset="../.gitbook/assets/proxyshard-extension-pin_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/proxyshard-extension-pin_white.png" alt="Pinning ProxyShard Extension in the browser">
   </picture>
-  <figcaption><p>1) Open the extensions menu. 2) Pin ProxyShard.</p></figcaption>
+  <figcaption><p>Open the Extensions menu and pin the extension</p></figcaption>
 </figure>
 
 {% hint style="danger" %}
 **SOCKS5 limitation in Chromium-based browsers**
 
-Google Chrome (and other Chromium browsers) does not support login/password authentication over SOCKS5 proxies out of the box. For **Manifest V3** extensions, this limitation still applies.
+Chrome and other Chromium-based browsers do not support username and password authentication for SOCKS5 proxies through Manifest V3 extensions.
 
-You can use SOCKS5 through the extension only:
-
-* **without credentials** (anonymous proxy), or
-* **with IP whitelist binding**
-
-For proxies that require authentication, use the <mark style="color:purple;">**HTTP / HTTPS**</mark> protocol, which is fully supported.
+You can use SOCKS5 only without credentials or with IP allowlist authentication. Select HTTP / HTTPS for proxies that require a username and password.
 {% endhint %}
 
 {% hint style="success" %}
 **SOCKS5 in Mozilla Firefox**
 
-The Mozilla Firefox version of ProxyShard Extension supports SOCKS5 through the extension, so you can use SOCKS5 profiles directly in Firefox.
+The Mozilla Firefox version of ProxyShard Extension supports authenticated SOCKS5, so you can use these profiles directly.
 {% endhint %}
 
-## Setting up Residential proxies
+## Set up a Residential proxy
 
-1. Open your order on the [**Residential proxy**](https://dashboard.proxyshard.com/en/residential-main) page and configure the proxy parameters (country, region, protocol, TTL, port, etc.).
-2. Click <mark style="color:purple;">**Generate proxy**</mark>, and the generated proxy will appear in the <mark style="color:purple;">Proxy List</mark> block on the right.
-3. Copy the connection string with the <mark style="color:purple;">**Copy all**</mark> button.
-4. Open the ProxyShard extension (the pinned icon next to the address bar).
-
-<figure>
-  <picture>
-    <source srcset="../.gitbook/assets/extension-residential-copy_black.png" media="(prefers-color-scheme: dark)">
-    <img src="../.gitbook/assets/extension-residential-copy_white.png" alt="Generating a residential proxy on the dashboard">
-  </picture>
-  <figcaption><p>Steps 1-4: configuring and copying the proxy from the dashboard</p></figcaption>
-</figure>
-
-5. In the field at the bottom of the extension, **paste the copied string** in the `ip:port:login:password` format and click <mark style="color:purple;">**Add**</mark>.
+1. Open your order on the [Residential proxy](https://dashboard.proxyshard.com/en/residential-main) page.
+2. Select the country, region, session type, protocol, and other settings, then click `Generate proxy`.
+3. Select the required format in `Proxy List`, then click `Copy all`.
 
 <figure>
   <picture>
-    <source srcset="../.gitbook/assets/extension-residential-add_black.png" media="(prefers-color-scheme: dark)">
-    <img src="../.gitbook/assets/extension-residential-add_white.png" alt="Adding the proxy in the extension">
+    <source srcset="../.gitbook/assets/proxyshard-extension-residential-generate_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/proxyshard-extension-residential-generate_white.png" alt="Generating and copying a Residential proxy">
   </picture>
-  <figcaption><p>Step 5: pasting the proxy and adding the profile</p></figcaption>
+  <figcaption><p>Residential proxy settings and the Proxy List section</p></figcaption>
 </figure>
 
-6. The profile will appear in the list. Click <mark style="color:purple;">**Test**</mark> to verify it works, and the <mark style="color:purple;">**Play**</mark> button to activate the proxy.
+4. Open the pinned ProxyShard extension.
+5. Paste the proxy string in `ip:port:login:password` format into the field at the bottom, then click `Add`.
 
 <figure>
   <picture>
-    <source srcset="../.gitbook/assets/extension-residential-run_black.png" media="(prefers-color-scheme: dark)">
-    <img src="../.gitbook/assets/extension-residential-run_white.png" alt="Activating the proxy in the extension">
+    <source srcset="../.gitbook/assets/proxyshard-extension-add-proxy-string_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/proxyshard-extension-add-proxy-string_white.png" alt="Adding a Residential proxy to the extension">
   </picture>
-  <figcaption><p>Step 6: testing and starting the profile</p></figcaption>
+  <figcaption><p>Paste the connection string and click Add</p></figcaption>
 </figure>
 
-## Setting up Datacenter / ISP proxies
-
-1. Open your <mark style="color:purple;">Datacenter</mark> or <mark style="color:purple;">ISP proxy</mark> order on the dashboard and **copy** the connection string from the <mark style="color:purple;">Proxy List</mark> block.
-2. Open the pinned **ProxyShard** extension.
+6. The new profile appears in the list. Open its `...` menu, select `Test connection`, and click `Enable` after the test succeeds.
 
 <figure>
   <picture>
-    <source srcset="../.gitbook/assets/extension-dcisp-copy_black.png" media="(prefers-color-scheme: dark)">
-    <img src="../.gitbook/assets/extension-dcisp-copy_white.png" alt="Copying the proxy from a DC/ISP order">
+    <source srcset="../.gitbook/assets/proxyshard-extension-profile-actions_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/proxyshard-extension-profile-actions_white.png" alt="Testing and enabling a proxy profile">
   </picture>
-  <figcaption><p>Steps 1-2: copying the proxy from your order and opening the extension</p></figcaption>
+  <figcaption><p>Profile test, edit, and delete actions</p></figcaption>
 </figure>
 
-3. In the field at the bottom of the extension, **paste the proxy** (`ip:port:login:password`) and click <mark style="color:purple;">**Add**</mark>.
+## Set up a Datacenter or ISP proxy
+
+1. Open the Datacenter or ISP proxy order in your dashboard.
+2. Select the protocol and format in `Proxy List`, then click `Copy all`.
 
 <figure>
   <picture>
-    <source srcset="../.gitbook/assets/extension-dcisp-add_black.png" media="(prefers-color-scheme: dark)">
-    <img src="../.gitbook/assets/extension-dcisp-add_white.png" alt="Pasting the proxy into the extension">
+    <source srcset="../.gitbook/assets/proxyshard-extension-datacenter-proxy-list_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/proxyshard-extension-datacenter-proxy-list_white.png" alt="Copying a Datacenter proxy from an order">
   </picture>
-  <figcaption><p>Step 3: pasting the proxy into the extension</p></figcaption>
+  <figcaption><p>Copy the connection string from Proxy List</p></figcaption>
 </figure>
 
-4. Click <mark style="color:purple;">**Test**</mark> to verify, then activate the profile with the <mark style="color:purple;">**Play**</mark> button.
+3. Open the extension, paste the string into the field at the bottom, and click `Add`.
 
 <figure>
   <picture>
-    <source srcset="../.gitbook/assets/extension-dcisp-run_black.png" media="(prefers-color-scheme: dark)">
-    <img src="../.gitbook/assets/extension-dcisp-run_white.png" alt="Activating a DC/ISP profile">
+    <source srcset="../.gitbook/assets/proxyshard-extension-add-datacenter-proxy_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/proxyshard-extension-add-datacenter-proxy_white.png" alt="Adding a Datacenter proxy to the extension">
   </picture>
-  <figcaption><p>Step 4: testing and starting the profile</p></figcaption>
+  <figcaption><p>Add a Datacenter or ISP proxy</p></figcaption>
 </figure>
 
-{% hint style="info" %}
-**For Mobile proxies: IP rotation on a timer or by hotkey**
-
-When editing a profile, an <mark style="color:purple;">**IP Rotation**</mark> block is available, which is especially useful for <mark style="color:purple;">mobile proxies</mark>:
-
-* **Rotation URL** - paste the IP-change link from your mobile proxy order, and the extension will hit it automatically.
-* **Trigger: Interval** - rotation will run at the time interval you set.
-* **Trigger: Hotkey** - assign a key combination (for example, `Shift+F2`) to rotate the IP on the fly.
-* **Track IP history** - duplicate-detection feature: the extension will notify you if the same IP address repeats during your session.
+4. Open the new profile's `...` menu and select `Test connection`.
+5. If the test succeeds, click `Enable`. Enabling another profile automatically switches the current connection.
 
 <figure>
   <picture>
-    <source srcset="../.gitbook/assets/extension-ip-rotation_black.png" media="(prefers-color-scheme: dark)">
-    <img src="../.gitbook/assets/extension-ip-rotation_white.png" alt="IP Rotation settings">
+    <source srcset="../.gitbook/assets/proxyshard-extension-profile-switch_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/proxyshard-extension-profile-switch_white.png" alt="Switching between proxy profiles">
   </picture>
+  <figcaption><p>Test and enable the new profile</p></figcaption>
 </figure>
+
+## Mobile proxy IP rotation
+
+Open the profile's `...` menu, click `Edit`, and expand `IP rotation`.
+
+* `Enable IP rotation` turns on automatic IP rotation.
+* Paste the IP rotation link from your mobile proxy order into `Rotation URL`.
+* Under `Trigger`, select `Hotkey` or `Interval`.
+* For `Hotkey`, enter a keyboard shortcut such as `Shift+F2`. To use it on internal `chrome://` pages, assign it separately at `chrome://extensions/shortcuts`.
+* For `Interval`, set the time between IP rotation requests.
+* `Track IP history (detects duplicate IPs)` detects when the same IP address is assigned again.
+
+Click `Save profile` to save the settings.
+
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/proxyshard-extension-edit-profile-ip-rotation_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/proxyshard-extension-edit-profile-ip-rotation_white.png" alt="IP rotation settings">
+  </picture>
+  <figcaption><p>Rotate the IP by keyboard shortcut or interval</p></figcaption>
+</figure>
+
+## Domain routing and automatic switching
+
+The profile editor includes `Domain routing` and `Auto-switch` sections.
+
+### Domain routing
+
+This section controls how proxy traffic is routed for specific domains.
+
+* `Enable routing rules` turns on domain routing rules.
+* `Whitelist` sends only the specified domains through the proxy.
+* `Blacklist` excludes the specified domains from proxy routing.
+* Under `Domains`, enter one domain per line. To include subdomains, add the `*.` wildcard before the domain, for example `*.google.com`.
+
+### Auto-switch
+
+This feature automatically enables the selected profile when you open configured websites.
+
+* `Enable auto-switch` turns on automatic profile switching.
+* Under `Activate on these domains`, enter one domain per line, for example `example.com` or `*.work-site.com`.
+
+Click `Save profile` to save the changes or `Cancel` to close the window without saving.
+
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/proxyshard-extension-edit-profile-routing_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/proxyshard-extension-edit-profile-routing_white.png" alt="Domain routing and Auto-switch settings">
+  </picture>
+  <figcaption><p>Domain routing and automatic profile switching</p></figcaption>
+</figure>
+
+## Add a profile manually
+
+1. Click the gear icon in the main extension window and open `Profiles`.
+2. Click `+ Add profile`, then select the `Manual` tab.
+3. Complete the fields:
+   * `Name` - profile name;
+   * `Type` - connection type;
+   * `Host` and `Port` - proxy server address and port;
+   * `Bypass list` - addresses that should connect directly, one per line;
+   * `Username` and `Password` - authentication credentials.
+4. If required, configure `IP rotation`, `Domain routing`, and `Auto-switch domains`.
+5. Click `Save profile`.
+
+To add a complete proxy string quickly, use the `Quick paste` tab.
+
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/proxyshard-extension-options-add-profile_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/proxyshard-extension-options-add-profile_white.png" alt="Adding a proxy profile manually">
+  </picture>
+  <figcaption><p>The Add profile form on the Manual tab</p></figcaption>
+</figure>
+
+## Import and export profiles
+
+The `Import and export` section lets you back up your profiles and restore them when needed.
+
+* `Export profiles` saves every profile to a JSON file. Click `Export JSON` and store the file in a secure location.
+* `Import from JSON` restores profiles from a previously exported file. Click `Import JSON` and select the backup.
+
+{% hint style="warning" %}
+The backup may contain proxy addresses and authentication credentials. Do not share it with anyone you do not trust.
 {% endhint %}
 
-## Adding a profile manually
+<figure>
+  <picture>
+    <source srcset="../.gitbook/assets/proxyshard-extension-options-import-export_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/proxyshard-extension-options-import-export_white.png" alt="Importing and exporting ProxyShard Extension profiles">
+  </picture>
+  <figcaption><p>Back up and restore proxy profiles</p></figcaption>
+</figure>
 
-If you'd like to create a profile by hand instead of pasting a ready-made string, use the full <mark style="color:purple;">**+ Add Profile**</mark> form.
+## Preferences
 
-1. In the extension, open the <mark style="color:purple;">**Profiles**</mark> section (via the gear / settings icon).
-2. Click the <mark style="color:purple;">**+ Add Profile**</mark> button in the top-right corner.
-3. Fill in the profile parameters:
-   * <mark style="color:purple;">**Name**</mark> - any profile name you like
-   * <mark style="color:purple;">**Color**</mark> - a color tag for convenience
-   * <mark style="color:purple;">**Type**</mark> - protocol (`HTTP / HTTPS` is recommended)
-   * <mark style="color:purple;">**Host**</mark> and <mark style="color:purple;">**Port**</mark> - the proxy server address and port
-   * <mark style="color:purple;">**Bypass List**</mark> - list of IPs / domains that should go **directly**, bypassing the proxy (one entry per line)
-   * <mark style="color:purple;">**Username**</mark> / <mark style="color:purple;">**Password**</mark> - authentication details
-4. Click <mark style="color:purple;">**Save Profile**</mark>.
+The `Preferences` section contains the following settings:
+
+* `Show IP widget in popup` displays your current IP address and location at the top of the extension popup.
+* `Show badge on the toolbar icon` displays a connection status indicator on the extension icon.
+* `Context menu` adds profile switching to the browser's right-click menu.
+* `Auto-switch by domain` allows profiles to activate automatically for configured domains.
+* `WebRTC leak protection` helps prevent your real IP address from being exposed through WebRTC. Some WebRTC-based services may not work correctly while it is enabled. Learn more in [UDP and WebRTC](about-udp/README.md).
+* `Proxy fingerprint check (p0f)` compares the operating system in the User-Agent with the TCP fingerprint. A mismatch may indicate proxy use. Learn more in [OS fingerprint spoofing with p0f](p0f-spoofing.md).
+* `IP checker` lets you select the service used to detect your IP address and location. In `Auto (fallback)` mode, the extension tries the available services in sequence until one responds.
+
+Click `Save preferences` after changing the settings.
 
 <figure>
   <picture>
-    <source srcset="../.gitbook/assets/extension-manual-profile_black.png" media="(prefers-color-scheme: dark)">
-    <img src="../.gitbook/assets/extension-manual-profile_white.png" alt="Adding a profile manually">
+    <source srcset="../.gitbook/assets/proxyshard-extension-options-preferences_black.png" media="(prefers-color-scheme: dark)">
+    <img src="../.gitbook/assets/proxyshard-extension-options-preferences_white.png" alt="ProxyShard Extension Preferences">
   </picture>
-  <figcaption><p>The full profile creation form</p></figcaption>
+  <figcaption><p>Additional extension settings</p></figcaption>
 </figure>
 
 {% hint style="success" %}
-**Done!** The ProxyShard extension is fully configured and ready to go. Switch between proxies in one click from any supported browser.
+ProxyShard Extension is ready to use. You can enable and switch saved profiles from the main extension window.
 {% endhint %}
