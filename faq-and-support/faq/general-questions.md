@@ -198,16 +198,14 @@ The full list of restrictions by port, by site, by product-specific exceptions, 
 
 ## 17. Which payment systems are supported?
 
-We accept payments via:
+We accept the following payment methods:
 
-* <mark style="color:purple;">**Stripe**</mark> - bank cards, minimum payment **$5**.
-* <mark style="color:purple;">**Cryptomus**</mark> - cryptocurrencies (BTC, LTC, USDT, and others).
+* `Credit Card / Google Pay` - bank cards and Google Pay through Stripe. The minimum payment is **$5**.
+* `Nowpayments (Crypto)` - cryptocurrency. The minimum payment is **$5**.
+* `USDT TRC20` - USDT on the TRC20 (TRON) network.
 
-{% hint style="info" %}
-**About crypto payments through Cryptomus:**
-
-* Payment via **BTC** or **LTC** may take up to **1 hour** to process, this depends on network confirmations, not on our system.
-* Payment via **USDT** requires a minimum payment of **$15** and a fee on the client side. This is a Cryptomus platform requirement, we have no influence over these terms.
+{% hint style="warning" %}
+To pay with USDT on the TRC20 network, select the separate `USDT TRC20` option. The payment provider charges a percentage-based fee, so the minimum amount is **$21**.
 {% endhint %}
 
 ***
