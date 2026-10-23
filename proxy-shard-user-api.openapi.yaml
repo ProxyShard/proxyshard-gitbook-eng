@@ -25,10 +25,10 @@ servers:
 security:
   - bearerAuth: []
 tags:
-  - name: Datacenter & ISP Proxies
-    description: Operations for datacenter and ISP proxies
   - name: General
     description: General operations (profile, orders, reference data)
+  - name: Datacenter & ISP Proxies
+    description: Operations for datacenter and ISP proxies
   - name: Residential Proxies
     description: Operations for residential proxies
   - name: Service
