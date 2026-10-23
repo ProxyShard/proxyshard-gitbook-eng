@@ -29,9 +29,3 @@ For methods that require authentication, send the API key in the request header:
 ```http
 Authorization: Bearer <API_KEY>
 ```
-
-## OpenAPI specification
-
-{% file src="../proxy-shard-user-api.openapi.yaml" %}
-Download the ProxyShard OpenAPI specification
-{% endfile %}
