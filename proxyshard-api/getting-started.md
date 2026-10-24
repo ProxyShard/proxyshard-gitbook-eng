@@ -4,6 +4,8 @@ The ProxyShard API lets you retrieve profile and order information, manage proxi
 
 ## Where to get an API key
 
+You can open the API key tab using this [direct link](https://dashboard.proxyshard.com/en/profile?tab=api-key). To reach it through the dashboard menu:
+
 1. In the bottom-left corner, click the three-dot button next to your profile.
 2. Select `Settings`.
 3. Open the `API` tab.
