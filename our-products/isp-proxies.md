@@ -27,7 +27,7 @@ Current product restrictions are listed on the [Restrictions](restrictions.md) p
 | Connection limit | 2,500 per IP                     |
 | [UDP support](about-udp/) | Available                  |
 | [p0f support](p0f-spoofing.md) | Available (+$0.6 / IP per month) |
-| Price          | **$2** / IP per month              |
+| Price          | **From $2** / IP per month         |
 
 ## Available locations
 
@@ -37,6 +37,7 @@ Current product restrictions are listed on the [Restrictions](restrictions.md) p
 | 🇺🇸 USA |
 | 🇨🇿 Czechia |
 | 🇺🇦 Ukraine |
+| 🇲🇩 Moldova |
 
 {% hint style="info" %}
 The list of locations is constantly expanding.

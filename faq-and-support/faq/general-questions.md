@@ -279,7 +279,7 @@ The list is regularly expanded. The current locations and pricing are on the [Mo
 
 | Product | Price | Period / unit |
 | ------- | ----- | ------------- |
-| **ISP** | **$2** | per IP per month (+$0.6 for p0f) |
+| **ISP** | **From $2** | per IP per month (+$0.6 for p0f) |
 | **Residential** | **$2** | per GB |
 | **Premium Residential** | **$3** | per GB |
 | **Datacenter** | **$0.3 / $0.4 / $0.7 / $1.2** | 3 days / week / half-month / month (+$0.3 for p0f, available with a rental of one month or more) |
