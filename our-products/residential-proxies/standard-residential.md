@@ -16,7 +16,7 @@ Step-by-step purchase and payment guide: [Purchasing residential proxies](../../
 | ------------------------ | ------------------------------ |
 | Pool size                | 300,000 - 400,000 devices      |
 | Max connections          | 35,000                         |
-| Max speed per order      | 75 Mbps                        |
+| Max speed per order      | Not limited                    |
 | [UDP support](../about-udp/) | Available (except in the USA; [port restrictions apply](../restrictions.md)) |
 | [Device OS filtering](../p0f-spoofing.md) | Not available |
 | Billing                  | Per gigabyte (Pay as you go)   |

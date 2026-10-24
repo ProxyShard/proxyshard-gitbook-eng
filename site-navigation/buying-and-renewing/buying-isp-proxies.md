@@ -54,5 +54,5 @@ If automatic renewal is disabled or the balance is insufficient, the order moves
 See [Order fields](../../our-products/isp-proxies.md#order-fields) for details about `Status`, `Product tag`, access credentials, p0f settings, and the other fields.
 
 {% hint style="danger" %}
-An order with the `Canceled` status cannot be renewed. An unpaid order moves to this status after three days.
+An order with the `Canceled` status cannot be renewed. After the paid period ends, a monthly order remains available for renewal for three days. An order with a shorter billing period remains available for renewal for up to three hours. The order is then deleted, and neither the order nor the same IP address can be recovered.
 {% endhint %}

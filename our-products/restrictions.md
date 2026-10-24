@@ -104,5 +104,5 @@ Connections through proxies to service ports that are often used for attacks on 
 
 ## Restrictions on Unlimited Residential proxies
 
-* Basic connection limit = 5000. It can be increased; more details are available from [Support](../contact-us.md).
+* Unlimited plans support up to 5,000 concurrent connections. The limit includes every connection state, such as `ESTAB`, `FIN_WAIT`, and others. It cannot currently be increased. Dedicated plans are still in development and are not yet available.
 * Maximum speed per order = 75 **Mbps**

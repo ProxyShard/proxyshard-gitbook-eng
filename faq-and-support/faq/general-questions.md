@@ -78,10 +78,10 @@ After purchasing or renewing a Datacenter or ISP order, **1-2 minutes** are need
 
 ## 7. How long do I have to renew a Datacenter / ISP proxy?
 
-Renewal for Datacenter and ISP proxies is available **only within 3 days** after the rental period ends.
+The renewal window for Datacenter and ISP proxies depends on the billing period. A monthly order can be renewed within **3 days** after the paid period ends. An order with a shorter billing period can be renewed within **3 hours**.
 
 {% hint style="danger" %}
-If the order isn't renewed within 3 days, **it is deleted permanently**. You won't be able to recover the same IP address or order after that.
+Once the applicable renewal window expires, **the order is deleted permanently**. You won't be able to recover the same IP address or order after that.
 {% endhint %}
 
 We recommend enabling the <mark style="color:purple;">**Auto renew**</mark> option in the order settings so renewal is charged from your balance automatically.

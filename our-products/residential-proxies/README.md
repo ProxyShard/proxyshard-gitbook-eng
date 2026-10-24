@@ -25,7 +25,7 @@ Step-by-step purchase and payment guide: [Purchasing residential proxies](../../
 | -------------------- | ------------------------------------ | ------------------------------------------- | --------------------------------- |
 | Pool size            | 300k - 400k                          | 300k - 400k (= Standard)                    | 3.8M - 4.6M                       |
 | Max connections      | 35,000                               | 5,000                                       | -                                 |
-| Max speed            | 75 Mbps                              | 75 Mbps                                     | 75 Mbps                           |
+| Max speed            | Not limited                          | 75 Mbps                                     | Not limited                       |
 | [UDP support](../about-udp/) | Available (except in the USA; [port restrictions apply](../restrictions.md)) | Available (except in the USA; [port restrictions apply](../restrictions.md)) | Available ([except in certain cities and on macOS/iOS devices](../restrictions.md)) |
 | [Device OS filtering](../p0f-spoofing.md) | Not available | Not available | Available |
 | Unlimited plan       | Not available                        | Available                                   | Not available                     |

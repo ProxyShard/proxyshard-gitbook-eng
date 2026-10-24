@@ -89,7 +89,7 @@ After payment, allow 1-2 minutes for the order to synchronize and the proxies to
 * In `Proxy List`, you can select `HTTP` or `SOCKS5`, change the proxy string format, copy the list with `Copy all`, or download it with `Export All`.
 
 {% hint style="danger" %}
-An order with the `Canceled` status cannot be restored. This status is assigned after three days without payment.
+An order with the `Canceled` status cannot be restored. After the paid period ends, a monthly order remains available for renewal for three days. An order with a shorter billing period remains available for renewal for up to three hours. The order is then deleted, and neither the order nor the same IP address can be recovered.
 {% endhint %}
 
 ## Suitable use cases
