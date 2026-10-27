@@ -22,7 +22,7 @@
 * [Proxy Tester](our-products/proxy-tester.md)
 * [IP Checker](our-products/ip-checker.md)
 * [ProxyShard Extension](our-products/proxyshard-extension.md)
-* [ShardX Launcher](our-products/shardx-launcher.md)
+* [ShardBrowser](our-products/shardx-launcher.md)
 * [API Specifications](our-products/api-specifications.md)
 
 ## Technologies and capabilities
@@ -65,7 +65,13 @@
 ## Usage instructions
 
 * [Setup instructions](setup-guides/getting-started.md)
-* [ShardX Launcher](setup-guides/shardx-browser.md)
+* [ShardBrowser](setup-guides/shardx-browser.md)
+  * [Folders](setup-guides/shardx-browser/folders.md)
+  * [Fingerprints](setup-guides/shardx-browser/fingerprints.md)
+  * [Extensions](setup-guides/shardx-browser/extensions.md)
+  * [Bookmarks](setup-guides/shardx-browser/bookmarks.md)
+  * [Automation](setup-guides/shardx-browser/automation.md)
+  * [ProxyShard Dashboard](setup-guides/shardx-browser/proxyshard-dashboard.md)
 * [Windows](setup-guides/windows/README.md)
   * [Proxifier](setup-guides/windows/proxifier.md)
   * [v2rayN](setup-guides/windows/v2rayn.md)

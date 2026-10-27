@@ -39,7 +39,7 @@ Mobile carrier proxies with country and carrier selection. You can rotate the IP
 
 A browser extension for Chrome, Firefox, and Chromium-based browsers. It stores proxy profiles, switches and tests connections, and can rotate a Mobile proxy IP on a timer or keyboard shortcut.
 
-### [<mark style="color:purple;">ShardX Launcher</mark>](our-products/shardx-launcher.md)
+### [<mark style="color:purple;">ShardBrowser</mark>](our-products/shardx-launcher.md)
 
 A modern anti-detect browser for isolated profiles with consistent fingerprints and dedicated proxy settings. It supports Windows, macOS, and Linux, as well as a local HTTP API, CDP, Puppeteer, Playwright, and an MCP server for automation.
 

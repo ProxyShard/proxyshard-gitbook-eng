@@ -1,30 +1,30 @@
 ---
 description: >-
-  ShardX anti-detect browser with unique fingerprints and a local API for
+  ShardBrowser anti-detect browser with unique fingerprints and a local API for
   automating profiles via Puppeteer / Playwright
 icon: fingerprint
 ---
 
-# ShardX Launcher
+# ShardBrowser
 
 <figure>
   <picture>
     <source srcset="../.gitbook/assets/shardx-cover_black.svg" media="(prefers-color-scheme: dark)">
-    <img src="../.gitbook/assets/shardx-cover_white.svg" alt="ShardX Launcher logo">
+    <img src="../.gitbook/assets/shardx-cover_white.svg" alt="ShardBrowser logo">
   </picture>
 </figure>
 
-<mark style="color:purple;">**ShardX Browser**</mark> is our anti-detect browser. Create separate profiles with unique fingerprints, assign a dedicated proxy to each profile, and manage dozens of accounts as if they belonged to different users on different devices. The local **Automation API** also lets you create, launch, and control profiles through Puppeteer / Playwright.
+<mark style="color:purple;">**ShardBrowser**</mark> is our anti-detect browser. Create separate profiles with unique fingerprints, assign a dedicated proxy to each profile, and manage dozens of accounts as if they belonged to different users on different devices. The local **Automation API** also lets you create, launch, and control profiles through Puppeteer / Playwright.
 
 ## Download and install
 
 <mark style="color:violet;">**Step-by-step guide covering installation, proxy setup, and your first profile:**</mark>
 
 {% content-ref url="../setup-guides/shardx-browser.md" %}
-[ShardX Launcher - setup guide](../setup-guides/shardx-browser.md)
+[ShardBrowser setup guide](../setup-guides/shardx-browser.md)
 {% endcontent-ref %}
 
-#### What ShardX can do:
+#### What ShardBrowser can do:
 
 * Generates unique fingerprints for <mark style="color:purple;">Windows</mark>, <mark style="color:purple;">macOS</mark>, and <mark style="color:purple;">Linux</mark> (navigator, screen, client hints, WebGL / WebGPU, etc.)
 * Per-vector noise: <mark style="color:purple;">canvas, WebGL, audio, client rects, fonts, sensors</mark>
@@ -37,7 +37,7 @@ icon: fingerprint
 
 ## Fingerprints and anti-detect
 
-For every profile ShardX injects a consistent set of parameters: User-Agent, platform, CPU cores, and device memory (never exceeding the real machine), screen resolution, Sec-CH-UA, and more. On top of that, **noise** is applied per vector - canvas, WebGL, audio, client rects, fonts, sensors. Each noise block is toggled independently, so a profile's fingerprint is stable across sessions yet different from other profiles and from your real device.
+For every profile ShardBrowser injects a consistent set of parameters: User-Agent, platform, CPU cores, and device memory (never exceeding the real machine), screen resolution, Sec-CH-UA, and more. On top of that, **noise** is applied per vector - canvas, WebGL, audio, client rects, fonts, sensors. Each noise block is toggled independently, so a profile's fingerprint is stable across sessions yet different from other profiles and from your real device.
 
 {% hint style="info" %}
 The fingerprint is uniquified and not tied to hardware: CPU core count and RAM are capped to the host and never inflated, and the screen is clamped to the real display. This reduces the risk of being caught on inconsistencies.
@@ -45,7 +45,7 @@ The fingerprint is uniquified and not tied to hardware: CPU core count and RAM a
 
 ## Proxies, QUIC, and WebRTC
 
-ShardX pairs especially well with our proxies. On **every** profile launch, before the browser starts, the bound proxy is tested live for UDP-relay support (SOCKS5 UDP\_ASSOCIATE):
+ShardBrowser pairs especially well with our proxies. On **every** profile launch, before the browser starts, the bound proxy is tested live for UDP-relay support (SOCKS5 UDP\_ASSOCIATE):
 
 * if UDP works - <mark style="color:purple;">QUIC</mark> is enabled and WebRTC uses the proxied UDP relay;
 * if UDP is unavailable - QUIC is disabled and WebRTC is forced into **TCP-only** mode so the real IP cannot leak.
@@ -53,7 +53,7 @@ ShardX pairs especially well with our proxies. On **every** profile launch, befo
 Timezone, locale, and geolocation fields set to `auto` are also resolved live through the proxy at launch time.
 
 {% hint style="success" %}
-The ShardX + [**UDP-supporting proxies**](about-udp/) combination closes the WebRTC leak at the browser level: UDP traffic goes through the proxy, not directly from your IP. More about the underlying issue in the [**About UDP**](about-udp/) section.
+ShardBrowser combined with our [**UDP-supporting proxies**](about-udp/) closes the WebRTC leak at the browser level: UDP traffic goes through the proxy, not directly from your IP. Read more about the underlying issue in the [**About UDP**](about-udp/) section.
 {% endhint %}
 
 ## Automation: local API
