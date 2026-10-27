@@ -16,6 +16,8 @@ icon: fingerprint
 
 <mark style="color:purple;">**ShardBrowser**</mark> is our anti-detect browser. Create separate profiles with unique fingerprints, assign a dedicated proxy to each profile, and manage dozens of accounts as if they belonged to different users on different devices. The local **Automation API** also lets you create, launch, and control profiles through Puppeteer / Playwright.
 
+Official website: [shardbrowser.com](https://shardbrowser.com/).
+
 ## Download and install
 
 <mark style="color:violet;">**Step-by-step guide covering installation, proxy setup, and your first profile:**</mark>
