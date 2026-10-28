@@ -24,4 +24,4 @@ If you still cannot connect through a plugin, browser, or program, check that th
 Recheck the data again. If it is definitely correct, try checking through a VPN to rule out blocking by your ISP. In any case, contact **our technical support**; we will try to quickly identify and fix the issue if it is on our side.
 
 **If it works, but not for me:**\
-If the proxies worked before but suddenly stopped, while checks through our [Proxy Tester](https://proxyshard.com/proxy-tester), VPN, or other resources confirm that the proxies are alive, **your ISP may be blocking connections**. **Try using SOCKS ports or contact our technical support.**
+If the proxies worked before but suddenly stopped, while checks through our [Proxy Tester](https://proxyshard.com/proxy-tester), VPN, or other resources confirm that the proxies are alive, **your ISP may be blocking connections**. Datacenter and ISP proxies use the same port for HTTP and SOCKS5, so there is no need to change the port: try selecting the other protocol in your application. If that does not help, contact our technical support.

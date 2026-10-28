@@ -42,8 +42,8 @@ If `WebRTC IP` shows an address different from `My IP address`, WebRTC is bypass
 
 For a description of every field, see [IP Checker](../ip-checker.md).
 
-## 2. Ipbinding
+## 2. BrowserLeaks
 
-[Ipbinding](https://ipbinding.online/) also displays WebRTC candidates. Read the result the same way: the WebRTC address should match the proxy address.
+[BrowserLeaks WebRTC Leak Test](https://browserleaks.com/webrtc) also displays WebRTC candidates. Read the result the same way: the WebRTC address should match the proxy address.
 
-{% embed url="https://ipbinding.online/" %}
+{% embed url="https://browserleaks.com/webrtc" %}

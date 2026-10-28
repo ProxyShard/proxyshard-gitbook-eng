@@ -7,4 +7,4 @@ icon: circle-half-stroke
 
 Extensions for the Vivaldi browser. Vivaldi is built on the Chromium engine and **supports** installing extensions from the Chrome Web Store directly.
 
-* [🔥 ShardX Extension](proxyshard.md)
+* [🔥 ShardX Extension](shardx.md)

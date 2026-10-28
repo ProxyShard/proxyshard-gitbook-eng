@@ -86,7 +86,7 @@ After payment, allow 1-2 minutes for the order to synchronize and the proxies to
 * `Billing cycle`, `Next due date`, `Price`, and `Next charge` show the rental term and the next payment.
 * `Auto-renew proxy` controls automatic renewal. The same settings are available through `Manage renewal`.
 * `p0f` and `Buy p0f slots` open the fingerprint settings and the purchase of additional slots.
-* In `Proxy List`, you can select `HTTP` or `SOCKS5`, change the proxy string format, copy the list with `Copy all`, or download it with `Export All`.
+* In `Proxy List`, the `HTTP` / `SOCKS5` switch only changes the displayed proxy string format. Both protocols use the same port, and the switch remains for compatibility with older setups. You can copy the list with `Copy all` or download it with `Export All`.
 
 {% hint style="danger" %}
 An order with the `Canceled` status cannot be restored. After the paid period ends, a monthly order remains available for renewal for three days. An order with a shorter billing period remains available for renewal for up to three hours. The order is then deleted, and neither the order nor the same IP address can be recovered.

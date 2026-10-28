@@ -9,8 +9,8 @@ icon: question
 
 <figure>
   <picture>
-    <source srcset=".gitbook/assets/proxyshard-products_black.svg" media="(prefers-color-scheme: dark)">
-    <img src=".gitbook/assets/proxyshard-products_white.svg" alt="ShardX products and tools">
+    <source srcset=".gitbook/assets/shardx-products_black.svg" media="(prefers-color-scheme: dark)">
+    <img src=".gitbook/assets/shardx-products_white.svg" alt="ShardX products and tools">
   </picture>
   <figcaption><p>Proxy services, browser tools, and testing services in the ShardX ecosystem</p></figcaption>
 </figure>

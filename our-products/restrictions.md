@@ -16,7 +16,7 @@ The following are unavailable through proxies:
 * Government portals and websites, as well as websites in the `.gov` and `.edu` domains
 * Payment processors: <mark style="color:purple;">Stripe</mark>, <mark style="color:purple;">PayPal</mark> (including <mark style="color:purple;">Yahoo</mark>)
 
-This is a regulatory requirement aimed at limiting fraudulent activity. This restriction **does not apply** to crypto services and payment systems such as exchanges.
+This is a regulatory requirement aimed at limiting fraudulent activity. As a rule, this restriction **does not apply** to crypto services such as exchanges. Specific Premium Residential exceptions are listed below.
 
 {% hint style="warning" %}
 Applies to all products **except** [Mobile proxy](mobile-proxies.md).
@@ -27,6 +27,7 @@ Stripe and PayPal are available on Datacenter and ISP proxies.
 Additional restrictions on Residential proxies:
 
 * Microsoft and Apple services are unavailable on [Standard Residential](residential-proxies/standard-residential.md) / [Unlimited Residential](residential-proxies/unlimited-residential-proxy.md) / [Premium Residential](residential-proxies/premium-residential.md).
+* Coinbase, CoinGate, and DeBank are also unavailable on Premium Residential.
 
 ***
 

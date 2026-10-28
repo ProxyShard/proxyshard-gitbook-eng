@@ -114,7 +114,7 @@ Add each server as a separate item under `proxies:` and list their names in the 
 
 ## Verify the connection
 
-Open [ShardX IP Checker](https://proxyshard.com/tools/ip-checker) and confirm that it displays the proxy IP address.
+Open [ShardX IP Checker](https://proxyshard.com/ip-checker) and confirm that it displays the proxy IP address.
 
 <figure>
   <picture>

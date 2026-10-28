@@ -70,7 +70,7 @@ curl --socks5 KWFFEKf:LDLFEPF@88.99.123.233:44454 -I https://www.google.com
 
 ### What to do if it does not connect
 
-1. Recheck the username, password, IP, and port. A common mistake is mixing up **HTTP** and **SOCKS5** ports
+1. Recheck the username, password, IP, and port. DC and ISP proxies use the same port for HTTP and SOCKS5. Make sure the required protocol is selected in the application: you do not need to change the port when switching protocols
 2. Try connecting through a VPN to rule out blocking by your ISP
 3. Wait 2-3 minutes after purchase: the servers need time to update
 4. If nothing helped, contact [support](../../contact-us.md)

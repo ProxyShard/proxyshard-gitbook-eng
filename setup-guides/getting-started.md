@@ -7,7 +7,7 @@ icon: clipboard-list
 Before configuring an application, open the required [order](https://dashboard.shardx.com/products) and copy its connection details.
 
 {% hint style="info" %}
-The examples below use `SOCKS5`. If an application supports only HTTP, select `HTTP` in the order settings and use the corresponding port.
+The examples below use `SOCKS5`. Datacenter and ISP proxies use the same port for HTTP and SOCKS5. The HTTP / SOCKS5 switch in the order only changes the displayed proxy string and remains for compatibility with older setups. Select the required protocol in your application and use the port shown in the order.
 {% endhint %}
 
 ## Residential proxies

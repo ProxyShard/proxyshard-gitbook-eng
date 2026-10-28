@@ -7,4 +7,4 @@ icon: shield-halved
 
 Extensions for the Brave browser. Brave is built on the Chromium engine and **supports** installing extensions from the Chrome Web Store directly.
 
-* [🔥 ShardX Extension](proxyshard.md)
+* [🔥 ShardX Extension](shardx.md)

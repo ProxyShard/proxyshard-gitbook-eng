@@ -191,6 +191,7 @@ On all products the following are blocked:
 
 * Service ports often used for brute-force attacks: **22 (SSH), 23 (Telnet), 25 (SMTP)** and several others.
 * Banking and government websites, and **Stripe** and **PayPal** payment processors (this is a regulatory requirement).
+* **Coinbase**, **CoinGate**, and **DeBank** are also unavailable on Premium Residential.
 
 The full list of restrictions by port, by site, by product-specific exceptions, and the limits for Unlimited Residential proxies are in the [Limitations](../../our-products/restrictions.md) section.
 

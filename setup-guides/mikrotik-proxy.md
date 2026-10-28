@@ -1,8 +1,6 @@
 ---
 description: Proxy setup on MikroTik
 icon: router
-cover: https://mikrotik.ru/image/catalog/routeros7/mikrotik.png
-coverY: 0
 ---
 
 # MikroTik proxy
@@ -151,7 +149,7 @@ These fields must be filled in according to the data from the purchased order.
 {% endhint %}
 
 {% hint style="info" %}
-Please note that the test connection is made through SOCKS5! To find the SOCKS connection port, click _**Show socks5**_ inside the order.
+The test connection uses SOCKS5. Datacenter and ISP proxies use the same port for HTTP and SOCKS5. Set `SOCKS5_PORT` to the port shown in `Proxy List`. You do not need to switch the order format.
 {% endhint %}
 
 ## **Adding the container**
