@@ -4,9 +4,9 @@ icon: check-to-slot
 
 # How to check for WebRTC leaks
 
-You can test WebRTC with ProxyShard IP Checker or the third-party Ipbinding service. Start with our tool: it shows the external IP, the WebRTC address, and the UDP test result in one report.
+You can test WebRTC with ShardX IP Checker or the third-party Ipbinding service. Start with our tool: it shows the external IP, the WebRTC address, and the UDP test result in one report.
 
-## 1. ProxyShard IP Checker
+## 1. ShardX IP Checker
 
 {% embed url="https://proxyshard.com/ip-checker" %}
 

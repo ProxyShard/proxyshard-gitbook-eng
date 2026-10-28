@@ -6,7 +6,7 @@ icon: circle-question
 # Popular questions
 
 {% hint style="warning" %}
-Products, locations, operators, and prices may change. Check the current pages in the [dashboard](https://dashboard.proxyshard.com/) before purchasing.
+Products, locations, operators, and prices may change. Check the current pages in the [dashboard](https://dashboard.shardx.com/) before purchasing.
 {% endhint %}
 
 ***
@@ -114,7 +114,7 @@ Mobile proxies sit on our mobile farms and operate via real SIM cards. IP addres
 * On average the carrier refreshes the address **once a day**.
 * The carrier may initiate a pool change at any moment, and the address will change earlier.
 
-This is a feature of how mobile internet works and **is outside our control**. If you need rotation on a timer or by hotkey, use the [IP Rotation feature in our extension](../../our-products/proxyshard-extension.md).
+This is a feature of how mobile internet works and **is outside our control**. If you need rotation on a timer or by hotkey, use the [IP Rotation feature in our extension](../../our-products/shardx-extension.md).
 
 ***
 
@@ -163,7 +163,7 @@ Any of these reasons leads to an IP change during the session. We don't manage t
 **Method 2.** Change the <mark style="color:purple;">**SID**</mark> manually in the connection string. For example, in this string:
 
 ```
-relay-eu.proxyshard.com:8080:plan-limited-country-any-sid-8dbryym0a32i:7nnrpl63344545gx
+relay-eu.shardx.com:8080:plan-limited-country-any-sid-8dbryym0a32i:7nnrpl63344545gx
 ```
 
 the login contains a fragment `sid-8dbryym0a32i`. If you change one character in it, for example to `sid-8dbryym0a324`, the IP address will change. The same thing happens "under the hood" when you click <mark style="color:purple;">Generate proxy</mark>.
@@ -271,7 +271,7 @@ Available locations:
 | 🇨🇦 Canada | Rogers |
 | 🇮🇩 Indonesia | Telkomsel |
 
-The list is regularly expanded. The current locations and pricing are on the [Mobile proxy](https://dashboard.proxyshard.com/en/mobile-proxy) purchase page.
+The list is regularly expanded. The current locations and pricing are on the [Mobile proxy](https://dashboard.shardx.com/en/mobile-proxy) purchase page.
 
 ***
 
@@ -287,7 +287,7 @@ The list is regularly expanded. The current locations and pricing are on the [Mo
 | **Mobile** | **from $4 / day, $55 / month** | depends on country and operator |
 
 {% hint style="info" %}
-The exact price and available periods for each plan are shown directly on the purchase page in the [dashboard](https://dashboard.proxyshard.com/).
+The exact price and available periods for each plan are shown directly on the purchase page in the [dashboard](https://dashboard.shardx.com/).
 {% endhint %}
 
 ***
@@ -299,13 +299,13 @@ On <mark style="color:purple;">**Mobile**</mark> and <mark style="color:purple;"
 Example connection strings:
 
 ```
-mobile.eu.proxyshard.com:1234:aabbbcc:password
-resident.eu.proxyshard.com:8080:plan-limited-country-NL-sid-ABXdedq:AAAbbbbCC
+mobile.proxy-eu.shardx.com:1234:aabbbcc:password
+relay-eu.shardx.com:8080:plan-limited-country-NL-sid-ABXdedq:AAAbbbbCC
 ```
 
 If your software strictly requires IPv4, you can **resolve** the domain and substitute the resulting address for the domain name.
 
-**Option 1. Via a website.** Open [www.nslookup.io](https://www.nslookup.io), enter the domain from your connection string, and you'll get a list of IPv4 addresses. For example, if the query returned `172.67.72.239`, then instead of `mobile.eu.proxyshard.com` you can put this IP:
+**Option 1. Via a website.** Open [www.nslookup.io](https://www.nslookup.io), enter the domain from your connection string, and you'll get a list of IPv4 addresses. For example, if the query returned `172.67.72.239`, then instead of `mobile.proxy-eu.shardx.com` you can put this IP:
 
 ```
 172.67.72.239:1234:aabbbcc:password
@@ -314,7 +314,7 @@ If your software strictly requires IPv4, you can **resolve** the domain and subs
 **Option 2. Manually from the terminal.** On Windows or Linux run:
 
 ```
-nslookup mobile.eu.proxyshard.com
+nslookup mobile.proxy-eu.shardx.com
 ```
 
 The **Addresses** section of the response will contain the IPv4 addresses - take any of them and use it instead of the domain.

@@ -64,7 +64,7 @@ redirects:
   faq-and-support/faq/products: faq-and-support/faq/general-questions
   razbor-vozmozhnykh-problem/faq-chastye-voprosy/proksi-ne-rabotayut: faq-and-support/faq/proxy-not-working
   razbor-vozmozhnykh-problem/faq-chastye-voprosy/lokaciya-proksi-neverna: faq-and-support/faq/wrong-proxy-location
-  chto-takoe-proxyshard: about-proxyshard
+  chto-takoe-proxyshard: about-shardx
   svyaz-s-nami: contact-us
   nashi-produkty/o-protokole-udp/kak-ustanovit-tampermonkey-i-skript-dlya-debaga-webrtc: our-products/about-udp/tampermonkey-webrtc-debug
   nashi-produkty/o-protokole-udp/kak-rabotaet-utechka-cherez-webrtc: our-products/about-udp/how-webrtc-leak-works
@@ -107,19 +107,19 @@ redirects:
   # Removed duplicate/draft pages -> real pages
   setup-guides/checker-proxy: our-products/proxy-tester
 
-  # ProxyShard API group migration (2026-07-14)
+  # ShardX API group migration (2026-07-14)
   user-api: proxyshard-api/getting-started
-  user-api/datacenter-and-isp-proxies: proxyshard-api/datacenter-and-isp-proxies
-  user-api/residential-proxies: proxyshard-api/residential-proxies
-  user-api/general: proxyshard-api/general
-  user-api/models: proxyshard-api/models
+  user-api/datacenter-and-isp-proxies: shardx-api/datacenter-and-isp-proxies
+  user-api/residential-proxies: shardx-api/residential-proxies
+  user-api/general: shardx-api/general
+  user-api/models: shardx-api/models
 
   # Temporary combined API group split (2026-07-14)
   api-specifications: proxyshard-api/getting-started
-  api-specifications/datacenter-and-isp-proxies: proxyshard-api/datacenter-and-isp-proxies
-  api-specifications/residential-proxies: proxyshard-api/residential-proxies
-  api-specifications/general: proxyshard-api/general
-  api-specifications/models: proxyshard-api/models
+  api-specifications/datacenter-and-isp-proxies: shardx-api/datacenter-and-isp-proxies
+  api-specifications/residential-proxies: shardx-api/residential-proxies
+  api-specifications/general: shardx-api/general
+  api-specifications/models: shardx-api/models
   api-specifications/binding-and-lifecycle: shardx-launcher-api/binding-and-lifecycle
   api-specifications/authentication: shardx-launcher-api/authentication
   api-specifications/typical-flow: shardx-launcher-api/typical-flow
@@ -133,3 +133,20 @@ redirects:
   api-specifications/folders: shardx-launcher-api/folders
   api-specifications/proxies: shardx-launcher-api/proxies
   api-specifications/models-1: shardx-launcher-api/models
+
+  # ProxyShard → ShardX (28.10.2026): страницы с «proxyshard» в пути переименованы
+  about-proxyshard: about-shardx
+  tools/proxyshard-extension: tools/shardx-extension
+  usage-instructions/shardx-browser/proxyshard-dashboard: usage-instructions/shardx-browser/shardx-dashboard
+  usage-instructions/browsers/brave/proxyshard: usage-instructions/browsers/brave/shardx
+  usage-instructions/browsers/chrome/proxyshard: usage-instructions/browsers/chrome/shardx
+  usage-instructions/browsers/edge/proxyshard: usage-instructions/browsers/edge/shardx
+  usage-instructions/browsers/mozilla-firefox/proxyshard: usage-instructions/browsers/mozilla-firefox/shardx
+  usage-instructions/browsers/opera/proxyshard: usage-instructions/browsers/opera/shardx
+  usage-instructions/browsers/vivaldi/proxyshard: usage-instructions/browsers/vivaldi/shardx
+  usage-instructions/browsers/yandex/proxyshard: usage-instructions/browsers/yandex/shardx
+  proxyshard-api/datacenter-and-isp-proxies: shardx-api/datacenter-and-isp-proxies
+  proxyshard-api/general: shardx-api/general
+  proxyshard-api/models: shardx-api/models
+  proxyshard-api/residential-proxies: shardx-api/residential-proxies
+  proxyshard-api/service: shardx-api/service

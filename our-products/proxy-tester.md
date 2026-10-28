@@ -4,7 +4,7 @@ icon: vial
 
 # Proxy Tester
 
-<mark style="color:purple;">ProxyShard Proxy Tester</mark> lets you quickly check whether your proxies work directly on the website, without installing additional software, and even check UDP support if you use SOCKS5.
+<mark style="color:purple;">ShardX Proxy Tester</mark> lets you quickly check whether your proxies work directly on the website, without installing additional software, and even check UDP support if you use SOCKS5.
 
 {% embed url="https://proxyshard.com/proxy-tester" %}
 

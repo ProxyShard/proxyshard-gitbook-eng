@@ -1,18 +1,18 @@
 ---
-description: A brief overview of ProxyShard and its products
+description: A brief overview of ShardX and its products
 icon: question
 ---
 
-# What is ProxyShard
+# What is ShardX
 
-<mark style="color:purple;">**ProxyShard**</mark> brings together Residential, Datacenter, ISP, and Mobile proxies with tools for browser workflows, testing, and automation. Datacenter and ISP addresses are assigned to one customer and are not shared. Availability of UDP, p0f switching, and other features depends on the product and location.
+<mark style="color:purple;">**ShardX**</mark> (formerly ProxyShard) brings together Residential, Datacenter, ISP, and Mobile proxies with tools for browser workflows, testing, and automation. Datacenter and ISP addresses are assigned to one customer and are not shared. Availability of UDP, p0f switching, and other features depends on the product and location.
 
 <figure>
   <picture>
     <source srcset=".gitbook/assets/proxyshard-products_black.svg" media="(prefers-color-scheme: dark)">
-    <img src=".gitbook/assets/proxyshard-products_white.svg" alt="ProxyShard products and tools">
+    <img src=".gitbook/assets/proxyshard-products_white.svg" alt="ShardX products and tools">
   </picture>
-  <figcaption><p>Proxy services, browser tools, and testing services in the ProxyShard ecosystem</p></figcaption>
+  <figcaption><p>Proxy services, browser tools, and testing services in the ShardX ecosystem</p></figcaption>
 </figure>
 
 ***
@@ -35,7 +35,7 @@ Static addresses hosted on internet service provider networks. They combine the 
 
 Mobile carrier proxies with country and carrier selection. You can rotate the IP through a link, while available settings depend on the selected plan and location.
 
-### [<mark style="color:purple;">ProxyShard Extension</mark>](our-products/proxyshard-extension.md)
+### [<mark style="color:purple;">ShardX Extension</mark>](our-products/shardx-extension.md)
 
 A browser extension for Chrome, Firefox, and Chromium-based browsers. It stores proxy profiles, switches and tests connections, and can rotate a Mobile proxy IP on a timer or keyboard shortcut.
 

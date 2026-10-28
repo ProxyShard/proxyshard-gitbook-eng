@@ -16,7 +16,7 @@ To customize the end of the referral link, click the pencil icon next to it and 
 <figure>
   <picture>
     <source srcset="../.gitbook/assets/affiliate-program_black.png" media="(prefers-color-scheme: dark)">
-    <img src="../.gitbook/assets/affiliate-program_white.png" alt="ProxyShard referral program">
+    <img src="../.gitbook/assets/affiliate-program_white.png" alt="ShardX referral program">
   </picture>
 </figure>
 

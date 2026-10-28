@@ -83,7 +83,7 @@ Typical automation flow:
 **Temporary profiles.** `POST /profiles/temporary` creates a profile flagged `temporary`: hidden from the general list and the UI, and auto-deleted when its browser closes (together with its data folder). Convenient for one-off tasks.
 {% endhint %}
 
-The full reference for all methods (profiles, fingerprints, proxies, folders, cookies, start/stop) with data models and examples is in the [ShardX Launcher API specification](https://docs.proxyshard.com/eng/shardx-launcher-api/binding-and-lifecycle).
+The full reference for all methods (profiles, fingerprints, proxies, folders, cookies, start/stop) with data models and examples is in the [ShardX Launcher API specification](https://docs.shardx.com/eng/shardx-launcher-api/binding-and-lifecycle).
 
 ## MCP server for AI agents
 

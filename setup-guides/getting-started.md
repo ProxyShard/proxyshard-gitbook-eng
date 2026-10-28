@@ -4,7 +4,7 @@ icon: clipboard-list
 
 # Setup guide
 
-Before configuring an application, open the required [order](https://dashboard.proxyshard.com/products) and copy its connection details.
+Before configuring an application, open the required [order](https://dashboard.shardx.com/products) and copy its connection details.
 
 {% hint style="info" %}
 The examples below use `SOCKS5`. If an application supports only HTTP, select `HTTP` in the order settings and use the corresponding port.

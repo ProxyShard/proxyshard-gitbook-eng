@@ -17,6 +17,6 @@ If you have any questions, we will be happy to help you in Live Chat.
 <figure>
   <picture>
     <source srcset=".gitbook/assets/contact-page_black.png" media="(prefers-color-scheme: dark)">
-    <img src=".gitbook/assets/contact-page_white.png" alt="Contact form on the ProxyShard website">
+    <img src=".gitbook/assets/contact-page_white.png" alt="Contact form on the ShardX website">
   </picture>
 </figure>

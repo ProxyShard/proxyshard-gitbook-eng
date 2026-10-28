@@ -6,7 +6,7 @@ icon: server
 
 ## Purchasing proxies
 
-To purchase [Datacenter proxies](https://dashboard.proxyshard.com/datacenter-proxy):
+To purchase [Datacenter proxies](https://dashboard.shardx.com/datacenter-proxy):
 
 1. Open `Datacenter Proxy`.
 2. Select the proxy country in `Proxy region`.
@@ -32,11 +32,11 @@ After you click `Buy now`, an invoice with the `Unpaid` status opens. Check the 
 <figure>
   <picture>
     <source srcset="../../.gitbook/assets/datacenter-invoice-payment_black.png" media="(prefers-color-scheme: dark)">
-    <img src="../../.gitbook/assets/datacenter-invoice-payment_white.png" alt="Paying an invoice with the ProxyShard balance">
+    <img src="../../.gitbook/assets/datacenter-invoice-payment_white.png" alt="Paying an invoice with the ShardX balance">
   </picture>
 </figure>
 
-After payment, the order appears under `Active products` and in [`My orders`](https://dashboard.proxyshard.com/products). A paid order has the `Active` status.
+After payment, the order appears under `Active products` and in [`My orders`](https://dashboard.shardx.com/products). A paid order has the `Active` status.
 
 <figure>
   <picture>

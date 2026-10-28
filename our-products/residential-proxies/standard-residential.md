@@ -4,9 +4,9 @@ icon: house-signal
 
 # Standard Residential
 
-<mark style="color:purple;">Standard Residential</mark> is the base residential proxy pool of ProxyShard. The proxies are hosted on real home devices that have passed standard selection filters. They support <mark style="color:purple;">UDP</mark>, which makes them the optimal choice for <mark style="color:purple;">WebRTC</mark> tasks.
+<mark style="color:purple;">Standard Residential</mark> is the base residential proxy pool of ShardX. The proxies are hosted on real home devices that have passed standard selection filters. They support <mark style="color:purple;">UDP</mark>, which makes them the optimal choice for <mark style="color:purple;">WebRTC</mark> tasks.
 
-{% embed url="https://dashboard.proxyshard.com/en/residential-main" %}
+{% embed url="https://dashboard.shardx.com/en/residential-main" %}
 
 Step-by-step purchase and payment guide: [Purchasing residential proxies](../../site-navigation/buying-and-renewing/buying-residential-proxies.md).
 

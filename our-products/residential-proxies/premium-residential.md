@@ -6,7 +6,7 @@ icon: crown
 
 <mark style="color:purple;">Premium Residential</mark> is a pool with stricter device selection criteria. The pool is roughly 10–15 times larger than Standard: from 3.8 to 4.6 million IP addresses. It offers extended geo-targeting down to operator selection.
 
-{% embed url="https://dashboard.proxyshard.com/en/residential-premium" %}
+{% embed url="https://dashboard.shardx.com/en/residential-premium" %}
 
 Step-by-step purchase and payment guide: [Purchasing residential proxies](../../site-navigation/buying-and-renewing/buying-residential-proxies.md).
 

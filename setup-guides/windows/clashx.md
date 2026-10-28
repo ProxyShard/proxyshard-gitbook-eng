@@ -39,7 +39,7 @@ Add the proxy under `proxies:` and enter the details from your order. This examp
 
 ```yaml
 proxies:
-  - name: "ProxyShard-Germany"
+  - name: "ShardX-Germany"
     type: socks5
     server: 123.123.123.123
     port: 41733
@@ -48,13 +48,13 @@ proxies:
     udp: true
 
 proxy-groups:
-  - name: "ProxyShard"
+  - name: "ShardX"
     type: select
     proxies:
-      - ProxyShard-Germany
+      - ShardX-Germany
 
 rules:
-  - PROCESS-NAME,chrome.exe,ProxyShard
+  - PROCESS-NAME,chrome.exe,ShardX
   - MATCH,DIRECT
 ```
 
@@ -75,7 +75,7 @@ See the [general setup guide](../getting-started.md) for help finding the connec
 
 1. Open `Proxies`.
 2. Select `Global` mode.
-3. Click `Check` next to the ProxyShard server.
+3. Click `Check` next to the ShardX server.
 
 <figure>
   <picture>
@@ -90,7 +90,7 @@ If the connection is available, the server card will show its latency.
 
 ## Add multiple proxies
 
-Add each server as a separate item under `proxies:` and list their names in the `ProxyShard` group. After saving the configuration, the servers will appear under `Proxies`, where you can switch between them.
+Add each server as a separate item under `proxies:` and list their names in the `ShardX` group. After saving the configuration, the servers will appear under `Proxies`, where you can switch between them.
 
 <figure>
   <picture>
@@ -114,7 +114,7 @@ Add each server as a separate item under `proxies:` and list their names in the 
 
 ## Verify the connection
 
-Open [ProxyShard IP Checker](https://proxyshard.com/tools/ip-checker) and confirm that it displays the proxy IP address.
+Open [ShardX IP Checker](https://proxyshard.com/tools/ip-checker) and confirm that it displays the proxy IP address.
 
 <figure>
   <picture>

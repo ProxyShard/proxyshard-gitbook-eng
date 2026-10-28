@@ -67,12 +67,12 @@ Click `Create profile` inside the folder.
   </picture>
 </figure>
 
-Generate one SOCKS5 proxy in the ProxyShard dashboard and copy its connection details.
+Generate one SOCKS5 proxy in the ShardX dashboard and copy its connection details.
 
 <figure>
   <picture>
     <source srcset="../../.gitbook/assets/vision-residential-generate-single_black.png" media="(prefers-color-scheme: dark)">
-    <img src="../../.gitbook/assets/vision-residential-generate-single_white.png" alt="Generating one SOCKS5 proxy in ProxyShard">
+    <img src="../../.gitbook/assets/vision-residential-generate-single_white.png" alt="Generating one SOCKS5 proxy in ShardX">
   </picture>
 </figure>
 
@@ -98,7 +98,7 @@ Open the `Proxies` tab and click `Add proxy`.
   </picture>
 </figure>
 
-Generate a SOCKS5 proxy list in the ProxyShard dashboard and copy it.
+Generate a SOCKS5 proxy list in the ShardX dashboard and copy it.
 
 <figure>
   <picture>
@@ -130,7 +130,7 @@ After saving, the assigned proxy appears in the profile row.
 
 ## Check WebRTC
 
-Start the profile and open [ProxyShard IP Checker](https://proxyshard.com/ip-checker). The TCP and WebRTC addresses should match.
+Start the profile and open [ShardX IP Checker](https://proxyshard.com/ip-checker). The TCP and WebRTC addresses should match.
 
 <figure>
   <picture>

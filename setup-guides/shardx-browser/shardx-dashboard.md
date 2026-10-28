@@ -1,26 +1,26 @@
 ---
-description: Your ProxyShard account in the ShardBrowser app
+description: Your ShardX account in the ShardBrowser app
 icon: gauge
 ---
 
-# ProxyShard Dashboard
+# ShardX Dashboard
 
-The <mark style="color:purple;">**ProxyShard**</mark> section connects your [ProxyShard](https://proxyshard.com) account to the app: balance, traffic, orders and proxy purchases are available right in ShardBrowser.
+The <mark style="color:purple;">**ShardX**</mark> section connects your [ShardX](https://proxyshard.com) account to the app: balance, traffic, orders and proxy purchases are available right in ShardBrowser.
 
-To connect your account, copy the API key from your [ProxyShard dashboard settings](https://dashboard.proxyshard.com/en/profile?tab=api-key) and paste it into the field in the <mark style="color:purple;">**Connect your ProxyShard account**</mark> block.
+To connect your account, copy the API key from your [ShardX dashboard settings](https://dashboard.shardx.com/en/profile?tab=api-key) and paste it into the field in the <mark style="color:purple;">**Connect your ShardX account**</mark> block.
 
 <figure>
   <picture>
     <source srcset="../../.gitbook/assets/shardbrowser-proxyshard-connect_black.png" media="(prefers-color-scheme: dark)">
-    <img src="../../.gitbook/assets/shardbrowser-proxyshard-connect_white.png" alt="ProxyShard section">
+    <img src="../../.gitbook/assets/shardbrowser-proxyshard-connect_white.png" alt="ShardX section">
   </picture>
-  <figcaption>ProxyShard section</figcaption>
+  <figcaption>ShardX section</figcaption>
 </figure>
 
 Click <mark style="color:purple;">**Save**</mark>.
 
 {% hint style="info" %}
-The API key is stored on your computer and sent only to ProxyShard. Do not share it with anyone.
+The API key is stored on your computer and sent only to ShardX. Do not share it with anyone.
 {% endhint %}
 
 <figure>
@@ -44,7 +44,7 @@ Once connected, the account panel opens:
 <figure>
   <picture>
     <source srcset="../../.gitbook/assets/shardbrowser-proxyshard-dashboard_black.png" media="(prefers-color-scheme: dark)">
-    <img src="../../.gitbook/assets/shardbrowser-proxyshard-dashboard_white.png" alt="ProxyShard account panel">
+    <img src="../../.gitbook/assets/shardbrowser-proxyshard-dashboard_white.png" alt="ShardX account panel">
   </picture>
-  <figcaption>ProxyShard account panel</figcaption>
+  <figcaption>ShardX account panel</figcaption>
 </figure>

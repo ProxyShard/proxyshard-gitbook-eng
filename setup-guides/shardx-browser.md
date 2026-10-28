@@ -13,7 +13,7 @@ icon: browser
 </figure>
 
 {% hint style="info" %}
-ShardBrowser is a Chromium-based anti-detect browser by the ProxyShard team. Every profile gets its own fingerprint of a real device and its own proxy, so websites see your profiles as different computers. The program is free and provided "as is". If you run into a serious issue, please file a bug report on [GitHub](https://github.com/ProxyShard/ShardBrowser/issues).
+ShardBrowser is a Chromium-based anti-detect browser by the ShardX team. Every profile gets its own fingerprint of a real device and its own proxy, so websites see your profiles as different computers. The program is free and provided "as is". If you run into a serious issue, please file a bug report on [GitHub](https://github.com/ProxyShard/ShardBrowser/issues).
 {% endhint %}
 
 ## Windows system requirements
@@ -84,7 +84,7 @@ sudo apt install ./ShardBrowser.Launcher_<version>_amd64.deb
 
 ## First launch
 
-After installation and launch, the <mark style="color:purple;">**All profiles**</mark> home screen opens. The section menu is on the left: profiles, proxies, fingerprints, extensions, bookmarks, automation and your ProxyShard account.
+After installation and launch, the <mark style="color:purple;">**All profiles**</mark> home screen opens. The section menu is on the left: profiles, proxies, fingerprints, extensions, bookmarks, automation and your ShardX account.
 
 <figure>
   <picture>

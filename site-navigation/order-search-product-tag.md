@@ -25,7 +25,7 @@ The assigned tag appears next to the order number under `Active products`.
   </picture>
 </figure>
 
-Enter the tag in `Search` and click `Search`. Search is available both on the selected product page and under [`My orders`](https://dashboard.proxyshard.com/products).
+Enter the tag in `Search` and click `Search`. Search is available both on the selected product page and under [`My orders`](https://dashboard.shardx.com/products).
 
 <figure>
   <picture>

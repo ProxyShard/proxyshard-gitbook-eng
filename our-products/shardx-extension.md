@@ -3,9 +3,9 @@ description: Extension for Chrome, Firefox, and other browsers
 icon: puzzle-piece
 ---
 
-# ProxyShard Extension
+# ShardX Extension
 
-<mark style="color:purple;">**ProxyShard – Smart Proxy Manager**</mark> is the official ProxyShard extension for Chrome, Mozilla Firefox, and Chromium-based browsers such as Edge, Opera, Brave, and Yandex. It lets you add, test, and switch proxies directly in your browser.
+<mark style="color:purple;">**ShardX – Smart Proxy Manager**</mark> is the official ShardX extension for Chrome, Mozilla Firefox, and Chromium-based browsers such as Edge, Opera, Brave, and Yandex. It lets you add, test, and switch proxies directly in your browser.
 
 #### Extension features
 
@@ -22,7 +22,7 @@ icon: puzzle-piece
 <figure>
   <picture>
     <source srcset="../.gitbook/assets/proxyshard-extension-popup-overview_black.png" media="(prefers-color-scheme: dark)">
-    <img src="../.gitbook/assets/proxyshard-extension-popup-overview_white.png" alt="ProxyShard Extension main window">
+    <img src="../.gitbook/assets/proxyshard-extension-popup-overview_white.png" alt="ShardX Extension main window">
   </picture>
   <figcaption><p>The main window with saved proxy profiles</p></figcaption>
 </figure>
@@ -39,12 +39,12 @@ The extension is available from the official Chrome Web Store and Firefox Add-on
 
 {% embed url="https://addons.mozilla.org/en-US/firefox/addon/proxyshard-smart-proxy-manager/" %}
 
-After installation, open the `Extensions` menu to the right of the address bar and pin `ProxyShard – Smart Proxy Manager` by clicking the pin icon.
+After installation, open the `Extensions` menu to the right of the address bar and pin `ShardX – Smart Proxy Manager` by clicking the pin icon.
 
 <figure>
   <picture>
     <source srcset="../.gitbook/assets/proxyshard-extension-pin_black.png" media="(prefers-color-scheme: dark)">
-    <img src="../.gitbook/assets/proxyshard-extension-pin_white.png" alt="Pinning ProxyShard Extension in the browser">
+    <img src="../.gitbook/assets/proxyshard-extension-pin_white.png" alt="Pinning ShardX Extension in the browser">
   </picture>
   <figcaption><p>Open the Extensions menu and pin the extension</p></figcaption>
 </figure>
@@ -60,12 +60,12 @@ You can use SOCKS5 only without credentials or with IP allowlist authentication.
 {% hint style="success" %}
 **SOCKS5 in Mozilla Firefox**
 
-The Mozilla Firefox version of ProxyShard Extension supports authenticated SOCKS5, so you can use these profiles directly.
+The Mozilla Firefox version of ShardX Extension supports authenticated SOCKS5, so you can use these profiles directly.
 {% endhint %}
 
 ## Set up a Residential proxy
 
-1. Open your order on the [Residential proxy](https://dashboard.proxyshard.com/en/residential-main) page.
+1. Open your order on the [Residential proxy](https://dashboard.shardx.com/en/residential-main) page.
 2. Select the country, region, session type, protocol, and other settings, then click `Generate proxy`.
 3. Select the required format in `Proxy List`, then click `Copy all`.
 
@@ -77,7 +77,7 @@ The Mozilla Firefox version of ProxyShard Extension supports authenticated SOCKS
   <figcaption><p>Residential proxy settings and the Proxy List section</p></figcaption>
 </figure>
 
-4. Open the pinned ProxyShard extension.
+4. Open the pinned ShardX extension.
 5. Paste the proxy string in `ip:port:login:password` format into the field at the bottom, then click `Add`.
 
 <figure>
@@ -220,7 +220,7 @@ The backup may contain proxy addresses and authentication credentials. Do not sh
 <figure>
   <picture>
     <source srcset="../.gitbook/assets/proxyshard-extension-options-import-export_black.png" media="(prefers-color-scheme: dark)">
-    <img src="../.gitbook/assets/proxyshard-extension-options-import-export_white.png" alt="Importing and exporting ProxyShard Extension profiles">
+    <img src="../.gitbook/assets/proxyshard-extension-options-import-export_white.png" alt="Importing and exporting ShardX Extension profiles">
   </picture>
   <figcaption><p>Back up and restore proxy profiles</p></figcaption>
 </figure>
@@ -242,11 +242,11 @@ Click `Save preferences` after changing the settings.
 <figure>
   <picture>
     <source srcset="../.gitbook/assets/proxyshard-extension-options-preferences_black.png" media="(prefers-color-scheme: dark)">
-    <img src="../.gitbook/assets/proxyshard-extension-options-preferences_white.png" alt="ProxyShard Extension Preferences">
+    <img src="../.gitbook/assets/proxyshard-extension-options-preferences_white.png" alt="ShardX Extension Preferences">
   </picture>
   <figcaption><p>Additional extension settings</p></figcaption>
 </figure>
 
 {% hint style="success" %}
-ProxyShard Extension is ready to use. You can enable and switch saved profiles from the main extension window.
+ShardX Extension is ready to use. You can enable and switch saved profiles from the main extension window.
 {% endhint %}

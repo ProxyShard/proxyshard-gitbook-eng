@@ -25,14 +25,14 @@ When you generate new proxies with different settings, **the old ones continue t
 Suppose you generated German proxies:
 
 ```
-relay-eu.proxyshard.com:8080:plan-limited-country-de-sid-aaaaaaaaa:xxxxxxxxx
+relay-eu.shardx.com:8080:plan-limited-country-de-sid-aaaaaaaaa:xxxxxxxxx
 ```
 
 Let's break down the connection string:
 
 | Part                      | Value                                                                              |
 | ------------------------- | ---------------------------------------------------------------------------------- |
-| `relay-eu.proxyshard.com` | Load balancing server (relay)                                                      |
+| `relay-eu.shardx.com` | Load balancing server (relay)                                                      |
 | `8080`                    | Server port                                                                        |
 | `plan-limited`            | Proxy tariff (`limited` - regular, `unlimited` - unlimited, `premium` - premium)   |
 | `country-de`              | Connection country: Germany (`de`)                                                 |

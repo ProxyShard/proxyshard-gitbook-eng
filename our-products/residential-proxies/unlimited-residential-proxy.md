@@ -6,7 +6,7 @@ icon: triple-chevrons-up
 
 <mark style="color:purple;">Unlimited Residential</mark> is based on the [Standard Residential](standard-residential.md) pool - the same devices, the same countries, the same IP range. The key difference: **no traffic limits**. This plan pays off where Standard with per-gigabyte billing becomes expensive.
 
-{% embed url="https://dashboard.proxyshard.com/en/residential-unlimited" %}
+{% embed url="https://dashboard.shardx.com/en/residential-unlimited" %}
 
 Step-by-step purchase and payment guide: [Purchasing residential proxies](../../site-navigation/buying-and-renewing/buying-residential-proxies.md).
 

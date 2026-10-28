@@ -15,7 +15,7 @@ Unused traffic does not expire at the end of the month. It remains on the order 
 Addresses are issued on real home IPs. A session can change at any moment if the device in the pool leaves the traffic-sharing network. If you need a **static IP**, see [Datacenter](../datacenter-proxies.md) or [ISP proxies](../isp-proxies.md).
 {% endhint %}
 
-{% embed url="https://dashboard.proxyshard.com/en/residential-main" %}
+{% embed url="https://dashboard.shardx.com/en/residential-main" %}
 
 Step-by-step purchase and payment guide: [Purchasing residential proxies](../../site-navigation/buying-and-renewing/buying-residential-proxies.md).
 
@@ -115,7 +115,7 @@ The standard format is:
 host:port:username:password
 ```
 
-* `host` specifies the connection server, for example `relay-eu.proxyshard.com`.
+* `host` specifies the connection server, for example `relay-eu.shardx.com`.
 * `port` connects to that server and does not determine the final IP by itself.
 * `username` contains the targeting parameters and the `sid` session identifier.
 * `password` is used for authentication.

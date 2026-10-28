@@ -12,7 +12,7 @@ This makes them a good option for Tier-1 sites and services that are sensitive t
 
 ISP proxies support <mark style="color:purple;">p0f</mark> network fingerprint spoofing.
 
-{% embed url="https://dashboard.proxyshard.com/en/isp-proxy" %}
+{% embed url="https://dashboard.shardx.com/en/isp-proxy" %}
 
 Step-by-step purchase and payment guide: [Purchasing ISP proxies](../site-navigation/buying-and-renewing/buying-isp-proxies.md).
 

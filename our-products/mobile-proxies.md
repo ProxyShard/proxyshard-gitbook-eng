@@ -20,7 +20,7 @@ icon: signal
 2\) Not available to users in Russia without using a VPN.
 {% endhint %}
 
-{% embed url="https://dashboard.proxyshard.com/en/mobile-proxy" %}
+{% embed url="https://dashboard.shardx.com/en/mobile-proxy" %}
 
 Step-by-step purchase and activation guide: [Purchasing mobile proxies](../site-navigation/buying-and-renewing/buying-mobile-proxies.md).
 
@@ -55,7 +55,7 @@ Step-by-step purchase and activation guide: [Purchasing mobile proxies](../site-
 | 🇮🇩 Indonesia | Telkomsel |
 
 {% hint style="info" %}
-The list is regularly expanding. Up-to-date locations and pricing are on the purchase page [Mobile proxy](https://dashboard.proxyshard.com/en/mobile-proxy).
+The list is regularly expanding. Up-to-date locations and pricing are on the purchase page [Mobile proxy](https://dashboard.shardx.com/en/mobile-proxy).
 {% endhint %}
 
 ## How to purchase

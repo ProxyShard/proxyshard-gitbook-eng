@@ -7,5 +7,5 @@ icon: edge
 
 Extensions for the Edge browser
 
-* [🔥 ProxyShard Extension](proxyshard.md)
+* [🔥 ShardX Extension](proxyshard.md)
 * [ZeroOmega](zeroomega.md)

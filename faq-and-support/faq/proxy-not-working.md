@@ -17,7 +17,7 @@ Detailed instructions for checking via curl and Proxy Tester: [How to check whet
 
 **If the check was successful:**
 
-If you still cannot connect through a plugin, browser, or program, check that the entered data is correct and that the software works properly. **SOCKS and HTTP proxy connection protocols are often mixed up.** <mark style="color:red;">We do not provide support for software or hardware that is not related to the</mark> <mark style="color:red;">**Proxyshard**</mark><mark style="color:red;"> project unless the issue is caused by a problem on our side.</mark>
+If you still cannot connect through a plugin, browser, or program, check that the entered data is correct and that the software works properly. **SOCKS and HTTP proxy connection protocols are often mixed up.** <mark style="color:red;">We do not provide support for software or hardware that is not related to the</mark> <mark style="color:red;">**ShardX**</mark><mark style="color:red;"> project unless the issue is caused by a problem on our side.</mark>
 
 **If the check failed:**
 

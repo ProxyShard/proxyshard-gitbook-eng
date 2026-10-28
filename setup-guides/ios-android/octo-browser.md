@@ -50,7 +50,7 @@ In the new profile settings, tap **Set a proxy**.
 </figure>
 
 1. Under **Type**, select HTTP, HTTPS, or SOCKS5.
-2. Copy the complete connection string from the required ProxyShard order and paste it into **Proxy**.
+2. Copy the complete connection string from the required ShardX order and paste it into **Proxy**.
 3. Tap **Check proxy**. After a successful check, the app displays the connection IP address, location, and time zone.
 4. Tap **Done**.
 

@@ -16,7 +16,7 @@ How websites perform these checks:
 
 **A common problem:** Datacenter and ISP proxies usually run on Linux servers. Without spoofing, the network fingerprint may indicate Linux even when the user is working on Windows or macOS. An anti-fraud system may treat this mismatch as a sign that a proxy is being used.
 
-## How ProxyShard solves this
+## How ShardX solves this
 
 We added the ability to **spoof the p0f fingerprint** directly from the dashboard. You select the required OS, and the proxy server starts sending network packets with the corresponding TCP/IP fingerprint.
 
@@ -88,7 +88,7 @@ When registering a Google account on a desktop device, a mismatch between the br
 For maximum results, we recommend using:
 
 * [**Vision Browser**](../setup-guides/antidetect-browsers/vision-browser.md), an antidetect browser with UDP support
-* **ProxyShard ISP proxies** with p0f spoofing enabled
+* **ShardX ISP proxies** with p0f spoofing enabled
 
 In this configuration, Vision Browser handles the browser fingerprint, p0f handles the network fingerprint, and the ISP proxy provides an IP address from a residential internet provider.
 

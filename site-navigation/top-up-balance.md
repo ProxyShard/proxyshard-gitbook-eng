@@ -8,7 +8,7 @@ Your balance is used to purchase products, renew orders, and pay for additional 
 
 To add funds:
 
-1. Open [`Wallet`](https://dashboard.proxyshard.com/en/wallet).
+1. Open [`Wallet`](https://dashboard.shardx.com/en/wallet).
 2. Enter the amount in `Top up balance amount`.
 3. Select a payment option in `Payment method`.
 4. Click `Top up your balance` and complete the payment.
@@ -16,7 +16,7 @@ To add funds:
 <figure>
   <picture>
     <source srcset="../.gitbook/assets/wallet-top-up-form_black.png" media="(prefers-color-scheme: dark)">
-    <img src="../.gitbook/assets/wallet-top-up-form_white.png" alt="Adding funds to a ProxyShard balance">
+    <img src="../.gitbook/assets/wallet-top-up-form_white.png" alt="Adding funds to a ShardX balance">
   </picture>
 </figure>
 

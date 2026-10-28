@@ -10,7 +10,7 @@ You need sufficient [funds](../top-up-balance.md) on your balance to pay for an 
 
 ## Purchasing proxies
 
-To purchase [ISP proxies](https://dashboard.proxyshard.com/isp-proxy):
+To purchase [ISP proxies](https://dashboard.shardx.com/isp-proxy):
 
 1. Open `ISP Proxy`.
 2. Select the proxy country in `Proxy region`.
@@ -32,7 +32,7 @@ To purchase [ISP proxies](https://dashboard.proxyshard.com/isp-proxy):
 
 After you click `Buy now`, an invoice with the `Unpaid` status opens. Check the `Total amount`, then click `Pay with Wallet`. The payment flow is the same as in the [Datacenter proxy guide](buying-datacenter-proxies.md#paying-for-the-order).
 
-After payment, the order appears under `Active products` and in [`My orders`](https://dashboard.proxyshard.com/products).
+After payment, the order appears under `Active products` and in [`My orders`](https://dashboard.shardx.com/products).
 
 {% hint style="warning" %}
 The proxies become available within 1-2 minutes while the order is being synchronized.

@@ -8,7 +8,7 @@ icon: server
 
 <mark style="color:purple;">Datacenter proxies</mark>, like <mark style="color:purple;">ISP</mark> proxies, are issued to one user only: no sharing, meaning no more than one user per address and no hidden sharing. The addresses are <mark style="color:purple;">IPv4</mark> and also support <mark style="color:purple;">UDP</mark>.
 
-{% embed url="https://dashboard.proxyshard.com/en/datacenter-proxy" %}
+{% embed url="https://dashboard.shardx.com/en/datacenter-proxy" %}
 
 Step-by-step purchase and payment guide: [Purchasing Datacenter proxies](../site-navigation/buying-and-renewing/buying-datacenter-proxies.md).
 

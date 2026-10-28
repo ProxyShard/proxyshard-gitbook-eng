@@ -31,7 +31,7 @@ Review the invoice total and click `Pay with Wallet`.
   </picture>
 </figure>
 
-After payment, the order appears under `Active products` and in [`My orders`](https://dashboard.proxyshard.com/products). Click `Open` to view its settings.
+After payment, the order appears under `Active products` and in [`My orders`](https://dashboard.shardx.com/products). Click `Open` to view its settings.
 
 <figure>
   <picture>
