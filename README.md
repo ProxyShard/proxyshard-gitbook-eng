@@ -1,8 +1,9 @@
 ---
+description: "ShardX residential, datacenter, ISP and mobile proxies: connection, setup in browsers and apps, FAQ and API"
 icon: hand-wave
 ---
 
-# ShardX GitBook
+# ShardX Documentation
 
 <figure>
   <picture>
