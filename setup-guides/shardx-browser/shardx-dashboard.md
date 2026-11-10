@@ -5,7 +5,7 @@ icon: gauge
 
 # ShardX Dashboard
 
-The <mark style="color:purple;">**ShardX**</mark> section connects your [ShardX](https://proxyshard.com) account to the app: balance, traffic, orders and proxy purchases are available right in ShardBrowser.
+The <mark style="color:purple;">**ShardX**</mark> section connects your [ShardX](https://shardx.com) account to the app: balance, traffic, orders and proxy purchases are available right in ShardBrowser.
 
 To connect your account, copy the API key from your [ShardX dashboard settings](https://dashboard.shardx.com/en/profile?tab=api-key) and paste it into the field in the <mark style="color:purple;">**Connect your ShardX account**</mark> block.
 

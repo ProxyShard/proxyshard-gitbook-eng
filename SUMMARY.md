@@ -119,12 +119,12 @@
 
 ## Buy
 
-* [Buy Residential Proxies](https://proxyshard.com/residential-proxy)
-* [Buy Datacenter Proxies](https://proxyshard.com/datacenter-proxy)
-* [Buy ISP Proxy](https://proxyshard.com/isp-proxy)
-* [Buy Mobile Proxies](https://proxyshard.com/mobile-proxy)
-* [IP Checker](https://proxyshard.com/ip-checker)
-* [Proxy Tester](https://proxyshard.com/proxy-tester)
+* [Buy Residential Proxies](https://shardx.com/residential-proxy)
+* [Buy Datacenter Proxies](https://shardx.com/datacenter-proxy)
+* [Buy ISP Proxy](https://shardx.com/isp-proxy)
+* [Buy Mobile Proxies](https://shardx.com/mobile-proxy)
+* [IP Checker](https://shardx.com/ip-checker)
+* [Proxy Tester](https://shardx.com/proxy-tester)
 
 ## APIs and integrations <a href="#api-and-integrations" id="api-and-integrations"></a>
 

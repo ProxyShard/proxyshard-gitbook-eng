@@ -9,7 +9,7 @@ noIndex: true
 **Answer:** Updating the endpoint servers takes some time, up to 3 minutes from the moment of purchase.\
 \
 **Question:** More than 3 minutes have passed, and the proxies still are not working!\
-**Answer:** Check the proxies using our [Proxy Tester](https://proxyshard.com/proxy-tester) or check the connection on your side via the command line (terminal).
+**Answer:** Check the proxies using our [Proxy Tester](https://shardx.com/proxy-tester) or check the connection on your side via the command line (terminal).
 
 Detailed instructions for checking via curl and Proxy Tester: [How to check whether a proxy works](how-to-check-proxy.md)
 
@@ -24,4 +24,4 @@ If you still cannot connect through a plugin, browser, or program, check that th
 Recheck the data again. If it is definitely correct, try checking through a VPN to rule out blocking by your ISP. In any case, contact **our technical support**; we will try to quickly identify and fix the issue if it is on our side.
 
 **If it works, but not for me:**\
-If the proxies worked before but suddenly stopped, while checks through our [Proxy Tester](https://proxyshard.com/proxy-tester), VPN, or other resources confirm that the proxies are alive, **your ISP may be blocking connections**. Datacenter and ISP proxies use the same port for HTTP and SOCKS5, so there is no need to change the port: try selecting the other protocol in your application. If that does not help, contact our technical support.
+If the proxies worked before but suddenly stopped, while checks through our [Proxy Tester](https://shardx.com/proxy-tester), VPN, or other resources confirm that the proxies are alive, **your ISP may be blocking connections**. Datacenter and ISP proxies use the same port for HTTP and SOCKS5, so there is no need to change the port: try selecting the other protocol in your application. If that does not help, contact our technical support.

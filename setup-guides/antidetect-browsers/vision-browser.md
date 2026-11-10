@@ -130,7 +130,7 @@ After saving, the assigned proxy appears in the profile row.
 
 ## Check WebRTC
 
-Start the profile and open [ShardX IP Checker](https://proxyshard.com/ip-checker). The TCP and WebRTC addresses should match.
+Start the profile and open [ShardX IP Checker](https://shardx.com/ip-checker). The TCP and WebRTC addresses should match.
 
 <figure>
   <picture>

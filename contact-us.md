@@ -10,7 +10,7 @@ icon: at
 <mark style="color:purple;">Discord</mark> - [https://discord.gg/zKzzRKZheP](https://discord.gg/zKzzRKZheP)\
 Primary support is available through Live Chat in the bottom-right corner <img src=".gitbook/assets/contact-support-icon.png" alt="Live Chat" data-size="line">
 
-For partnership or other inquiries, use the [English Google form](https://forms.gle/ysqdK3CzXjHuDmxL6) or the form on the [website](https://proxyshard.com/contacts).
+For partnership or other inquiries, use the [English Google form](https://forms.gle/ysqdK3CzXjHuDmxL6) or the form on the [website](https://shardx.com/contacts).
 
 If you have any questions, we will be happy to help you in Live Chat.
 

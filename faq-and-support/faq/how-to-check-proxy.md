@@ -12,7 +12,7 @@ If the proxies do not connect, or you want to make sure everything is working, t
 
 The fastest option.&#x20;
 
-Open our [Proxy Tester](https://proxyshard.com/proxy-tester), paste the proxy into the field, and click **Test Proxy**.
+Open our [Proxy Tester](https://shardx.com/proxy-tester), paste the proxy into the field, and click **Test Proxy**.
 
 Read more about features and formats in the [Proxy Tester](../../our-products/proxy-tester.md) article.
 

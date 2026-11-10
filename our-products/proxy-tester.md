@@ -6,7 +6,7 @@ icon: vial
 
 <mark style="color:purple;">ShardX Proxy Tester</mark> lets you quickly check whether your proxies work directly on the website, without installing additional software, and even check UDP support if you use SOCKS5.
 
-{% embed url="https://proxyshard.com/proxy-tester" %}
+{% embed url="https://shardx.com/proxy-tester" %}
 
 ***
 
@@ -19,7 +19,7 @@ icon: vial
 
 ## How to use it
 
-1. Open [proxyshard.com/proxy-tester](https://proxyshard.com/proxy-tester)
+1. Open [proxyshard.com/proxy-tester](https://shardx.com/proxy-tester)
 2. Paste one or more proxies into the <mark style="color:purple;">**Proxy list**</mark> field, one per line
 3. Click <mark style="color:purple;">**Test Proxy**</mark>
 4. Wait for the result in the <mark style="color:purple;">**Proxy check history**</mark> table below

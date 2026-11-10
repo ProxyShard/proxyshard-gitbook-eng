@@ -8,7 +8,7 @@ You can test WebRTC with ShardX IP Checker or the third-party Ipbinding service.
 
 ## 1. ShardX IP Checker
 
-{% embed url="https://proxyshard.com/ip-checker" %}
+{% embed url="https://shardx.com/ip-checker" %}
 
 ### Expected result
 
