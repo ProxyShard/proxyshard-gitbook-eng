@@ -7,5 +7,5 @@ icon: chrome
 
 Extensions for the Chrome browser
 
-* [🔥 ShardX Extension](shardx.md)
+* [🔥 ShardExtension](shardx.md)
 * [ZeroOmega](zeroomega.md)

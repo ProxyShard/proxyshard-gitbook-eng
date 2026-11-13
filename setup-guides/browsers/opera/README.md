@@ -7,5 +7,5 @@ icon: opera
 
 Extensions for the Opera browser
 
-* [🔥 ShardX Extension](shardx.md)
+* [🔥 ShardExtension](shardx.md)
 * [ZeroOmega](zeroomega.md)

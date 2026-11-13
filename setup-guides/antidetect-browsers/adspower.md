@@ -1,7 +1,7 @@
 # AdsPower
 
 {% hint style="warning" %}
-AdsPower does not support UDP proxies. Use [Vision Browser](vision-browser.md) when UDP is required.
+AdsPower does not support UDP proxies. Use [Vision Browser](vision-browser.md) or the free [ShardBrowser](../../our-products/shardx-launcher.md) when UDP is required.
 {% endhint %}
 
 ## Add a proxy

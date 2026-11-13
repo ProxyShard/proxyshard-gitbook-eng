@@ -38,6 +38,7 @@ Current product restrictions are listed on the [Restrictions](restrictions.md) p
 | 🇨🇿 Czechia |
 | 🇺🇦 Ukraine |
 | 🇲🇩 Moldova |
+| 🇦🇹 Austria |
 
 {% hint style="info" %}
 The list of locations is constantly expanding.

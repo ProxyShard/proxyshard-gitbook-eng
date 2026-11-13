@@ -7,7 +7,7 @@ description: Proxy setup for Chrome
 ## Installing ZeroOmega
 
 {% hint style="warning" %}
-ZeroOmega handles TCP traffic only. Use [Vision Browser](../../antidetect-browsers/vision-browser.md) when you need UDP support.
+ZeroOmega handles TCP traffic only. Use [Vision Browser](../../antidetect-browsers/vision-browser.md) or the free [ShardBrowser](../../../our-products/shardx-launcher.md) when you need UDP support.
 {% endhint %}
 
 Install [ZeroOmega](https://chromewebstore.google.com/detail/pfnededegaaopdmhkdmcofjmoldfiped) from the Chrome Web Store.

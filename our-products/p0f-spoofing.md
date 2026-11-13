@@ -85,12 +85,12 @@ When registering a Google account on a desktop device, a mismatch between the br
 
 ## Recommended stack
 
-For maximum results, we recommend using:
+For the best results, we recommend using:
 
-* [**Vision Browser**](../setup-guides/antidetect-browsers/vision-browser.md), an antidetect browser with UDP support
+* [**Vision Browser**](../setup-guides/antidetect-browsers/vision-browser.md) or the free [**ShardBrowser**](shardx-launcher.md), both of which are antidetect browsers with UDP support
 * **ShardX ISP proxies** with p0f spoofing enabled
 
-In this configuration, Vision Browser handles the browser fingerprint, p0f handles the network fingerprint, and the ISP proxy provides an IP address from a residential internet provider.
+In this configuration, Vision Browser or ShardBrowser handles the browser fingerprint, p0f handles the network fingerprint, and the ISP proxy provides an IP address from a residential internet provider.
 
 ## Where it is available
 

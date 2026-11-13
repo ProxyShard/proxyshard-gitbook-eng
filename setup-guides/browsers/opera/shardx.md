@@ -1,11 +1,11 @@
 ---
-description: ShardX extension for Opera
+description: ShardExtension for Opera
 icon: puzzle-piece
 ---
 
-# ShardX Extension
+# ShardExtension
 
-Our official <mark style="color:purple;">**ShardX – Smart Proxy Manager**</mark> extension can be installed directly from the **Chrome Web Store** in Opera.
+Our official browser extension, <mark style="color:purple;">**ShardExtension**</mark>, can be installed in Opera directly from the **Chrome Web Store**.
 
 ## Installation
 
@@ -17,6 +17,6 @@ Open the extension page and click the install button. If Opera asks you to confi
 
 A full overview of the extension's features, pinning steps, profile setup for Residential / Datacenter / ISP proxies, and IP rotation for mobile proxies are on a dedicated page:
 
-{% content-ref url="../../../our-products/shardx-extension.md" %}
-[shardx-extension.md](../../../our-products/shardx-extension.md)
+{% content-ref url="../../../our-products/shardextension.md" %}
+[shardextension.md](../../../our-products/shardextension.md)
 {% endcontent-ref %}

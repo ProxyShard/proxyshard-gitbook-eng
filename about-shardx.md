@@ -35,7 +35,7 @@ Static addresses hosted on internet service provider networks. They combine the 
 
 Mobile carrier proxies with country and carrier selection. You can rotate the IP through a link, while available settings depend on the selected plan and location.
 
-### [<mark style="color:purple;">ShardX Extension</mark>](our-products/shardx-extension.md)
+### [<mark style="color:purple;">ShardExtension</mark>](our-products/shardextension.md)
 
 A browser extension for Chrome, Firefox, and Chromium-based browsers. It stores proxy profiles, switches and tests connections, and can rotate a Mobile proxy IP on a timer or keyboard shortcut.
 

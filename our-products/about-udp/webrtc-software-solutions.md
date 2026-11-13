@@ -13,10 +13,10 @@ Examples of supported software for different operating systems:
 * [<mark style="color:$success;">Vision</mark>](../../setup-guides/antidetect-browsers/vision-browser.md): an accessible and reliable paid browser with support for UDP, QUIC, Smart Fingerprint, and other useful features. More than 60% of teams on our website choose it.
 
 {% hint style="success" %}
-Our [ISP Proxy](https://dashboard.shardx.com/en/isp-proxy) combined with the [Vision](../../setup-guides/antidetect-browsers/vision-browser.md) browser is one of the recommended setups for using UDP through a proxy. ISP Proxy also supports changing the [p0f](../p0f-spoofing.md) network fingerprint.
+Our [ISP Proxy](https://dashboard.shardx.com/en/isp-proxy) combined with [Vision](../../setup-guides/antidetect-browsers/vision-browser.md) or the free [ShardBrowser](../shardx-launcher.md) is one of the recommended setups for using UDP through a proxy. ISP Proxy also supports changing the [p0f](../p0f-spoofing.md) network fingerprint.
 {% endhint %}
 
-* [<mark style="color:$tint;">ShardBrowser</mark>](../shardx-launcher.md): our open-source solution with a wide selection of profiles and proper UDP and QUIC support.
+* [<mark style="color:$tint;">ShardBrowser</mark>](../shardx-launcher.md): our free, open-source solution with a wide selection of profiles and proper UDP and QUIC support.
 
 <mark style="color:purple;">**Windows:**</mark>
 

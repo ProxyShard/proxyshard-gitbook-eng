@@ -4,7 +4,7 @@ icon: magnifying-glass
 
 # IP Checker
 
-<mark style="color:purple;">ShardX IP Checker</mark> is a free tool for checking your IP address, geolocation, browser data, WebRTC leaks, and a unique browser profile quality score.
+<mark style="color:purple;">ShardX IP Checker</mark> is a free tool for checking your IP address, geolocation, browser data, WebRTC leaks, and browser profile quality.
 
 {% embed url="https://shardx.com/ip-checker" %}
 
@@ -59,7 +59,7 @@ Under normal conditions, <mark style="color:purple;">WebRTC</mark> should displa
 
 ### Fake ISP
 
-Checks whether the provider is "fake". This is common for some VPN services that mask their origin. `No` means the provider is real.
+Checks whether the provider details match the actual owner of the IP address. Some VPN services may mask the address origin. `No` means the provider was identified as genuine.
 
 ### Host
 
@@ -195,6 +195,6 @@ Checks `navigator.maxTouchPoints` and pointer type (`mouse`, `touch`, `pen`). If
 {% hint style="danger" %}
 **Problem:** If WebRTC shows an IP different from the proxy, the leak must be fixed immediately.&#x20;
 
-We strongly recommend a universal setup for all tasks:\
-ISP proxies + a good antidetect browser. Example setup: [Vision](../setup-guides/antidetect-browsers/vision-browser.md)
+For most tasks, we recommend this universal setup:\
+ISP proxies + a good antidetect browser: [Vision](../setup-guides/antidetect-browsers/vision-browser.md) or the free [ShardBrowser](shardx-launcher.md)
 {% endhint %}

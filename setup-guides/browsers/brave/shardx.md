@@ -1,11 +1,11 @@
 ---
-description: ShardX extension for Brave
+description: ShardExtension for Brave
 icon: puzzle-piece
 ---
 
-# ShardX Extension
+# ShardExtension
 
-Our official <mark style="color:purple;">**ShardX – Smart Proxy Manager**</mark> extension installs in Brave directly from the **Chrome Web Store**, since the browser uses the Chromium engine and is compatible with all Chrome extensions.
+Our official browser extension, <mark style="color:purple;">**ShardExtension**</mark>, installs in Brave directly from the **Chrome Web Store**, since the browser uses the Chromium engine and is compatible with all Chrome extensions.
 
 {% embed url="https://chromewebstore.google.com/detail/ohlcikccaeapbfpmejhckfjjddkcflbe" %}
 
@@ -13,6 +13,6 @@ Our official <mark style="color:purple;">**ShardX – Smart Proxy Manager**</mar
 
 A full overview of the extension's features, pinning steps, profile setup for Residential / Datacenter / ISP proxies, and IP rotation for mobile proxies are on a dedicated page:
 
-{% content-ref url="../../../our-products/shardx-extension.md" %}
-[shardx-extension.md](../../../our-products/shardx-extension.md)
+{% content-ref url="../../../our-products/shardextension.md" %}
+[shardextension.md](../../../our-products/shardextension.md)
 {% endcontent-ref %}

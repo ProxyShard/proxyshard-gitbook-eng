@@ -43,7 +43,7 @@ See [About the UDP protocol](../../our-products/about-udp/) and [Restrictions](.
 
 Yes, **QUIC is supported** on every proxy where UDP works (see question 2). However, your software also needs to support QUIC.
 
-For example, in the [Vision browser](../../setup-guides/antidetect-browsers/vision-browser.md) you need to turn on the <mark style="color:purple;">**Enable QUIC**</mark> option in settings.
+For example, in the [Vision browser](../../setup-guides/antidetect-browsers/vision-browser.md) you need to turn on the <mark style="color:purple;">**Enable QUIC**</mark> option in settings. The free [ShardBrowser](../../our-products/shardx-launcher.md) configures QUIC and WebRTC automatically after checking the proxy for UDP support.
 
 ***
 
@@ -96,7 +96,7 @@ After purchasing a Mobile proxy, the port needs to be **activated** in one of th
 * Following the personal **Reset URL** link from the order
 
 {% hint style="warning" %}
-If you don't use the proxy, after **3 hours** the port goes into power-saving mode. This limit can't be removed, to bring the proxy back simply hit Restart proxy or the Reset URL again.
+If you don't use the proxy, after **3 hours** the port goes into power-saving mode. This limit can't be removed. To reactivate the proxy, click <mark style="color:purple;">**Restart proxy**</mark> or follow the <mark style="color:purple;">**Reset URL**</mark> again.
 {% endhint %}
 
 ***
@@ -114,14 +114,14 @@ Mobile proxies sit on our mobile farms and operate via real SIM cards. IP addres
 * On average the carrier refreshes the address **once a day**.
 * The carrier may initiate a pool change at any moment, and the address will change earlier.
 
-This is a feature of how mobile internet works and **is outside our control**. If you need rotation on a timer or by hotkey, use the [IP Rotation feature in our extension](../../our-products/shardx-extension.md).
+This is a feature of how mobile internet works and **is outside our control**. If you need rotation on a timer or by hotkey, use the [IP Rotation feature in our extension](../../our-products/shardextension.md).
 
 ***
 
 ## 11. What are TTL and Sticky on Residential proxies?
 
 * <mark style="color:purple;">**TTL**</mark> (Time-To-Live) is the session "lifetime" in seconds. Once TTL expires, the proxy chain is rebuilt and you get a new IP. Range: from 60 to 86400 seconds.
-* <mark style="color:purple;">**Sticky / Random**</mark> is the session mode. <mark style="color:purple;">Sticky</mark> tries to hold the same IP within TTL, <mark style="color:purple;">Random</mark> issues a random IP on every new connection.
+* <mark style="color:purple;">**Sticky / Random**</mark> is the session mode. <mark style="color:purple;">Sticky</mark> tries to hold the same IP within TTL, while <mark style="color:purple;">Random</mark> assigns a random IP for each new connection.
 
 Full description of all Residential proxy order parameters: [Residential proxy configuration](../../our-products/residential-proxies/#proxy-configuration).
 
@@ -166,7 +166,7 @@ Any of these reasons leads to an IP change during the session. We don't manage t
 relay-eu.shardx.com:8080:plan-limited-country-any-sid-8dbryym0a32i:7nnrpl63344545gx
 ```
 
-the login contains a fragment `sid-8dbryym0a32i`. If you change one character in it, for example to `sid-8dbryym0a324`, the IP address will change. The same thing happens "under the hood" when you click <mark style="color:purple;">Generate proxy</mark>.
+the login contains a fragment `sid-8dbryym0a32i`. If you change one character in it, for example to `sid-8dbryym0a324`, the IP address will change.
 
 <mark style="color:purple;">SID</mark> is responsible for picking the device and the IP for your session.
 {% endhint %}
@@ -178,10 +178,10 @@ the login contains a fragment `sid-8dbryym0a32i`. If you change one character in
 Google and Cloudflare captchas are usually **not related to the proxy itself**, but to the browser fingerprint. The most common causes:
 
 * An outdated or low-quality antidetect browser is used
-* The profile has a "sticky" / repeating fingerprint
+* The same fingerprint is reused across multiple profiles
 * The browser leaks mismatched parameters (timezone, language, WebRTC, etc.)
 
-**What to do:** generate new profile fingerprints whenever there's an issue, use quality antidetect solutions (for example the [Vision browser](../../setup-guides/antidetect-browsers/vision-browser.md)), and verify leaks at [IP Checker](../../our-products/ip-checker.md).
+**What to do:** generate new profile fingerprints whenever there's an issue, use quality antidetect solutions such as the [Vision browser](../../setup-guides/antidetect-browsers/vision-browser.md) or the free [ShardBrowser](../../our-products/shardx-launcher.md), and verify leaks at [IP Checker](../../our-products/ip-checker.md).
 
 ***
 
@@ -215,7 +215,7 @@ To pay with USDT on the TRC20 network, select the separate `USDT TRC20` option. 
 
 Yes, we have a full user API.
 
-* **Specification and Try-it-out:** the [User API](../../) section in this GitBook.
+* **Specification and Try-it-out:** the [User API](../../proxyshard-api/getting-started.md) section in this GitBook.
 * **Usage examples in Russian:** [github.com/ProxyShard/proxyshard-api-examples-ru](https://github.com/ProxyShard/proxyshard-api-examples-ru)
 * **Usage examples in English:** [github.com/ProxyShard/proxyshard-api-examples](https://github.com/ProxyShard/proxyshard-api-examples)
 
@@ -237,19 +237,14 @@ ISP proxies are available in the following locations:
 | 🇺🇸 USA (Pennsylvania) |
 | 🇹🇷 Turkey |
 | 🇺🇦 Ukraine |
+| 🇲🇩 Moldova |
+| 🇦🇹 Austria |
 
 ***
 
 ## 21. Which countries are available for Datacenter proxies?
 
-Available locations:
-
-* 🇲🇩 Moldova
-* 🇺🇦 Ukraine
-* 🇳🇱 Netherlands
-* 🇩🇪 Germany
-* 🇵🇱 Poland
-* 🇺🇸 USA (coming soon)
+See the [Datacenter proxies](../../our-products/datacenter-proxies.md) page or the [Datacenter Proxy](https://dashboard.shardx.com/en/datacenter-proxy) purchase section for the current country list.
 
 ***
 

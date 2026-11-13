@@ -1,11 +1,11 @@
 ---
-description: ShardX extension for Microsoft Edge
+description: ShardExtension for Microsoft Edge
 icon: puzzle-piece
 ---
 
-# ShardX Extension
+# ShardExtension
 
-Our official <mark style="color:purple;">**ShardX – Smart Proxy Manager**</mark> extension works in Microsoft Edge without restrictions, since Edge is built on the Chromium engine and supports extensions from the **Chrome Web Store**.
+Our official browser extension, <mark style="color:purple;">**ShardExtension**</mark>, works in Microsoft Edge without restrictions, since Edge is built on the Chromium engine and supports extensions from the **Chrome Web Store**.
 
 {% hint style="info" %}
 When installing an extension from the Chrome Web Store for the first time, Edge may prompt you to «**Allow extensions from other stores**», please confirm this permission.
@@ -17,6 +17,6 @@ When installing an extension from the Chrome Web Store for the first time, Edge 
 
 A full overview of the extension's features, pinning steps, profile setup for Residential / Datacenter / ISP proxies, and IP rotation for mobile proxies are on a dedicated page:
 
-{% content-ref url="../../../our-products/shardx-extension.md" %}
-[shardx-extension.md](../../../our-products/shardx-extension.md)
+{% content-ref url="../../../our-products/shardextension.md" %}
+[shardextension.md](../../../our-products/shardextension.md)
 {% endcontent-ref %}

@@ -19,7 +19,7 @@ icon: vial
 
 ## How to use it
 
-1. Open [proxyshard.com/proxy-tester](https://shardx.com/proxy-tester)
+1. Open [shardx.com/proxy-tester](https://shardx.com/proxy-tester)
 2. Paste one or more proxies into the <mark style="color:purple;">**Proxy list**</mark> field, one per line
 3. Click <mark style="color:purple;">**Test Proxy**</mark>
 4. Wait for the result in the <mark style="color:purple;">**Proxy check history**</mark> table below
@@ -45,7 +45,7 @@ After the check, the <mark style="color:purple;">**Proxy check history**</mark> 
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Proxy**         | IP address through which the connection was made                                                                                                                                                               |
 | **Response time** | Response time in milliseconds. The lower it is, the faster the proxy                                                                                                                                            |
-| **Status code**   | HTTP response code. `200` means everything is OK                                                                                                                                                               |
+| **Status code**   | HTTP response code. A `200` response means the connection was successful                                                                                                                                       |
 | **Result**        | Final status: <mark style="color:green;">**Success**</mark> (works) or <mark style="color:red;">**Failed**</mark> (does not work). If the proxy supports UDP, the <mark style="color:purple;">**UDP**</mark> label is shown next to the status |
 
 ***
