@@ -138,7 +138,28 @@ redirects:
   about-proxyshard: about-shardx
   tools/proxyshard-extension: tools/shardextension
   tools/shardx-extension: tools/shardextension
-  usage-instructions/shardx-browser/proxyshard-dashboard: usage-instructions/shardx-browser/shardx-dashboard
+  # Moved product and ShardBrowser pages (2026-11-17)
+  our-products/proxy-tester: tools/proxy-tester
+  our-products/ip-checker: tools/ip-checker
+  our-products/shardextension: tools/shardextension
+  our-products/p0f-spoofing: technologies-and-capabilities/p0f-spoofing
+  our-products/about-udp: technologies-and-capabilities/about-udp
+  our-products/about-udp/tampermonkey-webrtc-debug: technologies-and-capabilities/about-udp/tampermonkey-webrtc-debug
+  our-products/about-udp/how-webrtc-leak-works: technologies-and-capabilities/about-udp/how-webrtc-leak-works
+  our-products/about-udp/webrtc-leak-check-tools: technologies-and-capabilities/about-udp/webrtc-leak-check-tools
+  our-products/about-udp/why-tcp-proxy-not-enough: technologies-and-capabilities/about-udp/how-webrtc-leak-works
+  our-products/about-udp/why-blocking-webrtc-doesnt-help: technologies-and-capabilities/about-udp/why-blocking-webrtc-doesnt-help
+  our-products/about-udp/field-test-results: technologies-and-capabilities/about-udp/field-test-results
+  our-products/about-udp/webrtc-software-solutions: technologies-and-capabilities/about-udp/webrtc-software-solutions
+  our-products/shardx-launcher: tools/shardx-launcher
+  usage-instructions/shardx-browser: tools/shardx-launcher
+  usage-instructions/shardx-browser/folders: tools/shardx-launcher/folders
+  usage-instructions/shardx-browser/fingerprints: tools/shardx-launcher/fingerprints
+  usage-instructions/shardx-browser/extensions: tools/shardx-launcher/extensions
+  usage-instructions/shardx-browser/bookmarks: tools/shardx-launcher/bookmarks
+  usage-instructions/shardx-browser/automation: tools/shardx-launcher/automation
+  usage-instructions/shardx-browser/shardx-dashboard: tools/shardx-launcher/shardx-dashboard
+  usage-instructions/shardx-browser/proxyshard-dashboard: tools/shardx-launcher/shardx-dashboard
   usage-instructions/browsers/brave/proxyshard: usage-instructions/browsers/brave/shardx
   usage-instructions/browsers/chrome/proxyshard: usage-instructions/browsers/chrome/shardx
   usage-instructions/browsers/edge/proxyshard: usage-instructions/browsers/edge/shardx

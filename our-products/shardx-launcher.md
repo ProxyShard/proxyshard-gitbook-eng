@@ -1,5 +1,5 @@
 ---
-description: Installing ShardBrowser, adding a proxy and launching your first profile
+description: Installation, setup, and features of the ShardBrowser anti-detect browser
 icon: browser
 ---
 
@@ -20,7 +20,9 @@ Official ShardBrowser website: [shardbrowser.com](https://shardbrowser.com/).
 
 <figure><img src="../.gitbook/assets/shardbrowser-website.png" alt="Official ShardBrowser website"><figcaption>Official ShardBrowser website</figcaption></figure>
 
-## Windows system requirements
+## Installation and setup
+
+### Windows system requirements
 
 | Component      | Minimum                                | Recommended                                  |
 | -------------- | -------------------------------------- | -------------------------------------------- |
@@ -33,7 +35,7 @@ Official ShardBrowser website: [shardbrowser.com](https://shardbrowser.com/).
 
 ---
 
-## Installing on Windows
+### Installing on Windows
 
 Download the latest version:
 
@@ -59,13 +61,13 @@ Run the downloaded file. <mark style="color:purple;">Windows SmartScreen</mark> 
   <figcaption>SmartScreen: click Run anyway</figcaption>
 </figure>
 
-## Installing on macOS
+### Installing on macOS
 
 Under <mark style="color:purple;">**Assets**</mark>, download <mark style="color:purple;">`ShardBrowser.Launcher_<version>_aarch64.dmg`</mark>. This build supports Macs with Apple Silicon processors.
 
 Open the `.dmg` file and drag <mark style="color:purple;">**ShardBrowser Launcher**</mark> to <mark style="color:purple;">**Applications**</mark>. The app is signed with an Apple Developer ID and notarized, so it opens like any other macOS app.
 
-## Installing on Linux
+### Installing on Linux
 
 The <mark style="color:purple;">**Assets**</mark> section provides `.AppImage`, `.deb` and `.rpm` builds. To run the AppImage, make it executable:
 
@@ -80,7 +82,7 @@ Install the `.deb` package with:
 sudo apt install ./ShardBrowser.Launcher_<version>_amd64.deb
 ```
 
-## First launch
+### First launch
 
 After installation and launch, the <mark style="color:purple;">**All profiles**</mark> home screen opens. The section menu is on the left: profiles, proxies, fingerprints, extensions, bookmarks, automation and your ShardX account.
 
@@ -94,7 +96,7 @@ After installation and launch, the <mark style="color:purple;">**All profiles**<
 
 ---
 
-## Adding a proxy
+### Adding a proxy
 
 Go to <mark style="color:purple;">**Proxies**</mark> and click <mark style="color:purple;">**+ Add proxies**</mark>.
 
@@ -141,7 +143,7 @@ Proxies marked <mark style="color:purple;">**UDP**</mark> support <mark style="c
 
 ---
 
-## Creating your first profile
+### Creating your first profile
 
 Go to <mark style="color:purple;">**All profiles**</mark> and click <mark style="color:purple;">**+ New profile**</mark>. You can also import a profile from the clipboard with <mark style="color:purple;">**Import from clipboard**</mark>.
 
@@ -187,7 +189,7 @@ Click <mark style="color:purple;">**Create profile**</mark>.
 
 ---
 
-## Launching a profile
+### Launching a profile
 
 The profile appears in the list. The profile card opens on the right: proxy, extensions, notes, fingerprint settings, timezone and language (taken from the proxy by default). Click <mark style="color:purple;">**Start**</mark>.
 
@@ -211,12 +213,84 @@ The browser starts with an isolated fingerprint and proxy. The `chrome://shardx`
 
 ---
 
-## Troubleshooting
+### Troubleshooting
 
-### The app doesn't start
+#### The app doesn't start
 
 Most likely <mark style="color:purple;">Microsoft Edge WebView2 Runtime</mark> is not installed. Download and install it:
 
 {% embed url="https://developer.microsoft.com/en-us/microsoft-edge/webview2/consumer" %}
 
 Original Windows 10/11 images already include WebView2. Stripped-down builds may have it removed.
+
+## Features
+
+* Generates unique fingerprints for <mark style="color:purple;">Windows</mark>, <mark style="color:purple;">macOS</mark>, and <mark style="color:purple;">Linux</mark> (navigator, screen, client hints, WebGL / WebGPU, etc.)
+* Per-vector noise for <mark style="color:purple;">canvas, WebGL, audio, client rects, fonts, and sensors</mark>
+* Unlimited profiles organized into folders
+* Proxy binding per profile (<mark style="color:purple;">SOCKS5 / HTTP / HTTPS</mark>) with automatic testing when added
+* Local **HTTP API** for full automation
+* Control through **CDP** (Chrome DevTools Protocol) with Puppeteer, Playwright, and similar tools
+* Cookie export and import between profiles
+* A separate **MCP server** that lets an AI agent control a profile
+
+### Fingerprints and anti-detect
+
+For every profile, ShardBrowser provides a consistent set of parameters: User-Agent, platform, CPU cores, device memory (never exceeding the real machine), screen resolution, Sec-CH-UA, and more. Per-vector **noise** is applied to canvas, WebGL, audio, client rects, fonts, and sensors. Each noise option is controlled independently, so a profile's fingerprint remains stable across sessions while differing from other profiles and from your real device.
+
+{% hint style="info" %}
+The fingerprint is unique and not tied to the hardware: CPU cores and RAM are capped to the host, and screen parameters are limited to the real display. This reduces the risk of detection caused by inconsistent values.
+{% endhint %}
+
+### Proxies, QUIC, and WebRTC
+
+Whenever a profile starts, ShardBrowser tests its proxy for UDP relay support (SOCKS5 UDP\_ASSOCIATE) before launching the browser:
+
+* if UDP works, <mark style="color:purple;">QUIC</mark> is enabled and WebRTC uses the proxied UDP relay;
+* if UDP is unavailable, QUIC is disabled and WebRTC switches to **TCP-only** mode so the real IP cannot leak.
+
+Timezone, locale, and geolocation fields set to `auto` are also resolved through the proxy at launch.
+
+{% hint style="success" %}
+ShardBrowser combined with our [**UDP-supporting proxies**](about-udp/) prevents WebRTC leaks at the browser level: UDP traffic goes through the proxy rather than directly from your IP. Learn more in [**About UDP**](about-udp/).
+{% endhint %}
+
+### Automation: local API
+
+The application starts a local HTTP server on <mark style="color:purple;">**127.0.0.1**</mark> (default port **40325**, configurable under _Settings → Automation API_). It is accessible only from your computer.
+
+All requests except `GET /health` require a **Bearer token** (a persistent JWT from the settings):
+
+```
+Authorization: Bearer <token>
+```
+
+The **Regenerate token** button rotates the secret immediately: the new token becomes active at once and all previous tokens stop working.
+
+Typical automation flow:
+
+1. `GET /fingerprint/new/{platform}` — get a ready-to-use unique fingerprint without saving it.
+2. Optionally adjust the fingerprint, for example by enabling font noise or changing the WebRTC mode.
+3. `POST /profiles` — create a profile with that fingerprint and bind a proxy.
+4. `POST /profiles/{id}/start` — start the profile and receive its **CDP endpoint**.
+5. Connect to it as `browserWSEndpoint = cdp.web_socket_debugger_url` in Puppeteer / Playwright.
+6. `POST /profiles/{id}/stop` — close the profile.
+
+{% hint style="info" %}
+**Temporary profiles.** `POST /profiles/temporary` creates a hidden profile with the `temporary` flag. When the browser closes, the profile and its data directory are deleted automatically.
+{% endhint %}
+
+See the [ShardX Launcher API specification](https://docs.shardx.com/eng/shardx-launcher-api/binding-and-lifecycle) for the complete method reference, data models, and examples.
+
+### MCP server for AI agents
+
+ShardBrowser includes a separate **MCP server** (Model Context Protocol). It lets an AI client control the launcher through the API and the profile browser through CDP. It runs as a separate Node process and is not part of the HTTP API.
+
+Download it directly from the launcher under _Settings → MCP server → Download MCP server_. Configure it with `SHARDX_API` (the API base URL) and `SHARDX_TOKEN` (the Bearer token). The MCP server provides:
+
+* **API tools** for profiles, fingerprints, proxies, folders, cookies, start, and stop operations;
+* **browser tools** over CDP for navigation, JavaScript execution, screenshots, clicks, text input, tabs, and waits.
+
+{% hint style="warning" %}
+CDP (remote debugging) is enabled **only** when a profile is started through the API. Profiles started from the interface do not use a debugging port.
+{% endhint %}

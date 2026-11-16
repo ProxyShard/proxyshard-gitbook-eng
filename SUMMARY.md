@@ -22,7 +22,13 @@
 * [Proxy Tester](our-products/proxy-tester.md)
 * [IP Checker](our-products/ip-checker.md)
 * [ShardExtension](our-products/shardextension.md)
-* [ShardBrowser setup guide](our-products/shardx-launcher.md)
+* [ShardBrowser](our-products/shardx-launcher.md)
+  * [Folders](setup-guides/shardx-browser/folders.md)
+  * [Fingerprints](setup-guides/shardx-browser/fingerprints.md)
+  * [Extensions](setup-guides/shardx-browser/extensions.md)
+  * [Bookmarks](setup-guides/shardx-browser/bookmarks.md)
+  * [Automation](setup-guides/shardx-browser/automation.md)
+  * [ShardX Dashboard](setup-guides/shardx-browser/shardx-dashboard.md)
 * [API Specifications](our-products/api-specifications.md)
 
 ## Technologies and capabilities
@@ -65,13 +71,6 @@
 ## Usage instructions
 
 * [Setup instructions](setup-guides/getting-started.md)
-* [ShardBrowser features](setup-guides/shardx-browser.md)
-  * [Folders](setup-guides/shardx-browser/folders.md)
-  * [Fingerprints](setup-guides/shardx-browser/fingerprints.md)
-  * [Extensions](setup-guides/shardx-browser/extensions.md)
-  * [Bookmarks](setup-guides/shardx-browser/bookmarks.md)
-  * [Automation](setup-guides/shardx-browser/automation.md)
-  * [ShardX Dashboard](setup-guides/shardx-browser/shardx-dashboard.md)
 * [Windows](setup-guides/windows/README.md)
   * [Proxifier](setup-guides/windows/proxifier.md)
   * [v2rayN](setup-guides/windows/v2rayn.md)
@@ -92,6 +91,7 @@
   * [Potatso](setup-guides/ios-android/potatso.md)
   * [Super Proxy](setup-guides/ios-android/super-proxy.md)
 * [Antidetect browsers](setup-guides/antidetect-browsers/README.md)
+  * [ShardBrowser](setup-guides/antidetect-browsers/shardbrowser.md)
   * [🔥 Vision browser](setup-guides/antidetect-browsers/vision-browser.md)
   * [AdsPower](setup-guides/antidetect-browsers/adspower.md)
 * [Browsers](setup-guides/browsers/README.md)
