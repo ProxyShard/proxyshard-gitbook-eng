@@ -1,9 +1,9 @@
 ---
-description: ShardExtension for Vivaldi
+description: "Install ShardExtension in Vivaldi, add a ShardX proxy, switch profiles, and verify the external IP."
 icon: puzzle-piece
 ---
 
-# ShardExtension
+# ShardExtension for Vivaldi
 
 Our official browser extension, <mark style="color:purple;">**ShardExtension**</mark>, installs in Vivaldi directly from the **Chrome Web Store**, since the browser uses the Chromium engine and is compatible with all Chrome extensions.
 

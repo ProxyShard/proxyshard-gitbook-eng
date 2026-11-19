@@ -1,3 +1,7 @@
+---
+description: "Step-by-step setup of a ShardX HTTP or SOCKS5 proxy in NekoRay for Windows, including IP verification."
+---
+
 # NekoRay
 
 {% hint style="success" %}

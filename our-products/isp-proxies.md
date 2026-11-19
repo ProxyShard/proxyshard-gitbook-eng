@@ -1,4 +1,5 @@
 ---
+description: "ShardX ISP proxies with static ISP-assigned IPs: locations, features, restrictions, and connection details."
 icon: fire
 ---
 

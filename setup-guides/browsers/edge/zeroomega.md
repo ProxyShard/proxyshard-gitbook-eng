@@ -1,8 +1,8 @@
 ---
-description: Proxy setup for Microsoft Edge
+description: "Step-by-step setup of a ShardX HTTP or SOCKS5 proxy in the ZeroOmega extension for Microsoft Edge."
 ---
 
-# ZeroOmega
+# ZeroOmega for Microsoft Edge
 
 ## Installing ZeroOmega
 

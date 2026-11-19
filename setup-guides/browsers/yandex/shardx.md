@@ -1,9 +1,9 @@
 ---
-description: ShardExtension for Yandex Browser
+description: "Install ShardExtension in Yandex Browser, add a ShardX proxy, switch profiles, and verify the IP."
 icon: puzzle-piece
 ---
 
-# ShardExtension
+# ShardExtension for Yandex Browser
 
 Our official browser extension, <mark style="color:purple;">**ShardExtension**</mark>, installs in Yandex Browser directly from the **Chrome Web Store** with no extra steps required.
 

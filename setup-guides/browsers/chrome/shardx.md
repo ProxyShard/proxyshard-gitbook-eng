@@ -1,9 +1,9 @@
 ---
-description: ShardExtension for Google Chrome
+description: "Install ShardExtension in Google Chrome, add a ShardX proxy, switch profiles, and verify the IP."
 icon: puzzle-piece
 ---
 
-# ShardExtension
+# ShardExtension for Google Chrome
 
 Our official browser extension, <mark style="color:purple;">**ShardExtension**</mark>, manages proxies directly in the browser and installs from the **Chrome Web Store**.
 

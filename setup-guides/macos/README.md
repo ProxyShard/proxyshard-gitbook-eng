@@ -1,4 +1,5 @@
 ---
+description: "Guides for configuring ShardX HTTP and SOCKS5 proxies on macOS for the system, browsers, and individual apps."
 icon: apple
 ---
 

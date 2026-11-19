@@ -1,4 +1,5 @@
 ---
+description: "Compare anti-detect browsers for ShardX proxies, including supported platforms, UDP support, and setup guides."
 icon: window-restore
 ---
 

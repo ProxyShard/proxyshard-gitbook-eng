@@ -1,4 +1,8 @@
-# V2Box
+---
+description: "Step-by-step ShardX proxy setup in V2Box for macOS: add a server, enable the connection, and verify the IP."
+---
+
+# V2Box for macOS
 
 {% hint style="success" %}
 This solution supports UDP tunneling!

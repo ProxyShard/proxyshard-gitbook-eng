@@ -1,4 +1,5 @@
 ---
+description: "Why completely blocking WebRTC does not guarantee anonymity and can itself reveal an anti-detect configuration."
 icon: arrow-down-right
 ---
 

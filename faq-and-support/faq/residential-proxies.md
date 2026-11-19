@@ -1,8 +1,9 @@
 ---
+description: "Answers to common questions about ShardX residential proxies, including formats, rotation, geolocation, traffic, and sessions."
 icon: house-signal
 ---
 
-# Residential proxies
+# Residential proxy FAQ
 
 Questions related to Residential proxy operation, session generation, and rotation specifics.
 

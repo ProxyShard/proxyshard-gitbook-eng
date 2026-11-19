@@ -1,4 +1,5 @@
 ---
+description: "Quick start with ShardX proxies: find your order credentials, choose a protocol, and configure a connection."
 icon: clipboard-list
 ---
 

@@ -1,4 +1,5 @@
 ---
+description: "ShardX Unlimited Residential proxies with unlimited traffic, IP rotation, and a choice of available locations."
 icon: triple-chevrons-up
 ---
 

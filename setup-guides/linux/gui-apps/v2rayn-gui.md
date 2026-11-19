@@ -1,3 +1,7 @@
+---
+description: "Configure a ShardX proxy in the v2rayN graphical client for Linux, add a server, and verify connectivity."
+---
+
 # v2rayN GUI
 
 {% hint style="success" %}

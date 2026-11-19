@@ -1,5 +1,5 @@
 ---
-description: Proxy setup on MikroTik
+description: "Step-by-step ShardX proxy setup on MikroTik routers, including connection parameters, routing rules, and testing."
 icon: router
 ---
 

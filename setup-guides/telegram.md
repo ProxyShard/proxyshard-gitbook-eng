@@ -1,5 +1,5 @@
 ---
-description: Proxy setup for Telegram
+description: "Step-by-step setup of a ShardX HTTP or SOCKS5 proxy in Telegram Desktop and the mobile app."
 icon: telegram
 ---
 

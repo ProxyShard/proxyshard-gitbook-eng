@@ -1,4 +1,5 @@
 ---
+description: "Teamspaces in ShardX: create a workspace, invite members, and manage proxies collaboratively."
 icon: people-group
 ---
 

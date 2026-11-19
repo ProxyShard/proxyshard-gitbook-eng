@@ -1,4 +1,5 @@
 ---
+description: "ShardX Premium Residential proxies with precise geo-targeting, IP rotation, and traffic-based pricing."
 icon: crown
 ---
 

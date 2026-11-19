@@ -1,4 +1,5 @@
 ---
+description: "ShardX Standard Residential proxies with a large IP pool, country selection, and traffic-based pricing."
 icon: house-signal
 ---
 

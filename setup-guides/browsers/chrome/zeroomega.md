@@ -1,8 +1,8 @@
 ---
-description: Proxy setup for Chrome
+description: "Step-by-step setup of a ShardX HTTP or SOCKS5 proxy in the ZeroOmega extension for Google Chrome."
 ---
 
-# ZeroOmega
+# ZeroOmega for Google Chrome
 
 ## Installing ZeroOmega
 

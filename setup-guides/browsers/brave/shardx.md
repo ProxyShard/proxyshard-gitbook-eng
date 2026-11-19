@@ -1,9 +1,9 @@
 ---
-description: ShardExtension for Brave
+description: "Install ShardExtension in Brave, add a ShardX proxy, switch profiles, and verify the external IP."
 icon: puzzle-piece
 ---
 
-# ShardExtension
+# ShardExtension for Brave
 
 Our official browser extension, <mark style="color:purple;">**ShardExtension**</mark>, installs in Brave directly from the **Chrome Web Store**, since the browser uses the Chromium engine and is compatible with all Chrome extensions.
 

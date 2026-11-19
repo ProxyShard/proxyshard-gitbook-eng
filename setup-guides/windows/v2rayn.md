@@ -1,3 +1,7 @@
+---
+description: "Step-by-step setup of a ShardX HTTP or SOCKS5 proxy in v2rayN for Windows, including system proxy mode."
+---
+
 # v2rayN
 
 {% hint style="success" %}

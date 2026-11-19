@@ -1,4 +1,5 @@
 ---
+description: "Guides for setting up ShardX proxies and ShardExtension in Chrome, Firefox, Edge, Opera, and other browsers."
 icon: browsers
 ---
 

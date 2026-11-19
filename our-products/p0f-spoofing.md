@@ -1,4 +1,5 @@
 ---
+description: "p0f network fingerprint spoofing to align proxy TCP/IP characteristics with the selected operating system."
 icon: fingerprint
 ---
 

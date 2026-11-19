@@ -1,4 +1,5 @@
 ---
+description: "Why generated residential proxies are not saved to an order and how to reuse an IP with session parameters."
 icon: arrows-rotate
 ---
 

@@ -1,4 +1,5 @@
 ---
+description: "How to find a ShardX order by Product tag and quickly open its proxies and connection details."
 icon: magnifying-glass
 ---
 

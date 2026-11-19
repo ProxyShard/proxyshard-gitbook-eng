@@ -1,4 +1,5 @@
 ---
+description: "How to contact the ShardX team for help with proxies, payments, orders, and using the service."
 icon: at
 ---
 

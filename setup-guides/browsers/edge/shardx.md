@@ -1,9 +1,9 @@
 ---
-description: ShardExtension for Microsoft Edge
+description: "Install ShardExtension in Microsoft Edge, add a ShardX proxy, switch profiles, and verify the IP."
 icon: puzzle-piece
 ---
 
-# ShardExtension
+# ShardExtension for Microsoft Edge
 
 Our official browser extension, <mark style="color:purple;">**ShardExtension**</mark>, works in Microsoft Edge without restrictions, since Edge is built on the Chromium engine and supports extensions from the **Chrome Web Store**.
 

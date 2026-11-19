@@ -1,5 +1,5 @@
 ---
-description: Proxy setup for Mozilla Firefox
+description: "Step-by-step setup of a ShardX HTTP or SOCKS5 proxy in the FoxyProxy extension for Mozilla Firefox."
 ---
 
 # FoxyProxy

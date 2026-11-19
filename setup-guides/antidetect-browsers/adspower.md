@@ -1,3 +1,7 @@
+---
+description: "Step-by-step ShardX proxy setup in AdsPower: create a profile, enter proxy credentials, and test the connection."
+---
+
 # AdsPower
 
 {% hint style="warning" %}

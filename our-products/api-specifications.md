@@ -1,3 +1,7 @@
+---
+description: "ShardX API reference for managing proxies, orders, profiles, and ShardBrowser automation."
+---
+
 # API Specifications
 
 Interactive API references for <mark style="color:$tint;">ShardX</mark> and <mark style="color:$tint;">ShardX Launcher</mark>.

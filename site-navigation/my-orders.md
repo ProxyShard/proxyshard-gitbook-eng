@@ -1,4 +1,5 @@
 ---
+description: "The ShardX My Orders section: view proxies, connection credentials, expiration dates, status, and available actions."
 icon: arrow-up-wide-short
 ---
 

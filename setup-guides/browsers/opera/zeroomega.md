@@ -1,8 +1,8 @@
 ---
-description: Proxy setup for Opera
+description: "Step-by-step setup of a ShardX HTTP or SOCKS5 proxy in the ZeroOmega extension for Opera."
 ---
 
-# ZeroOmega
+# ZeroOmega for Opera
 
 ## Installing ZeroOmega
 

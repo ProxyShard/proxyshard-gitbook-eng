@@ -1,4 +1,5 @@
 ---
+description: "Set up a ShardX proxy in Octo Browser on iOS and Android: create a profile, enter credentials, and verify the IP."
 icon: octopus
 ---
 

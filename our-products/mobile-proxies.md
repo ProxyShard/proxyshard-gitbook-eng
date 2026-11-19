@@ -1,4 +1,5 @@
 ---
+description: "ShardX mobile proxies with carrier IPs: available countries, rotation options, authentication, and usage terms."
 icon: signal
 ---
 

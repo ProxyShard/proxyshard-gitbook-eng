@@ -1,4 +1,8 @@
-# V2Box
+---
+description: "Step-by-step ShardX proxy setup in V2Box on iOS and Android, including connection setup and IP verification."
+---
+
+# V2Box for iOS and Android
 
 {% hint style="success" %}
 V2Box supports UDP traffic.

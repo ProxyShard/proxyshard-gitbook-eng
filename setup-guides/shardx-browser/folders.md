@@ -1,5 +1,5 @@
 ---
-description: Folders for ShardBrowser profiles
+description: "Create and manage profile folders in ShardBrowser, including grouping, moving, renaming, and deleting profiles."
 icon: folder
 ---
 

@@ -1,4 +1,5 @@
 ---
+description: "Answers to common questions about ShardX proxies, connection setup, orders, locations, and troubleshooting."
 icon: comments-question-check
 ---
 

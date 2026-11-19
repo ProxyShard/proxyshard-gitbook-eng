@@ -1,5 +1,5 @@
 ---
-description: Vivaldi Browser proxy
+description: "Ways to configure ShardX proxies in Vivaldi with ShardExtension, Chromium extensions, or system proxy settings."
 icon: circle-half-stroke
 ---
 

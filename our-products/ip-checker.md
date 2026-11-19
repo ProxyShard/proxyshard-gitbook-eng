@@ -1,4 +1,5 @@
 ---
+description: "Check an IP address, geolocation, ISP, network type, leak risks, and proxy quality with ShardX IP Checker."
 icon: magnifying-glass
 ---
 

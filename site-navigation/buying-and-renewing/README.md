@@ -1,4 +1,5 @@
 ---
+description: "Instructions for purchasing and renewing residential, datacenter, ISP, and mobile proxies in the ShardX dashboard."
 icon: coin-vertical
 ---
 

@@ -1,3 +1,7 @@
+---
+description: "Configure ShardX HTTP and SOCKS5 proxies in ProxyCap or NetDetour for individual Windows applications."
+---
+
 # ProxyCap (NetDetour)
 
 {% hint style="success" %}

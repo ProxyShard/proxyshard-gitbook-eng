@@ -1,3 +1,7 @@
+---
+description: "Configure a ShardX SOCKS5 proxy in SocksCap64 to run selected Windows programs through the proxy."
+---
+
 # SocksCap64
 
 {% hint style="success" %}

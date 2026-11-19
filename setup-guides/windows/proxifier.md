@@ -1,3 +1,7 @@
+---
+description: "Configure ShardX proxies in Proxifier to route selected Windows applications through HTTP or SOCKS5."
+---
+
 # Proxifier
 
 {% hint style="danger" %}

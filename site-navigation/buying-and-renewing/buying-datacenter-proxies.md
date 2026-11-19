@@ -1,4 +1,5 @@
 ---
+description: "How to purchase or renew ShardX datacenter proxies, including location, billing period, IP quantity, and add-ons."
 icon: server
 ---
 

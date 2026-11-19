@@ -1,4 +1,5 @@
 ---
+description: "Ways to verify proxy availability, IP address, and connectivity with Proxy Tester, command-line tools, and external services."
 icon: flask-vial
 ---
 

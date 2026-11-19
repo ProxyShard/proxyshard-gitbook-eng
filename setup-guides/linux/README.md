@@ -1,4 +1,5 @@
 ---
+description: "Guides for configuring ShardX HTTP and SOCKS5 proxies on Linux with graphical and command-line tools."
 icon: linux
 ---
 

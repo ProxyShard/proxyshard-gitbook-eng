@@ -1,5 +1,5 @@
 ---
-description: How WebRTC works
+description: "How WebRTC establishes connections, why a real IP can leak over UDP, and how a proxy prevents the leak."
 icon: wave-square
 ---
 

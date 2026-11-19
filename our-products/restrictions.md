@@ -1,4 +1,5 @@
 ---
+description: "ShardX proxy restrictions, including prohibited use cases, connection limits, usage rules, and site availability."
 icon: hand
 ---
 

@@ -1,4 +1,5 @@
 ---
+description: "ShardX datacenter proxies with dedicated IPs: available locations, specifications, restrictions, and use cases."
 icon: server
 ---
 

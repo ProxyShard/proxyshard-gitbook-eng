@@ -1,4 +1,5 @@
 ---
+description: "Answers to common questions about ShardX datacenter and ISP proxies, including setup, authentication, renewal, and limits."
 icon: server
 ---
 

@@ -1,4 +1,5 @@
 ---
+description: "How to purchase or renew ShardX ISP proxies, including country, provider, billing period, and static IP quantity."
 icon: server
 ---
 

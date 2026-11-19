@@ -1,5 +1,5 @@
 ---
-description: Opera proxy
+description: "Ways to configure ShardX proxies in Opera with ShardExtension, ZeroOmega, or system proxy settings."
 icon: opera
 ---
 

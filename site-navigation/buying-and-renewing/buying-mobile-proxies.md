@@ -1,4 +1,5 @@
 ---
+description: "How to purchase or renew ShardX mobile proxies, including country, carrier, billing period, and rotation settings."
 icon: sim-card
 ---
 

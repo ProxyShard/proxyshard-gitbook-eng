@@ -1,3 +1,7 @@
+---
+description: "Configure ShardX HTTP and SOCKS5 proxies in proxychains to run Linux applications through a proxy from the terminal."
+---
+
 # proxychains
 
 ## Proxychains4 setup

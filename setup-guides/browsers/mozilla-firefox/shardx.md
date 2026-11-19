@@ -1,9 +1,9 @@
 ---
-description: ShardExtension for Mozilla Firefox
+description: "Install ShardExtension in Mozilla Firefox, add a ShardX proxy, switch profiles, and verify the IP."
 icon: puzzle-piece
 ---
 
-# ShardExtension
+# ShardExtension for Mozilla Firefox
 
 Our official browser extension, <mark style="color:purple;">**ShardExtension**</mark>, lets you manage proxies directly in Mozilla Firefox. Install it from **Firefox Add-ons**.
 

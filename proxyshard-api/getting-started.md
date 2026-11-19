@@ -1,3 +1,7 @@
+---
+description: "Get started with the ShardX API: obtain a key, use the base URL, authenticate requests, and make your first call."
+---
+
 # Getting started
 
 The ShardX API lets you retrieve profile and order information, manage proxies, and perform other operations from your applications and scripts.

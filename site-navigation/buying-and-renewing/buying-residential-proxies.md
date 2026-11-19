@@ -1,4 +1,5 @@
 ---
+description: "How to purchase ShardX residential proxies: choose Standard, Premium, or Unlimited, traffic, location, and plan."
 icon: house-signal
 ---
 

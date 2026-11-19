@@ -1,9 +1,9 @@
 ---
-description: ShardExtension for Opera
+description: "Install ShardExtension in Opera, add a ShardX proxy, switch profiles, and verify the external IP."
 icon: puzzle-piece
 ---
 
-# ShardExtension
+# ShardExtension for Opera
 
 Our official browser extension, <mark style="color:purple;">**ShardExtension**</mark>, can be installed in Opera directly from the **Chrome Web Store**.
 

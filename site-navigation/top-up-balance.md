@@ -1,4 +1,5 @@
 ---
+description: "How to top up your ShardX balance: choose a payment method, create a payment, and verify the funds."
 icon: dollar-sign
 ---
 

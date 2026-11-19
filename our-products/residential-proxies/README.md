@@ -1,4 +1,5 @@
 ---
+description: "ShardX residential proxies: compare Standard, Premium, and Unlimited plans, locations, pricing, and rotation modes."
 icon: house-signal
 ---
 

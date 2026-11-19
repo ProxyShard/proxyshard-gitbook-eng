@@ -1,4 +1,5 @@
 ---
+description: "Software solutions for using WebRTC safely through a proxy, including ShardBrowser, Vision, and other options."
 icon: git-alt
 ---
 

@@ -1,4 +1,5 @@
 ---
+description: "Test lists of HTTP and SOCKS5 proxies online for availability, speed, external IP, country, and response code."
 icon: vial
 ---
 

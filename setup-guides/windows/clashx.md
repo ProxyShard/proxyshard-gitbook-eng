@@ -1,3 +1,7 @@
+---
+description: "Configure a ShardX proxy in Clash for Windows, enable the system proxy, and verify the connection."
+---
+
 # Clash for Windows
 
 {% hint style="success" %}

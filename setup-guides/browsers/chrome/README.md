@@ -1,5 +1,5 @@
 ---
-description: Chrome proxy
+description: "Ways to configure ShardX proxies in Google Chrome with ShardExtension, ZeroOmega, or system proxy settings."
 icon: chrome
 ---
 
