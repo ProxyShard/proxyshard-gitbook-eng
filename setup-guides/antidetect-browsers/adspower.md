@@ -4,10 +4,6 @@ description: "Step-by-step ShardX proxy setup in AdsPower: create a profile, ent
 
 # AdsPower
 
-{% hint style="warning" %}
-AdsPower does not support UDP proxies. Use [Vision Browser](vision-browser.md) or the free [ShardBrowser](../../our-products/shardx-launcher.md) when UDP is required.
-{% endhint %}
-
 ## Add a proxy
 
 Open `Proxies` and click `Add Proxy`.
