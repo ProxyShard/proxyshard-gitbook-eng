@@ -29,6 +29,7 @@
   * [Bookmarks](setup-guides/shardx-browser/bookmarks.md)
   * [Automation](setup-guides/shardx-browser/automation.md)
   * [ShardX Dashboard](setup-guides/shardx-browser/shardx-dashboard.md)
+  * [Team server](setup-guides/shardx-browser/team-server.md)
 * [API Specifications](our-products/api-specifications.md)
 
 ## Technologies and capabilities
